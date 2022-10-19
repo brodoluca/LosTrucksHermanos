@@ -1,6 +1,6 @@
 #include "Leader.hpp"
 
-Leader::Leader()
+LeaderTruck::LeaderTruck()
 {
     this->_id = 1;
-};
+}

@@ -1,14 +1,14 @@
 #ifndef Leader_HPP
 #define Leader_HPP
-
+//#pragma once
 #include "Truck.hpp"
 
-class Leader : protected Truck
+class LeaderTruck : public Truck
 {
 public:
-    Leader();
-    
-protected:
+    LeaderTruck();
 };
+
+
 
 #endif

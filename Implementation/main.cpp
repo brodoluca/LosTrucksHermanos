@@ -1,10 +1,10 @@
 #include <iostream>
+#include "TruckPlatoon.hpp"
 
-#include "src/Leader.hpp"
 
 int main()
 {
-    Leader leader();
-    std::cout << "Hello world " ;
+    
+    TruckPlatoon::StartSimulation(1);
     return 0;
 }

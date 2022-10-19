@@ -1,0 +1,72 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ compila il file attivo",
+            "command": "/usr/local/opt/llvm/bin/clang++",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                //"-g",
+                //"-I/usr/local/include",
+                //" -L/usr/local/lib",
+                //"-lomp",
+                "-fopenmp",
+
+                "${file}",
+                "${fileDirname}/src/**.cpp",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++17",
+                
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Attività generata dal debugger."
+        },
+        {
+            "command": "/usr/local/opt/llvm/bin/clang++",
+            "label": "g++ build active file",
+            "args": [
+                "-g",
+                "${fileDirname}/src/**.cpp",
+                "${fileDirname}/src/**.hpp",
+                "-o",
+                "-fopenmp",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++17",
+                
+            ]
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ compila il file attivo",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-fopenmp"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Attività generata dal debugger."
+        }
+    ],
+    "version": "2.0.0"
+}
