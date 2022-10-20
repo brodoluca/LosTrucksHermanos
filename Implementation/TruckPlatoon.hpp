@@ -18,7 +18,7 @@
 namespace TruckPlatoon
 {
 
-    void TruckCreatesPlatoon();
+    void TruckCreatesPlatoon(const int &NumberOfThreads = 4);
     void StartSimulation( uint8_t Option)
     {
         switch (Option)
@@ -35,11 +35,11 @@ namespace TruckPlatoon
 
     
 
-    void TruckCreatesPlatoon()
+    void TruckCreatesPlatoon(const int &NumberOfThreads)
     {
 
 
-        omp_set_num_threads(4);
+        omp_set_num_threads(NumberOfThreads);
         #pragma omp parallel 
         {
             int ID = omp_get_thread_num();
