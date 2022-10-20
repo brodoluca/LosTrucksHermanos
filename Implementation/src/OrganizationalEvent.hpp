@@ -10,38 +10,18 @@
 
 
 
-std::ostream& operator << ( std::ostream& outs, const OrganizationalEventType& p )
-{
-    switch (p)
-    {
-    case OrganizationalEventType::LeaderElection:
-        return outs << "LeaderElection";
-    case OrganizationalEventType::Joining:
-        return outs << "Joining";
-    case OrganizationalEventType::Leaving:
-        return outs << "Leaving";
-    case OrganizationalEventType::Coupling:
-        return outs << "Coupling";
-    case OrganizationalEventType::Decoupling:
-        return outs << "Decoupling";
-    case OrganizationalEventType::OrganizationalNone:
-        return outs << "None";
-    default:
-        return outs << "Default";
-    };
-}
 
 
-class OrganizationalEvent : Event
+
+class OrganizationalEvent : protected Event
 {
 public:
     
-    OrganizationalEvent(OrganizationalEventType Token):_EventType(Token){};
-    OrganizationalEvent():_EventType(OrganizationalEventType::OrganizationalNone){};
-    OrganizationalEventType Type(){return _EventType;};
+    OrganizationalEvent(EventType Token){ _Event = Token;};
+    OrganizationalEvent(){ _Event = EventType::None;};
+    EventType Type(){return _Event;};
 
 private:
-    OrganizationalEventType _EventType;
 
 };
 

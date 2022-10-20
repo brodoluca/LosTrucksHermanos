@@ -13,8 +13,10 @@
 #include "src/OrganizationalEvent.hpp"
 #include "src/SafetyCriticalEvent.hpp"
 
-#include <pthread.h>
+#include "src/Communication.hpp"
 
+#include <pthread.h>
+#include <vector>
 namespace TruckPlatoon
 {
 
@@ -24,7 +26,7 @@ namespace TruckPlatoon
         switch (Option)
         {
         case 1:
-            TruckCreatesPlatoon();
+            TruckCreatesPlatoon(5);
             break;
         
         default:
@@ -33,14 +35,23 @@ namespace TruckPlatoon
     }
 
 
-    
+
+
+
+
+
+ 
+
 
     void TruckCreatesPlatoon(const int &NumberOfThreads)
     {
 
+        std::vector<Message> MessageBus;
+
+        
 
         omp_set_num_threads(NumberOfThreads);
-        #pragma omp parallel 
+        #pragma omp parallel shared(MessageBus)
         {
             int ID = omp_get_thread_num();
             
@@ -48,11 +59,16 @@ namespace TruckPlatoon
 
             Truck truck(ID);
 
-            #pragma omp barrier
-            std::cout << "TRUCK:  " << truck.GetID();
-            std::cout <<  std::endl;
-            
 
+            #pragma omp critical
+            //std::cout << "TRUCK:  " << truck.GetID()<<  std::endl;
+            truck.CheckPlatoon(&MessageBus);
+
+        }
+
+        for(auto message: MessageBus)
+        {
+            std::cout<<"ID_Sender: " <<message._ID_Sender <<" ID_RECEIVER: "<<message._ID_Receiver << " EVENT:  " << message._Event.Type() << std::endl;
         }
     } 
 

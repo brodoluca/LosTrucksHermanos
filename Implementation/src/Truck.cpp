@@ -9,8 +9,9 @@ Truck::Truck()
     this->_stearingAngle = 0;
     this->_distance = 0;
     this->_state = TruckState::Available;
+    this ->_order = 0;
 
-    bool platoon = this->CheckForPlatoon();
+    //bool platoon = this->CheckForPlatoon();
 }
 
 
@@ -24,17 +25,27 @@ Truck::Truck(u_int16_t newID):_id (newID)
 }
 
 
-bool Truck::CheckForPlatoon ()
-{
-    if(omp_get_num_threads() > 1)
+void Truck::CheckPlatoon(std::vector<Message>* Bus)
     {
-        return true;
+        int count = 0;
+        for(auto message: *Bus)
+        {
+            count++;
+        }
+
+        if(count == 0)
+        {
+            HandleEvent(TruckEvent::PlatoonNotAvailable);
+            WriteBus(Bus, _order, 0, EventType::PlatoonCreated);
+            ReadBus(Bus);
+            HandleEvent(TruckEvent::Elected);
+        }
+        else
+        {
+            //Join Platoon
+        }
+
     }
-    else
-    {
-        return false;
-    }
-}
 
 
 u_int16_t Truck::GetID()
@@ -123,11 +134,65 @@ void Truck::HandleEvent(const TruckEvent &event)
             /* code */
             break;
         case TruckState::PlatoonCreation:
+            if(event == TruckEvent::Elected){
+                _state = TruckState::Leader;
+            }
+                
+            break;
+        
+        default:
+            break;
+    }
+    Update();
+
+}
+
+
+
+void Truck::Update()
+{
+    switch (_state)
+    {
+        case TruckState::Available:
+            break;
+
+        case TruckState::PlatoonMember:
             /* code */
+            break;
+        case TruckState::Leader:
+            std::cout << "Truck n. " << _id << " is the leader"<<std::endl;
+            break;
+        case TruckState::SimpleMember:
+            /* code */
+            break;
+
+        case TruckState::Unavailable:
+            /* code */
+            break;
+        case TruckState::PlatoonCreation:
+            _order = 1;
             break;
         
         default:
             break;
     }
 
+}
+
+void Truck::ReadBus(std::vector<Message>* Bus){
+        for(auto message: *Bus)
+        {
+            //std::cout<< message._Event.Type() << " from: " << _id << std::endl;
+        }
+    };
+
+void Truck::WriteBus(std::vector<Message>* Bus, Message *m )
+{
+        Bus->push_back(*m);
+}
+
+void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t ID_Sender, u_int16_t ID_Receiver, Event Event)
+{
+
+        Bus->push_back(Message(ID_Sender,ID_Receiver, Event));
 }

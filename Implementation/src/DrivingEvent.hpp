@@ -4,7 +4,7 @@
 #include "Event.hpp"
 #include "utils/PlatoonTypes.hpp"
 
-class DrivingEvent : Event
+class DrivingEvent : private Event
 {
     speedType _speed;
     stearingAngleType _stearingAngle;

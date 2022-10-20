@@ -8,32 +8,21 @@
 #include <iostream>
 
 
-std::ostream& operator << ( std::ostream& outs, const SafetyEventType& p )
-{
-    switch (p)
-    {
-    case SafetyEventType::Crash:
-        return outs << "Crash";
-    case SafetyEventType::CommunicationFailure:
-        return outs << "CommunicationFailure";
-    case SafetyEventType::SafetyNone:
-        return outs << "None";
-    default:
-        return outs << "Default";
-    };
-}
 
 
-class SafetyCriticalEvent : Event
+
+
+
+
+class SafetyCriticalEvent : protected Event
 {
 public:
     
-    SafetyCriticalEvent(SafetyEventType Token):_EventType(Token){};
-    SafetyCriticalEvent():_EventType(SafetyEventType::SafetyNone){};
-    SafetyEventType Type(){return _EventType;};
+    SafetyCriticalEvent(EventType Token){ _Event = Token;};
+    SafetyCriticalEvent(){ _Event= EventType::None;};
+    EventType Type(){return _Event;};
     
 private:
-    SafetyEventType _EventType;
 
 };
 

@@ -6,7 +6,7 @@
 #include <cstdint>
 
 
-
+//#include "Communication.hpp"
 
 class Truck
 {
@@ -29,8 +29,12 @@ public:
 
 
     void HandleEvent(const TruckEvent &event);
+    void Update();
 
-    bool CheckForPlatoon();
+    void CheckPlatoon(std::vector<Message>* Bus);
+    void ReadBus(std::vector<Message>* Bus);
+    void WriteBus(std::vector<Message>* Bus,u_int16_t ID_Sender, u_int16_t ID_Receiver, Event Event);
+    void WriteBus(std::vector<Message>* Bus, Message *m );
     
 protected:
     TruckState _state;
@@ -38,6 +42,8 @@ protected:
     speedType _speed;
     stearingAngleType _stearingAngle;
     distanceType _distance;
+
+    u_int16_t _order;
     
 };
 
