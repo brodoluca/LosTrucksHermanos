@@ -9,7 +9,7 @@ Truck::Truck()
     this->_stearingAngle = 0;
     this->_distance = 0;
     this->_state = TruckState::Available;
-    this ->_order = 0;
+    this ->_position = 0;
 
     //bool platoon = this->CheckForPlatoon();
 }
@@ -26,7 +26,7 @@ Truck::Truck(u_int16_t newID):_id (newID)
 
 
 void Truck::CheckPlatoon(std::vector<Message>* Bus)
-    {
+{
         int count = 0;
         for(auto message: *Bus)
         {
@@ -36,17 +36,180 @@ void Truck::CheckPlatoon(std::vector<Message>* Bus)
         if(count == 0)
         {
             HandleEvent(TruckEvent::PlatoonNotAvailable);
-            WriteBus(Bus, _order, 0, EventType::PlatoonCreated);
-            ReadBus(Bus);
+            WriteBus(Bus, _position, 0, EventType::PlatoonNotFound);
+            //ReadBus(Bus);
+            HandleEvent(TruckEvent::PlatoonCreated);
+            WriteBus(Bus, _position, 0, EventType::NewPlatoon);
+
             HandleEvent(TruckEvent::Elected);
+            WriteBus(Bus, _position, 0, EventType::LeaderElected);
         }
         else
         {
-            //Join Platoon
+            HandleEvent(TruckEvent::Join);
+            WriteBus(Bus, _position, 0, EventType::Joining, _id);
+            if(!SearchFor(Bus, EventType::LeaderElected))
+            {
+                HandleEvent(TruckEvent::ElectNewLeader);
+            }
         }
 
-    }
+}
 
+
+
+void Truck::HandleEvent(const TruckEvent &event)
+{
+    switch (_state)
+    {
+        case TruckState::Available:
+            if (event == TruckEvent::Join)
+            {
+                _state = TruckState::PlatoonMember;
+            }else if(event == TruckEvent::PlatoonNotAvailable)
+            {
+                _state = TruckState::PlatoonCreation;
+            }else
+            {
+                //ErrorHandling
+            }
+            break;
+        case TruckState::Elections:
+            break;
+        case TruckState::PlatoonMember:
+            if(event == TruckEvent::Elected)
+            {
+                _state = TruckState::Leader;
+            }
+            else if(event == TruckEvent::ElectNewLeader)
+            {
+                _state = TruckState::Elections;
+            }
+        case TruckState::Leader:
+            /* code */
+            break;
+        case TruckState::SimpleMember:
+            /* code */
+            break;
+
+        case TruckState::Unavailable:
+            /* code */
+            break;
+        case TruckState::PlatoonCreation:
+            if(event == TruckEvent::PlatoonCreated)
+            {
+                _state = TruckState::PlatoonMember;
+            }
+            break;
+        
+        default:
+            break;
+    }
+    Update();
+
+}
+
+
+
+void Truck::Update()
+{
+    switch (_state)
+    {
+        case TruckState::Available:
+
+            break;
+
+        case TruckState::PlatoonMember:
+            break;
+        case TruckState::Leader:
+            if(!_isLeader){
+                _isLeader = true;
+                return;
+            }
+            do
+            {
+                auto m = _Bus->back();
+                if(m._SenderPosition != 1)
+                    _Bus->pop_back();
+                
+                if(m._Event.Type() == EventType::Joining)
+                {
+                    // Write on the bus the new member position
+                    //Each message will have a body in json for the content
+                    // Grande giuseppe per l'idea
+                }
+
+            } while (0);
+            
+            break;
+        case TruckState::SimpleMember:
+            /* code */
+            break;
+
+        case TruckState::Unavailable:
+            /* code */
+            break;
+        case TruckState::PlatoonCreation:
+            _position = 1;
+            
+            break;
+        case TruckState::Elections:
+            break;
+        default:
+            break;
+    }
+    std::cout << "Truck n. " << _id << " : " << _state <<std::endl;
+
+}
+
+
+
+
+
+
+
+
+
+Message Truck::PopBackLastMessage(std::vector<Message>* Bus)
+{
+    return Bus->back();
+}
+
+
+void Truck::ReadBus(std::vector<Message>* Bus){
+        for(auto message: *Bus)
+        {
+            //std::cout<< message._Event.Type() << " from: " << _id << std::endl;
+        }
+};
+
+
+bool Truck::SearchFor(std::vector<Message>* Bus, const EventType& Event)
+{
+    for(auto message: *Bus)
+        {
+            if(message._Event.Type() == Event)
+                return true;
+        }
+    return false;
+}
+
+
+void Truck::WriteBus(std::vector<Message>* Bus, Message *m )
+{
+        Bus->push_back(*m);
+}
+
+//void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event)
+//{
+
+  //      Bus->push_back(Message(SenderPosition,ReceiverPosition, Event));
+//}
+
+void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+{
+    Bus->push_back(Message(SenderPosition,ReceiverPosition, Event, SenderID, ReceiverID));
+}
 
 u_int16_t Truck::GetID()
 {
@@ -102,97 +265,6 @@ TruckState Truck::GetState()
 }
 
 
-
-void Truck::HandleEvent(const TruckEvent &event)
-{
-    switch (_state)
-    {
-        case TruckState::Available:
-            if (event == TruckEvent::Join)
-            {
-                _state = TruckState::PlatoonMember;
-            }else if(event == TruckEvent::PlatoonNotAvailable)
-            {
-                _state = TruckState::PlatoonCreation;
-            }else
-            {
-                //ErrorHandling
-            }
-            break;
-
-        case TruckState::PlatoonMember:
-            /* code */
-            break;
-        case TruckState::Leader:
-            /* code */
-            break;
-        case TruckState::SimpleMember:
-            /* code */
-            break;
-
-        case TruckState::Unavailable:
-            /* code */
-            break;
-        case TruckState::PlatoonCreation:
-            if(event == TruckEvent::Elected){
-                _state = TruckState::Leader;
-            }
-                
-            break;
-        
-        default:
-            break;
-    }
-    Update();
-
-}
-
-
-
-void Truck::Update()
-{
-    switch (_state)
-    {
-        case TruckState::Available:
-            break;
-
-        case TruckState::PlatoonMember:
-            /* code */
-            break;
-        case TruckState::Leader:
-            std::cout << "Truck n. " << _id << " is the leader"<<std::endl;
-            break;
-        case TruckState::SimpleMember:
-            /* code */
-            break;
-
-        case TruckState::Unavailable:
-            /* code */
-            break;
-        case TruckState::PlatoonCreation:
-            _order = 1;
-            break;
-        
-        default:
-            break;
-    }
-
-}
-
-void Truck::ReadBus(std::vector<Message>* Bus){
-        for(auto message: *Bus)
-        {
-            //std::cout<< message._Event.Type() << " from: " << _id << std::endl;
-        }
-    };
-
-void Truck::WriteBus(std::vector<Message>* Bus, Message *m )
-{
-        Bus->push_back(*m);
-}
-
-void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t ID_Sender, u_int16_t ID_Receiver, Event Event)
-{
-
-        Bus->push_back(Message(ID_Sender,ID_Receiver, Event));
+void Truck::SetBus(std::vector<Message>* Bus){
+    _Bus = Bus;
 }

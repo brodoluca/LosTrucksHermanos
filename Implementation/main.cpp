@@ -5,6 +5,6 @@
 int main()
 {
     
-    TruckPlatoon::StartSimulation(1);
+    TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon);
     return 0;
 }

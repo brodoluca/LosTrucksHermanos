@@ -12,16 +12,18 @@ typedef float distanceType;
 
 
 
-
-
+// Type of the events that could happen during the interaction between trucks in the platoon
 enum  EventType
 {
     LeaderElection,
+    LeaderElected,
     Joining, 
     Leaving, 
     Coupling,
     Decoupling,
-    PlatoonCreated,
+    NewPlatoon,
+    PlatoonNotFound,
+    PlatoonFound,
     None, 
 
     Crash,
@@ -47,8 +49,14 @@ static std::ostream& operator << ( std::ostream& outs, const EventType& p )
         return outs << "Coupling";
     case EventType::Decoupling:
         return outs << "Decoupling";
-    case EventType::PlatoonCreated:
-        return outs << "PlatoonCreated";   
+    case EventType::NewPlatoon:
+        return outs << "NewPlatoon";   
+    case EventType::PlatoonNotFound:
+        return outs << "PlatoonNotFound";
+    case EventType::LeaderElected:
+        return outs << "LeaderElected";
+    case EventType::PlatoonFound:
+        return outs << "PlatoonFound";
     case EventType::None:
         return outs << "None";
     default:
@@ -56,6 +64,9 @@ static std::ostream& operator << ( std::ostream& outs, const EventType& p )
     };
 };
 
+
+
+//States a truck could be in
 enum TruckState
 {
     Available, 
@@ -63,10 +74,38 @@ enum TruckState
     Leader, 
     SimpleMember, 
     Unavailable, 
-    PlatoonCreation
+    PlatoonCreation, 
+    Elections
 };
 
 
+
+static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+{
+    switch (p)
+    {
+    case TruckState::Available:
+        return outs << "Available";
+    case TruckState::PlatoonMember:
+        return outs << "PlatoonMember";
+    case TruckState::Leader:
+        return outs << "Leader";
+    case TruckState::SimpleMember:
+        return outs << "SimpleMember";
+    case TruckState::Unavailable:
+        return outs << "Unavailable";
+    case TruckState::PlatoonCreation:
+        return outs << "PlatoonCreation";
+    case TruckState::Elections:
+        return outs << "Elections";
+    default:
+        return outs << "No State";
+    };
+};
+
+
+//Events that are internal of any truck. Different from the events above. Those are the transitions of the state machine, 
+// Different things
 enum TruckEvent
 {
     Join, 
@@ -76,7 +115,9 @@ enum TruckEvent
     Fixed, 
     NotFixed, 
     PlatoonNotAvailable, 
-    Leave 
+    Leave, 
+    PlatoonCreated, 
+    ElectNewLeader
 };
 class Event
 {
@@ -91,10 +132,14 @@ protected:
 
 struct Message
 {
-            Message(u_int16_t ID_Sender, u_int16_t ID_Receiver, Event Event): _ID_Sender(ID_Sender), _ID_Receiver(ID_Receiver), _Event(Event){};
-            u_int16_t _ID_Sender;
-            u_int16_t _ID_Receiver;
+            Message(u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event,u_int16_t SenderID = -1, u_int16_t ReceiverID = -1)
+            : _SenderPosition(SenderPosition), _ReceiverPosition(ReceiverPosition), _Event(Event), _SenderID(SenderID),  _ReceiverID(ReceiverID)
+            {};
+            u_int16_t _SenderPosition;
+            u_int16_t _ReceiverPosition;
             Event _Event;
+            int16_t _SenderID;
+            int16_t _ReceiverID;
 
 };
 
