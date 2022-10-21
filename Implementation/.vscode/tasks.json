@@ -11,6 +11,7 @@
                 "-fopenmp",
                 "${file}",
                 "${fileDirname}/src/**.cpp",
+                "${fileDirname}/src/utils/**.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

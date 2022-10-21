@@ -80,6 +80,8 @@
         "stop_token": "cpp",
         "cinttypes": "cpp",
         "iomanip": "cpp",
-        "source_location": "cpp"
+        "source_location": "cpp",
+        "__tree": "cpp",
+        "map": "cpp"
     }
 }

@@ -140,6 +140,8 @@ struct Message
             Event _Event;
             int16_t _SenderID;
             int16_t _ReceiverID;
+            std::string _Body;
+
 
 };
 

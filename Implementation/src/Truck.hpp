@@ -4,7 +4,7 @@
 #include "utils/Include.hpp"
 #include <cstdint>
 
-
+#include "utils/JsonHandler.hpp"
 
 
 /// Class generated from the class diagram. 
