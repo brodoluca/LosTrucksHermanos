@@ -88,6 +88,7 @@ void Truck::HandleEvent(const TruckEvent &event)
             else if(event == TruckEvent::PositionReceived)
             {
                 _state = TruckState::SimpleMember;
+               
             }
         case TruckState::Leader:
             /* code */
@@ -129,8 +130,9 @@ void Truck::Update()
                     auto map = StupidJSON::ReadJson(message._Body);
                     _position = std::stoi(map[NEW_POSITION]);
                     _leaderID = std::stoi(map[LEADER_ID]);
-                    std::cout << std::to_string(_position) <<std::endl;
+                    WriteBus(_Bus,_position, LEADER_POSITION, EventType::Joined, _id, _leaderID );
                     HandleEvent(TruckEvent::PositionReceived);
+                    
                 }
                     
             }
@@ -168,7 +170,7 @@ void Truck::Update()
             
             break;
         case TruckState::SimpleMember:
-            WriteBus(_Bus,_position, LEADER_POSITION, EventType::Joined, _id, _leaderID );
+             
             break;
 
         case TruckState::Unavailable:

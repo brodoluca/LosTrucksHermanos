@@ -53,6 +53,7 @@ public:
     Message PopBackLastMessage(std::vector<Message>* Bus);
     
     void SetBus(std::vector<Message>* Bus);
+
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
