@@ -85,6 +85,10 @@ void Truck::HandleEvent(const TruckEvent &event)
             {
                 _state = TruckState::Elections;
             }
+            else if(event == TruckEvent::PositionReceived)
+            {
+                _state = TruckState::SimpleMember;
+            }
         case TruckState::Leader:
             /* code */
             break;
@@ -116,41 +120,63 @@ void Truck::Update()
     switch (_state)
     {
         case TruckState::Available:
-
             break;
 
         case TruckState::PlatoonMember:
+            for(auto message: *_Bus)
+            {
+                if(message._Event.Type() == EventType::ReceivePosition && message._ReceiverID == _id && _position==0){
+                    auto map = StupidJSON::ReadJson(message._Body);
+                    _position = std::stoi(map[NEW_POSITION]);
+                    _leaderID = std::stoi(map[LEADER_ID]);
+                    std::cout << std::to_string(_position) <<std::endl;
+                    HandleEvent(TruckEvent::PositionReceived);
+                }
+                    
+            }
             break;
         case TruckState::Leader:
             if(!_isLeader){
                 _isLeader = true;
                 return;
             }
-            do
-            {
-                auto m = _Bus->back();
-                if(m._SenderPosition != 1)
-                    _Bus->pop_back();
-                
-                if(m._Event.Type() == EventType::Joining)
+        
+                for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
                 {
-                    // Write on the bus the new member position
-                    //Each message will have a body in json for the content
-                    // Grande giuseppe per l'idea
-                }
+                    if((*message)._Event.Type() == EventType::LeaderElected)
+                        break;
+                    //if((*message)._SenderPosition != 1)
+                      //  _Bus->erase(message);
+                    if((*message)._Event.Type() == EventType::Joining)
+                    {
+                        _platoonSize +=1;
+                        Message newMessage( _position, 0, EventType::ReceivePosition, _id, (*message)._SenderID);
+                        std::string  Tags[] = {NEW_POSITION, LEADER_ID};
+                        std::string Values[] = {std::to_string(int(_platoonSize)), std::to_string(int(_id))};
+                        newMessage._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 2);
+                        
+                        
+                        WriteBus(_Bus,&newMessage);
 
-            } while (0);
+                        // Write on the bus the new member position
+                        //Each message will have a body in json for the content
+                        // Grande giuseppe per l'idea
+                    }
+                }
+                
+
             
             break;
         case TruckState::SimpleMember:
-            /* code */
+            WriteBus(_Bus,_position, LEADER_POSITION, EventType::Joined, _id, _leaderID );
             break;
 
         case TruckState::Unavailable:
             /* code */
             break;
         case TruckState::PlatoonCreation:
-            _position = 1;
+            _position = LEADER_POSITION;
+            _platoonSize = 1;
             
             break;
         case TruckState::Elections:

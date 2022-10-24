@@ -22,12 +22,19 @@ void TruckCreatesPlatoon(const int &NumberOfThreads)
             //std::cout << "TRUCK:  " << truck.GetID()<<  std::endl;
             truck.CheckPlatoon(&MessageBus);
 
+            #pragma omp critical
+            truck.Update();
+
         }
+
+
 
         std::cout << std::endl<<std::endl << "READING THE BUS: "<< std::endl <<std::endl;
         for(auto message: MessageBus)
         {
             std::cout<<"_SenderPosition: " <<message._SenderPosition <<" _ReceiverPosition: "<<message._ReceiverPosition << " EVENT:  " << message._Event.Type();
-            std::cout<<" _SenderID: " <<message._SenderID << " _ReceiverID: "<<message._ReceiverID<< std::endl;
+            std::cout<<" _SenderID: " <<message._SenderID << " _ReceiverID: "<<message._ReceiverID;
+            std::cout << " _Body:"<< message._Body<<std::endl;
+            
         }
 } 

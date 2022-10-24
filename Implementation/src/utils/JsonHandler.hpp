@@ -7,8 +7,9 @@
 namespace StupidJSON
 {
 std::string CreateJsonFromTags(std::string* Tags, std::string* Values, size_t n);
+std::string CreateJsonFromTag(std::string Tag, std::string Value);
 
-std::map<std::string, int> ReadJson(const std::string& Message);
+std::map<std::string, std::string> ReadJson(const std::string& MessageBody);
 }
 
 

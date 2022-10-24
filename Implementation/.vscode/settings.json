@@ -82,6 +82,7 @@
         "iomanip": "cpp",
         "source_location": "cpp",
         "__tree": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "any": "cpp"
     }
 }

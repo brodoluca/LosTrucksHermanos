@@ -58,9 +58,12 @@ protected:
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
     u_int16_t _id;
     u_int16_t _position;
+    u_int16_t _leaderID;
     speedType _speed;
     stearingAngleType _stearingAngle;
     distanceType _distance;
+
+    constexpr static distanceType _safetyDistance = 150;//in m
     
     bool _isLeader = false;
     u_int16_t _platoonSize;

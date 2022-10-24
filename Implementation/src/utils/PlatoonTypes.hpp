@@ -4,6 +4,15 @@
 
 #include "include.hpp"
 
+
+
+#define NEW_POSITION "NewPosition"
+#define LEADER_ID "LeaderID"
+#define PLATOON_SIZE "PlatoonSize"
+#define LEADER_POSITION 1
+
+
+
 typedef float speedType;
 
 typedef float stearingAngleType;
@@ -24,6 +33,8 @@ enum  EventType
     NewPlatoon,
     PlatoonNotFound,
     PlatoonFound,
+    ReceivePosition,
+    Joined,
     None, 
 
     Crash,
@@ -57,10 +68,14 @@ static std::ostream& operator << ( std::ostream& outs, const EventType& p )
         return outs << "LeaderElected";
     case EventType::PlatoonFound:
         return outs << "PlatoonFound";
+    case EventType::ReceivePosition:
+        return outs<<"ReceivePosition";
+    case EventType::Joined:
+        return outs<<"Joined";
     case EventType::None:
         return outs << "None";
     default:
-        return outs << "No State";
+        return outs << "No Event";
     };
 };
 
@@ -117,7 +132,8 @@ enum TruckEvent
     PlatoonNotAvailable, 
     Leave, 
     PlatoonCreated, 
-    ElectNewLeader
+    ElectNewLeader, 
+    PositionReceived
 };
 class Event
 {
