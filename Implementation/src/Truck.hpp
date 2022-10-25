@@ -44,15 +44,20 @@ public:
     void WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID = -1, int16_t ReceiverID = -1 );
     void WriteBus(std::vector<Message>* Bus, Message *m );
     bool SearchFor(std::vector<Message>* Bus, const EventType& Event);
+    Message PopBackLastMessage(std::vector<Message>* Bus);
+    
+    void SetBus(std::vector<Message>* Bus);
+
+
 
     ///@brief Checks whether a platoon exists or not. Right now, we do that by simply checking if there are messages on the bus. 
     ///        We will update it in the future
     void CheckPlatoon(std::vector<Message>* Bus);
 
 
-    Message PopBackLastMessage(std::vector<Message>* Bus);
-    
-    void SetBus(std::vector<Message>* Bus);
+    void BroadcastInfo();
+
+    bool isLeader();
 
 protected:
     TruckState _state;
@@ -69,6 +74,8 @@ protected:
     bool _isLeader = false;
     u_int16_t _platoonSize;
     std::vector<Message>* _Bus;
+    
+    void _updateSpeed(const speedType& newSpeed);
 };
 
 

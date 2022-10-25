@@ -140,37 +140,61 @@ void Truck::Update()
         case TruckState::Leader:
             if(!_isLeader){
                 _isLeader = true;
+                _speed = 10;
                 return;
             }
         
                 for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
                 {
-                    if((*message)._Event.Type() == EventType::LeaderElected)
+                    if((*message)._Event.Type() == EventType::LeaderElected || (*message)._Event.Type() == EventType::BroadcastInfo)
                         break;
-                    //if((*message)._SenderPosition != 1)
-                      //  _Bus->erase(message);
-                    if((*message)._Event.Type() == EventType::Joining)
-                    {
-                        _platoonSize +=1;
-                        Message newMessage( _position, 0, EventType::ReceivePosition, _id, (*message)._SenderID);
-                        std::string  Tags[] = {NEW_POSITION, LEADER_ID};
-                        std::string Values[] = {std::to_string(int(_platoonSize)), std::to_string(int(_id))};
-                        newMessage._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 2);
-                        
-                        
-                        WriteBus(_Bus,&newMessage);
+                    
 
-                        // Write on the bus the new member position
-                        //Each message will have a body in json for the content
-                        // Grande giuseppe per l'idea
+                    switch ((*message)._Event.Type() )
+                    {
+                    case EventType::Joining:
+                        {
+                            _platoonSize +=1;
+                            Message newMessage( _position, 0, EventType::ReceivePosition, _id, (*message)._SenderID);
+                            std::string  Tags[] = {NEW_POSITION, LEADER_ID};
+                            std::string Values[] = {std::to_string(int(_platoonSize)), std::to_string(int(_id))};
+                            newMessage._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 2);
+                            
+                            
+                            WriteBus(_Bus,&newMessage);
+
+                            // Write on the bus the new member position
+                            //Each message will have a body in json for the content
+                            // Grande giuseppe per l'idea
+                            //if((*message)._SenderPosition != 1)
+                            //  _Bus->erase(message++);
+                        }
+                        break;
+                    
+                    default:
+                        break;
                     }
+
+                    
+                    
                 }
-                
+                //WriteBus(_Bus,STAMP_MESSAGE);
+                BroadcastInfo();
 
             
             break;
         case TruckState::SimpleMember:
-             
+            for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
+            {
+                if((*message)._Event.Type() == EventType::LeaderElected or (*message)._Event.Type() == EventType::None)
+                        break;
+                if((*message)._Event.Type() == EventType::BroadcastInfo && ((*message)._ReceiverPosition == _position || (*message)._ReceiverPosition == BROADCAST))
+                {
+                    auto map = StupidJSON::ReadJson((*message)._Body);
+                    _speed = std::stoi(map[SPEED]);
+                    _platoonSize = std::stoi(map[PLATOON_SIZE]);
+                }
+            }
             break;
 
         case TruckState::Unavailable:
@@ -186,7 +210,7 @@ void Truck::Update()
         default:
             break;
     }
-    std::cout << "Truck n. " << _id << " : " << _state <<std::endl;
+    std::cout << "Truck n. " << _id << " : " << _state  << " position : "<< _position << " speed: "<< _speed <<std::endl;
 
 }
 
@@ -293,6 +317,32 @@ TruckState Truck::GetState()
 }
 
 
-void Truck::SetBus(std::vector<Message>* Bus){
+void Truck::SetBus(std::vector<Message>* Bus)
+{
     _Bus = Bus;
+}
+
+bool Truck::isLeader()
+{
+    return _isLeader;
+}
+
+void Truck::BroadcastInfo()
+{
+    
+    if(this->isLeader())
+    {
+        Message newMessage( _position, 0, EventType::BroadcastInfo, _id, BROADCAST);
+        std::string  Tags[] = {SPEED, SAFETY_DISTANCE, PLATOON_SIZE};
+        std::string Values[] = {std::to_string(int(_speed)), std::to_string(_safetyDistance), std::to_string(_platoonSize)};
+        newMessage._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 3);
+        WriteBus(_Bus, &newMessage);
+    }
+    
+}
+
+
+void Truck::_updateSpeed(const speedType& newSpeed)
+{
+    _speed = newSpeed;
 }

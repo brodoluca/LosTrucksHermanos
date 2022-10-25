@@ -25,6 +25,10 @@ void TruckCreatesPlatoon(const int &NumberOfThreads)
             #pragma omp critical
             truck.Update();
 
+
+            #pragma omp critical
+            truck.Update();
+
         }
 
 

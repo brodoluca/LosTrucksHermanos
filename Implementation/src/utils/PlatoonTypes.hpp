@@ -9,7 +9,14 @@
 #define NEW_POSITION "NewPosition"
 #define LEADER_ID "LeaderID"
 #define PLATOON_SIZE "PlatoonSize"
+#define SPEED "Speed"
+#define SAFETY_DISTANCE "SafetyDistance"
+#define PLATOON_SIZE "PlatoonSize"
+
+#define BROADCAST 0
+#define STAMP_MESSAGE _position, BROADCAST, EventType::None, _id, BROADCAST
 #define LEADER_POSITION 1
+
 
 
 
@@ -34,6 +41,7 @@ enum  EventType
     PlatoonNotFound,
     PlatoonFound,
     ReceivePosition,
+    BroadcastInfo,
     Joined,
     None, 
 
@@ -72,6 +80,8 @@ static std::ostream& operator << ( std::ostream& outs, const EventType& p )
         return outs<<"ReceivePosition";
     case EventType::Joined:
         return outs<<"Joined";
+    case EventType::BroadcastInfo:
+        return outs<<"BroadcastInfo";
     case EventType::None:
         return outs << "None";
     default:
