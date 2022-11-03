@@ -1,0 +1,30 @@
+[0.133s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.225s] -- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+[0.293s] -- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+[0.840s] -- Found rosidl_default_generators: 1.0.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake)
+[0.869s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.967s] -- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+[1.210s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+[1.364s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+[2.106s] CMake Error at /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:218 (message):
+[2.107s]   Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+[2.107s]   system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+[2.107s]   OPENSSL_INCLUDE_DIR)
+[2.107s] Call Stack (most recent call first):
+[2.108s]   /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:577 (_FPHSA_FAILURE_MESSAGE)
+[2.108s]   /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindOpenSSL.cmake:536 (find_package_handle_standard_args)
+[2.108s]   /Users/brodie/ros2_foxy/ros2-osx/share/fastrtps/cmake/fastrtps-config.cmake:52 (find_package)
+[2.108s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c-extras.cmake:6 (find_package)
+[2.108s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:41 (include)
+[2.108s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+[2.108s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+[2.109s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[2.109s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[2.109s]   CMakeLists.txt:25 (find_package)
+[2.109s] 
+[2.109s] 
+[2.109s] -- Configuring incomplete, errors occurred!
+[2.109s] See also "/Users/brodie/ros2_truckplatoon/build/truck/CMakeFiles/CMakeOutput.log".
+[2.110s] See also "/Users/brodie/ros2_truckplatoon/build/truck/CMakeFiles/CMakeError.log".
+[2.113s] gmake: *** [Makefile:405: cmake_check_build_system] Error 1
+[2.115s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

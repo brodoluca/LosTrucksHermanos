@@ -1,0 +1,142 @@
+[0.050s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.138s] Scanning dependencies of target truck
+[0.158s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.159s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.160s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.161s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.645s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.645s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.645s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.645s] #include "utils/Include.hpp"
+[0.645s]          ^~~~~~~~~~~~~~~~~~~
+[0.645s]          "utils/include.hpp"
+[0.647s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.647s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.647s] #include "utils/Include.hpp"
+[0.647s]          ^~~~~~~~~~~~~~~~~~~
+[0.647s]          "utils/include.hpp"
+[0.649s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.649s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.649s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.650s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.650s] #include "utils/Include.hpp"
+[0.650s]          ^~~~~~~~~~~~~~~~~~~
+[0.650s]          "utils/include.hpp"
+[0.652s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.653s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.653s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.653s] #include "utils/Include.hpp"
+[0.653s]          ^~~~~~~~~~~~~~~~~~~
+[0.653s]          "utils/include.hpp"
+[1.286s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.287s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.287s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:26:18: error: no matching member function for call to 'create_wall_timer'
+[1.287s]   timer_ = this->create_wall_timer(
+[1.287s]            ~~~~~~^~~~~~~~~~~~~~~~~
+[1.287s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:109:7: note: candidate template ignored: requirement 'rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void ()>>::value || rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void (rclcpp::TimerBase &)>>::value' was not satisfied [with DurationRepT = long long, DurationT = std::ratio<1, 1000>, CallbackT = std::__bind<void (Publisher::*)(std::string), Publisher *>]
+[1.288s] Node::create_wall_timer(
+[1.288s]       ^
+[1.292s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.292s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.292s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:55:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+[1.293s]   void callback(std::string TopicName)
+[1.293s]                             ^
+[1.293s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.293s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.294s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.294s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:26:18: error: no matching member function for call to 'create_wall_timer'
+[1.294s]   timer_ = this->create_wall_timer(
+[1.294s]            ~~~~~~^~~~~~~~~~~~~~~~~
+[1.294s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:109:7: note: candidate template ignored: requirement 'rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void ()>>::value || rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void (rclcpp::TimerBase &)>>::value' was not satisfied [with DurationRepT = long long, DurationT = std::ratio<1, 1000>, CallbackT = std::__bind<void (Publisher::*)(std::string), Publisher *>]
+[1.294s] Node::create_wall_timer(
+[1.295s]       ^
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.296s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:55:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+[1.296s]   void callback(std::string TopicName)
+[1.296s]                             ^
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.297s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:26:18: error: no matching member function for call to 'create_wall_timer'
+[1.297s]   timer_ = this->create_wall_timer(
+[1.297s]            ~~~~~~^~~~~~~~~~~~~~~~~
+[1.297s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:109:7: note: candidate template ignored: requirement 'rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void ()>>::value || rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void (rclcpp::TimerBase &)>>::value' was not satisfied [with DurationRepT = long long, DurationT = std::ratio<1, 1000>, CallbackT = std::__bind<void (Publisher::*)(std::string), Publisher *>]
+[1.297s] Node::create_wall_timer(
+[1.297s]       ^
+[1.298s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.299s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.299s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.299s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.299s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:55:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+[1.299s]   void callback(std::string TopicName)
+[1.299s]                             ^
+[1.303s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.304s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.304s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:26:18: error: no matching member function for call to 'create_wall_timer'
+[1.304s]   timer_ = this->create_wall_timer(
+[1.304s]            ~~~~~~^~~~~~~~~~~~~~~~~
+[1.305s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:109:7: note: candidate template ignored: requirement 'rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void ()>>::value || rclcpp::function_traits::same_arguments<std::__bind<void (Publisher::*)(std::string), Publisher *>, std::function<void (rclcpp::TimerBase &)>>::value' was not satisfied [with DurationRepT = long long, DurationT = std::ratio<1, 1000>, CallbackT = std::__bind<void (Publisher::*)(std::string), Publisher *>]
+[1.305s] Node::create_wall_timer(
+[1.305s]       ^
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.305s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.305s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.306s]                                                                ^
+[1.306s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.306s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.306s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:55:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+[1.307s]   void callback(std::string TopicName)
+[1.307s]                             ^
+[1.310s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.311s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.311s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.311s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.311s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.311s]                                                                ^
+[1.317s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.317s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.317s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.318s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.318s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.318s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.318s]                                                                ^
+[1.319s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.320s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.320s] #include "src/utils/Include.hpp"
+[1.320s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.320s]          "src/utils/include.hpp"
+[1.323s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.323s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.324s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.324s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.324s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.324s]                                                                ^
+[2.097s] 3 warnings and 1 error generated.
+[2.106s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.106s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.106s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.106s]     speedType _speed;
+[2.107s]               ^
+[2.107s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.107s]     stearingAngleType _stearingAngle;
+[2.107s]                       ^
+[2.107s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.107s]     distanceType _distance;
+[2.107s]                  ^
+[2.107s] 7 warnings and 1 error generated.
+[2.115s] 3 warnings and 1 error generated.
+[2.117s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[2.117s] gmake[2]: *** Waiting for unfinished jobs....
+[2.125s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[2.132s] 3 warnings and 1 error generated.
+[2.136s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[2.148s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.149s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.149s] gmake: *** [Makefile:160: all] Error 2
+[2.151s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

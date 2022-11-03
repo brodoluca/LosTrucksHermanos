@@ -1,0 +1,31 @@
+[0.059s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.141s] [100%] Built target truck
+[0.154s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.263s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/truck
+[0.274s] -- Install configuration: ""
+[0.275s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/lib/truck/truck
+[0.276s] xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
+[0.277s] Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+[0.277s] See `man xcode-select` for more details.
+[0.278s] xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
+[0.278s] Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+[0.279s] See `man xcode-select` for more details.
+[0.280s] xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
+[0.281s] Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+[0.281s] See `man xcode-select` for more details.
+[0.281s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/package_run_dependencies/truck
+[0.281s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/parent_prefix_path/truck
+[0.281s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.sh
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.dsv
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.sh
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.dsv
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.bash
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.sh
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.zsh
+[0.282s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.dsv
+[0.282s] -- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.dsv
+[0.283s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/packages/truck
+[0.283s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig.cmake
+[0.283s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig-version.cmake
+[0.283s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.xml
+[0.296s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/truck

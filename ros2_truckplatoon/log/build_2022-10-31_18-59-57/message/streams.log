@@ -1,0 +1,123 @@
+[0.126s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/message -- -j8 -l8
+[0.242s] [  3%] Built target message__cpp
+[0.243s] [ 12%] Built target message__rosidl_generator_c
+[0.315s] [ 22%] Built target message__rosidl_typesupport_cpp
+[0.321s] [ 35%] Built target message__rosidl_typesupport_fastrtps_cpp
+[0.321s] [ 41%] Built target message__rosidl_typesupport_introspection_cpp
+[0.322s] [ 51%] Built target message__rosidl_typesupport_c
+[0.325s] [ 61%] Built target message__rosidl_typesupport_introspection_c
+[0.400s] [ 70%] Built target message__rosidl_typesupport_fastrtps_c
+[0.458s] [ 70%] Built target message
+[0.509s] [ 74%] Built target message__py
+[0.566s] [ 80%] Built target message__python
+[0.644s] [ 87%] Built target message__rosidl_typesupport_c__pyext
+[0.646s] [ 93%] Built target message__rosidl_typesupport_introspection_c__pyext
+[0.648s] [100%] Built target message__rosidl_typesupport_fastrtps_c__pyext
+[0.673s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/message -- -j8 -l8
+[1.040s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/message
+[1.054s] -- Install configuration: ""
+[1.055s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/rosidl_interfaces/message
+[1.056s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.056s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.057s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_generator_c__visibility_control.h
+[1.057s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.h
+[1.057s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.058s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.h
+[1.058s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.h
+[1.058s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.h
+[1.058s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.c
+[1.059s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.sh
+[1.059s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.dsv
+[1.059s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_generator_c.dylib
+[1.081s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.081s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.082s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.083s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_c.h
+[1.083s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.083s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_c.dylib
+[1.138s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.138s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.139s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.139s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.139s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/dds_fastrtps
+[1.139s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp
+[1.139s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_cpp.dylib
+[1.178s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.178s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.179s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.179s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.c
+[1.179s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_c.h
+[1.179s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.180s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_c.dylib
+[1.215s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_c.dylib
+[1.233s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.234s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.234s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.235s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__traits.hpp
+[1.235s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.hpp
+[1.235s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__builder.hpp
+[1.235s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.hpp
+[1.235s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+[1.236s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+[1.236s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+[1.236s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.cpp
+[1.236s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp
+[1.237s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_cpp.dylib
+[1.254s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_cpp.dylib
+[1.273s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.sh
+[1.273s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.dsv
+[1.273s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/__init__.py
+[1.375s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg
+[1.376s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/__init__.py
+[1.376s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message.py
+[1.376s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message_s.c
+[1.376s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so
+[1.393s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"
+[1.409s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"
+[1.426s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"
+[1.442s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /usr/local/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /usr/local/lib"
+[1.442s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so
+[1.459s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"
+[1.477s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"
+[1.494s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"
+[1.494s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so
+[1.511s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"
+[1.527s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"
+[1.543s] error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"
+[1.543s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__python.dylib
+[1.579s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.idl
+[1.580s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.msg
+[1.580s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/package_run_dependencies/message
+[1.581s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/parent_prefix_path/message
+[1.581s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.sh
+[1.581s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.dsv
+[1.582s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.sh
+[1.582s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.dsv
+[1.582s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.bash
+[1.583s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.sh
+[1.583s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.zsh
+[1.584s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.dsv
+[1.584s] -- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv
+[1.585s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/packages/message
+[1.585s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport.cmake
+[1.586s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport-noconfig.cmake
+[1.586s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport.cmake
+[1.587s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.587s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport.cmake
+[1.588s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport-noconfig.cmake
+[1.588s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cppExport.cmake
+[1.589s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport.cmake
+[1.589s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.590s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport.cmake
+[1.590s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport-noconfig.cmake
+[1.590s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake-extras.cmake
+[1.591s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.591s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_libraries-extras.cmake
+[1.591s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_targets-extras.cmake
+[1.591s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.591s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.592s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.592s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig.cmake
+[1.592s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig-version.cmake
+[1.592s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.xml
+[1.593s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/message

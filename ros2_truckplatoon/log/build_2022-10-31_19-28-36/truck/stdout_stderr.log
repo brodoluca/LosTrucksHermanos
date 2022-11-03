@@ -1,0 +1,189 @@
+Scanning dependencies of target truck
+[ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:11:
+:
+In file included from In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp/Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp::74:
+:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hppIn file included from :/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp26::760:
+:/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp :error: 26unknown type name 'Interval':
+60: error: unknown type name 'Interval'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                           ^    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+
+                                                           ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                           ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                           ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:120: error: unknown type name 'Timeout'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                       ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:120: error: unknown type name 'Timeout'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                       ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:120: error: unknown type name 'Timeout'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                       ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:120: error: unknown type name 'Timeout'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                       ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: error: no viable conversion from 'std::chrono::milliseconds' (aka 'duration<long long, ratio<1LL, 1000LL>>') to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                     ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: note: passing argument to parameter 'interval' here
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: error: no viable conversion from 'Subscriber::(lambda at /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139)' to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^         ~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139: note: candidate function
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                          ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: note: passing argument to parameter 'timeout' here
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: error: no viable conversion from 'std::chrono::milliseconds' (aka 'duration<long long, ratio<1LL, 1000LL>>') to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                     ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: note: passing argument to parameter 'interval' here
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: error: no viable conversion from 'Subscriber::(lambda at /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139)' to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^         ~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139: note: candidate function
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                          ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: note: passing argument to parameter 'timeout' here
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: error: no viable conversion from 'std::chrono::milliseconds' (aka 'duration<long long, ratio<1LL, 1000LL>>') to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                     ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: note: passing argument to parameter 'interval' here
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: error: no viable conversion from 'Subscriber::(lambda at /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139)' to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^         ~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139: note: candidate function
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                          ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: note: passing argument to parameter 'timeout' here
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: error: no viable conversion from 'std::chrono::milliseconds' (aka 'duration<long long, ratio<1LL, 1000LL>>') to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                     ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:70: note: passing argument to parameter 'interval' here
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: error: no viable conversion from 'Subscriber::(lambda at /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139)' to 'const int'
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^         ~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:139: note: candidate function
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                          ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:129: note: passing argument to parameter 'timeout' here
+    Subscriber(std::string nodeName = "DefaultNode", const Interval &interval = std::chrono::milliseconds(1000), const Timeout &timeout = [] {
+                                                                                                                                ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:54:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:54:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:54:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:54:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "src/utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "src/utils/include.hpp"
+/Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:14: warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char ** argv)
+             ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:28: warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char ** argv)
+                           ^
+2 warnings and 4 errors generated.
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+    speedType _speed;
+              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+    stearingAngleType _stearingAngle;
+                      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+    distanceType _distance;
+                 ^
+8 warnings and 4 errors generated.
+2 warnings and 4 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: error: no matching constructor for initialization of 'Subscriber'
+        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+                                    ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Subscriber, std::allocator<Subscriber>>::__shared_ptr_emplace<std::string>' requested here
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+                                                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Subscriber, std::allocator<Subscriber>, std::string, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+                  ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:59:31: note: in instantiation of function template specialization 'std::make_shared<Subscriber, std::string, void>' requested here
+    this ->_subscriber = std::make_shared<Subscriber>("Subscriber_Truck_" + std::to_string(_id));
+                              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' to 'const Subscriber' for 1st argument
+class Subscriber : public rclcpp::Node
+      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 1 was provided
+2 warnings and 5 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

@@ -1,0 +1,234 @@
+[0.050s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.137s] Scanning dependencies of target truck
+[0.160s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.160s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.161s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.161s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.638s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.638s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.638s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.639s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.639s] #include "utils/Include.hpp"
+[0.639s]          ^~~~~~~~~~~~~~~~~~~
+[0.639s]          "utils/include.hpp"
+[0.642s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.642s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.642s] #include "utils/Include.hpp"
+[0.642s]          ^~~~~~~~~~~~~~~~~~~
+[0.642s]          "utils/include.hpp"
+[0.643s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.643s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.643s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.643s] #include "utils/Include.hpp"
+[0.643s]          ^~~~~~~~~~~~~~~~~~~
+[0.644s]          "utils/include.hpp"
+[0.644s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.644s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.645s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.645s] #include "utils/Include.hpp"
+[0.645s]          ^~~~~~~~~~~~~~~~~~~
+[0.645s]          "utils/include.hpp"
+[1.259s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.259s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.259s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.260s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.260s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')
+[1.260s]       RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE
+[1.260s]                                       ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+[1.260s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'
+[1.260s]       rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \
+[1.261s]                                             ^~~~~~~~~~~
+[1.261s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'
+[1.261s] #define RCLCPP_FIRST_ARG(N, ...) N
+[1.261s]                                  ^
+[1.262s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.262s]     __VA_ARGS__)
+[1.262s]     ^~~~~~~~~~~
+[1.262s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.262s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.262s]                                                                ^~~~~~~~~~~
+[1.262s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.263s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.263s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.263s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')
+[1.263s]       RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE
+[1.263s]                                       ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+[1.263s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'
+[1.263s]       rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \
+[1.263s]                                             ^~~~~~~~~~~
+[1.264s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'
+[1.264s] #define RCLCPP_FIRST_ARG(N, ...) N
+[1.264s]                                  ^
+[1.264s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.264s]     __VA_ARGS__)
+[1.264s]     ^~~~~~~~~~~
+[1.264s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.264s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.264s]                                                                ^~~~~~~~~~~
+[1.265s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.265s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.265s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')
+[1.265s]       RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE
+[1.265s]                                       ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+[1.265s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'
+[1.265s]       rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \
+[1.265s]                                             ^~~~~~~~~~~
+[1.266s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'
+[1.266s] #define RCLCPP_FIRST_ARG(N, ...) N
+[1.266s]                                  ^
+[1.266s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.266s]     __VA_ARGS__)
+[1.266s]     ^~~~~~~~~~~
+[1.266s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.266s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.266s]                                                                ^~~~~~~~~~~
+[1.266s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.266s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.267s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.267s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')
+[1.267s]       RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE
+[1.267s]                                       ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+[1.267s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'
+[1.267s]       rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \
+[1.267s]                                             ^~~~~~~~~~~
+[1.267s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'
+[1.267s] #define RCLCPP_FIRST_ARG(N, ...) N
+[1.267s]                                  ^
+[1.267s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.268s]     __VA_ARGS__)
+[1.268s]     ^~~~~~~~~~~
+[1.268s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.268s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.268s]                                                                ^~~~~~~~~~~
+[1.271s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.271s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.271s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.271s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.271s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.271s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.271s]               ^~~~~~~~~
+[1.271s]               TopicName2
+[1.271s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.272s]   std::string TopicName2 = "Platoon";
+[1.272s]               ^
+[1.272s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.272s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.272s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.272s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.272s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.272s]               ^~~~~~~~~
+[1.272s]               TopicName2
+[1.272s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.273s]   std::string TopicName2 = "Platoon";
+[1.273s]               ^
+[1.273s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.273s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.273s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.273s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.273s]               ^~~~~~~~~
+[1.273s]               TopicName2
+[1.273s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.273s]   std::string TopicName2 = "Platoon";
+[1.274s]               ^
+[1.274s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.274s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.275s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.275s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.275s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.275s]               ^~~~~~~~~
+[1.275s]               TopicName2
+[1.275s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.275s]   std::string TopicName2 = "Platoon";
+[1.276s]               ^
+[1.284s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.285s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.285s]                                                                          ^~~~~~~~~
+[1.285s]                                                                          TopicName2
+[1.285s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.285s]   std::string TopicName2 = "Platoon";
+[1.286s]               ^
+[1.286s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.286s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.287s]                                                                          ^~~~~~~~~
+[1.287s]                                                                          TopicName2
+[1.287s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.288s]   std::string TopicName2 = "Platoon";
+[1.288s]               ^
+[1.288s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.288s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.288s]                                                                          ^~~~~~~~~
+[1.288s]                                                                          TopicName2
+[1.288s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.288s]   std::string TopicName2 = "Platoon";
+[1.289s]               ^
+[1.289s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?
+[1.289s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.289s]                                                                          ^~~~~~~~~
+[1.289s]                                                                          TopicName2
+[1.289s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here
+[1.289s]   std::string TopicName2 = "Platoon";
+[1.289s]               ^
+[1.324s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.325s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.326s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'
+[1.326s]         RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    
+[1.326s]                                                                   ^
+[1.326s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.326s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.327s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.327s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'
+[1.327s]         RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    
+[1.327s]                                                                   ^
+[1.327s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.327s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.327s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.328s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'
+[1.328s]         RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    
+[1.328s]                                                                   ^
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.329s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.329s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'
+[1.329s]         RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    
+[1.329s]                                                                   ^
+[1.333s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.334s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.334s]                                                                ^
+[1.334s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.334s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.335s]                                                                ^
+[1.336s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.336s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.336s]                                                                ^
+[1.336s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.336s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.336s]                                                                ^
+[1.337s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.337s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.337s] #include "src/utils/Include.hpp"
+[1.338s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.338s]          "src/utils/include.hpp"
+[2.142s] 2 warnings and 4 errors generated.
+[2.149s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.149s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.149s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.149s]     speedType _speed;
+[2.150s]               ^
+[2.150s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.150s]     stearingAngleType _stearingAngle;
+[2.150s]                       ^
+[2.150s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.150s]     distanceType _distance;
+[2.150s]                  ^
+[2.151s] 6 warnings and 4 errors generated.
+[2.151s] 2 warnings and 4 errors generated.
+[2.162s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[2.162s] gmake[2]: *** Waiting for unfinished jobs....
+[2.167s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[2.167s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[2.190s] 2 warnings and 4 errors generated.
+[2.204s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.205s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.205s] gmake: *** [Makefile:160: all] Error 2
+[2.207s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

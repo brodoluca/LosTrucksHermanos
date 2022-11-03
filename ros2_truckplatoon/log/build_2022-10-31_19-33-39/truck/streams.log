@@ -1,0 +1,187 @@
+[0.088s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.257s] Scanning dependencies of target truck
+[0.303s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.304s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.305s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.306s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[1.108s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.108s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.108s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.108s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.109s] #include "utils/Include.hpp"
+[1.109s]          ^~~~~~~~~~~~~~~~~~~
+[1.109s]          "utils/include.hpp"
+[1.119s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.119s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.119s] #include "utils/Include.hpp"
+[1.120s]          ^~~~~~~~~~~~~~~~~~~
+[1.120s]          "utils/include.hpp"
+[1.126s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.126s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.126s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.127s] #include "utils/Include.hpp"
+[1.127s]          ^~~~~~~~~~~~~~~~~~~
+[1.127s]          "utils/include.hpp"
+[1.130s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.130s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.130s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.131s] #include "utils/Include.hpp"
+[1.131s]          ^~~~~~~~~~~~~~~~~~~
+[1.131s]          "utils/include.hpp"
+[2.147s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.148s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.148s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.148s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.149s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+[2.149s]     Subscriber(std::string nodeName = "DefaultNode", const Interval &interval)
+[2.149s]                                                            ^
+[2.158s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.158s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.158s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+[2.158s]     Subscriber(std::string nodeName = "DefaultNode", const Interval &interval)
+[2.158s]                                                            ^
+[2.163s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.163s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.163s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.163s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+[2.164s]     Subscriber(std::string nodeName = "DefaultNode", const Interval &interval)
+[2.164s]                                                            ^
+[2.170s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.170s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.171s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.171s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'Interval'
+[2.171s]     Subscriber(std::string nodeName = "DefaultNode", const Interval &interval)
+[2.172s]                                                            ^
+[2.173s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: cannot assign to non-static data member within const member function 'topic_callback'
+[2.173s]       if(!_running)_running = true;
+[2.173s]                    ~~~~~~~~ ^
+[2.174s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:10: note: member function 'Subscriber::topic_callback' is declared const here
+[2.174s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.175s]     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.175s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.175s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.175s]                                                                ^
+[2.176s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:66:42: error: expected ';' after expression
+[2.176s]         else std::cout << "Kill the node"
+[2.176s]                                          ^
+[2.176s]                                          ;
+[2.177s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.178s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.178s] #include "src/utils/Include.hpp"
+[2.178s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[2.178s]          "src/utils/include.hpp"
+[2.179s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:14: warning: unused parameter 'argc' [-Wunused-parameter]
+[2.179s] int main(int argc, char ** argv)
+[2.180s]              ^
+[2.180s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:28: warning: unused parameter 'argv' [-Wunused-parameter]
+[2.180s] int main(int argc, char ** argv)
+[2.181s]                            ^
+[2.181s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: cannot assign to non-static data member within const member function 'topic_callback'
+[2.182s]       if(!_running)_running = true;
+[2.182s]                    ~~~~~~~~ ^
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:10: note: member function 'Subscriber::topic_callback' is declared const here
+[2.182s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.183s]     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.183s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.183s]                                                                ^
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:66:42: error: expected ';' after expression
+[2.184s]         else std::cout << "Kill the node"
+[2.184s]                                          ^
+[2.184s]                                          ;
+[2.185s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: cannot assign to non-static data member within const member function 'topic_callback'
+[2.186s]       if(!_running)_running = true;
+[2.186s]                    ~~~~~~~~ ^
+[2.186s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:10: note: member function 'Subscriber::topic_callback' is declared const here
+[2.186s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.186s]     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.187s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.187s]                                                                ^
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:59:130: error: expected ';' after expression
+[2.187s]     this ->_subscriber = std::make_shared<Subscriber>("Subscriber_Truck_" + std::to_string(_id), std::chrono::milliseconds(1000))
+[2.187s]                                                                                                                                  ^
+[2.188s]                                                                                                                                  ;
+[2.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:66:42: error: expected ';' after expression
+[2.188s]         else std::cout << "Kill the node"
+[2.188s]                                          ^
+[2.189s]                                          ;
+[2.196s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: cannot assign to non-static data member within const member function 'topic_callback'
+[2.196s]       if(!_running)_running = true;
+[2.197s]                    ~~~~~~~~ ^
+[2.197s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:10: note: member function 'Subscriber::topic_callback' is declared const here
+[2.197s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.197s]     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.198s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.198s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.198s]                                                                ^
+[2.198s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:66:42: error: expected ';' after expression
+[2.199s]         else std::cout << "Kill the node"
+[2.199s]                                          ^
+[2.199s]                                          ;
+[3.383s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.383s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.383s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.384s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[3.384s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:62:22: warning: private field 'mRunning' is not used [-Wunused-private-field]
+[3.384s]     std::atomic_bool mRunning{};
+[3.385s]                      ^
+[3.385s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.385s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[3.385s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[3.386s]     speedType _speed;
+[3.386s]               ^
+[3.386s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[3.386s]     stearingAngleType _stearingAngle;
+[3.387s]                       ^
+[3.387s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[3.387s]     distanceType _distance;
+[3.387s]                  ^
+[3.388s] 9 warnings and 3 errors generated.
+[3.405s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[3.406s] gmake[2]: *** Waiting for unfinished jobs....
+[3.433s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:62:22: warning: private field 'mRunning' is not used [-Wunused-private-field]
+[3.433s]     std::atomic_bool mRunning{};
+[3.433s]                      ^
+[3.433s] 3 warnings and 3 errors generated.
+[3.433s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:62:22: warning: private field 'mRunning' is not used [-Wunused-private-field]
+[3.434s]     std::atomic_bool mRunning{};
+[3.434s]                      ^
+[3.434s] 3 warnings and 3 errors generated.
+[3.448s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.448s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[3.448s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[3.449s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[3.449s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[3.449s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[3.450s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[3.450s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[3.451s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[3.452s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[3.452s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:20:
+[3.452s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: error: no matching constructor for initialization of 'Subscriber'
+[3.452s]         ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+[3.453s]                                     ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.453s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Subscriber, std::allocator<Subscriber>>::__shared_ptr_emplace<std::string, std::chrono::duration<long long, std::ratio<1, 1000>>>' requested here
+[3.454s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[3.454s]                                                       ^
+[3.454s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Subscriber, std::allocator<Subscriber>, std::string, std::chrono::duration<long long, std::ratio<1, 1000>>, void>' requested here
+[3.454s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[3.454s]                   ^
+[3.455s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:59:31: note: in instantiation of function template specialization 'std::make_shared<Subscriber, std::string, std::chrono::duration<long long, std::ratio<1, 1000>>, void>' requested here
+[3.455s]     this ->_subscriber = std::make_shared<Subscriber>("Subscriber_Truck_" + std::to_string(_id), std::chrono::milliseconds(1000))
+[3.455s]                               ^
+[3.456s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+[3.456s] class Subscriber : public rclcpp::Node
+[3.456s]       ^
+[3.456s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 2 were provided
+[3.459s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[3.460s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[3.485s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:62:22: warning: private field 'mRunning' is not used [-Wunused-private-field]
+[3.486s]     std::atomic_bool mRunning{};
+[3.486s]                      ^
+[3.486s] 3 warnings and 5 errors generated.
+[3.509s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[3.509s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[3.509s] gmake: *** [Makefile:160: all] Error 2
+[3.511s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

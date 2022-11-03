@@ -1,0 +1,66 @@
+[0.000000] (-) TimerEvent: {}
+[0.000373] (truck) JobQueued: {'identifier': 'truck', 'dependencies': OrderedDict()}
+[0.003347] (truck) JobStarted: {'identifier': 'truck'}
+[0.102663] (-) TimerEvent: {}
+[0.105537] (truck) JobProgress: {'identifier': 'truck', 'progress': 'cmake'}
+[0.107102] (truck) JobProgress: {'identifier': 'truck', 'progress': 'build'}
+[0.110682] (truck) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/truck', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/truck', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/truck'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.193204] (truck) StdoutLine: {'line': b'Scanning dependencies of target truck\n'}
+[0.204230] (-) TimerEvent: {}
+[0.216633] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o\n'}
+[0.307371] (-) TimerEvent: {}
+[0.411000] (-) TimerEvent: {}
+[0.515507] (-) TimerEvent: {}
+[0.616139] (-) TimerEvent: {}
+[0.716693] (-) TimerEvent: {}
+[0.821348] (-) TimerEvent: {}
+[0.911349] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[0.911771] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[0.911962] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[0.912236] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[0.912700] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[0.912931] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[0.913091] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[0.913241] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[0.913389] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file \'"src/utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[0.913553] (truck) StderrLine: {'line': b'#include "src/utils/Include.hpp"\n'}
+[0.913701] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~~~~~\n'}
+[0.913852] (truck) StderrLine: {'line': b'         "src/utils/include.hpp"\n'}
+[0.922913] (-) TimerEvent: {}
+[0.984029] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[0.984521] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[0.984685] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[0.984832] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:\n'}
+[0.984977] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[0.985124] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const EventType& p )\n'}
+[0.985266] (truck) StderrLine: {'line': b'                     ^\n'}
+[0.985407] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[0.985547] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const TruckState& p )\n'}
+[0.985686] (truck) StderrLine: {'line': b'                     ^\n'}
+[0.985825] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[0.985966] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:\n'}
+[0.986106] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]\n"}
+[0.986247] (truck) StderrLine: {'line': b'    speedType _speed;\n'}
+[0.986386] (truck) StderrLine: {'line': b'              ^\n'}
+[0.986526] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]\n"}
+[0.986671] (truck) StderrLine: {'line': b'    stearingAngleType _stearingAngle;\n'}
+[0.986810] (truck) StderrLine: {'line': b'                      ^\n'}
+[0.986950] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]\n"}
+[0.987094] (truck) StderrLine: {'line': b'    distanceType _distance;\n'}
+[0.987234] (truck) StderrLine: {'line': b'                 ^\n'}
+[0.992283] (truck) StderrLine: {'line': b'7 warnings generated.\n'}
+[1.014437] (truck) StdoutLine: {'line': b'[100%] Linking CXX executable truck\n'}
+[1.023188] (-) TimerEvent: {}
+[1.090735] (truck) StderrLine: {'line': b'Undefined symbols for architecture x86_64:\n'}
+[1.091054] (truck) StderrLine: {'line': b'  "Truck::Truck(unsigned short)", referenced from:\n'}
+[1.091212] (truck) StderrLine: {'line': b'      _main in truck.cpp.o\n'}
+[1.091566] (truck) StderrLine: {'line': b'ld: symbol(s) not found for architecture x86_64\n'}
+[1.093254] (truck) StderrLine: {'line': b'clang: error: linker command failed with exit code 1 (use -v to see invocation)\n'}
+[1.095529] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:103: truck] Error 1\n'}
+[1.095994] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2\n'}
+[1.096502] (truck) StderrLine: {'line': b'gmake: *** [Makefile:160: all] Error 2\n'}
+[1.100910] (truck) CommandEnded: {'returncode': 2}
+[1.123577] (-) TimerEvent: {}
+[1.224753] (-) TimerEvent: {}
+[1.307397] (truck) JobEnded: {'identifier': 'truck', 'rc': 2}
+[1.309360] (-) EventReactorShutdown: {}

@@ -1,0 +1,43 @@
+[0.058s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.147s] Scanning dependencies of target truck
+[0.176s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.666s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.666s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.666s] #include "utils/Include.hpp"
+[0.667s]          ^~~~~~~~~~~~~~~~~~~
+[0.667s]          "utils/include.hpp"
+[1.358s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.358s]     RCLCPP_INFO(this->get_logger(), "TopicName");
+[1.358s]                 ~~~~  ^
+[1.358s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[1.358s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[1.359s]                                                                                      ^~~~~~
+[1.359s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.359s]     RCLCPP_INFO(this->get_logger(), "TopicName");
+[1.359s]                 ~~~~  ^
+[1.359s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[1.359s]       logger.get_name(), \
+[1.359s]       ^~~~~~
+[1.359s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.359s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[1.359s]                                                               ^~~~
+[1.359s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.359s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[1.360s]                                               ^~~~
+[1.360s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.360s]     RCLCPP_INFO(this->get_logger(), "TopicName");
+[1.360s]                 ~~~~  ^
+[1.360s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[1.360s]       logger.get_name(), \
+[1.360s]       ^~~~~~
+[1.360s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.360s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[1.360s]                                                               ^~~~
+[1.360s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.361s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.361s]                                                          ^~~~
+[1.848s] 1 warning and 3 errors generated.
+[1.860s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[1.860s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.860s] gmake: *** [Makefile:160: all] Error 2
+[1.862s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

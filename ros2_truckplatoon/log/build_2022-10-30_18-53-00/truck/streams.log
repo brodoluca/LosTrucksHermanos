@@ -1,0 +1,458 @@
+[0.062s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.147s] Scanning dependencies of target truck
+[0.170s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.170s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.170s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.171s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.657s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.657s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.657s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.658s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.658s] #include "utils/Include.hpp"
+[0.658s]          ^~~~~~~~~~~~~~~~~~~
+[0.658s]          "utils/include.hpp"
+[0.658s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.658s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.658s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.659s] #include "utils/Include.hpp"
+[0.659s]          ^~~~~~~~~~~~~~~~~~~
+[0.659s]          "utils/include.hpp"
+[0.660s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.660s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.660s] #include "utils/Include.hpp"
+[0.661s]          ^~~~~~~~~~~~~~~~~~~
+[0.661s]          "utils/include.hpp"
+[0.668s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.669s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.669s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.669s] #include "utils/Include.hpp"
+[0.669s]          ^~~~~~~~~~~~~~~~~~~
+[0.669s]          "utils/include.hpp"
+[1.273s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.274s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.274s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:5:
+[1.274s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/memory:974:
+[1.275s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cassert:20:
+[1.275s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/assert.h:81:1: error: expected member name or ';' after declaration specifiers
+[1.275s] __BEGIN_DECLS
+[1.276s] ^~~~~~~~~~~~~
+[1.276s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h:71:32: note: expanded from macro '__BEGIN_DECLS'
+[1.276s] #define __BEGIN_DECLS   extern "C" {
+[1.276s]                         ~~~~~~ ^
+[1.276s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.277s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.277s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:15:7: error: using declaration in class refers into 'std::placeholders::', which is not a class
+[1.277s] using std::placeholders::_1;
+[1.277s]       ^~~~~~~~~~~~~~~~~~~
+[1.277s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.277s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.277s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.277s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:5:
+[1.277s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/memory:974:
+[1.277s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cassert:20:
+[1.278s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/assert.h:81:1: error: expected member name or ';' after declaration specifiers
+[1.278s] __BEGIN_DECLS
+[1.278s] ^~~~~~~~~~~~~
+[1.278s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h:71:32: note: expanded from macro '__BEGIN_DECLS'
+[1.278s] #define __BEGIN_DECLS   extern "C" {
+[1.278s]                         ~~~~~~ ^
+[1.278s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.278s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.278s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.278s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:15:7: error: using declaration in class refers into 'std::placeholders::', which is not a class
+[1.278s] using std::placeholders::_1;
+[1.278s]       ^~~~~~~~~~~~~~~~~~~
+[1.279s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.279s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.279s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.279s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.279s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:5:
+[1.279s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/memory:974:
+[1.279s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cassert:20:
+[1.279s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/assert.h:81:1: error: expected member name or ';' after declaration specifiers
+[1.279s] __BEGIN_DECLS
+[1.279s] ^~~~~~~~~~~~~
+[1.279s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h:71:32: note: expanded from macro '__BEGIN_DECLS'
+[1.279s] #define __BEGIN_DECLS   extern "C" {
+[1.280s]                         ~~~~~~ ^
+[1.280s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.280s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.280s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.280s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.280s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:15:7: error: using declaration in class refers into 'std::placeholders::', which is not a class
+[1.280s] using std::placeholders::_1;
+[1.280s]       ^~~~~~~~~~~~~~~~~~~
+[1.282s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.282s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.282s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: error: missing '}' at end of definition of 'Publisher'
+[1.282s] class Publisher : public rclcpp::Node
+[1.282s]       ^
+[1.283s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp:7:1: note: still within definition of 'Publisher' here
+[1.283s] namespace StupidJSON
+[1.283s] ^
+[1.284s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.285s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.285s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.285s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: error: missing '}' at end of definition of 'Publisher'
+[1.285s] class Publisher : public rclcpp::Node
+[1.285s]       ^
+[1.286s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp:7:1: note: still within definition of 'Publisher' here
+[1.286s] namespace StupidJSON
+[1.286s] ^
+[1.286s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.286s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.286s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.286s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.286s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: error: missing '}' at end of definition of 'Publisher'
+[1.287s] class Publisher : public rclcpp::Node
+[1.287s]       ^
+[1.287s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp:7:1: note: still within definition of 'Publisher' here
+[1.287s] namespace StupidJSON
+[1.287s] ^
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.295s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:3: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[1.295s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.296s]   ^~~~~~~~~~~
+[1.296s]   Publisher
+[1.296s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: note: 'Publisher' declared here
+[1.296s] class Publisher : public rclcpp::Node
+[1.296s]       ^
+[1.296s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[1.296s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.296s]              ^~~~~~~~~~~
+[1.297s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[1.297s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: redefinition of 'TopicName'
+[1.297s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.297s]               ^
+[1.297s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: previous definition is here
+[1.298s]   std::string TopicName = "Platoon";
+[1.298s]               ^
+[1.298s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: reference to 'TopicName' is ambiguous
+[1.299s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.299s]                                                                          ^
+[1.299s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: note: candidate found by name lookup is 'TopicName'
+[1.299s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.299s]               ^
+[1.299s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: candidate found by name lookup is 'TopicName'
+[1.299s]   std::string TopicName = "Platoon";
+[1.299s]               ^
+[1.299s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:27:1: error: function definition is not allowed here
+[1.299s] {
+[1.299s] ^
+[1.300s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:37:1: error: function definition is not allowed here
+[1.300s] {
+[1.300s] ^
+[1.300s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:1: error: expected expression
+[1.300s] private:
+[1.300s] ^
+[1.300s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.300s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.300s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.300s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:5:
+[1.300s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/memory:974:
+[1.300s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cassert:20:
+[1.301s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/assert.h:81:1: error: expected member name or ';' after declaration specifiers
+[1.301s] __BEGIN_DECLS
+[1.301s] ^~~~~~~~~~~~~
+[1.301s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h:71:32: note: expanded from macro '__BEGIN_DECLS'
+[1.301s] #define __BEGIN_DECLS   extern "C" {
+[1.301s]                         ~~~~~~ ^
+[1.301s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.301s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.301s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.301s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:15:7: error: using declaration in class refers into 'std::placeholders::', which is not a class
+[1.301s] using std::placeholders::_1;
+[1.301s]       ^~~~~~~~~~~~~~~~~~~
+[1.302s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.302s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.302s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.302s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:3: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[1.302s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.302s]   ^~~~~~~~~~~
+[1.302s]   Publisher
+[1.302s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: note: 'Publisher' declared here
+[1.302s] class Publisher : public rclcpp::Node
+[1.302s]       ^
+[1.302s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[1.302s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.303s]              ^~~~~~~~~~~
+[1.303s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[1.303s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: redefinition of 'TopicName'
+[1.303s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.303s]               ^
+[1.303s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: previous definition is here
+[1.303s]   std::string TopicName = "Platoon";
+[1.303s]               ^
+[1.303s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: reference to 'TopicName' is ambiguous
+[1.303s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.303s]                                                                          ^
+[1.303s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: note: candidate found by name lookup is 'TopicName'
+[1.303s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.304s]               ^
+[1.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: candidate found by name lookup is 'TopicName'
+[1.304s]   std::string TopicName = "Platoon";
+[1.304s]               ^
+[1.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:27:1: error: function definition is not allowed here
+[1.304s] {
+[1.304s] ^
+[1.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:37:1: error: function definition is not allowed here
+[1.304s] {
+[1.304s] ^
+[1.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:1: error: expected expression
+[1.304s] private:
+[1.305s] ^
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.305s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:3: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[1.305s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.305s]   ^~~~~~~~~~~
+[1.305s]   Publisher
+[1.305s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: note: 'Publisher' declared here
+[1.305s] class Publisher : public rclcpp::Node
+[1.306s]       ^
+[1.306s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[1.306s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.306s]              ^~~~~~~~~~~
+[1.306s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[1.306s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: redefinition of 'TopicName'
+[1.306s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.306s]               ^
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: previous definition is here
+[1.307s]   std::string TopicName = "Platoon";
+[1.307s]               ^
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: reference to 'TopicName' is ambiguous
+[1.307s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.307s]                                                                          ^
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: note: candidate found by name lookup is 'TopicName'
+[1.307s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.307s]               ^
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: candidate found by name lookup is 'TopicName'
+[1.307s]   std::string TopicName = "Platoon";
+[1.308s]               ^
+[1.308s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:27:1: error: function definition is not allowed here
+[1.308s] {
+[1.308s] ^
+[1.308s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:37:1: error: function definition is not allowed here
+[1.308s] {
+[1.308s] ^
+[1.308s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:1: error: expected expression
+[1.309s] private:
+[1.309s] ^
+[1.309s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.309s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.309s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.309s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: error: missing '}' at end of definition of 'Publisher'
+[1.309s] class Publisher : public rclcpp::Node
+[1.310s]       ^
+[1.310s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp:7:1: note: still within definition of 'Publisher' here
+[1.310s] namespace StupidJSON
+[1.310s] ^
+[1.316s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.316s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.316s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:27:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.316s]         "Platoon", 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.316s]                                                                     ^~
+[1.317s]                                                                     std::placeholders::_1
+[1.317s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.317s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.317s]                                              ^
+[1.321s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.321s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.321s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.321s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:3: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[1.321s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.321s]   ^~~~~~~~~~~
+[1.321s]   Publisher
+[1.322s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:16:7: note: 'Publisher' declared here
+[1.322s] class Publisher : public rclcpp::Node
+[1.322s]       ^
+[1.322s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[1.322s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.322s]              ^~~~~~~~~~~
+[1.322s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:14: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[1.322s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: redefinition of 'TopicName'
+[1.322s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.323s]               ^
+[1.323s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: previous definition is here
+[1.323s]   std::string TopicName = "Platoon";
+[1.323s]               ^
+[1.323s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: reference to 'TopicName' is ambiguous
+[1.323s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.323s]                                                                          ^
+[1.324s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: note: candidate found by name lookup is 'TopicName'
+[1.324s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[1.324s]               ^
+[1.324s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: candidate found by name lookup is 'TopicName'
+[1.324s]   std::string TopicName = "Platoon";
+[1.324s]               ^
+[1.324s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:27:1: error: function definition is not allowed here
+[1.325s] {
+[1.325s] ^
+[1.325s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:37:1: error: function definition is not allowed here
+[1.325s] {
+[1.325s] ^
+[1.325s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:1: error: expected expression
+[1.325s] private:
+[1.326s] ^
+[1.326s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.326s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.326s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.327s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:27:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.327s]         "Platoon", 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.327s]                                                                     ^~
+[1.327s]                                                                     std::placeholders::_1
+[1.328s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.328s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.328s]                                              ^
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.328s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.329s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:27:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.329s]         "Platoon", 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.329s]                                                                     ^~
+[1.329s]                                                                     std::placeholders::_1
+[1.329s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.329s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.329s]                                              ^
+[1.329s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.330s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.330s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.330s]         TopicName, 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.330s]                                                                     ^~
+[1.330s]                                                                     std::placeholders::_1
+[1.330s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.330s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.330s]                                              ^
+[1.331s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.331s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.331s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.331s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.331s]                                                                ^
+[1.336s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.337s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.337s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.337s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.337s]         TopicName, 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.338s]                                                                     ^~
+[1.338s]                                                                     std::placeholders::_1
+[1.338s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.339s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.339s]                                              ^
+[1.339s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.339s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.339s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.339s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.339s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.340s]                                                                ^
+[1.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.341s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.341s]         TopicName, 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.341s]                                                                     ^~
+[1.341s]                                                                     std::placeholders::_1
+[1.341s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.341s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.342s]                                              ^
+[1.342s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.342s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.342s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.342s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.343s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.343s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.343s]                                                                ^
+[1.343s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.343s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:78:21: error: unknown type name 'Subscriber'; did you mean 'Publisher::Subscriber'?
+[1.343s]     std::shared_ptr<Subscriber> _subscriber;
+[1.344s]                     ^~~~~~~~~~
+[1.344s]                     Publisher::Subscriber
+[1.344s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:19:7: note: 'Publisher::Subscriber' declared here
+[1.344s] class Subscriber : public rclcpp::Node
+[1.344s]       ^
+[1.348s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.348s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.348s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.348s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:27:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.349s]         "Platoon", 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.349s]                                                                     ^~
+[1.349s]                                                                     std::placeholders::_1
+[1.349s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.349s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.349s]                                              ^
+[1.353s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.353s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.354s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.354s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:78:21: error: unknown type name 'Subscriber'; did you mean 'Publisher::Subscriber'?
+[1.354s]     std::shared_ptr<Subscriber> _subscriber;
+[1.354s]                     ^~~~~~~~~~
+[1.355s]                     Publisher::Subscriber
+[1.355s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:19:7: note: 'Publisher::Subscriber' declared here
+[1.355s] class Subscriber : public rclcpp::Node
+[1.355s]       ^
+[1.355s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.356s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.356s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:78:21: error: unknown type name 'Subscriber'; did you mean 'Publisher::Subscriber'?
+[1.356s]     std::shared_ptr<Subscriber> _subscriber;
+[1.356s]                     ^~~~~~~~~~
+[1.356s]                     Publisher::Subscriber
+[1.356s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:19:7: note: 'Publisher::Subscriber' declared here
+[1.356s] class Subscriber : public rclcpp::Node
+[1.356s]       ^
+[1.356s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.357s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.357s] #include "src/utils/Include.hpp"
+[1.357s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.357s]          "src/utils/include.hpp"
+[1.360s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.360s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.360s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.361s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:69: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.361s]         TopicName, 10, std::bind(&Subscriber::topic_callback, this, _1));
+[1.361s]                                                                     ^~
+[1.361s]                                                                     std::placeholders::_1
+[1.361s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.361s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.361s]                                              ^
+[1.362s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.362s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.362s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.362s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.362s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.362s]                                                                ^
+[1.371s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.372s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.372s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:78:21: error: unknown type name 'Subscriber'; did you mean 'Publisher::Subscriber'?
+[1.372s]     std::shared_ptr<Subscriber> _subscriber;
+[1.372s]                     ^~~~~~~~~~
+[1.372s]                     Publisher::Subscriber
+[1.372s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:19:7: note: 'Publisher::Subscriber' declared here
+[1.373s] class Subscriber : public rclcpp::Node
+[1.373s]       ^
+[2.084s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.084s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.084s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.084s]     speedType _speed;
+[2.084s]               ^
+[2.084s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.084s]     stearingAngleType _stearingAngle;
+[2.084s]                       ^
+[2.084s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.084s]     distanceType _distance;
+[2.084s]                  ^
+[2.085s] 7 warnings and 13 errors generated.
+[2.085s] 3 warnings and 13 errors generated.
+[2.100s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[2.100s] gmake[2]: *** Waiting for unfinished jobs....
+[2.102s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[2.110s] 3 warnings and 13 errors generated.
+[2.116s] 3 warnings and 13 errors generated.
+[2.124s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[2.132s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.133s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.133s] gmake: *** [Makefile:160: all] Error 2
+[2.134s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

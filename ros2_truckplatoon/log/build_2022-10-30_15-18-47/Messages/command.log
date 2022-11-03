@@ -1,0 +1,1 @@
+Invoking command in '/Users/brodie/ros2_truckplatoon/build/Messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake /Users/brodie/ros2_truckplatoon/src/Messages -DCMAKE_INSTALL_PREFIX=/Users/brodie/ros2_truckplatoon/install/Messages

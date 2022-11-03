@@ -1,0 +1,20 @@
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:14:13: error: no type named 'spin_once' in namespace 'rclcpp'
+    rclcpp::spin_once(_publisher);
+    ~~~~~~~~^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:41:13: error: no type named 'spin_once' in namespace 'rclcpp'
+    rclcpp::spin_once(_publisher);
+    ~~~~~~~~^
+2 warnings and 2 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

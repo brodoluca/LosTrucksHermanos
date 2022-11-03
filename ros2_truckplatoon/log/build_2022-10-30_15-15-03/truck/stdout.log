@@ -1,0 +1,10 @@
+-- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+-- Found rosidl_default_generators: 1.0.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+-- Configuring incomplete, errors occurred!
+See also "/Users/brodie/ros2_truckplatoon/build/truck/CMakeFiles/CMakeOutput.log".
+See also "/Users/brodie/ros2_truckplatoon/build/truck/CMakeFiles/CMakeError.log".

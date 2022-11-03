@@ -1,0 +1,307 @@
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+    publishers_[TopicName]->publish(message);
+                ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+    publishers_[TopicName]->publish(message);
+                ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+    publishers_[TopicName]->publish(message);
+                ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+    publishers_[TopicName]->publish(message);
+                ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "src/utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "src/utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), Publisher *, std::string &>'
+    callback_();
+    ^~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>' requested here
+    execute_callback_delegate<>();
+    ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback' requested here
+  WallTimer(
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::WallTimer' requested here
+        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+                                                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+                  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'
+  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'
+  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'
+    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \
+                ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(
+                                             ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  return rclcpp::create_wall_timer(
+                 ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:27:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  timer_ = this->create_wall_timer(
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args)
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args) const
+        ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), Publisher *, std::string &>'
+    callback_();
+    ^~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>' requested here
+    execute_callback_delegate<>();
+    ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback' requested here
+  WallTimer(
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::WallTimer' requested here
+        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+                                                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:                  ^
+20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:2233:: 5note: :in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+ error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), Publisher *, std::string &>'
+  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)    callback_();
+
+  ^    ^~~~~~~~~
+
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5::3: note:  expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'
+note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>' requested here
+  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \
+    execute_callback_delegate<>();
+    ^
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note:   __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)
+  ^
+in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback' requested here/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'
+
+  WallTimer(
+  ^
+    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp298::13537::46 :note:  note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::WallTimer' requested here
+  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(
+                                             ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18:         ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);note: 
+in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here                                    ^
+
+  return rclcpp::create_wall_timer(
+                 ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:27:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  timer_ = this->create_wall_timer(
+                 ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h
+:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args)
+        ^
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h
+:                                                      ^299:9
+: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args) const
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+                  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'
+  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'
+  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'
+    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \
+                ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(
+                                             ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  return rclcpp::create_wall_timer(
+                 ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:27:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  timer_ = this->create_wall_timer(
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args)
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args) const
+        ^
+1 warning and 2 errors generated.
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:
+In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), Publisher *, std::string &>'
+    callback_();
+    ^~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>' requested here
+    execute_callback_delegate<>();
+    ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::execute_callback' requested here
+  WallTimer(
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::WallTimer' requested here
+        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+                                                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+                  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>, void>' requested here
+  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'
+  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'
+  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'
+    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \
+                ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), Publisher *, std::string &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), Publisher *, std::string &>, std::shared_ptr<rclcpp::Context>>' requested here
+  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(
+                                             ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  return rclcpp::create_wall_timer(
+                 ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:27:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), Publisher *, std::string &>>' requested here
+  timer_ = this->create_wall_timer(
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args)
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<Publisher *, std::string>, std::tuple<>, false>'
+        operator()(_Args&& ...__args) const
+        ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+    speedType _speed;
+              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+    stearingAngleType _stearingAngle;
+                      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+    distanceType _distance;
+                 ^
+5 warnings and 2 errors generated.
+1 warning and 2 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+1 warning and 2 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

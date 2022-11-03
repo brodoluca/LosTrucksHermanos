@@ -1,0 +1,129 @@
+[0.048s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.135s] Scanning dependencies of target truck
+[0.157s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.157s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.158s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.158s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.696s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.696s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.696s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.696s] #include "utils/Include.hpp"
+[0.696s]          ^~~~~~~~~~~~~~~~~~~
+[0.696s]          "utils/include.hpp"
+[0.697s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.697s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.698s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.698s] #include "utils/Include.hpp"
+[0.698s]          ^~~~~~~~~~~~~~~~~~~
+[0.698s]          "utils/include.hpp"
+[0.707s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.707s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.708s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.708s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.708s] #include "utils/Include.hpp"
+[0.708s]          ^~~~~~~~~~~~~~~~~~~
+[0.708s]          "utils/include.hpp"
+[0.714s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.714s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.714s] #include "utils/Include.hpp"
+[0.715s]          ^~~~~~~~~~~~~~~~~~~
+[0.715s]          "utils/include.hpp"
+[1.594s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.595s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.595s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.595s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.595s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.595s]                                                                ^
+[1.595s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.596s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.596s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.596s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.596s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.596s]                                                                ^
+[1.608s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.608s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.608s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.608s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.609s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.609s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.609s]                                                                ^
+[1.611s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.611s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.611s] #include "src/utils/Include.hpp"
+[1.611s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.611s]          "src/utils/include.hpp"
+[1.624s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.624s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.624s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.624s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.624s]                                                                ^
+[2.763s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.763s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:
+[2.763s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:
+[2.764s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.764s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.764s]                      ^
+[2.764s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.765s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.765s]                      ^
+[2.770s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.771s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.771s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.771s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.771s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.771s]                      ^
+[2.771s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.771s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.772s]                      ^
+[2.789s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.789s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.789s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.789s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.790s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.790s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.790s]                      ^
+[2.790s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.790s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.790s]                      ^
+[2.791s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.791s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.791s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.791s]     speedType _speed;
+[2.791s]               ^
+[2.791s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.792s]     stearingAngleType _stearingAngle;
+[2.792s]                       ^
+[2.792s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.792s]     distanceType _distance;
+[2.792s]                  ^
+[2.806s] 4 warnings generated.
+[2.819s] 4 warnings generated.
+[2.841s] 8 warnings generated.
+[2.884s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.884s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.884s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.884s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.884s]                      ^
+[3.363s] 3 warnings generated.
+[3.385s] [ 83%] Linking CXX executable truck
+[3.488s] [100%] Built target truck
+[3.500s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[3.617s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/truck
+[3.626s] -- Install configuration: ""
+[3.626s] -- Installing: /Users/brodie/ros2_truckplatoon/install/truck/lib/truck/truck
+[3.677s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/package_run_dependencies/truck
+[3.678s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/parent_prefix_path/truck
+[3.678s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.sh
+[3.678s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.dsv
+[3.678s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.sh
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.dsv
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.bash
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.sh
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.zsh
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.dsv
+[3.679s] -- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.dsv
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/packages/truck
+[3.679s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig.cmake
+[3.680s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig-version.cmake
+[3.680s] -- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.xml
+[3.696s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/truck

@@ -1,0 +1,47 @@
+[0.113s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.190s] Scanning dependencies of target truck
+[0.213s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.908s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.909s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.909s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.909s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.909s] #include "utils/Include.hpp"
+[0.910s]          ^~~~~~~~~~~~~~~~~~~
+[0.910s]          "utils/include.hpp"
+[0.910s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.910s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.910s] #include "src/utils/Include.hpp"
+[0.910s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[0.911s]          "src/utils/include.hpp"
+[0.981s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.981s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.981s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.982s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[0.982s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[0.982s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[0.982s]                      ^
+[0.982s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[0.982s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[0.982s]                      ^
+[0.983s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.983s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[0.983s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[0.983s]     speedType _speed;
+[0.983s]               ^
+[0.983s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[0.983s]     stearingAngleType _stearingAngle;
+[0.984s]                       ^
+[0.984s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[0.984s]     distanceType _distance;
+[0.984s]                  ^
+[0.989s] 7 warnings generated.
+[1.011s] [100%] Linking CXX executable truck
+[1.088s] Undefined symbols for architecture x86_64:
+[1.088s]   "Truck::Truck(unsigned short)", referenced from:
+[1.088s]       _main in truck.cpp.o
+[1.088s] ld: symbol(s) not found for architecture x86_64
+[1.090s] clang: error: linker command failed with exit code 1 (use -v to see invocation)
+[1.092s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:103: truck] Error 1
+[1.093s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.093s] gmake: *** [Makefile:160: all] Error 2
+[1.102s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

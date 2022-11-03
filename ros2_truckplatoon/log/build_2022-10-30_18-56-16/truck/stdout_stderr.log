@@ -1,0 +1,116 @@
+Scanning dependencies of target truck
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:48:21: error: use of undeclared identifier 'TopicName'
+  this->publishers_[TopicName]->publish(message);
+                    ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:53:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+  void callback(std::string TopicName)
+                            ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:48:21: error: use of undeclared identifier 'TopicName'
+  this->publishers_[TopicName]->publish(message);
+                    ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:48:21: error: use of undeclared identifier 'TopicName'
+  this->publishers_[TopicName]->publish(message);
+                    ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:53:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+  void callback(std::string TopicName)
+                            ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:53:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+  void callback(std::string TopicName)
+                            ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:48:21: error: use of undeclared identifier 'TopicName'
+  this->publishers_[TopicName]->publish(message);
+                    ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:53:29: warning: unused parameter 'TopicName' [-Wunused-parameter]
+  void callback(std::string TopicName)
+                            ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "src/utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "src/utils/include.hpp"
+3 warnings and 1 error generated.
+3 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+    speedType _speed;
+              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+    stearingAngleType _stearingAngle;
+                      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+    distanceType _distance;
+                 ^
+7 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+3 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

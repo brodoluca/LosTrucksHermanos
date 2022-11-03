@@ -1,0 +1,4 @@
+source;share/truck/local_setup.bash
+source;share/truck/local_setup.dsv
+source;share/truck/local_setup.sh
+source;share/truck/local_setup.zsh

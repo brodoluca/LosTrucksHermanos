@@ -1,0 +1,138 @@
+[0.060s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.159s] Scanning dependencies of target truck
+[0.187s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.187s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.187s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.190s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.868s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.870s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.870s] #include "utils/Include.hpp"
+[0.871s]          ^~~~~~~~~~~~~~~~~~~
+[0.871s]          "utils/include.hpp"
+[0.871s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.871s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.871s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.871s] #include "utils/Include.hpp"
+[0.872s]          ^~~~~~~~~~~~~~~~~~~
+[0.872s]          "utils/include.hpp"
+[0.872s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.872s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.872s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.872s] #include "utils/Include.hpp"
+[0.872s]          ^~~~~~~~~~~~~~~~~~~
+[0.873s]          "utils/include.hpp"
+[0.873s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.873s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.873s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.873s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.874s] #include "utils/Include.hpp"
+[0.874s]          ^~~~~~~~~~~~~~~~~~~
+[0.874s]          "utils/include.hpp"
+[1.890s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.890s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.891s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[1.891s]       500ms, [this, TopicName]() -> void { callback(); });
+[1.891s]               ^~~~~
+[1.891s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.891s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.892s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.892s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[1.892s]       500ms, [this, TopicName]() -> void { callback(); });
+[1.892s]               ^~~~~
+[1.892s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[1.892s]     publishers_[TopicName]->publish(message);
+[1.893s]                 ^
+[1.893s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.893s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[1.893s]                 ^
+[1.893s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.893s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.894s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:5: error: invalid use of member 'publishers_' in static member function
+[1.894s]     publishers_[TopicName]->publish(message);
+[1.894s]     ^~~~~~~~~~~
+[1.894s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.894s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.894s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.895s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.895s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[1.895s]       500ms, [this, TopicName]() -> void { callback(); });
+[1.895s]               ^~~~~
+[1.895s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[1.895s]     publishers_[TopicName]->publish(message);
+[1.896s]                 ^
+[1.896s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.896s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[1.896s]                 ^
+[1.896s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.896s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.897s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:5: error: invalid use of member 'publishers_' in static member function
+[1.897s]     publishers_[TopicName]->publish(message);
+[1.897s]     ^~~~~~~~~~~
+[1.897s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:17: error: use of undeclared identifier 'TopicName'
+[1.897s]     publishers_[TopicName]->publish(message);
+[1.897s]                 ^
+[1.897s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[1.898s]     publishers_[TopicName]->publish(message);
+[1.898s]                 ^
+[1.898s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.898s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[1.898s]                 ^
+[1.898s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.899s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.899s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:5: error: invalid use of member 'publishers_' in static member function
+[1.899s]     publishers_[TopicName]->publish(message);
+[1.899s]     ^~~~~~~~~~~
+[1.899s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:17: error: use of undeclared identifier 'TopicName'
+[1.899s]     publishers_[TopicName]->publish(message);
+[1.900s]                 ^
+[1.900s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:17: error: use of undeclared identifier 'TopicName'
+[1.900s]     publishers_[TopicName]->publish(message);
+[1.900s]                 ^
+[1.900s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.901s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.901s] #include "src/utils/Include.hpp"
+[1.901s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.901s]          "src/utils/include.hpp"
+[1.901s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.901s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.902s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.902s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[1.902s]       500ms, [this, TopicName]() -> void { callback(); });
+[1.902s]               ^~~~~
+[1.917s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[1.917s]     publishers_[TopicName]->publish(message);
+[1.917s]                 ^
+[1.918s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.918s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[1.919s]                 ^
+[1.919s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.919s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:53:17: error: invalid use of 'this' outside of a non-static member function
+[1.919s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:5: error: invalid use of member 'publishers_' in static member function
+[1.919s]     publishers_[TopicName]->publish(message);
+[1.919s]     ^~~~~~~~~~~
+[1.926s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:17: error: use of undeclared identifier 'TopicName'
+[1.926s]     publishers_[TopicName]->publish(message);
+[1.926s]                 ^
+[2.411s] 2 warnings and 6 errors generated.
+[2.427s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[2.428s] gmake[2]: *** Waiting for unfinished jobs....
+[2.434s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.434s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.434s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.434s]     speedType _speed;
+[2.434s]               ^
+[2.435s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.435s]     stearingAngleType _stearingAngle;
+[2.435s]                       ^
+[2.435s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.435s]     distanceType _distance;
+[2.436s]                  ^
+[2.436s] 6 warnings and 6 errors generated.
+[2.451s] 2 warnings and 6 errors generated.
+[2.451s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[2.466s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.479s] 2 warnings and 6 errors generated.
+[2.492s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[2.492s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.492s] gmake: *** [Makefile:160: all] Error 2
+[2.493s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

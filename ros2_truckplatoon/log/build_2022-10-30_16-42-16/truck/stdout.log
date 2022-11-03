@@ -1,0 +1,49 @@
+-- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+-- Found rclcpp: 2.4.0 (/Users/brodie/ros2_foxy/ros2-osx/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/Users/brodie/ros2_foxy/ros2-osx/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found message: 0.0.0 (/Users/brodie/ros2_truckplatoon/install/message/share/message/cmake)
+-- Found ament_lint_auto: 0.9.6 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/brodie/ros2_truckplatoon/src/truck/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/brodie/ros2_truckplatoon/build/truck
+Scanning dependencies of target truck
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[ 83%] Linking CXX executable truck
+[100%] Built target truck
+-- Install configuration: ""
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/lib/truck/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/package_run_dependencies/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/parent_prefix_path/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.bash
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.sh
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.zsh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/packages/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig.cmake
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig-version.cmake
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.xml

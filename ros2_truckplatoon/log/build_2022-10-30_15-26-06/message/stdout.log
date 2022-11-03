@@ -1,0 +1,181 @@
+-- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+-- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found suitable version "3.9.4", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+-- Found rosidl_default_generators: 1.0.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+-- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found version "3.9.4") 
+-- Found ament_cmake_ros: 0.9.2 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found suitable version "3.9.4", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/Users/brodie/ros2_foxy/ros2-osx/share/python_cmake_module/cmake)
+-- Using PythonExtra_INCLUDE_DIRS: /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9;/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9
+-- Using PythonExtra_LIBRARIES: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/config-3.9-darwin/libpython3.9.dylib
+-- Found PythonExtra: .so  
+-- Using numpy include directory: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/include
+-- Found ament_lint_auto: 0.9.6 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/brodie/ros2_truckplatoon/build/message
+[  3%] Generating C code for ROS interfaces
+Scanning dependencies of target message__cpp
+[  6%] Generating C++ code for ROS interfaces
+[  6%] Built target message__cpp
+Scanning dependencies of target message__rosidl_generator_c
+[ 12%] Generating C++ type support dispatch for ROS interfaces
+[ 12%] Generating C++ type support for eProsima Fast-RTPS
+[ 16%] Generating C++ introspection for ROS interfaces
+[ 19%] Building C object CMakeFiles/message__rosidl_generator_c.dir/rosidl_generator_c/message/msg/detail/message__functions.c.o
+[ 22%] Linking C shared library libmessage__rosidl_generator_c.dylib
+[ 22%] Built target message__rosidl_generator_c
+[ 25%] Generating C type support dispatch for ROS interfaces
+[ 29%] Generating C introspection for ROS interfaces
+Scanning dependencies of target message__rosidl_typesupport_cpp
+[ 32%] Building CXX object CMakeFiles/message__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/message/msg/message__type_support.cpp.o
+Scanning dependencies of target message__rosidl_typesupport_introspection_cpp
+[ 35%] Building CXX object CMakeFiles/message__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message/msg/detail/message__type_support.cpp.o
+Scanning dependencies of target message__rosidl_typesupport_fastrtps_cpp
+[ 38%] Building CXX object CMakeFiles/message__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/message/msg/detail/dds_fastrtps/message__type_support.cpp.o
+Scanning dependencies of target message__rosidl_typesupport_c
+[ 41%] Building CXX object CMakeFiles/message__rosidl_typesupport_c.dir/rosidl_typesupport_c/message/msg/message__type_support.cpp.o
+Scanning dependencies of target message__rosidl_typesupport_introspection_c
+[ 45%] Building C object CMakeFiles/message__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message/msg/detail/message__type_support.c.o
+[ 48%] Linking CXX shared library libmessage__rosidl_typesupport_c.dylib
+[ 51%] Linking C shared library libmessage__rosidl_typesupport_introspection_c.dylib
+[ 51%] Built target message__rosidl_typesupport_c
+[ 51%] Built target message__rosidl_typesupport_introspection_c
+[ 54%] Linking CXX shared library libmessage__rosidl_typesupport_cpp.dylib
+[ 58%] Linking CXX shared library libmessage__rosidl_typesupport_introspection_cpp.dylib
+[ 58%] Built target message__rosidl_typesupport_cpp
+[ 58%] Built target message__rosidl_typesupport_introspection_cpp
+[ 61%] Linking CXX shared library libmessage__rosidl_typesupport_fastrtps_cpp.dylib
+[ 61%] Built target message__rosidl_typesupport_fastrtps_cpp
+[ 64%] Generating C type support for eProsima Fast-RTPS
+Scanning dependencies of target message__rosidl_typesupport_fastrtps_c
+[ 67%] Building CXX object CMakeFiles/message__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/message/msg/detail/message__type_support_c.cpp.o
+[ 70%] Linking CXX shared library libmessage__rosidl_typesupport_fastrtps_c.dylib
+[ 70%] Built target message__rosidl_typesupport_fastrtps_c
+Scanning dependencies of target message
+[ 70%] Built target message
+Scanning dependencies of target message__py
+[ 74%] Generating Python code for ROS interfaces
+[ 74%] Built target message__py
+Scanning dependencies of target message__python
+[ 77%] Building C object CMakeFiles/message__python.dir/rosidl_generator_py/message/msg/_message_s.c.o
+[ 80%] Linking C shared library rosidl_generator_py/message/libmessage__python.dylib
+[ 80%] Built target message__python
+Scanning dependencies of target message__rosidl_typesupport_c__pyext
+Scanning dependencies of target message__rosidl_typesupport_introspection_c__pyext
+Scanning dependencies of target message__rosidl_typesupport_fastrtps_c__pyext
+[ 87%] Building C object CMakeFiles/message__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/message/_message_s.ep.rosidl_typesupport_c.c.o
+[ 87%] Building C object CMakeFiles/message__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/message/_message_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[ 90%] Building C object CMakeFiles/message__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/message/_message_s.ep.rosidl_typesupport_introspection_c.c.o
+[ 93%] Linking C shared library rosidl_generator_py/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so
+[ 96%] Linking C shared library rosidl_generator_py/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so
+[100%] Linking CXX shared library rosidl_generator_py/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so
+[100%] Built target message__rosidl_typesupport_c__pyext
+[100%] Built target message__rosidl_typesupport_introspection_c__pyext
+[100%] Built target message__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/rosidl_interfaces/message
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.c
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_generator_c.dylib
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_c.dylib
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/dds_fastrtps
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_cpp.dylib
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.c
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_c.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_c.dylib
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_c.dylib
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__traits.hpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.hpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__builder.hpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.hpp
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.cpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_cpp.dylib
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_cpp.dylib
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/__init__.py
+Compiling '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/__init__.py'...
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/__init__.py
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message.py
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message_s.c
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__python.dylib
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.idl
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.msg
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/package_run_dependencies/message
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/parent_prefix_path/message
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.bash
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.sh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.zsh
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/packages/message
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cppExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig-version.cmake
+-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.xml

@@ -1,0 +1,406 @@
+[0.000000] (-) TimerEvent: {}
+[0.002132] (message) JobQueued: {'identifier': 'message', 'dependencies': OrderedDict()}
+[0.026870] (truck) JobQueued: {'identifier': 'truck', 'dependencies': OrderedDict([('message', '/Users/brodie/ros2_truckplatoon/install/message')])}
+[0.026959] (message) JobStarted: {'identifier': 'message'}
+[0.089179] (message) JobProgress: {'identifier': 'message', 'progress': 'cmake'}
+[0.090352] (message) JobProgress: {'identifier': 'message', 'progress': 'build'}
+[0.092695] (message) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/message', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/message', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/message'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099576] (-) TimerEvent: {}
+[0.176578] (message) StdoutLine: {'line': b'[  9%] Built target message__cpp\n'}
+[0.176869] (message) StdoutLine: {'line': b'[ 12%] Built target message__rosidl_generator_c\n'}
+[0.200324] (-) TimerEvent: {}
+[0.227726] (message) StdoutLine: {'line': b'[ 32%] Built target message__rosidl_typesupport_introspection_cpp\n'}
+[0.228310] (message) StdoutLine: {'line': b'[ 32%] Built target message__rosidl_typesupport_cpp\n'}
+[0.228538] (message) StdoutLine: {'line': b'[ 41%] Built target message__rosidl_typesupport_c\n'}
+[0.229135] (message) StdoutLine: {'line': b'[ 51%] Built target message__rosidl_typesupport_introspection_c\n'}
+[0.231888] (message) StdoutLine: {'line': b'[ 61%] Built target message__rosidl_typesupport_fastrtps_cpp\n'}
+[0.283306] (message) StdoutLine: {'line': b'[ 70%] Built target message__rosidl_typesupport_fastrtps_c\n'}
+[0.306997] (-) TimerEvent: {}
+[0.393532] (message) StdoutLine: {'line': b'[ 70%] Built target message\n'}
+[0.407048] (-) TimerEvent: {}
+[0.447227] (message) StdoutLine: {'line': b'[ 74%] Built target message__py\n'}
+[0.490666] (message) StdoutLine: {'line': b'[ 80%] Built target message__python\n'}
+[0.509125] (-) TimerEvent: {}
+[0.524573] (message) StdoutLine: {'line': b'[ 87%] Built target message__rosidl_typesupport_c__pyext\n'}
+[0.527296] (message) StdoutLine: {'line': b'[ 96%] Built target message__rosidl_typesupport_introspection_c__pyext\n'}
+[0.527610] (message) StdoutLine: {'line': b'[100%] Built target message__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.539148] (message) CommandEnded: {'returncode': 0}
+[0.609367] (-) TimerEvent: {}
+[0.714189] (-) TimerEvent: {}
+[0.716161] (message) JobProgress: {'identifier': 'message', 'progress': 'install'}
+[0.729838] (message) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/Users/brodie/ros2_truckplatoon/build/message'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/message', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/message'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.738835] (message) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.739248] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/rosidl_interfaces/message\n'}
+[0.739508] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.739767] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.739904] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.740010] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.h\n'}
+[0.740146] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.740283] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.h\n'}
+[0.740387] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.h\n'}
+[0.740484] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.h\n'}
+[0.740578] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.c\n'}
+[0.740672] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.sh\n'}
+[0.740766] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.dsv\n'}
+[0.740858] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_generator_c.dylib\n'}
+[0.752585] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.752997] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.753139] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.753242] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_c.h\n'}
+[0.753338] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.753433] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_c.dylib\n'}
+[0.789606] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.789796] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.790016] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.790212] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.790328] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/dds_fastrtps\n'}
+[0.790422] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.790513] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_cpp.dylib\n'}
+[0.815055] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.815395] (-) TimerEvent: {}
+[0.815543] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.815790] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.815980] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.c\n'}
+[0.816088] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_c.h\n'}
+[0.816184] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.816309] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_c.dylib\n'}
+[0.840973] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_c.dylib\n'}
+[0.853500] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.853915] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.854106] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.854203] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__traits.hpp\n'}
+[0.854299] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.hpp\n'}
+[0.854391] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__builder.hpp\n'}
+[0.854479] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.hpp\n'}
+[0.854566] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[0.854651] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[0.854736] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[0.854916] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.cpp\n'}
+[0.855023] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855132] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_cpp.dylib\n'}
+[0.866560] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_cpp.dylib\n'}
+[0.878398] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.sh\n'}
+[0.878676] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.dsv\n'}
+[0.878805] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/__init__.py\n'}
+[0.915481] (-) TimerEvent: {}
+[0.934055] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg\n'}
+[0.934344] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/__init__.py\n'}
+[0.934591] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message.py\n'}
+[0.934707] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message_s.c\n'}
+[0.934797] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so\n'}
+[0.945739] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[0.958318] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[0.970235] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[0.981158] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /usr/local/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /usr/local/lib"\n'}
+[0.981470] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so\n'}
+[0.992550] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[1.003603] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[1.014743] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[1.015146] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so\n'}
+[1.015541] (-) TimerEvent: {}
+[1.025804] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[1.037640] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[1.050150] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[1.050491] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__python.dylib\n'}
+[1.075490] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.idl\n'}
+[1.075671] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.msg\n'}
+[1.075855] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/package_run_dependencies/message\n'}
+[1.076108] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/parent_prefix_path/message\n'}
+[1.076361] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.sh\n'}
+[1.076547] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.dsv\n'}
+[1.076863] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.sh\n'}
+[1.077207] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.dsv\n'}
+[1.077611] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.bash\n'}
+[1.077908] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.sh\n'}
+[1.078296] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.zsh\n'}
+[1.078577] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.dsv\n'}
+[1.078763] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv\n'}
+[1.078873] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/packages/message\n'}
+[1.079027] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport.cmake\n'}
+[1.079357] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.079593] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.079801] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.079894] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport.cmake\n'}
+[1.079982] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.080090] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cppExport.cmake\n'}
+[1.080177] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.080262] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.080347] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport.cmake\n'}
+[1.080497] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.080595] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake-extras.cmake\n'}
+[1.080686] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.080772] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.081097] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.081255] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.081397] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.081547] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.081775] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig.cmake\n'}
+[1.081948] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig-version.cmake\n'}
+[1.084759] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.xml\n'}
+[1.084935] (message) CommandEnded: {'returncode': 0}
+[1.118336] (-) TimerEvent: {}
+[1.220591] (-) TimerEvent: {}
+[1.336385] (-) TimerEvent: {}
+[1.386645] (message) JobEnded: {'identifier': 'message', 'rc': 0}
+[1.404474] (truck) JobStarted: {'identifier': 'truck'}
+[1.439248] (-) TimerEvent: {}
+[1.448625] (truck) JobProgress: {'identifier': 'truck', 'progress': 'cmake'}
+[1.449625] (truck) JobProgress: {'identifier': 'truck', 'progress': 'build'}
+[1.451485] (truck) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/truck', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/truck', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/truck'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[1.540767] (truck) StdoutLine: {'line': b'Scanning dependencies of target truck\n'}
+[1.541091] (-) TimerEvent: {}
+[1.564383] (truck) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o\n'}
+[1.564686] (truck) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o\n'}
+[1.565045] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o\n'}
+[1.565626] (truck) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o\n'}
+[1.644264] (-) TimerEvent: {}
+[1.749061] (-) TimerEvent: {}
+[1.853786] (-) TimerEvent: {}
+[1.955346] (-) TimerEvent: {}
+[2.042406] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.042720] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.042849] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.042948] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.043053] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.043145] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.043236] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.046130] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.046353] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.046513] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.046691] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.046862] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.047034] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.047210] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.047379] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.047549] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.047717] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.047886] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.048510] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.048748] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.048938] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.049118] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.049279] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.049393] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.056840] (-) TimerEvent: {}
+[2.160279] (-) TimerEvent: {}
+[2.264177] (-) TimerEvent: {}
+[2.368638] (-) TimerEvent: {}
+[2.472017] (-) TimerEvent: {}
+[2.573761] (-) TimerEvent: {}
+[2.662586] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.663369] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.663732] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.663947] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.664126] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')\n"}
+[2.664292] (truck) StderrLine: {'line': b'      RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE\n'}
+[2.664460] (truck) StderrLine: {'line': b'                                      ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~\n'}
+[2.664625] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'\n"}
+[2.664820] (truck) StderrLine: {'line': b'      rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \\\n'}
+[2.664988] (truck) StderrLine: {'line': b'                                            ^~~~~~~~~~~\n'}
+[2.665541] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'\n"}
+[2.665693] (truck) StderrLine: {'line': b'#define RCLCPP_FIRST_ARG(N, ...) N\n'}
+[2.665829] (truck) StderrLine: {'line': b'                                 ^\n'}
+[2.665960] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'\n"}
+[2.666092] (truck) StderrLine: {'line': b'    __VA_ARGS__)\n'}
+[2.666222] (truck) StderrLine: {'line': b'    ^~~~~~~~~~~\n'}
+[2.666353] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'\n"}
+[2.666534] (truck) StderrLine: {'line': b'      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n'}
+[2.666668] (truck) StderrLine: {'line': b'                                                               ^~~~~~~~~~~\n'}
+[2.666800] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.666929] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.667054] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.667180] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')\n"}
+[2.667330] (truck) StderrLine: {'line': b'      RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE\n'}
+[2.667453] (truck) StderrLine: {'line': b'                                      ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~\n'}
+[2.667574] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'\n"}
+[2.667697] (truck) StderrLine: {'line': b'      rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \\\n'}
+[2.667848] (truck) StderrLine: {'line': b'                                            ^~~~~~~~~~~\n'}
+[2.667968] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'\n"}
+[2.668086] (truck) StderrLine: {'line': b'#define RCLCPP_FIRST_ARG(N, ...) N\n'}
+[2.668205] (truck) StderrLine: {'line': b'                                 ^\n'}
+[2.668321] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'\n"}
+[2.668440] (truck) StderrLine: {'line': b'    __VA_ARGS__)\n'}
+[2.668558] (truck) StderrLine: {'line': b'    ^~~~~~~~~~~\n'}
+[2.668674] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'\n"}
+[2.668791] (truck) StderrLine: {'line': b'      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n'}
+[2.668909] (truck) StderrLine: {'line': b'                                                               ^~~~~~~~~~~\n'}
+[2.669026] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.669143] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.669265] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')\n"}
+[2.669385] (truck) StderrLine: {'line': b'      RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE\n'}
+[2.669528] (truck) StderrLine: {'line': b'                                      ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~\n'}
+[2.669648] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'\n"}
+[2.669767] (truck) StderrLine: {'line': b'      rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \\\n'}
+[2.669886] (truck) StderrLine: {'line': b'                                            ^~~~~~~~~~~\n'}
+[2.670001] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'\n"}
+[2.670118] (truck) StderrLine: {'line': b'#define RCLCPP_FIRST_ARG(N, ...) N\n'}
+[2.670242] (truck) StderrLine: {'line': b'                                 ^\n'}
+[2.670334] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'\n"}
+[2.670433] (truck) StderrLine: {'line': b'    __VA_ARGS__)\n'}
+[2.670518] (truck) StderrLine: {'line': b'    ^~~~~~~~~~~\n'}
+[2.670602] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'\n"}
+[2.670686] (truck) StderrLine: {'line': b'      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n'}
+[2.670773] (truck) StderrLine: {'line': b'                                                               ^~~~~~~~~~~\n'}
+[2.670857] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.670941] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.671024] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.671108] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:22:59: error: invalid operands to binary expression ('const char[18]' and 'const char[8]')\n"}
+[2.671193] (truck) StderrLine: {'line': b'      RCLCPP_INFO(this->get_logger(), "Publishing node: " + "Platoon");    // CHANGE\n'}
+[2.671287] (truck) StderrLine: {'line': b'                                      ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~\n'}
+[2.671370] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:544:45: note: expanded from macro 'RCLCPP_INFO'\n"}
+[2.671454] (truck) StderrLine: {'line': b'      rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")), \\\n'}
+[2.671551] (truck) StderrLine: {'line': b'                                            ^~~~~~~~~~~\n'}
+[2.671635] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:35:34: note: expanded from macro 'RCLCPP_FIRST_ARG'\n"}
+[2.671718] (truck) StderrLine: {'line': b'#define RCLCPP_FIRST_ARG(N, ...) N\n'}
+[2.671801] (truck) StderrLine: {'line': b'                                 ^\n'}
+[2.671883] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'\n"}
+[2.671984] (truck) StderrLine: {'line': b'    __VA_ARGS__)\n'}
+[2.672091] (truck) StderrLine: {'line': b'    ^~~~~~~~~~~\n'}
+[2.672177] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'\n"}
+[2.672261] (truck) StderrLine: {'line': b'      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n'}
+[2.672360] (truck) StderrLine: {'line': b'                                                               ^~~~~~~~~~~\n'}
+[2.674115] (-) TimerEvent: {}
+[2.674620] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.675134] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.675251] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.675369] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.675463] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.675571] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.675663] (truck) StderrLine: {'line': b'              ^~~~~~~~~\n'}
+[2.675755] (truck) StderrLine: {'line': b'              TopicName2\n'}
+[2.675846] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.675949] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.676040] (truck) StderrLine: {'line': b'              ^\n'}
+[2.676130] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.676221] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.676314] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.676405] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.676497] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.676588] (truck) StderrLine: {'line': b'              ^~~~~~~~~\n'}
+[2.676678] (truck) StderrLine: {'line': b'              TopicName2\n'}
+[2.676769] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.676893] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.677076] (truck) StderrLine: {'line': b'              ^\n'}
+[2.677177] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.677271] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.677377] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.677472] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.677567] (truck) StderrLine: {'line': b'              ^~~~~~~~~\n'}
+[2.677660] (truck) StderrLine: {'line': b'              TopicName2\n'}
+[2.677752] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.677846] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.677940] (truck) StderrLine: {'line': b'              ^\n'}
+[2.678543] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.678790] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.678944] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.679101] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:15: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.679250] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.679412] (truck) StderrLine: {'line': b'              ^~~~~~~~~\n'}
+[2.679587] (truck) StderrLine: {'line': b'              TopicName2\n'}
+[2.679709] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.679837] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.679940] (truck) StderrLine: {'line': b'              ^\n'}
+[2.688267] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.688644] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.689122] (truck) StderrLine: {'line': b'                                                                         ^~~~~~~~~\n'}
+[2.689329] (truck) StderrLine: {'line': b'                                                                         TopicName2\n'}
+[2.689527] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.689723] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.689919] (truck) StderrLine: {'line': b'              ^\n'}
+[2.690243] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.690655] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.691109] (truck) StderrLine: {'line': b'                                                                         ^~~~~~~~~\n'}
+[2.691476] (truck) StderrLine: {'line': b'                                                                         TopicName2\n'}
+[2.691677] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.691870] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.692061] (truck) StderrLine: {'line': b'              ^\n'}
+[2.692252] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.692405] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.692525] (truck) StderrLine: {'line': b'                                                                         ^~~~~~~~~\n'}
+[2.692626] (truck) StderrLine: {'line': b'                                                                         TopicName2\n'}
+[2.692725] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.692823] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.692943] (truck) StderrLine: {'line': b'              ^\n'}
+[2.693041] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:24:74: error: use of undeclared identifier 'TopicName'; did you mean 'TopicName2'?\n"}
+[2.693138] (truck) StderrLine: {'line': b'  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);\n'}
+[2.693237] (truck) StderrLine: {'line': b'                                                                         ^~~~~~~~~\n'}
+[2.693351] (truck) StderrLine: {'line': b'                                                                         TopicName2\n'}
+[2.693448] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:23:15: note: 'TopicName2' declared here\n"}
+[2.693601] (truck) StderrLine: {'line': b'  std::string TopicName2 = "Platoon";\n'}
+[2.693814] (truck) StderrLine: {'line': b'              ^\n'}
+[2.728606] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.728925] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:\n'}
+[2.729504] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'\n"}
+[2.730435] (truck) StderrLine: {'line': b'        RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    \n'}
+[2.730579] (truck) StderrLine: {'line': b'                                                                  ^\n'}
+[2.730692] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.730821] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.730973] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:\n'}
+[2.731123] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'\n"}
+[2.731282] (truck) StderrLine: {'line': b'        RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    \n'}
+[2.731435] (truck) StderrLine: {'line': b'                                                                  ^\n'}
+[2.731585] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.731735] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.731885] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.732035] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:\n'}
+[2.732184] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'\n"}
+[2.732358] (truck) StderrLine: {'line': b'        RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    \n'}
+[2.732504] (truck) StderrLine: {'line': b'                                                                  ^\n'}
+[2.732707] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.732865] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.733018] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:\n'}
+[2.733169] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:25:67: error: use of undeclared identifier 'TopicName'\n"}
+[2.733320] (truck) StderrLine: {'line': b'        RCLCPP_INFO(this->get_logger(), "Subscribing to node: " + TopicName);    \n'}
+[2.733481] (truck) StderrLine: {'line': b'                                                                  ^\n'}
+[2.737791] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]\n"}
+[2.737973] (truck) StderrLine: {'line': b'    void topic_callback(const message::msg::Message::SharedPtr msg) const\n'}
+[2.738085] (truck) StderrLine: {'line': b'                                                               ^\n'}
+[2.738560] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]\n"}
+[2.738824] (truck) StderrLine: {'line': b'    void topic_callback(const message::msg::Message::SharedPtr msg) const\n'}
+[2.739024] (truck) StderrLine: {'line': b'                                                               ^\n'}
+[2.739752] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]\n"}
+[2.740100] (truck) StderrLine: {'line': b'    void topic_callback(const message::msg::Message::SharedPtr msg) const\n'}
+[2.740213] (truck) StderrLine: {'line': b'                                                               ^\n'}
+[2.740337] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]\n"}
+[2.740520] (truck) StderrLine: {'line': b'    void topic_callback(const message::msg::Message::SharedPtr msg) const\n'}
+[2.740698] (truck) StderrLine: {'line': b'                                                               ^\n'}
+[2.741280] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.741505] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file \'"src/utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.741697] (truck) StderrLine: {'line': b'#include "src/utils/Include.hpp"\n'}
+[2.741877] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.742073] (truck) StderrLine: {'line': b'         "src/utils/include.hpp"\n'}
+[2.776931] (-) TimerEvent: {}
+[2.880847] (-) TimerEvent: {}
+[2.981968] (-) TimerEvent: {}
+[3.083418] (-) TimerEvent: {}
+[3.188676] (-) TimerEvent: {}
+[3.292207] (-) TimerEvent: {}
+[3.395308] (-) TimerEvent: {}
+[3.497495] (-) TimerEvent: {}
+[3.546455] (truck) StderrLine: {'line': b'2 warnings and 4 errors generated.\n'}
+[3.553197] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[3.553529] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:\n'}
+[3.553677] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]\n"}
+[3.553870] (truck) StderrLine: {'line': b'    speedType _speed;\n'}
+[3.554062] (truck) StderrLine: {'line': b'              ^\n'}
+[3.554228] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]\n"}
+[3.554349] (truck) StderrLine: {'line': b'    stearingAngleType _stearingAngle;\n'}
+[3.554466] (truck) StderrLine: {'line': b'                      ^\n'}
+[3.554582] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]\n"}
+[3.554701] (truck) StderrLine: {'line': b'    distanceType _distance;\n'}
+[3.554818] (truck) StderrLine: {'line': b'                 ^\n'}
+[3.554933] (truck) StderrLine: {'line': b'6 warnings and 4 errors generated.\n'}
+[3.555053] (truck) StderrLine: {'line': b'2 warnings and 4 errors generated.\n'}
+[3.566465] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1\n'}
+[3.566760] (truck) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.571610] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1\n'}
+[3.571790] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1\n'}
+[3.594169] (truck) StderrLine: {'line': b'2 warnings and 4 errors generated.\n'}
+[3.597551] (-) TimerEvent: {}
+[3.608195] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1\n'}
+[3.608755] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2\n'}
+[3.609080] (truck) StderrLine: {'line': b'gmake: *** [Makefile:160: all] Error 2\n'}
+[3.610483] (truck) CommandEnded: {'returncode': 2}
+[3.698309] (-) TimerEvent: {}
+[3.750119] (truck) JobEnded: {'identifier': 'truck', 'rc': 2}
+[3.752261] (-) EventReactorShutdown: {}

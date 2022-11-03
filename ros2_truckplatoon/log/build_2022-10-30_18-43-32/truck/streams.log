@@ -1,0 +1,27 @@
+[0.051s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.127s] Scanning dependencies of target truck
+[0.147s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.594s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.594s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.595s] #include "utils/Include.hpp"
+[0.595s]          ^~~~~~~~~~~~~~~~~~~
+[0.595s]          "utils/include.hpp"
+[1.212s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.212s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.212s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[1.212s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[1.212s]                                                                ^
+[1.217s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:29:5: error: no matching function for call to 'spin'
+[1.218s]     rclcpp::spin();
+[1.218s]     ^~~~~~~~~~~~
+[1.218s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:45:1: note: candidate function not viable: requires single argument 'node_ptr', but no arguments were provided
+[1.218s] spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[1.218s] ^
+[1.218s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:49:1: note: candidate function not viable: requires single argument 'node_ptr', but no arguments were provided
+[1.218s] spin(rclcpp::Node::SharedPtr node_ptr);
+[1.218s] ^
+[2.036s] 2 warnings and 1 error generated.
+[2.050s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.051s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.051s] gmake: *** [Makefile:160: all] Error 2
+[2.053s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

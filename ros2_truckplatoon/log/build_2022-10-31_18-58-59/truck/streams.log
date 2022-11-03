@@ -1,0 +1,112 @@
+[0.093s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.251s] Scanning dependencies of target truck
+[0.298s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.298s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.299s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.299s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[1.115s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.116s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.116s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.117s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.117s] #include "utils/Include.hpp"
+[1.117s]          ^~~~~~~~~~~~~~~~~~~
+[1.117s]          "utils/include.hpp"
+[1.118s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.118s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.118s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.118s] #include "utils/Include.hpp"
+[1.119s]          ^~~~~~~~~~~~~~~~~~~
+[1.119s]          "utils/include.hpp"
+[1.119s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.119s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.119s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.119s] #include "utils/Include.hpp"
+[1.119s]          ^~~~~~~~~~~~~~~~~~~
+[1.120s]          "utils/include.hpp"
+[1.154s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.154s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.155s] #include "utils/Include.hpp"
+[1.155s]          ^~~~~~~~~~~~~~~~~~~
+[1.155s]          "utils/include.hpp"
+[2.098s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.098s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.099s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.099s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:21: error: use of undeclared identifier 'TopicName'
+[2.100s]   this->publishers_[TopicName]->publish(message);
+[2.100s]                     ^
+[2.100s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.100s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.101s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.101s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:21: error: use of undeclared identifier 'TopicName'
+[2.101s]   this->publishers_[TopicName]->publish(message);
+[2.101s]                     ^
+[2.105s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.105s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.106s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.106s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.106s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:21: error: use of undeclared identifier 'TopicName'
+[2.107s]   this->publishers_[TopicName]->publish(message);
+[2.107s]                     ^
+[2.132s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.132s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.132s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.133s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.133s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.133s]                                                                ^
+[2.134s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.135s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.135s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.135s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.135s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.136s]                                                                ^
+[2.138s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.138s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.138s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.139s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.139s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.139s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.139s]                                                                ^
+[2.141s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.141s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.141s] #include "src/utils/Include.hpp"
+[2.141s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[2.142s]          "src/utils/include.hpp"
+[2.144s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:14: warning: unused parameter 'argc' [-Wunused-parameter]
+[2.144s] int main(int argc, char ** argv)
+[2.144s]              ^
+[2.145s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:28: warning: unused parameter 'argv' [-Wunused-parameter]
+[2.145s] int main(int argc, char ** argv)
+[2.145s]                            ^
+[2.168s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.168s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.168s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Publisher.hpp:49:21: error: use of undeclared identifier 'TopicName'
+[2.168s]   this->publishers_[TopicName]->publish(message);
+[2.168s]                     ^
+[2.204s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.205s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.205s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:37:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.205s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.205s]                                                                ^
+[3.351s] 2 warnings and 1 error generated.
+[3.368s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.368s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[3.369s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[3.369s]     speedType _speed;
+[3.369s]               ^
+[3.369s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[3.370s]     stearingAngleType _stearingAngle;
+[3.370s]                       ^
+[3.370s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[3.370s]     distanceType _distance;
+[3.371s]                  ^
+[3.371s] 8 warnings and 1 error generated.
+[3.371s] 2 warnings and 1 error generated.
+[3.377s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[3.377s] gmake[2]: *** Waiting for unfinished jobs....
+[3.392s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[3.395s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[3.508s] 2 warnings and 1 error generated.
+[3.531s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[3.532s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[3.532s] gmake: *** [Makefile:160: all] Error 2
+[3.538s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

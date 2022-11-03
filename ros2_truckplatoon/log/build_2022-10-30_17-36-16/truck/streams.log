@@ -1,0 +1,19 @@
+[0.055s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.133s] Scanning dependencies of target truck
+[0.152s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.597s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.597s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.597s] #include "utils/Include.hpp"
+[0.597s]          ^~~~~~~~~~~~~~~~~~~
+[0.597s]          "utils/include.hpp"
+[1.208s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:21:18: error: too few arguments to function call, expected at least 2, have 0
+[1.208s]     rclcpp::init();
+[1.208s]     ~~~~~~~~~~~~ ^
+[1.208s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/utilities.hpp:56:1: note: 'init' declared here
+[1.208s] init(int argc, char const * const argv[], const InitOptions & init_options = InitOptions());
+[1.208s] ^
+[1.676s] 1 warning and 1 error generated.
+[1.688s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[1.689s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.689s] gmake: *** [Makefile:160: all] Error 2
+[1.690s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

@@ -1,0 +1,190 @@
+[0.071s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.193s] Scanning dependencies of target truck
+[0.227s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.227s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.228s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.229s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.889s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.890s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.890s] #include "utils/Include.hpp"
+[0.890s]          ^~~~~~~~~~~~~~~~~~~
+[0.890s]          "utils/include.hpp"
+[0.896s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.897s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.897s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.897s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.897s] #include "utils/Include.hpp"
+[0.898s]          ^~~~~~~~~~~~~~~~~~~
+[0.898s]          "utils/include.hpp"
+[0.898s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.898s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.898s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.898s] #include "utils/Include.hpp"
+[0.899s]          ^~~~~~~~~~~~~~~~~~~
+[0.899s]          "utils/include.hpp"
+[0.904s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.904s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.905s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.905s] #include "utils/Include.hpp"
+[0.905s]          ^~~~~~~~~~~~~~~~~~~
+[0.905s]          "utils/include.hpp"
+[2.172s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.173s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.173s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.173s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.173s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:44: error: use of undeclared identifier 'callback'
+[2.174s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.174s]                                            ^
+[2.174s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[2.174s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.174s]               ^~~~~
+[2.175s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.175s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.175s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:44: error: use of undeclared identifier 'callback'
+[2.175s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.175s]                                            ^
+[2.176s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[2.176s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.176s]               ^~~~~
+[2.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.177s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:44: error: use of undeclared identifier 'callback'
+[2.177s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.177s]                                            ^
+[2.177s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[2.177s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.177s]               ^~~~~
+[2.178s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[2.178s]     publishers_[TopicName]->publish(message);
+[2.178s]                 ^
+[2.178s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.178s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[2.179s]                 ^
+[2.179s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.179s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.179s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.179s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.179s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.179s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:44: error: use of undeclared identifier 'callback'
+[2.179s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.180s]                                            ^
+[2.180s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:15: warning: lambda capture 'this' is not used [-Wunused-lambda-capture]
+[2.180s]       500ms, [this, TopicName]() -> void { callback(); });
+[2.180s]               ^~~~~
+[2.180s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[2.180s]     publishers_[TopicName]->publish(message);
+[2.180s]                 ^
+[2.181s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.181s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[2.181s]                 ^
+[2.181s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.181s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.181s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[2.181s]     publishers_[TopicName]->publish(message);
+[2.182s]                 ^
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.182s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[2.182s]                 ^
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:5: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[2.182s]     publishers_[TopicName]->publish(message);
+[2.182s]     ^~~~~~~~~~~
+[2.182s]     Publisher
+[2.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:14:7: note: 'Publisher' declared here
+[2.183s] class Publisher : public rclcpp::Node
+[2.183s]       ^
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[2.183s]     publishers_[TopicName]->publish(message);
+[2.183s]                ^~~~~~~~~~~
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration '[TopicName]' requires an initializer
+[2.183s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:27: error: expected ';' at end of declaration
+[2.183s]     publishers_[TopicName]->publish(message);
+[2.183s]                           ^
+[2.183s]                           ;
+[2.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:5: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[2.184s]     publishers_[TopicName]->publish(message);
+[2.184s]     ^~~~~~~~~~~
+[2.184s]     Publisher
+[2.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:14:7: note: 'Publisher' declared here
+[2.184s] class Publisher : public rclcpp::Node
+[2.184s]       ^
+[2.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[2.184s]     publishers_[TopicName]->publish(message);
+[2.184s]                ^~~~~~~~~~~
+[2.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[2.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration '[TopicName]' requires an initializer
+[2.185s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:27: error: expected ';' at end of declaration
+[2.185s]     publishers_[TopicName]->publish(message);
+[2.185s]                           ^
+[2.185s]                           ;
+[2.185s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.185s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.185s] #include "src/utils/Include.hpp"
+[2.186s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[2.186s]          "src/utils/include.hpp"
+[2.186s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:43:17: error: use of undeclared identifier 'TopicName'
+[2.186s]     publishers_[TopicName]->publish(message);
+[2.186s]                 ^
+[2.186s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.187s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[2.187s]                 ^
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:67:17: error: invalid use of 'this' outside of a non-static member function
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:5: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[2.187s]     publishers_[TopicName]->publish(message);
+[2.187s]     ^~~~~~~~~~~
+[2.188s]     Publisher
+[2.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:14:7: note: 'Publisher' declared here
+[2.188s] class Publisher : public rclcpp::Node
+[2.188s]       ^
+[2.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[2.188s]     publishers_[TopicName]->publish(message);
+[2.188s]                ^~~~~~~~~~~
+[2.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[2.189s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration '[TopicName]' requires an initializer
+[2.189s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:27: error: expected ';' at end of declaration
+[2.189s]     publishers_[TopicName]->publish(message);
+[2.189s]                           ^
+[2.189s]                           ;
+[2.189s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:5: error: unknown type name 'publishers_'; did you mean 'Publisher'?
+[2.189s]     publishers_[TopicName]->publish(message);
+[2.190s]     ^~~~~~~~~~~
+[2.190s]     Publisher
+[2.190s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:14:7: note: 'Publisher' declared here
+[2.190s] class Publisher : public rclcpp::Node
+[2.190s]       ^
+[2.191s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+[2.191s]     publishers_[TopicName]->publish(message);
+[2.191s]                ^~~~~~~~~~~
+[2.191s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration cannot be declared with type 'Publisher'; declared type must be 'auto' or reference to 'auto'
+[2.191s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:16: error: decomposition declaration '[TopicName]' requires an initializer
+[2.191s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:68:27: error: expected ';' at end of declaration
+[2.192s]     publishers_[TopicName]->publish(message);
+[2.192s]                           ^
+[2.192s]                           ;
+[2.504s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.504s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.504s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.504s]     speedType _speed;
+[2.505s]               ^
+[2.505s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.505s]     stearingAngleType _stearingAngle;
+[2.505s]                       ^
+[2.505s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.505s]     distanceType _distance;
+[2.505s]                  ^
+[2.505s] 7 warnings and 9 errors generated.
+[2.519s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[2.519s] gmake[2]: *** Waiting for unfinished jobs....
+[2.520s] 3 warnings and 9 errors generated.
+[2.532s] 3 warnings and 9 errors generated.
+[2.535s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[2.542s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[2.549s] 3 warnings and 9 errors generated.
+[2.560s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.560s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.561s] gmake: *** [Makefile:160: all] Error 2
+[2.562s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

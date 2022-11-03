@@ -1,0 +1,215 @@
+[0.000000] (-) TimerEvent: {}
+[0.000381] (truck) JobQueued: {'identifier': 'truck', 'dependencies': OrderedDict()}
+[0.003401] (truck) JobStarted: {'identifier': 'truck'}
+[0.103182] (-) TimerEvent: {}
+[0.106270] (truck) JobProgress: {'identifier': 'truck', 'progress': 'cmake'}
+[0.107778] (truck) JobProgress: {'identifier': 'truck', 'progress': 'build'}
+[0.111423] (truck) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/truck', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/truck', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/truck'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.182849] (truck) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)\n'}
+[0.203626] (-) TimerEvent: {}
+[0.250761] (truck) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3\n'}
+[0.304229] (-) TimerEvent: {}
+[0.404584] (-) TimerEvent: {}
+[0.509703] (-) TimerEvent: {}
+[0.612508] (-) TimerEvent: {}
+[0.714234] (-) TimerEvent: {}
+[0.714662] (truck) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_lint_auto/cmake)\n'}
+[0.814419] (-) TimerEvent: {}
+[0.852642] (truck) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.856552] (truck) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.857944] (truck) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/brodie/ros2_truckplatoon/src/truck/include>\n'}
+[0.858340] (truck) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.861740] (truck) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.861944] (truck) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.863581] (truck) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.867358] (truck) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.867558] (truck) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.868196] (truck) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.870420] (truck) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.914878] (-) TimerEvent: {}
+[0.921406] (truck) StdoutLine: {'line': b'-- Generating done\n'}
+[0.930944] (truck) StdoutLine: {'line': b'-- Build files have been written to: /Users/brodie/ros2_truckplatoon/build/truck\n'}
+[0.999802] (truck) StdoutLine: {'line': b'Scanning dependencies of target Communication\n'}
+[1.001813] (truck) StdoutLine: {'line': b'Scanning dependencies of target Leader\n'}
+[1.002768] (truck) StdoutLine: {'line': b'Scanning dependencies of target Truck_internal\n'}
+[1.006505] (truck) StdoutLine: {'line': b'Scanning dependencies of target JsonHandler\n'}
+[1.015229] (-) TimerEvent: {}
+[1.036864] (truck) StdoutLine: {'line': b'[ 10%] Linking CXX executable truck\n'}
+[1.046466] (truck) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/Communication.dir/src/src/Communication.cpp.o\n'}
+[1.050219] (truck) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/Truck_internal.dir/src/src/Truck.cpp.o\n'}
+[1.060805] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/JsonHandler.dir/src/src/utils/JsonHandler.cpp.o\n'}
+[1.061396] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/Leader.dir/src/src/Leader.cpp.o\n'}
+[1.117474] (-) TimerEvent: {}
+[1.201715] (truck) StderrLine: {'line': b'Undefined symbols for architecture x86_64:\n'}
+[1.202370] (truck) StderrLine: {'line': b'  "Truck::Truck(unsigned short)", referenced from:\n'}
+[1.202708] (truck) StderrLine: {'line': b'      _main in truck.cpp.o\n'}
+[1.203037] (truck) StderrLine: {'line': b'ld: symbol(s) not found for architecture x86_64\n'}
+[1.204143] (truck) StderrLine: {'line': b'clang: error: linker command failed with exit code 1 (use -v to see invocation)\n'}
+[1.207710] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:103: truck] Error 1\n'}
+[1.208460] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/truck.dir/all] Error 2\n'}
+[1.208773] (truck) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.218122] (-) TimerEvent: {}
+[1.321319] (-) TimerEvent: {}
+[1.422637] (-) TimerEvent: {}
+[1.523186] (-) TimerEvent: {}
+[1.626482] (-) TimerEvent: {}
+[1.737216] (-) TimerEvent: {}
+[1.837978] (-) TimerEvent: {}
+[1.941643] (-) TimerEvent: {}
+[2.011089] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.011370] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.011540] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.011697] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.011847] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.011994] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.014333] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:12:20: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]\n"}
+[2.014813] (truck) StderrLine: {'line': b'    for(int i = 0;i<n;i++)\n'}
+[2.015100] (truck) StderrLine: {'line': b'                  ~^~\n'}
+[2.015407] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:18:17: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]\n"}
+[2.015683] (truck) StderrLine: {'line': b'        if(i +1 < n )\n'}
+[2.015955] (truck) StderrLine: {'line': b'           ~~~~ ^ ~\n'}
+[2.016612] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.016936] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.017525] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.017902] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.018179] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.018428] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.018730] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.018965] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.019222] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[2.019465] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[2.019716] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[2.021462] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:31:27: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.021930] (truck) StderrLine: {'line': b'        for(auto message: *Bus)\n'}
+[2.022222] (truck) StderrLine: {'line': b'                          ^\n'}
+[2.022498] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.022769] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.023033] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.024331] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:127:31: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.024927] (truck) StderrLine: {'line': b'            for(auto message: *_Bus)\n'}
+[2.025100] (truck) StderrLine: {'line': b'                              ^\n'}
+[2.025261] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.025407] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.025639] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.026163] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:147:40: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.026329] (truck) StderrLine: {'line': b'                for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)\n'}
+[2.026476] (truck) StderrLine: {'line': b'                                       ^\n'}
+[2.026619] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.026759] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.026897] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.027032] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:187:36: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.027190] (truck) StderrLine: {'line': b'            for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)\n'}
+[2.027328] (truck) StderrLine: {'line': b'                                   ^\n'}
+[2.027465] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.027602] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.027795] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.028535] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:227:15: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.029909] (truck) StderrLine: {'line': b'    return Bus->back();\n'}
+[2.030199] (truck) StderrLine: {'line': b'              ^\n'}
+[2.030459] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.030719] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.030970] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.031219] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:232:27: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.031471] (truck) StderrLine: {'line': b'        for(auto message: *Bus)\n'}
+[2.031723] (truck) StderrLine: {'line': b'                          ^\n'}
+[2.031974] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd49::25910::28 :warning:  unused variable 'key' [-Wunused-variable]note: \n"}
+[2.032241] (truck) StderrLine: {'line': b'template is declared here\n'}
+[2.032496] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.032747] (truck) StderrLine: {'line': b'    bool key = true;\n'}
+[2.032998] (truck) StderrLine: {'line': b'         ^\n'}
+[2.033249] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.033496] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:241:23: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.033749] (truck) StderrLine: {'line': b'    for(auto message: *Bus)\n'}
+[2.033999] (truck) StderrLine: {'line': b'                      ^\n'}
+[2.034250] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.034537] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.034796] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.035044] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:252:12: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.035299] (truck) StderrLine: {'line': b'        Bus->push_back(*m);\n'}
+[2.035544] (truck) StderrLine: {'line': b'           ^\n'}
+[2.035790] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.036022] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.036173] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.036312] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:250:58: warning: unused parameter 'm' [-Wunused-parameter]\n"}
+[2.036448] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus, Message *m )\n'}
+[2.036582] (truck) StderrLine: {'line': b'                                                         ^\n'}
+[2.036742] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:263:8: error: implicit instantiation of undefined template 'std::vector<Message>'\n"}
+[2.036875] (truck) StderrLine: {'line': b'    Bus->push_back(Message(SenderPosition,ReceiverPosition, Event, SenderID, ReceiverID));\n'}
+[2.037008] (truck) StderrLine: {'line': b'       ^\n'}
+[2.037139] (truck) StderrLine: {'line': b'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here\n'}
+[2.037273] (truck) StderrLine: {'line': b'class _LIBCPP_TEMPLATE_VIS vector;\n'}
+[2.037547] (truck) StderrLine: {'line': b'                           ^\n'}
+[2.037829] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:58: warning: unused parameter 'SenderPosition' [-Wunused-parameter]\n"}
+[2.038082] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)\n'}
+[2.038345] (truck) StderrLine: {'line': b'                                                         ^\n'}
+[2.038603] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:84: warning: unused parameter 'ReceiverPosition' [-Wunused-parameter]\n"}
+[2.038856] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)\n'}
+[2.039112] (truck) StderrLine: {'line': b'                                                                                   ^\n'}
+[2.039363] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:108: warning: unused parameter 'Event' [-Wunused-parameter]\n"}
+[2.039620] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)\n'}
+[2.039912] (truck) StderrLine: {'line': b'                                                                                                           ^\n'}
+[2.040202] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:123: warning: unused parameter 'SenderID' [-Wunused-parameter]\n"}
+[2.040463] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)\n'}
+[2.040719] (truck) StderrLine: {'line': b'                                                                                                                          ^\n'}
+[2.041012] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:141: warning: unused parameter 'ReceiverID' [-Wunused-parameter]\n"}
+[2.041266] (truck) StderrLine: {'line': b'void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)\n'}
+[2.041521] (truck) StderrLine: {'line': b'                                                                                                                                            ^\n'}
+[2.041772] (-) TimerEvent: {}
+[2.051569] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.051964] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:\n'}
+[2.052237] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:\n'}
+[2.052496] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[2.052750] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const EventType& p )\n'}
+[2.053041] (truck) StderrLine: {'line': b'                     ^\n'}
+[2.053292] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[2.053598] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const TruckState& p )\n'}
+[2.053796] (truck) StderrLine: {'line': b'                     ^\n'}
+[2.057597] (truck) StderrLine: {'line': b'3 warnings generated.\n'}
+[2.058136] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.058291] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.058431] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:\n'}
+[2.058772] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[2.058949] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const EventType& p )\n'}
+[2.059089] (truck) StderrLine: {'line': b'                     ^\n'}
+[2.059225] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]\n"}
+[2.059359] (truck) StderrLine: {'line': b'static std::ostream& operator << ( std::ostream& outs, const TruckState& p )\n'}
+[2.059491] (truck) StderrLine: {'line': b'                     ^\n'}
+[2.064374] (truck) StderrLine: {'line': b'7 warnings and 9 errors generated.\n'}
+[2.065722] (truck) StderrLine: {'line': b'3 warnings generated.\n'}
+[2.073862] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Truck_internal.dir/build.make:82: CMakeFiles/Truck_internal.dir/src/src/Truck.cpp.o] Error 1\n'}
+[2.074476] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/Truck_internal.dir/all] Error 2\n'}
+[2.082978] (truck) StdoutLine: {'line': b'[ 60%] Linking CXX executable Communication\n'}
+[2.089428] (truck) StdoutLine: {'line': b'[ 70%] Linking CXX executable Leader\n'}
+[2.146884] (-) TimerEvent: {}
+[2.159352] (truck) StderrLine: {'line': b'Undefined symbols for architecture x86_64:\n'}
+[2.159712] (truck) StderrLine: {'line': b'  "_main", referenced from:\n'}
+[2.160028] (truck) StderrLine: {'line': b'     implicit entry/start for main executable\n'}
+[2.160259] (truck) StderrLine: {'line': b'ld: symbol(s) not found for architecture x86_64\n'}
+[2.162748] (truck) StderrLine: {'line': b'clang: error: linker command failed with exit code 1 (use -v to see invocation)\n'}
+[2.165532] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Communication.dir/build.make:103: Communication] Error 1\n'}
+[2.167699] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:132: CMakeFiles/Communication.dir/all] Error 2\n'}
+[2.169386] (truck) StderrLine: {'line': b'Undefined symbols for architecture x86_64:\n'}
+[2.170032] (truck) StderrLine: {'line': b'  "Truck::Truck()", referenced from:\n'}
+[2.170340] (truck) StderrLine: {'line': b'      LeaderTruck::LeaderTruck() in Leader.cpp.o\n'}
+[2.170680] (truck) StderrLine: {'line': b'  "_main", referenced from:\n'}
+[2.171026] (truck) StderrLine: {'line': b'     implicit entry/start for main executable\n'}
+[2.171279] (truck) StderrLine: {'line': b'ld: symbol(s) not found for architecture x86_64\n'}
+[2.172500] (truck) StderrLine: {'line': b'clang: error: linker command failed with exit code 1 (use -v to see invocation)\n'}
+[2.173215] (truck) StderrLine: {'line': b'3 warnings generated.\n'}
+[2.175599] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Leader.dir/build.make:103: Leader] Error 1\n'}
+[2.176342] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/Leader.dir/all] Error 2\n'}
+[2.202284] (truck) StdoutLine: {'line': b'[ 80%] Linking CXX executable JsonHandler\n'}
+[2.250067] (-) TimerEvent: {}
+[2.277702] (truck) StderrLine: {'line': b'Undefined symbols for architecture x86_64:\n'}
+[2.278011] (truck) StderrLine: {'line': b'  "_main", referenced from:\n'}
+[2.278158] (truck) StderrLine: {'line': b'     implicit entry/start for main executable\n'}
+[2.278296] (truck) StderrLine: {'line': b'ld: symbol(s) not found for architecture x86_64\n'}
+[2.279233] (truck) StderrLine: {'line': b'clang: error: linker command failed with exit code 1 (use -v to see invocation)\n'}
+[2.281321] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/JsonHandler.dir/build.make:103: JsonHandler] Error 1\n'}
+[2.281761] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/JsonHandler.dir/all] Error 2\n'}
+[2.282375] (truck) StderrLine: {'line': b'gmake: *** [Makefile:160: all] Error 2\n'}
+[2.283913] (truck) CommandEnded: {'returncode': 2}
+[2.354797] (-) TimerEvent: {}
+[2.462596] (-) TimerEvent: {}
+[2.521008] (truck) JobEnded: {'identifier': 'truck', 'rc': 2}
+[2.523920] (-) EventReactorShutdown: {}

@@ -1,0 +1,21 @@
+[0.141s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.378s] Scanning dependencies of target truck
+[0.449s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[1.664s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.664s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.665s] #include "utils/Include.hpp"
+[1.665s]          ^~~~~~~~~~~~~~~~~~~
+[1.665s]          "utils/include.hpp"
+[3.056s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:32:21: error: no member named 'PublishTopic' in 'std::shared_ptr<Publisher>'; did you mean to use '->' instead of '.'?
+[3.056s]     this->_publisher.PublishTopic("Ciao")
+[3.056s]                     ^
+[3.057s]                     ->
+[3.057s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:32:42: error: expected ';' after expression
+[3.057s]     this->_publisher.PublishTopic("Ciao")
+[3.057s]                                          ^
+[3.057s]                                          ;
+[3.987s] 1 warning and 2 errors generated.
+[4.009s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[4.010s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[4.010s] gmake: *** [Makefile:160: all] Error 2
+[4.012s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

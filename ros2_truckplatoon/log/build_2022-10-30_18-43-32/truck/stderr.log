@@ -1,0 +1,23 @@
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:34:64: warning: unused parameter 'msg' [-Wunused-parameter]
+    void topic_callback(const message::msg::Message::SharedPtr msg) const
+                                                               ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:29:5: error: no matching function for call to 'spin'
+    rclcpp::spin();
+    ^~~~~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:45:1: note: candidate function not viable: requires single argument 'node_ptr', but no arguments were provided
+spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:49:1: note: candidate function not viable: requires single argument 'node_ptr', but no arguments were provided
+spin(rclcpp::Node::SharedPtr node_ptr);
+^
+2 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

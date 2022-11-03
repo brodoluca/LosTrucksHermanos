@@ -1,0 +1,66 @@
+[0.109s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.210s] Scanning dependencies of target truck
+[0.259s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.265s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.265s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.265s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[1.491s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.492s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.492s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.492s] #include "utils/Include.hpp"
+[1.493s]          ^~~~~~~~~~~~~~~~~~~
+[1.493s]          "utils/include.hpp"
+[1.493s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.494s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.494s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.494s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:10: fatal error: 'rclcpp/rclcpp.hpp' file not found
+[1.494s] #include "rclcpp/rclcpp.hpp"
+[1.494s]          ^~~~~~~~~~~~~~~~~~~
+[1.495s] 1 warning and 1 error generated.
+[1.498s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.498s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.498s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.499s] #include "utils/Include.hpp"
+[1.499s]          ^~~~~~~~~~~~~~~~~~~
+[1.499s]          "utils/include.hpp"
+[1.499s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.500s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.500s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.501s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:10: fatal error: 'rclcpp/rclcpp.hpp' file not found
+[1.501s] #include "rclcpp/rclcpp.hpp"
+[1.501s]          ^~~~~~~~~~~~~~~~~~~
+[1.502s] 1 warning and 1 error generated.
+[1.504s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[1.504s] gmake[2]: *** Waiting for unfinished jobs....
+[1.505s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.505s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.506s] #include "utils/Include.hpp"
+[1.506s]          ^~~~~~~~~~~~~~~~~~~
+[1.507s]          "utils/include.hpp"
+[1.507s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.507s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.508s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:10: fatal error: 'rclcpp/rclcpp.hpp' file not found
+[1.508s] #include "rclcpp/rclcpp.hpp"
+[1.508s]          ^~~~~~~~~~~~~~~~~~~
+[1.512s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.512s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.513s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.513s] #include "utils/Include.hpp"
+[1.513s]          ^~~~~~~~~~~~~~~~~~~
+[1.513s]          "utils/include.hpp"
+[1.513s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[1.514s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.514s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.514s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.514s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[1.514s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:10: fatal error: 'rclcpp/rclcpp.hpp' file not found
+[1.514s] #include "rclcpp/rclcpp.hpp"
+[1.515s]          ^~~~~~~~~~~~~~~~~~~
+[1.516s] 1 warning and 1 error generated.
+[1.517s] 1 warning and 1 error generated.
+[1.525s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[1.526s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[1.526s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.526s] gmake: *** [Makefile:160: all] Error 2
+[1.529s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

@@ -1,0 +1,22 @@
+[0.118s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake /Users/brodie/ros2_truckplatoon/src/message -DCMAKE_INSTALL_PREFIX=/Users/brodie/ros2_truckplatoon/install/message
+[0.170s] -- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+[0.237s] -- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found suitable version "3.9.4", minimum required is "3") 
+[0.238s] -- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+[0.713s] -- Found rosidl_default_generators: 1.0.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake)
+[0.717s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.723s] -- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+[0.826s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+[0.852s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+[1.066s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.171s] -- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found version "3.9.4") 
+[1.289s] CMake Error at /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+[1.290s]   rosidl_generate_interfaces() the passed dependency 'geometry_msgs' has not
+[1.290s]   been found before using find_package()
+[1.290s] Call Stack (most recent call first):
+[1.290s]   CMakeLists.txt:25 (rosidl_generate_interfaces)
+[1.291s] 
+[1.291s] 
+[1.291s] -- Configuring incomplete, errors occurred!
+[1.291s] See also "/Users/brodie/ros2_truckplatoon/build/message/CMakeFiles/CMakeOutput.log".
+[1.291s] See also "/Users/brodie/ros2_truckplatoon/build/message/CMakeFiles/CMakeError.log".
+[1.298s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake /Users/brodie/ros2_truckplatoon/src/message -DCMAKE_INSTALL_PREFIX=/Users/brodie/ros2_truckplatoon/install/message

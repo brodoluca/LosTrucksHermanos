@@ -1,0 +1,77 @@
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "src/utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "src/utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+                     ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+                     ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+                     ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+                     ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+                     ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+                     ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+    speedType _speed;
+              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+    stearingAngleType _stearingAngle;
+                      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+    distanceType _distance;
+                 ^
+3 warnings generated.
+3 warnings generated.
+7 warnings generated.
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+                     ^
+2 warnings generated.

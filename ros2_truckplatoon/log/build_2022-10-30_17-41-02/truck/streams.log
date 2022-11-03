@@ -1,0 +1,111 @@
+[0.050s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.141s] Scanning dependencies of target truck
+[0.162s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.163s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.164s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.164s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.636s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.636s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.637s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.637s] #include "utils/Include.hpp"
+[0.637s]          ^~~~~~~~~~~~~~~~~~~
+[0.637s]          "utils/include.hpp"
+[0.639s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.639s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.640s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.640s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.640s] #include "utils/Include.hpp"
+[0.640s]          ^~~~~~~~~~~~~~~~~~~
+[0.640s]          "utils/include.hpp"
+[0.640s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.640s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.641s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.641s] #include "utils/Include.hpp"
+[0.641s]          ^~~~~~~~~~~~~~~~~~~
+[0.641s]          "utils/include.hpp"
+[0.644s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.644s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.644s] #include "utils/Include.hpp"
+[0.644s]          ^~~~~~~~~~~~~~~~~~~
+[0.644s]          "utils/include.hpp"
+[1.263s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.263s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.263s] #include "src/utils/Include.hpp"
+[1.263s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.263s]          "src/utils/include.hpp"
+[1.811s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.811s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.811s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.811s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[1.812s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[1.812s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[1.812s]                      ^
+[1.812s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[1.812s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[1.812s]                      ^
+[1.813s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.813s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[1.813s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[1.813s]     speedType _speed;
+[1.813s]               ^
+[1.813s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.814s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2::
+[1.814s]  warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[1.814s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4    stearingAngleType _stearingAngle;:
+[1.814s] 
+[1.814s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp                      ^:
+[1.814s] 53:22: /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hppwarning: :unused function 'operator<<' [-Wunused-function]11
+[1.815s] :18: warning: private field '_distance' is not used [-Wunused-private-field]
+[1.815s]     distanceType _distance;
+[1.815s]                  ^
+[1.815s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[1.815s]                      ^
+[1.815s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[1.816s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[1.816s]                      ^
+[1.816s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.816s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.816s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[1.816s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[1.817s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[1.817s]                      ^
+[1.817s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[1.817s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[1.817s]                      ^
+[1.840s] 3 warnings generated.
+[1.840s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.840s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[1.840s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[1.840s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[1.841s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[1.841s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[1.841s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[1.841s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[1.841s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[1.842s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[1.842s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:20:
+[1.842s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: error: no matching constructor for initialization of 'Publisher'
+[1.842s]         ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+[1.842s]                                     ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.842s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__shared_ptr_emplace<const char (&)[5]>' requested here
+[1.843s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[1.843s]                                                       ^
+[1.843s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h3 warnings generated.
+[1.843s] :1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, const char (&)[5], void>' requested here
+[1.843s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[1.843s]                   ^
+[1.843s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:25:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, const char (&)[5], void>' requested here
+[1.844s]     this ->_publisher = std::make_shared<Publisher>("Ciao");
+[1.844s]                              ^
+[1.844s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:13:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'const char[5]' to 'const Publisher' for 1st argument
+[1.844s] class Publisher : public rclcpp::Node
+[1.844s]       ^
+[1.845s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:16:3: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+[1.845s]   Publisher()
+[1.845s]   ^
+[1.845s] 7 warnings generated.
+[1.863s] 1 warning and 1 error generated.
+[1.876s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[1.877s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.877s] gmake: *** [Makefile:160: all] Error 2
+[1.879s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

@@ -1,0 +1,197 @@
+[1.728s] DEBUG:colcon:Command line arguments: ['/Library/Frameworks/Python.framework/Versions/3.9/bin/colcon', 'build']
+[1.729s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f96e47981c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f96e47046a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f96e47046a0>>)
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.900s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.901s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/Users/brodie/ros2_truckplatoon'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extensions ['ignore', 'ignore_ament_install']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extension 'ignore'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extension 'ignore_ament_install'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extensions ['colcon_pkg']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extension 'colcon_pkg'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extensions ['colcon_meta']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extension 'colcon_meta'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extensions ['ros']
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/message) by extension 'ros'
+[1.950s] DEBUG:colcon.colcon_core.package_identification:Package 'src/message' with type 'ros.ament_cmake' and name 'message'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extensions ['ignore', 'ignore_ament_install']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extension 'ignore'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extension 'ignore_ament_install'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extensions ['colcon_pkg']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extension 'colcon_pkg'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extensions ['colcon_meta']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extension 'colcon_meta'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extensions ['ros']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/truck) by extension 'ros'
+[1.953s] DEBUG:colcon.colcon_core.package_identification:Package 'src/truck' with type 'ros.ament_cmake' and name 'truck'
+[1.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_target' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_clean_cache' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_clean_first' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'cmake_force_configure' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'ament_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'catkin_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'message' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.074s] DEBUG:colcon.colcon_core.verb:Building package 'message' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/brodie/ros2_truckplatoon/build/message', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/brodie/ros2_truckplatoon/install/message', 'merge_install': False, 'path': '/Users/brodie/ros2_truckplatoon/src/message', 'symlink_install': False, 'test_result_base': None}
+[2.098s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_args' from command line to 'None'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_target' from command line to 'None'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_clean_cache' from command line to 'False'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_clean_first' from command line to 'False'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'cmake_force_configure' from command line to 'False'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'ament_cmake_args' from command line to 'None'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'catkin_cmake_args' from command line to 'None'
+[2.099s] Level 5:colcon.colcon_core.verb:set package 'truck' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.099s] DEBUG:colcon.colcon_core.verb:Building package 'truck' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/brodie/ros2_truckplatoon/build/truck', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/brodie/ros2_truckplatoon/install/truck', 'merge_install': False, 'path': '/Users/brodie/ros2_truckplatoon/src/truck', 'symlink_install': False, 'test_result_base': None}
+[2.107s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.149s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.150s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/Users/brodie/ros2_truckplatoon/src/message' with build type 'ament_cmake'
+[2.150s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/Users/brodie/ros2_truckplatoon/src/message'
+[2.202s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.286s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/Users/brodie/ros2_truckplatoon/src/truck' with build type 'ament_cmake'
+[2.287s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/Users/brodie/ros2_truckplatoon/src/truck'
+[2.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/message -- -j8 -l8
+[2.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[3.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/message -- -j8 -l8
+[3.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/message
+[4.928s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(message)
+[4.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --install /Users/brodie/ros2_truckplatoon/build/message
+[4.972s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message' for CMake module files
+[4.975s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message' for CMake config files
+[4.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'cmake_prefix_path')
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.ps1'
+[5.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.dsv'
+[5.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.sh'
+[5.007s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib'
+[5.008s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'dyld_library_path')
+[5.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.ps1'
+[5.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.dsv'
+[5.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.sh'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/bin'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib/pkgconfig/message.pc'
+[5.038s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages'
+[5.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'pythonpath')
+[5.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.ps1'
+[5.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.dsv'
+[5.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.sh'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/bin'
+[5.112s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.ps1'
+[5.116s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv'
+[5.122s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.sh'
+[5.124s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.bash'
+[5.126s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.zsh'
+[5.130s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Users/brodie/ros2_truckplatoon/install/message/share/colcon-core/packages/message)
+[5.732s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(message)
+[5.769s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message' for CMake module files
+[5.774s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message' for CMake config files
+[5.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'cmake_prefix_path')
+[5.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.ps1'
+[5.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.dsv'
+[5.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/cmake_prefix_path.sh'
+[5.828s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib'
+[5.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'dyld_library_path')
+[5.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.ps1'
+[5.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.dsv'
+[5.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/dyld_library_path.sh'
+[5.872s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/bin'
+[5.873s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib/pkgconfig/message.pc'
+[5.874s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages'
+[5.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('message', 'pythonpath')
+[5.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.ps1'
+[5.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.dsv'
+[5.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/message/share/message/hook/pythonpath.sh'
+[5.907s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/message/bin'
+[5.940s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.ps1'
+[5.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv'
+[5.944s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.sh'
+[5.946s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.bash'
+[5.947s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/message/share/message/package.zsh'
+[5.948s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Users/brodie/ros2_truckplatoon/install/message/share/colcon-core/packages/message)
+[6.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[7.210s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(truck)
+[7.231s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck' for CMake module files
+[7.232s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck' for CMake config files
+[7.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('truck', 'cmake_prefix_path')
+[7.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/hook/cmake_prefix_path.ps1'
+[7.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/hook/cmake_prefix_path.dsv'
+[7.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/hook/cmake_prefix_path.sh'
+[7.254s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck/lib'
+[7.255s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck/bin'
+[7.255s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck/lib/pkgconfig/truck.pc'
+[7.256s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck/lib/python3.9/site-packages'
+[7.256s] Level 1:colcon.colcon_core.environment:checking '/Users/brodie/ros2_truckplatoon/install/truck/bin'
+[7.275s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.ps1'
+[7.276s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.dsv'
+[7.277s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.sh'
+[7.278s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.bash'
+[7.280s] INFO:colcon.colcon_core.shell:Creating package script '/Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.zsh'
+[7.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Users/brodie/ros2_truckplatoon/install/truck/share/colcon-core/packages/truck)
+[7.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.283s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.283s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.283s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[7.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Not used on non-Linux systems
+[7.308s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.308s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'terminal_notifier'
+[7.394s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.432s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/brodie/ros2_truckplatoon/install/local_setup.ps1'
+[7.437s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Users/brodie/ros2_truckplatoon/install/_local_setup_util_ps1.py'
+[7.443s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/brodie/ros2_truckplatoon/install/setup.ps1'
+[7.472s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/brodie/ros2_truckplatoon/install/local_setup.sh'
+[7.475s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Users/brodie/ros2_truckplatoon/install/_local_setup_util_sh.py'
+[7.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/brodie/ros2_truckplatoon/install/setup.sh'
+[7.502s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/brodie/ros2_truckplatoon/install/local_setup.bash'
+[7.504s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/brodie/ros2_truckplatoon/install/setup.bash'
+[7.523s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/brodie/ros2_truckplatoon/install/local_setup.zsh'
+[7.524s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/brodie/ros2_truckplatoon/install/setup.zsh'

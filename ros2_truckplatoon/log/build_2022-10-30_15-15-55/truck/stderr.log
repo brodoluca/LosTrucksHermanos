@@ -1,0 +1,9 @@
+CMake Error at /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'msg/Message.msg' doesn't
+  exist relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/Users/brodie/ros2_truckplatoon/src/truck'
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (rosidl_generate_interfaces)
+
+
+gmake: *** [Makefile:405: cmake_check_build_system] Error 1

@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (-) JobUnselected: {'identifier': 'Messages'}
+[0.000348] (-) JobUnselected: {'identifier': 'truck'}
+[0.000866] (-) EventReactorShutdown: {}

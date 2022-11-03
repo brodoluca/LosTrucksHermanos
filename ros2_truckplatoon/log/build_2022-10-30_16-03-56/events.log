@@ -1,0 +1,477 @@
+[0.000000] (-) TimerEvent: {}
+[0.000322] (message) JobQueued: {'identifier': 'message', 'dependencies': OrderedDict()}
+[0.000514] (truck) JobQueued: {'identifier': 'truck', 'dependencies': OrderedDict()}
+[0.006220] (message) JobStarted: {'identifier': 'message'}
+[0.104653] (-) TimerEvent: {}
+[0.130851] (truck) JobStarted: {'identifier': 'truck'}
+[0.176102] (message) JobProgress: {'identifier': 'message', 'progress': 'cmake'}
+[0.177363] (message) JobProgress: {'identifier': 'message', 'progress': 'build'}
+[0.179488] (message) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/message', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/message', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/message'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.184049] (truck) JobProgress: {'identifier': 'truck', 'progress': 'cmake'}
+[0.186571] (truck) JobProgress: {'identifier': 'truck', 'progress': 'build'}
+[0.187118] (truck) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/Users/brodie/ros2_truckplatoon/build/truck', '--', '-j8', '-l8'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/truck', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/truck'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.207596] (-) TimerEvent: {}
+[0.270785] (message) StdoutLine: {'line': b'[  3%] Built target message__cpp\n'}
+[0.272276] (message) StdoutLine: {'line': b'[ 12%] Built target message__rosidl_generator_c\n'}
+[0.304263] (truck) StdoutLine: {'line': b'Scanning dependencies of target truck\n'}
+[0.308339] (-) TimerEvent: {}
+[0.329327] (message) StdoutLine: {'line': b'[ 22%] Built target message__rosidl_typesupport_cpp\n'}
+[0.333298] (message) StdoutLine: {'line': b'[ 32%] Built target message__rosidl_typesupport_c\n'}
+[0.336845] (message) StdoutLine: {'line': b'[ 41%] Built target message__rosidl_typesupport_introspection_cpp\n'}
+[0.337523] (message) StdoutLine: {'line': b'[ 51%] Built target message__rosidl_typesupport_fastrtps_cpp\n'}
+[0.341831] (truck) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o\n'}
+[0.342110] (message) StdoutLine: {'line': b'[ 61%] Built target message__rosidl_typesupport_introspection_c\n'}
+[0.345423] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o\n'}
+[0.345803] (truck) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o\n'}
+[0.346296] (truck) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o\n'}
+[0.406485] (message) StdoutLine: {'line': b'[ 70%] Built target message__rosidl_typesupport_fastrtps_c\n'}
+[0.408779] (-) TimerEvent: {}
+[0.472095] (message) StdoutLine: {'line': b'[ 70%] Built target message\n'}
+[0.513660] (-) TimerEvent: {}
+[0.526812] (message) StdoutLine: {'line': b'[ 74%] Built target message__py\n'}
+[0.583917] (message) StdoutLine: {'line': b'[ 80%] Built target message__python\n'}
+[0.618075] (-) TimerEvent: {}
+[0.656013] (message) StdoutLine: {'line': b'[ 87%] Built target message__rosidl_typesupport_introspection_c__pyext\n'}
+[0.659702] (message) StdoutLine: {'line': b'[ 93%] Built target message__rosidl_typesupport_c__pyext\n'}
+[0.664493] (message) StdoutLine: {'line': b'[100%] Built target message__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.683766] (message) CommandEnded: {'returncode': 0}
+[0.719964] (-) TimerEvent: {}
+[0.824140] (-) TimerEvent: {}
+[0.924732] (-) TimerEvent: {}
+[1.027422] (-) TimerEvent: {}
+[1.036911] (message) JobProgress: {'identifier': 'message', 'progress': 'install'}
+[1.060457] (message) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/Users/brodie/ros2_truckplatoon/build/message'], 'cwd': '/Users/brodie/ros2_truckplatoon/build/message', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('SHELL', '/bin/zsh'), ('TERM', 'xterm-256color'), ('TMPDIR', '/var/folders/b6/t14lv28n5xqdhgq7zcrqwfkm0000gn/T/'), ('TERM_PROGRAM_VERSION', '445'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('COLCON_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install:/Users/brodie/my_workspace/install:/Users/brodie/ros2_foxy/ros2-osx'), ('TERM_SESSION_ID', '68464B11-5BA9-4066-9F09-461F903B1524'), ('AMENT_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/my_package:/Users/brodie/ros2_foxy/ros2-osx'), ('USER', 'brodie'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.4a9jOPzOQR/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x4'), ('PATH', '/Users/brodie/ros2_foxy/ros2-osx/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/CrossPack-AVR/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/brodie/ros2_truckplatoon/build/message'), ('COLCON', '1'), ('LANG', 'it_IT.UTF-8'), ('XPC_FLAGS', '0x0'), ('XPC_SERVICE_NAME', '0'), ('OPENSSL_ROOT_DIR', '/usr/local/Cellar/openssl@3'), ('SHLVL', '2'), ('HOME', '/Users/brodie'), ('ROS_DISTRO', 'foxy'), ('PYTHONPATH', '/Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/tutorial_interfaces/lib/python3.9/site-packages:/Users/brodie/my_workspace/install/my_package/lib/python3.9/site-packages:/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages'), ('LOGNAME', 'brodie'), ('PKG_CONFIG_PATH', '/Users/brodie/ros2_foxy/ros2-osx/lib/pkgconfig'), ('CMAKE_PREFIX_PATH', '/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package'), ('DISPLAY', '/private/tmp/com.apple.launchd.fnO1XjjJMH/org.xquartz:0'), ('ROS_LOCALHOST_ONLY', '0'), ('_', '/usr/bin/env')]), 'shell': False}
+[1.073258] (message) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.073686] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/rosidl_interfaces/message\n'}
+[1.074001] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.074244] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.074787] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.075000] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.h\n'}
+[1.075435] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.075761] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.h\n'}
+[1.075959] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.h\n'}
+[1.078031] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.h\n'}
+[1.078476] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__functions.c\n'}
+[1.079597] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.sh\n'}
+[1.079904] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/library_path.dsv\n'}
+[1.080304] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_generator_c.dylib\n'}
+[1.098471] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.098968] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.099158] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.099308] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_c.h\n'}
+[1.099414] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.099511] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_c.dylib\n'}
+[1.131651] (-) TimerEvent: {}
+[1.132749] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[1.133176] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[1.133368] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[1.133516] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[1.133621] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[1.133795] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[1.134237] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[1.134430] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[1.134668] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[1.134874] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[1.135052] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[1.135215] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[1.135394] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[1.135556] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[1.135724] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[1.135887] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[1.136071] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[1.136185] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[1.136284] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[1.139807] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[1.140084] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file \'"utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[1.140279] (truck) StderrLine: {'line': b'#include "utils/Include.hpp"\n'}
+[1.140460] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~\n'}
+[1.140579] (truck) StderrLine: {'line': b'         "utils/include.hpp"\n'}
+[1.150748] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.151447] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.151680] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.151911] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.152097] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/dds_fastrtps\n'}
+[1.152280] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.152464] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_fastrtps_cpp.dylib\n'}
+[1.193524] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.194207] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.194651] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.194904] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.c\n'}
+[1.195115] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_c.h\n'}
+[1.195308] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.195532] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_c.dylib\n'}
+[1.233764] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_c.dylib\n'}
+[1.234061] (-) TimerEvent: {}
+[1.252711] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.253619] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.254095] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.254350] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__traits.hpp\n'}
+[1.254527] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__struct.hpp\n'}
+[1.254683] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__builder.hpp\n'}
+[1.254834] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/message.hpp\n'}
+[1.254997] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message\n'}
+[1.255155] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg\n'}
+[1.255322] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail\n'}
+[1.255484] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__type_support.cpp\n'}
+[1.255644] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/include/message/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.255793] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_introspection_cpp.dylib\n'}
+[1.275019] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__rosidl_typesupport_cpp.dylib\n'}
+[1.296165] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.sh\n'}
+[1.296568] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/pythonpath.dsv\n'}
+[1.296732] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/__init__.py\n'}
+[1.337721] (-) TimerEvent: {}
+[1.404207] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg\n'}
+[1.404579] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/__init__.py\n'}
+[1.404762] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message.py\n'}
+[1.405394] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/msg/_message_s.c\n'}
+[1.405801] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so\n'}
+[1.436341] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[1.438038] (-) TimerEvent: {}
+[1.460056] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[1.481144] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[1.500626] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /usr/local/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_fastrtps_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /usr/local/lib"\n'}
+[1.501202] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so\n'}
+[1.519940] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[1.536271] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[1.538229] (-) TimerEvent: {}
+[1.552928] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_introspection_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[1.553407] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so\n'}
+[1.567535] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message/rosidl_generator_py/message"\n'}
+[1.583582] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_truckplatoon/build/message found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_truckplatoon/build/message"\n'}
+[1.600438] (message) StderrLine: {'line': b'error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool: no LC_RPATH load command with path: /Users/brodie/ros2_foxy/ros2-osx/lib found in: /Users/brodie/ros2_truckplatoon/install/message/lib/python3.9/site-packages/message/message_s__rosidl_typesupport_c.cpython-39-darwin.so (for architecture x86_64), required for specified option "-delete_rpath /Users/brodie/ros2_foxy/ros2-osx/lib"\n'}
+[1.600961] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/lib/libmessage__python.dylib\n'}
+[1.638456] (-) TimerEvent: {}
+[1.660672] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.idl\n'}
+[1.661238] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/msg/Message.msg\n'}
+[1.666278] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/package_run_dependencies/message\n'}
+[1.666683] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/parent_prefix_path/message\n'}
+[1.670615] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.sh\n'}
+[1.670862] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/ament_prefix_path.dsv\n'}
+[1.671037] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.sh\n'}
+[1.671257] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/environment/path.dsv\n'}
+[1.671670] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.bash\n'}
+[1.671881] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.sh\n'}
+[1.672116] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.zsh\n'}
+[1.672302] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/local_setup.dsv\n'}
+[1.672468] (message) StdoutLine: {'line': b'-- Installing: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.dsv\n'}
+[1.672719] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/ament_index/resource_index/packages/message\n'}
+[1.672876] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport.cmake\n'}
+[1.673135] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.673454] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.673692] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.673893] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport.cmake\n'}
+[1.675242] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.675447] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_generator_cppExport.cmake\n'}
+[1.675652] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.675821] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.675984] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport.cmake\n'}
+[1.676162] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/message__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.676326] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake-extras.cmake\n'}
+[1.679390] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.679606] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.679785] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.680018] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.680237] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.680439] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.680552] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig.cmake\n'}
+[1.680642] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/cmake/messageConfig-version.cmake\n'}
+[1.680730] (message) StdoutLine: {'line': b'-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/message/share/message/package.xml\n'}
+[1.703661] (message) CommandEnded: {'returncode': 0}
+[1.744966] (-) TimerEvent: {}
+[1.847675] (-) TimerEvent: {}
+[1.952261] (-) TimerEvent: {}
+[2.055699] (-) TimerEvent: {}
+[2.131716] (message) JobEnded: {'identifier': 'message', 'rc': 0}
+[2.133546] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.133801] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.133989] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.134184] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.134382] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:42:17: error: use of undeclared identifier 'TopicName'\n"}
+[2.134569] (truck) StderrLine: {'line': b'    publishers_[TopicName]->publish(message);\n'}
+[2.134779] (truck) StderrLine: {'line': b'                ^\n'}
+[2.134952] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.135126] (truck) StderrLine: {'line': b'/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file \'"src/utils/include.hpp"\'; specified path differs in case from file name on disk [-Wnonportable-include-path]\n'}
+[2.135310] (truck) StderrLine: {'line': b'#include "src/utils/Include.hpp"\n'}
+[2.135481] (truck) StderrLine: {'line': b'         ^~~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.135671] (truck) StderrLine: {'line': b'         "src/utils/include.hpp"\n'}
+[2.135848] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.136033] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.136209] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.136394] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:42:17: error: use of undeclared identifier 'TopicName'\n"}
+[2.136592] (truck) StderrLine: {'line': b'    publishers_[TopicName]->publish(message);\n'}
+[2.136758] (truck) StderrLine: {'line': b'                ^\n'}
+[2.136906] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.137050] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.137192] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:42:17: error: use of undeclared identifier 'TopicName'\n"}
+[2.137334] (truck) StderrLine: {'line': b'    publishers_[TopicName]->publish(message);\n'}
+[2.137471] (truck) StderrLine: {'line': b'                ^\n'}
+[2.137613] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.137810] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.138018] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.138203] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:42:17: error: use of undeclared identifier 'TopicName'\n"}
+[2.138356] (truck) StderrLine: {'line': b'    publishers_[TopicName]->publish(message);\n'}
+[2.138533] (truck) StderrLine: {'line': b'                ^\n'}
+[2.160017] (-) TimerEvent: {}
+[2.260915] (-) TimerEvent: {}
+[2.366231] (-) TimerEvent: {}
+[2.469255] (-) TimerEvent: {}
+[2.569599] (-) TimerEvent: {}
+[2.581885] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.582284] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:\n'}
+[2.582383] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.582470] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.582554] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:\n'}
+[2.582949] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:\n'}
+[2.583321] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:\n'}
+[2.583484] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:\n'}
+[2.583641] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:\n'}
+[2.583795] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:\n'}
+[2.583951] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:\n'}
+[2.584113] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:\n'}
+[2.584272] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:\n'}
+[2.584452] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:\n'}
+[2.584607] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>'\n"}
+[2.584770] (truck) StderrLine: {'line': b'    callback_();\n'}
+[2.584925] (truck) StderrLine: {'line': b'    ^~~~~~~~~\n'}
+[2.585078] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>' requested here\n"}
+[2.585237] (truck) StderrLine: {'line': b'    execute_callback_delegate<>();\n'}
+[2.585392] (truck) StderrLine: {'line': b'    ^\n'}
+[2.585546] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback' requested here\n"}
+[2.585702] (truck) StderrLine: {'line': b'  WallTimer(\n'}
+[2.585853] (truck) StderrLine: {'line': b'  ^\n'}
+[2.586003] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::WallTimer' requested here\n"}
+[2.586159] (truck) StderrLine: {'line': b'        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);\n'}
+[2.586310] (truck) StderrLine: {'line': b'                                    ^\n'}
+[2.586480] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.586648] (truck) StderrLine: {'line': b'    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);\n'}
+[2.587385] (truck) StderrLine: {'line': b'                                                      ^\n'}
+[2.587695] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.587849] (truck) StderrLine: {'line': b'    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);\n'}
+[2.587939] (truck) StderrLine: {'line': b'                  ^\n'}
+[2.588024] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.588119] (truck) StderrLine: {'line': b'  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)\n'}
+[2.588202] (truck) StderrLine: {'line': b'  ^\n'}
+[2.588284] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'\n"}
+[2.588367] (truck) StderrLine: {'line': b'  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \\\n'}
+[2.588450] (truck) StderrLine: {'line': b'  ^\n'}
+[2.588719] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'\n"}
+[2.588807] (truck) StderrLine: {'line': b'  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)\n'}
+[2.588890] (truck) StderrLine: {'line': b'  ^\n'}
+[2.588972] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'\n"}
+[2.589054] (truck) StderrLine: {'line': b'    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \\\n'}
+[2.589135] (truck) StderrLine: {'line': b'                ^\n'}
+[2.589216] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.589304] (truck) StderrLine: {'line': b'  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(\n'}
+[2.589386] (truck) StderrLine: {'line': b'                                             ^\n'}
+[2.589465] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.589563] (truck) StderrLine: {'line': b'  return rclcpp::create_wall_timer(\n'}
+[2.589645] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.589725] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.589810] (truck) StderrLine: {'line': b'  timer_ = this->create_wall_timer(\n'}
+[2.589890] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.589970] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.590072] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args)\n'}
+[2.590153] (truck) StderrLine: {'line': b'        ^\n'}
+[2.590235] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.590335] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args) const\n'}
+[2.590416] (truck) StderrLine: {'line': b'        ^\n'}
+[2.590496] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:\n'}
+[2.590591] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:\n'}
+[2.590672] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]\n"}
+[2.590754] (truck) StderrLine: {'line': b'    speedType _speed;\n'}
+[2.590835] (truck) StderrLine: {'line': b'              ^\n'}
+[2.590928] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]\n"}
+[2.591052] (truck) StderrLine: {'line': b'    stearingAngleType _stearingAngle;\n'}
+[2.591168] (truck) StderrLine: {'line': b'                      ^\n'}
+[2.591282] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]\n"}
+[2.591399] (truck) StderrLine: {'line': b'    distanceType _distance;\n'}
+[2.591513] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.591628] (truck) StderrLine: {'line': b'5 warnings and 2 errors generated.\n'}
+[2.591744] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:\n'}
+[2.591859] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:\n'}
+[2.592595] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.592846] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:\n'}
+[2.592975] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:\n'}
+[2.593100] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:\n'}
+[2.593221] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:\n'}
+[2.593339] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:\n'}
+[2.593459] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:\n'}
+[2.593712] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:\n'}
+[2.593866] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:\n'}
+[2.594091] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:\n'}
+[2.594265] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:\n'}
+[2.594377] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>'\n"}
+[2.594546] (truck) StderrLine: {'line': b'    callback_();\n'}
+[2.594691] (truck) StderrLine: {'line': b'    ^~~~~~~~~\n'}
+[2.594852] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>' requested here\n"}
+[2.595013] (truck) StderrLine: {'line': b'    execute_callback_delegate<>();\n'}
+[2.595166] (truck) StderrLine: {'line': b'    ^\n'}
+[2.595314] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback' requested here\n"}
+[2.595462] (truck) StderrLine: {'line': b'  WallTimer(\n'}
+[2.595606] (truck) StderrLine: {'line': b'  ^\n'}
+[2.595750] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::WallTimer' requested here\n"}
+[2.595904] (truck) StderrLine: {'line': b'        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);\n'}
+[2.596044] (truck) StderrLine: {'line': b'                                    ^\n'}
+[2.596177] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.596365] (truck) StderrLine: {'line': b'    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);\n'}
+[2.596501] (truck) StderrLine: {'line': b'                                                      ^\n'}
+[2.596638] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.596786] (truck) StderrLine: {'line': b'    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);\n'}
+[2.596940] (truck) StderrLine: {'line': b'                  ^\n'}
+[2.597069] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.597210] (truck) StderrLine: {'line': b'  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)\n'}
+[2.597355] (truck) StderrLine: {'line': b'  ^\n'}
+[2.597491] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'\n"}
+[2.597627] (truck) StderrLine: {'line': b'  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \\\n'}
+[2.597758] (truck) StderrLine: {'line': b'  ^\n'}
+[2.597911] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'\n"}
+[2.598047] (truck) StderrLine: {'line': b'  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)\n'}
+[2.598179] (truck) StderrLine: {'line': b'  ^\n'}
+[2.598308] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'\n"}
+[2.598439] (truck) StderrLine: {'line': b'    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \\\n'}
+[2.598569] (truck) StderrLine: {'line': b'                ^\n'}
+[2.598705] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.598845] (truck) StderrLine: {'line': b'  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(\n'}
+[2.598976] (truck) StderrLine: {'line': b'                                             ^\n'}
+[2.599105] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.599238] (truck) StderrLine: {'line': b'  return rclcpp::create_wall_timer(\n'}
+[2.599367] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.599501] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.599637] (truck) StderrLine: {'line': b'  timer_ = this->create_wall_timer(\n'}
+[2.599914] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.600163] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.600376] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args)\n'}
+[2.600532] (truck) StderrLine: {'line': b'        ^\n'}
+[2.600686] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.600857] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args) const\n'}
+[2.601006] (truck) StderrLine: {'line': b'        ^\n'}
+[2.601143] (truck) StderrLine: {'line': b'1 warning and 2 errors generated.\n'}
+[2.601276] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:\n'}
+[2.601410] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:\n'}
+[2.601558] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.601693] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:\n'}
+[2.601828] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:\n'}
+[2.601953] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:\n'}
+[2.602084] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:\n'}
+[2.602214] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:\n'}
+[2.602343] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:\n'}
+[2.602490] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:\n'}
+[2.602626] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:\n'}
+[2.602774] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:\n'}
+[2.602906] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:\n'}
+[2.603035] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>'\n"}
+[2.603166] (truck) StderrLine: {'line': b'    callback_();\n'}
+[2.603297] (truck) StderrLine: {'line': b'    ^~~~~~~~~\n'}
+[2.603430] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>' requested here\n"}
+[2.603572] (truck) StderrLine: {'line': b'    execute_callback_delegate<>();\n'}
+[2.603703] (truck) StderrLine: {'line': b'    ^\n'}
+[2.603832] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback' requested here\n"}
+[2.603964] (truck) StderrLine: {'line': b'  WallTimer(\n'}
+[2.604120] (truck) StderrLine: {'line': b'  ^\n'}
+[2.604297] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::WallTimer' requested here\n"}
+[2.604443] (truck) StderrLine: {'line': b'        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);\n'}
+[2.604576] (truck) StderrLine: {'line': b'                                    ^\n'}
+[2.604704] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.604867] (truck) StderrLine: {'line': b'    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);\n'}
+[2.604987] (truck) StderrLine: {'line': b'                                                      ^\n'}
+[2.605180] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.605352] (truck) StderrLine: {'line': b'    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);\n'}
+[2.605490] (truck) StderrLine: {'line': b'                  ^\n'}
+[2.606618] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.606816] (truck) StderrLine: {'line': b'  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)\n'}
+[2.606958] (truck) StderrLine: {'line': b'  ^\n'}
+[2.607093] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'\n"}
+[2.607223] (truck) StderrLine: {'line': b'  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \\\n'}
+[2.607353] (truck) StderrLine: {'line': b'  ^\n'}
+[2.607506] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'\n"}
+[2.607648] (truck) StderrLine: {'line': b'  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)\n'}
+[2.607814] (truck) StderrLine: {'line': b'  ^\n'}
+[2.607956] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'\n"}
+[2.608052] (truck) StderrLine: {'line': b'    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \\\n'}
+[2.608186] (truck) StderrLine: {'line': b'                ^\n'}
+[2.608322] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.608480] (truck) StderrLine: {'line': b'  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(\n'}
+[2.608612] (truck) StderrLine: {'line': b'                                             ^\n'}
+[2.608746] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.608887] (truck) StderrLine: {'line': b'  return rclcpp::create_wall_timer(\n'}
+[2.609031] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.609166] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.609315] (truck) StderrLine: {'line': b'  timer_ = this->create_wall_timer(\n'}
+[2.609446] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.609595] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.609806] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args)\n'}
+[2.609905] (truck) StderrLine: {'line': b'        ^\n'}
+[2.609991] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.610082] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args) const\n'}
+[2.610165] (truck) StderrLine: {'line': b'        ^\n'}
+[2.610247] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1\n'}
+[2.610329] (truck) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.610410] (truck) StderrLine: {'line': b'1 warning and 2 errors generated.\n'}
+[2.610490] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1\n'}
+[2.610571] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:\n'}
+[2.610651] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:\n'}
+[2.610736] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:7:\n'}
+[2.610818] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/rclcpp.hpp:146:\n'}
+[2.610912] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:21:\n'}
+[2.610996] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors/multi_threaded_executor.hpp:26:\n'}
+[2.611077] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor.hpp:33:\n'}
+[2.611158] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executor_options.hpp:20:\n'}
+[2.611239] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategies.hpp:18:\n'}
+[2.611320] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/memory_strategy.hpp:24:\n'}
+[2.611400] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/any_executable.hpp:20:\n'}
+[2.611481] (truck) StderrLine: {'line': b'In file included from /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/callback_group.hpp:27:\n'}
+[2.611563] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:223:5: error: no matching function for call to object of type 'std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>'\n"}
+[2.611646] (truck) StderrLine: {'line': b'    callback_();\n'}
+[2.611733] (truck) StderrLine: {'line': b'    ^~~~~~~~~\n'}
+[2.611828] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:209:5: note: in instantiation of function template specialization 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback_delegate<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>' requested here\n"}
+[2.611932] (truck) StderrLine: {'line': b'    execute_callback_delegate<>();\n'}
+[2.612013] (truck) StderrLine: {'line': b'    ^\n'}
+[2.612112] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:270:3: note: in instantiation of member function 'rclcpp::GenericTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::execute_callback' requested here\n"}
+[2.612203] (truck) StderrLine: {'line': b'  WallTimer(\n'}
+[2.612284] (truck) StderrLine: {'line': b'  ^\n'}
+[2.612364] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in instantiation of member function 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::WallTimer' requested here\n"}
+[2.612453] (truck) StderrLine: {'line': b'        ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);\n'}
+[2.612566] (truck) StderrLine: {'line': b'                                    ^\n'}
+[2.612685] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1\n'}
+[2.612769] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>>::__shared_ptr_emplace<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.613054] (truck) StderrLine: {'line': b'    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);\n'}
+[2.613278] (truck) StderrLine: {'line': b'                                                      ^\n'}
+[2.613382] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, std::allocator<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.613494] (truck) StderrLine: {'line': b'    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);\n'}
+[2.613581] (truck) StderrLine: {'line': b'                  ^\n'}
+[2.613663] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/timer.hpp:262:3: note: in instantiation of function template specialization 'std::make_shared<rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>, const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>, void>' requested here\n"}
+[2.613751] (truck) StderrLine: {'line': b'  RCLCPP_SMART_PTR_DEFINITIONS(WallTimer)\n'}
+[2.613833] (truck) StderrLine: {'line': b'  ^\n'}
+[2.613913] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:37:3: note: expanded from macro 'RCLCPP_SMART_PTR_DEFINITIONS'\n"}
+[2.613996] (truck) StderrLine: {'line': b'  RCLCPP_SHARED_PTR_DEFINITIONS(__VA_ARGS__) \\\n'}
+[2.614076] (truck) StderrLine: {'line': b'  ^\n'}
+[2.614157] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:87:3: note: expanded from macro 'RCLCPP_SHARED_PTR_DEFINITIONS'\n"}
+[2.614240] (truck) StderrLine: {'line': b'  __RCLCPP_MAKE_SHARED_DEFINITION(__VA_ARGS__)\n'}
+[2.614327] (truck) StderrLine: {'line': b'  ^\n'}
+[2.614411] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/macros.hpp:81:17: note: expanded from macro '__RCLCPP_MAKE_SHARED_DEFINITION'\n"}
+[2.614492] (truck) StderrLine: {'line': b'    return std::make_shared<__VA_ARGS__>(std::forward<Args>(args) ...); \\\n'}
+[2.614574] (truck) StderrLine: {'line': b'                ^\n'}
+[2.614663] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/create_timer.hpp:135:46: note: in instantiation of function template specialization 'rclcpp::WallTimer<std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, nullptr>::make_shared<const std::chrono::duration<long long, std::ratio<1, 1000000000>> &, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>, std::shared_ptr<rclcpp::Context>>' requested here\n"}
+[2.614772] (truck) StderrLine: {'line': b'  auto timer = rclcpp::WallTimer<CallbackT>::make_shared(\n'}
+[2.614855] (truck) StderrLine: {'line': b'                                             ^\n'}
+[2.614935] (truck) StderrLine: {'line': b"/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:114:18: note: in instantiation of function template specialization 'rclcpp::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.615019] (truck) StderrLine: {'line': b'  return rclcpp::create_wall_timer(\n'}
+[2.615100] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.615180] (truck) StderrLine: {'line': b"/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:18: note: in instantiation of function template specialization 'rclcpp::Node::create_wall_timer<long long, std::ratio<1, 1000>, std::__bind<void (Publisher::*)(), std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>> &>>' requested here\n"}
+[2.615279] (truck) StderrLine: {'line': b'  timer_ = this->create_wall_timer(\n'}
+[2.615360] (truck) StderrLine: {'line': b'                 ^\n'}
+[2.615441] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:290:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*)(), std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.615543] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args)\n'}
+[2.615627] (truck) StderrLine: {'line': b'        ^\n'}
+[2.615707] (truck) StderrLine: {'line': b"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:299:9: note: candidate template ignored: substitution failure [with _Args = <>]: implicit instantiation of undefined template 'std::__bind_return<void (Publisher::*const)(), const std::tuple<std::shared_ptr<rclcpp::Publisher<message::msg::Message_<std::allocator<void>>>>>, std::tuple<>, false>'\n"}
+[2.615803] (truck) StderrLine: {'line': b'        operator()(_Args&& ...__args) const\n'}
+[2.615885] (truck) StderrLine: {'line': b'        ^\n'}
+[2.634126] (truck) StderrLine: {'line': b'1 warning and 2 errors generated.\n'}
+[2.641815] (truck) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1\n'}
+[2.642170] (truck) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2\n'}
+[2.642461] (truck) StderrLine: {'line': b'gmake: *** [Makefile:160: all] Error 2\n'}
+[2.643727] (truck) CommandEnded: {'returncode': 2}
+[2.673423] (-) TimerEvent: {}
+[2.778197] (-) TimerEvent: {}
+[2.779117] (truck) JobEnded: {'identifier': 'truck', 'rc': 2}
+[2.781983] (-) EventReactorShutdown: {}

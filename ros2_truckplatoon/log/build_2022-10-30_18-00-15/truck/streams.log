@@ -1,0 +1,82 @@
+[0.053s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.138s] Scanning dependencies of target truck
+[0.160s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.160s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.160s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.160s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.645s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.646s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.646s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.646s] #include "utils/Include.hpp"
+[0.646s]          ^~~~~~~~~~~~~~~~~~~
+[0.646s]          "utils/include.hpp"
+[0.647s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.647s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.647s] #include "utils/Include.hpp"
+[0.647s]          ^~~~~~~~~~~~~~~~~~~
+[0.647s]          "utils/include.hpp"
+[0.648s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.648s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.648s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.648s] #include "utils/Include.hpp"
+[0.648s]          ^~~~~~~~~~~~~~~~~~~
+[0.648s]          "utils/include.hpp"
+[0.652s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.652s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.652s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.652s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.652s] #include "utils/Include.hpp"
+[0.653s]          ^~~~~~~~~~~~~~~~~~~
+[0.653s]          "utils/include.hpp"
+[1.294s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.295s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.295s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: use of undeclared identifier 'MinimalSubscriber'
+[1.295s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this));
+[1.295s]                                   ^
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.296s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.296s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: use of undeclared identifier 'MinimalSubscriber'
+[1.296s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this));
+[1.296s]                                   ^
+[1.298s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.298s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.298s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.298s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: use of undeclared identifier 'MinimalSubscriber'
+[1.298s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this));
+[1.299s]                                   ^
+[1.307s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.307s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.307s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.307s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.307s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: use of undeclared identifier 'MinimalSubscriber'
+[1.308s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this));
+[1.308s]                                   ^
+[1.310s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.310s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.310s] #include "src/utils/Include.hpp"
+[1.310s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.310s]          "src/utils/include.hpp"
+[1.729s] 1 warning and 1 error generated.
+[1.733s] 1 warning and 1 error generated.
+[1.742s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.742s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[1.742s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[1.742s]     speedType _speed;
+[1.742s]               ^
+[1.742s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[1.743s]     stearingAngleType _stearingAngle;
+[1.743s]                       ^
+[1.743s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[1.743s]     distanceType _distance;
+[1.743s]                  ^
+[1.743s] 5 warnings and 1 error generated.
+[1.749s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[1.749s] gmake[2]: *** Waiting for unfinished jobs....
+[1.751s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[1.757s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[1.790s] 1 warning and 1 error generated.
+[1.802s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[1.802s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[1.802s] gmake: *** [Makefile:160: all] Error 2
+[1.804s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

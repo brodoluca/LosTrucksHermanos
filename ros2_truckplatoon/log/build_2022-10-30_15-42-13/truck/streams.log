@@ -1,0 +1,396 @@
+[0.079s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.275s] Scanning dependencies of target truck
+[0.330s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.331s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.331s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.331s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[1.408s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.409s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.409s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.410s] #include "utils/Include.hpp"
+[1.410s]          ^~~~~~~~~~~~~~~~~~~
+[1.411s]          "utils/include.hpp"
+[1.412s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.412s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.412s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.412s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.413s] #include "utils/Include.hpp"
+[1.413s]          ^~~~~~~~~~~~~~~~~~~
+[1.413s]          "utils/include.hpp"
+[1.413s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.413s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.413s] #include "utils/Include.hpp"
+[1.414s]          ^~~~~~~~~~~~~~~~~~~
+[1.414s]          "utils/include.hpp"
+[1.416s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.416s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.416s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.416s] #include "utils/Include.hpp"
+[1.416s]          ^~~~~~~~~~~~~~~~~~~
+[1.417s]          "utils/include.hpp"
+[2.704s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.704s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.704s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.704s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[2.705s]   MinimalPublisher()
+[2.705s]   ^
+[2.705s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.705s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.705s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.705s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.706s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[2.706s]   MinimalPublisher()
+[2.706s]   ^
+[2.706s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.707s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.707s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.707s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[2.707s]   MinimalPublisher()
+[2.708s]   ^
+[2.708s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:31:58: error: use of undeclared identifier 'tutorial_interfaces'
+[2.708s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[2.708s]                                                          ^
+[2.709s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:31:58: error: use of undeclared identifier 'tutorial_interfaces'
+[2.709s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[2.709s]                                                          ^
+[2.709s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:31:58: error: use of undeclared identifier 'tutorial_interfaces'
+[2.709s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[2.710s]                                                          ^
+[2.710s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.710s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.710s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[2.711s]   MinimalPublisher()
+[2.711s]   ^
+[2.717s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:43: error: use of undeclared identifier 'tutorial_interfaces'
+[2.717s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.717s]                                           ^
+[2.718s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[2.718s]   : Node("minimal_publisher"), count_(0)
+[2.718s]   ^
+[2.721s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:43: /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:43: error: error: use of undeclared identifier 'tutorial_interfaces'
+[2.721s] use of undeclared identifier 'tutorial_interfaces'
+[2.721s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.722s]                                           ^
+[2.722s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.722s]                                           ^
+[2.722s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: error: only constructors take base initializersonly constructors take base initializers
+[2.722s] 
+[2.723s]   : Node("minimal_publisher"), count_(0)
+[2.723s]   : Node("minimal_publisher"), count_(0)
+[2.723s]   ^
+[2.723s]   ^
+[2.724s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:31:58: error: use of undeclared identifier 'tutorial_interfaces'
+[2.724s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[2.724s]                                                          ^
+[2.740s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[2.740s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[2.740s]                                                   ^
+[2.744s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:43: error: use of undeclared identifier 'tutorial_interfaces'
+[2.744s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.745s]                                           ^
+[2.746s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[2.746s]   : Node("minimal_publisher"), count_(0)
+[2.747s]   ^
+[2.747s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[2.748s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[2.748s]                                                   ^
+[2.748s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[2.749s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[2.749s]                                                   ^
+[2.766s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:45:20: error: use of undeclared identifier 'tutorial_interfaces'
+[2.766s]     auto message = tutorial_interfaces::msg::Num();                               // CHANGE
+[2.767s]                    ^
+[2.768s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.768s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.768s]                 ^~~~
+[2.768s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[2.769s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[2.769s]                                                                                      ^~~~~~
+[2.769s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.769s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.769s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.770s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.770s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.771s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.771s]                 ^~~~
+[2.771s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.772s]       logger.get_name(), \
+[2.772s]       ^~~~~~
+[2.772s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.773s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.774s]                                                               ^~~~
+[2.774s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.774s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[2.774s]                                               ^~~~
+[2.774s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.775s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.775s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.775s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.776s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.777s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.777s]                 ^~~~
+[2.777s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.777s]       logger.get_name(), \
+[2.777s]       ^~~~~~
+[2.778s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.778s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.778s]                                                               ^~~~
+[2.778s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.779s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[2.779s]                                                          ^~~~
+[2.779s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[2.779s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[2.779s]                                                   ^
+[2.780s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:45:20: error: use of undeclared identifier 'tutorial_interfaces'
+[2.780s]     auto message = tutorial_interfaces::msg::Num();                               // CHANGE
+[2.780s]                    ^
+[2.780s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.780s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.781s]                 ^~~~
+[2.781s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[2.781s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[2.781s]                                                                                      ^~~~~~
+[2.781s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.782s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.782s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.782s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.782s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.782s]                 ^~~~
+[2.783s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.783s]       logger.get_name(), \
+[2.783s]       ^~~~~~
+[2.783s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.783s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.784s]                                                               ^~~~
+[2.784s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.784s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[2.784s]                                               ^~~~
+[2.785s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.785s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.785s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.785s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.785s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.786s]                 ^~~~
+[2.786s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.786s]       logger.get_name(), \
+[2.787s]       ^~~~~~
+[2.787s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.787s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.787s]                                                               ^~~~
+[2.788s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.788s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[2.788s]                                                          ^~~~
+[2.788s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:45:20: error: use of undeclared identifier 'tutorial_interfaces'
+[2.788s]     auto message = tutorial_interfaces::msg::Num();                               // CHANGE
+[2.789s]                    ^
+[2.789s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.789s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.789s]                 ^~~~
+[2.789s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[2.790s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[2.790s]                                                                                      ^~~~~~
+[2.791s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.791s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.791s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.791s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.792s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.792s]                 ^~~~
+[2.792s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.792s]       logger.get_name(), \
+[2.792s]       ^~~~~~
+[2.792s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.792s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.793s]                                                               ^~~~
+[2.793s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.794s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[2.795s]                                               ^~~~
+[2.795s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.795s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.795s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.796s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.796s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.796s]                 ^~~~
+[2.796s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.797s]       logger.get_name(), \
+[2.797s]       ^~~~~~
+[2.797s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.797s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.797s]                                                               ^~~~
+[2.798s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.798s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[2.798s]                                                          ^~~~
+[2.798s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.798s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.798s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.799s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.799s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:48:5: error: use of undeclared identifier 'publisher_'; did you mean 'publishers_'?
+[2.799s]     publisher_->publish(message);
+[2.799s]     ^~~~~~~~~~
+[2.800s]     publishers_
+[2.800s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: note: 'publishers_' declared here
+[2.800s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.800s]                                                                                      ^
+[2.800s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.801s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.801s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.801s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:48:5: error: use of undeclared identifier 'publisher_'; did you mean 'publishers_'?
+[2.801s]     publisher_->publish(message);
+[2.801s]     ^~~~~~~~~~
+[2.801s]     publishers_
+[2.802s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: note: 'publishers_' declared here
+[2.802s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.802s]                                                                                      ^
+[2.802s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:45:20: error: use of undeclared identifier 'tutorial_interfaces'
+[2.802s]     auto message = tutorial_interfaces::msg::Num();                               // CHANGE
+[2.803s]                    ^
+[2.803s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.803s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.804s]                 ^~~~
+[2.804s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[2.805s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.805s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.805s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.805s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:48:5: error: use of undeclared identifier 'publisher_'; did you mean 'publishers_'?
+[2.805s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[2.806s]     publisher_->publish(message);                                                                                     ^~~~~~
+[2.806s] 
+[2.806s]     ^~~~~~~~~~
+[2.806s]     publishers_
+[2.806s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: note: 'publishers_' declared here
+[2.807s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.807s]                                                                                      ^
+[2.807s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.808s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.808s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.808s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.808s]                 ^~~~
+[2.809s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.809s]       logger.get_name(), \
+[2.809s]       ^~~~~~
+[2.809s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.810s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.810s]                                                               ^~~~
+[2.810s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.811s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[2.811s]                                               ^~~~
+[2.811s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.812s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.812s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:47:17: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[2.812s]     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.num);    // CHANGE
+[2.813s]                 ^~~~
+[2.813s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[2.813s]       logger.get_name(), \
+[2.813s]       ^~~~~~
+[2.813s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[2.814s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[2.814s]                                                               ^~~~
+[2.814s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[2.814s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[2.814s]                                                          ^~~~
+[2.815s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:63:33: error: use of undeclared identifier 'MinimalPublisher'
+[2.815s]   rclcpp::spin(std::make_shared<MinimalPublisher>());
+[2.816s]                                 ^
+[2.816s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:63:33: error: use of undeclared identifier 'MinimalPublisher'
+[2.816s]   rclcpp::spin(std::make_shared<MinimalPublisher>());
+[2.816s]                                 ^
+[2.816s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.817s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[2.817s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:48:5: error: use of undeclared identifier 'publisher_'; did you mean 'publishers_'?
+[2.817s]     publisher_->publish(message);
+[2.818s]     ^~~~~~~~~~
+[2.818s]     publishers_
+[2.818s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: note: 'publishers_' declared here
+[2.818s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[2.819s]                                                                                      ^
+[2.819s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:63:33: error: use of undeclared identifier 'MinimalPublisher'
+[2.819s]   rclcpp::spin(std::make_shared<MinimalPublisher>());
+[2.819s]                                 ^
+[2.829s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.829s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.830s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.830s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:76:5: error: unknown type name 'NodePublisher'
+[2.831s]     NodePublisher _publisher;
+[2.831s]     ^
+[2.831s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.832s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.832s] #include "src/utils/Include.hpp"
+[2.832s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[2.832s]          "src/utils/include.hpp"
+[2.833s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.833s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.833s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:76:5: error: unknown type name 'NodePublisher'
+[2.833s]     NodePublisher _publisher;
+[2.833s]     ^
+[2.834s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:5: error: redefinition of 'main'
+[2.834s] int main(int argc, char ** argv)
+[2.834s]     ^
+[2.834s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:60:5: note: previous definition is here
+[2.834s] int main(int argc, char * argv[])
+[2.835s]     ^
+[2.836s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:63:33: error: use of undeclared identifier 'MinimalPublisher'
+[2.836s]   rclcpp::spin(std::make_shared<MinimalPublisher>());
+[2.837s]                                 ^
+[2.842s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.842s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.842s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:76:5: error: unknown type name 'NodePublisher'
+[2.842s]     NodePublisher _publisher;
+[2.843s]     ^
+[2.855s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.855s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:76:5: error: unknown type name 'NodePublisher'
+[2.856s]     NodePublisher _publisher;
+[2.856s]     ^
+[3.246s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[3.246s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[3.246s]                                                                                      ^
+[3.246s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:57:10: warning: private field 'count_' is not used [-Wunused-private-field]
+[3.247s]   size_t count_;
+[3.247s]          ^
+[3.247s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.247s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[3.247s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[3.247s]     speedType _speed;
+[3.247s]               ^
+[3.248s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[3.248s]     stearingAngleType _stearingAngle;
+[3.248s]                       ^
+[3.248s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[3.249s]     distanceType _distance;
+[3.249s]                  ^
+[3.249s] 7 warnings and 13 errors generated.
+[3.254s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.254s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.254s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.255s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[3.255s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[3.255s]                                                                                      ^
+[3.256s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:57:10: warning: private field 'count_' is not used [-Wunused-private-field]
+[3.256s]   size_t count_;
+[3.256s]          ^
+[3.256s] 3 warnings and 12 errors generated.
+[3.257s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.257s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.257s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.257s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[3.258s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[3.258s]                                                                                      ^
+[3.258s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:57:10: warning: private field 'count_' is not used [-Wunused-private-field]
+[3.259s]   size_t count_;
+[3.259s]          ^
+[3.259s] 3 warnings and 12 errors generated.
+[3.265s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[3.265s] gmake[2]: *** Waiting for unfinished jobs....
+[3.274s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[3.275s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[3.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.340s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.340s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:54:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[3.341s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[3.341s]                                                                                      ^
+[3.341s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:57:10: warning: private field 'count_' is not used [-Wunused-private-field]
+[3.341s]   size_t count_;
+[3.341s]          ^
+[3.342s] 3 warnings and 12 errors generated.
+[3.355s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[3.356s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[3.356s] gmake: *** [Makefile:160: all] Error 2
+[3.358s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

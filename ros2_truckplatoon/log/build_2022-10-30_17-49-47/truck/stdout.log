@@ -1,0 +1,24 @@
+Scanning dependencies of target truck
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[ 83%] Linking CXX executable truck
+[100%] Built target truck
+-- Install configuration: ""
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/lib/truck/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/package_run_dependencies/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/parent_prefix_path/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.sh
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/ament_prefix_path.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.sh
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/environment/path.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.bash
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.sh
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.zsh
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/local_setup.dsv
+-- Installing: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.dsv
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/ament_index/resource_index/packages/truck
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig.cmake
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/cmake/truckConfig-version.cmake
+-- Up-to-date: /Users/brodie/ros2_truckplatoon/install/truck/share/truck/package.xml

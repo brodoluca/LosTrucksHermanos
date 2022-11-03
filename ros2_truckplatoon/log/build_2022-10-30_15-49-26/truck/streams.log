@@ -1,0 +1,560 @@
+[0.143s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.403s] Scanning dependencies of target truck
+[0.471s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.473s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.477s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.479s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[1.834s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.835s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.835s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.838s] #include "utils/Include.hpp"
+[1.839s]          ^~~~~~~~~~~~~~~~~~~
+[1.839s]          "utils/include.hpp"
+[1.849s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.850s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.850s] #include "utils/Include.hpp"
+[1.850s]          ^~~~~~~~~~~~~~~~~~~
+[1.851s]          "utils/include.hpp"
+[1.890s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.891s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.891s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.892s] #include "utils/Include.hpp"
+[1.892s]          ^~~~~~~~~~~~~~~~~~~
+[1.892s]          "utils/include.hpp"
+[1.893s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.894s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.894s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.894s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.895s] #include "utils/Include.hpp"
+[1.895s]          ^~~~~~~~~~~~~~~~~~~
+[1.895s]          "utils/include.hpp"
+[3.578s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.579s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.579s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.580s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:57: error: no member named 'Num' in namespace 'message::msg'
+[3.580s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[3.580s]                                           ~~~~~~~~~~~~~~^
+[3.581s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:32: error: member initializer 'count_' does not name a non-static data member or base class
+[3.581s]   : Node("minimal_publisher"), count_(0)
+[3.588s]                                ^~~~~~~~~
+[3.590s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:34: error: no matching member function for call to 'create_publisher'
+[3.590s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[3.590s]                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.591s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:71:7: note: candidate function template not viable: no known conversion from 'Publisher' to 'rclcpp::Node' for object argument
+[3.592s] Node::create_publisher(
+[3.592s]       ^
+[3.592s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.593s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.593s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.593s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.594s]   message.sender_position = 0;
+[3.594s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.594s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.597s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.599s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.600s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.600s]   message.receiver_position = 0;
+[3.601s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.601s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.601s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.602s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.602s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.602s]   message.sender_id =0;
+[3.603s]   ~~~~~~~~~~~~~~~~~ ^
+[3.603s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.603s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.604s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.604s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.605s]   message.receiver_id = 0;
+[3.605s]   ~~~~~~~~~~~~~~~~~~~ ^
+[3.605s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.606s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.606s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.606s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:36:17: error: no viable overloaded '='
+[3.607s]   message.event = "PlatoonNotFound";
+[3.607s]   ~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+[3.608s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:905:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.608s]     basic_string& operator=(const basic_string& __str);
+[3.608s]                   ^
+[3.609s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:908:19: note: candidate template ignored: substitution failure [with _Tp = char[16]]: no member named '_EnableIfImpl' in 'std::_MetaBase<false>'
+[3.609s]     basic_string& operator=(const _Tp& __t)
+[3.609s]                   ^
+[3.610s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:913:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.610s]     basic_string& operator=(basic_string&& __str)
+[3.611s]                   ^
+[3.611s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:916:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.611s]     basic_string& operator=(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
+[3.612s]                   ^
+[3.612s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:918:45: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.612s]     _LIBCPP_INLINE_VISIBILITY basic_string& operator=(const value_type* __s) {return assign(__s);}
+[3.613s]                                             ^
+[3.613s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:922:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.614s]     basic_string& operator=(value_type __c);
+[3.614s]                   ^
+[3.615s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.615s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.615s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.616s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.616s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.617s]               ^~~~
+[3.618s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[3.619s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[3.619s]                                                                                      ^~~~~~
+[3.620s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.620s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.620s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.621s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.621s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.622s]               ^~~~
+[3.622s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.622s]       logger.get_name(), \
+[3.623s]       ^~~~~~
+[3.623s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.623s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.623s]                                                               ^~~~
+[3.624s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.624s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[3.624s]                                               ^~~~
+[3.624s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[3.624s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.625s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.625s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.625s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.626s]               ^~~~
+[3.626s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.626s]       logger.get_name(), \
+[3.627s]       ^~~~~~
+[3.627s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.627s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.628s]                                                               ^~~~
+[3.628s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.628s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[3.629s]                                                          ^~~~
+[3.629s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.630s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.630s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.630s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.631s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:57: error: no member named 'Num' in namespace 'message::msg'
+[3.631s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[3.632s]                                           ~~~~~~~~~~~~~~^
+[3.632s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:32: error: member initializer 'count_' does not name a non-static data member or base class
+[3.632s]   : Node("minimal_publisher"), count_(0)
+[3.633s]                                ^~~~~~~~~
+[3.633s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:34: error: no matching member function for call to 'create_publisher'
+[3.633s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[3.634s]                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.634s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:71:7: note: candidate function template not viable: no known conversion from 'Publisher' to 'rclcpp::Node' for object argument
+[3.634s] Node::create_publisher(
+[3.635s]       ^
+[3.635s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.635s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.636s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.636s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.636s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.637s]   message.sender_position = 0;
+[3.637s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.638s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.638s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.638s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.639s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.639s]   message.receiver_position = 0;
+[3.639s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.640s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.640s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.641s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.641s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.641s]   message.sender_id =0;
+[3.642s]   ~~~~~~~~~~~~~~~~~ ^
+[3.642s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.642s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.643s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.643s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.643s]   message.receiver_id = 0;
+[3.644s]   ~~~~~~~~~~~~~~~~~~~ ^
+[3.644s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.644s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.645s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.645s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.646s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.646s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:57: error: no member named 'Num' in namespace 'message::msg'
+[3.647s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[3.647s]                                           ~~~~~~~~~~~~~~^
+[3.648s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:36:17: error: no viable overloaded '='
+[3.648s]   message.event = "PlatoonNotFound";
+[3.649s]   ~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+[3.649s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:905:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.649s]     basic_string& operator=(const basic_string& __str);
+[3.650s]                   ^
+[3.650s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:908:19: note: candidate template ignored: substitution failure [with _Tp = char[16]]: no member named '_EnableIfImpl' in 'std::_MetaBase<false>'
+[3.651s]     basic_string& operator=(const _Tp& __t)
+[3.651s]                   ^
+[3.651s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:913:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.652s]     basic_string& operator=(basic_string&& __str)
+[3.652s]                   ^
+[3.652s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:916:/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:32: error: member initializer 'count_' does not name a non-static data member or base class
+[3.653s] 19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.653s]   : Node("minimal_publisher"), count_(0)
+[3.654s]                                ^~~~~~~~~
+[3.654s]     basic_string& operator=(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
+[3.654s]                   ^
+[3.655s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:918:45: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.655s]     _LIBCPP_INLINE_VISIBILITY basic_string& operator=(const value_type* __s) {return assign(__s);}
+[3.655s]                                             ^
+[3.656s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:922:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.656s]     basic_string& operator=(value_type __c);
+[3.656s]                   ^
+[3.657s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:34: error: no matching member function for call to 'create_publisher'
+[3.657s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp  publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);:
+[3.657s] 2                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:
+[3.658s] 
+[3.658s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.658s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.659s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.659s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.659s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:71:7: note: candidate function template not viable: no known conversion from 'Publisher' to 'rclcpp::Node' for object argument
+[3.660s] Node::create_publisher(
+[3.661s]       ^
+[3.661s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.661s]               ^~~~
+[3.662s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.662s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.663s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.663s]   message.sender_position = 0;
+[3.663s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.664s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538/Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30::86: note: expanded from macro 'RCLCPP_INFO'
+[3.664s] 81: note: variable 'message' declared const here
+[3.664s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.665s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.665s] 
+[3.665s]                                                                                      ^~~~~~
+[3.666s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.666s]   message.receiver_position = 0;
+[3.666s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.667s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.667s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.667s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.668s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.668s]   message.sender_id =0;
+[3.668s]   ~~~~~~~~~~~~~~~~~ ^
+[3.669s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.669s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.669s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.669s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.670s]   message.receiver_id = 0;
+[3.670s]   ~~~~~~~~~~~~~~~~~~~ ^
+[3.670s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.671s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.671s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.671s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.672s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.672s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[3.672s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.672s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.673s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.673s]               ^~~~
+[3.673s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.674s]       logger.get_name(), \
+[3.674s]       ^~~~~~
+[3.674s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.675s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp    RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \:
+[3.675s] 36                                                              ^~~~:
+[3.676s] 17: error: no viable overloaded '='
+[3.676s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.676s]   message.event = "PlatoonNotFound";
+[3.677s]   ~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+[3.677s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[3.677s]                                               ^~~~
+[3.678s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:905:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.678s]     basic_string& operator=(const basic_string& __str);
+[3.678s]                   ^
+[3.679s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.679s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[3.679s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stringIn file included from :/Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp908::419:
+[3.680s] :In file included from  /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hppnote: :candidate template ignored: substitution failure [with _Tp = char[16]]: no member named '_EnableIfImpl' in 'std::_MetaBase<false>'
+[3.680s] 6:
+[3.680s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.680s]     basic_string& operator=(const _Tp& __t)
+[3.681s]                   ^
+[3.681s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.681s]               ^~~~
+[3.682s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:913/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543::7:19 :note:  expanded from macro 'RCLCPP_INFO'note: 
+[3.682s] candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.682s]       logger.get_name(), \
+[3.682s]       ^~~~~~
+[3.683s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h    basic_string& operator=(basic_string&& __str)
+[3.683s]                   ^
+[3.684s] :502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.684s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:916:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.684s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.685s]                                                               ^~~~
+[3.685s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.686s]     basic_string& operator=(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
+[3.686s]                   ^
+[3.686s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \918
+[3.687s] :                                                         ^~~~45
+[3.687s] : note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.687s]     _LIBCPP_INLINE_VISIBILITY basic_string& operator=(const value_type* __s) {return assign(__s);}
+[3.688s]                                             ^
+[3.688s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:922:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.689s]     basic_string& operator=(value_type __c);
+[3.689s]                   ^
+[3.689s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.690s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.690s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.690s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.690s]               ^~~~
+[3.691s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[3.691s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[3.691s]                                                                                      ^~~~~~
+[3.692s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.692s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.692s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.693s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.693s]               ^~~~
+[3.693s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.694s]       logger.get_name(), \
+[3.694s]       ^~~~~~
+[3.695s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.695s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.695s]                                                               ^~~~
+[3.696s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.696s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[3.696s]                                               ^~~~
+[3.697s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.697s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.697s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.698s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.698s]               ^~~~
+[3.699s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.699s]       logger.get_name(), \
+[3.699s]       ^~~~~~
+[3.699s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.700s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.700s]                                                               ^~~~
+[3.700s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.701s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[3.701s]                                                          ^~~~
+[3.701s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.702s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[3.703s] #include "src/utils/Include.hpp"
+[3.703s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[3.703s]          "src/utils/include.hpp"
+[3.704s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.704s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.705s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.705s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:57: error: no member named 'Num' in namespace 'message::msg'
+[3.705s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[3.706s]                                           ~~~~~~~~~~~~~~^
+[3.706s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:14:5: error: no matching function for call to 'spin'
+[3.707s]     rclcpp::spin(_publisher);
+[3.707s]     ^~~~~~~~~~~~
+[3.708s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:45:1: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>' for 1st argument
+[3.708s] spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[3.709s] ^
+[3.709s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:49:1: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'shared_ptr<rclcpp::Node>' for 1st argument
+[3.709s] spin(rclcpp::Node::SharedPtr node_ptr);
+[3.710s] ^
+[3.710s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:32: error: member initializer 'count_' does not name a non-static data member or base class
+[3.710s]   : Node("minimal_publisher"), count_(0)
+[3.711s]                                ^~~~~~~~~
+[3.711s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:26:34: error: no matching member function for call to 'create_publisher'
+[3.711s]   publishers_[TopicName] = this->create_publisher<message::msg::Message>(TopicName, 10);
+[3.712s]                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.712s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:71:7: note: candidate function template not viable: no known conversion from 'Publisher' to 'rclcpp::Node' for object argument
+[3.712s] Node::create_publisher(
+[3.713s]       ^
+[3.713s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.713s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.713s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.714s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.714s]   message.sender_position = 0;
+[3.714s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.715s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.715s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.715s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.715s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.716s]   message.receiver_position = 0;
+[3.716s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[3.716s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.717s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.717s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.718s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.718s]   message.sender_id =0;
+[3.718s]   ~~~~~~~~~~~~~~~~~ ^
+[3.719s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.719s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.719s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.719s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[3.720s]   message.receiver_id = 0;
+[3.720s]   ~~~~~~~~~~~~~~~~~~~ ^
+[3.720s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[3.721s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[3.721s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[3.721s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:36:17: error: no viable overloaded '='
+[3.722s]   message.event = "PlatoonNotFound";
+[3.722s]   ~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+[3.723s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:905:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.723s]     basic_string& operator=(const basic_string& __str);
+[3.723s]                   ^
+[3.724s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:908:19: note: candidate template ignored: substitution failure [with _Tp = char[16]]: no member named '_EnableIfImpl' in 'std::_MetaBase<false>'
+[3.724s]     basic_string& operator=(const _Tp& __t)
+[3.724s]                   ^
+[3.724s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:913:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.725s]     basic_string& operator=(basic_string&& __str)
+[3.725s]                   ^
+[3.725s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:916:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.726s]     basic_string& operator=(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
+[3.726s]                   ^
+[3.726s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:918:45: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.727s]     _LIBCPP_INLINE_VISIBILITY basic_string& operator=(const value_type* __s) {return assign(__s);}
+[3.727s]                                             ^
+[3.727s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:922:19: note: candidate function not viable: 'this' argument has type 'const message::msg::Message_<std::allocator<void>>::_event_type' (aka 'const basic_string<char, char_traits<char>, allocator<char>>'), but method is not marked const
+[3.728s]     basic_string& operator=(value_type __c);
+[3.728s]                   ^
+[3.728s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.729s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.729s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.729s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.730s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.730s]               ^~~~
+[3.730s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[3.731s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[3.731s]                                                                                      ^~~~~~
+[3.731s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.731s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.732s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.732s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.733s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.733s]               ^~~~
+[3.733s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.733s]       logger.get_name(), \
+[3.734s]       ^~~~~~
+[3.734s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.734s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.735s]                                                               ^~~~
+[3.735s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.735s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[3.736s]                                               ^~~~
+[3.736s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[3.737s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[3.737s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[3.737s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:37:15: error: cannot initialize object parameter of type 'const rclcpp::Node' with an expression of type 'Publisher'
+[3.738s]   RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.sender_position);    // CHANGE
+[3.738s]               ^~~~
+[3.738s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[3.739s]       logger.get_name(), \
+[3.739s]       ^~~~~~
+[3.739s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[3.740s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[3.740s]                                                               ^~~~
+[3.740s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[3.741s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[3.741s]                                                          ^~~~
+[4.246s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[4.246s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.246s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.247s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:74: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.247s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[4.248s]                                                                          ^
+[4.248s] 2 warnings and 11 errors generated.
+[4.267s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[4.267s] gmake[2]: *** Waiting for unfinished jobs....
+[4.291s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.292s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[4.293s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[4.293s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[4.293s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[4.294s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[4.294s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[4.295s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[4.295s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[4.295s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[4.296s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:19:
+[4.297s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/compressed_pair.h:171:12: error: static_cast from 'std::__compressed_pair<std::allocator<Publisher>, Publisher> *' to 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::_Base1 *' (aka '__compressed_pair_elem<std::allocator<Publisher>, 0> *'), which are not related by inheritance, is not allowed
+[4.297s]     return static_cast<_Base1*>(__pair);
+[4.297s]            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.298s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:348:74: note: in instantiation of member function 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::__get_first_base' requested here
+[4.298s]             typename _CompressedPair::_Base1* __first = _CompressedPair::__get_first_base(__as_pair);
+[4.298s]                                                                          ^
+[4.299s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:341:27: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::__get_alloc' requested here
+[4.299s]             ::new ((void*)__get_alloc()) _Alloc(_VSTD::move(__a));
+[4.299s]                           ^
+[4.300s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:291:11: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::_Storage' requested here
+[4.300s]         : __storage_(_VSTD::move(__a))
+[4.301s]           ^
+[4.302s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__shared_ptr_emplace<>' requested here
+[4.302s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[4.303s]                                                       ^
+[4.303s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, void>' requested here
+[4.303s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[4.304s]                   ^
+[4.304s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:13:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, void>' requested here
+[4.304s]     this ->_publisher = std::make_shared<Publisher>();
+[4.305s]                              ^
+[4.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.305s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[4.306s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[4.306s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[4.306s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[4.307s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[4.307s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[4.307s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[4.308s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[4.308s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[4.309s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:19:
+[4.309s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/compressed_pair.h:175:12: error: static_cast from 'std::__compressed_pair<std::allocator<Publisher>, Publisher> *' to 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::_Base2 *' (aka '__compressed_pair_elem<Publisher, 1> *'), which are not related by inheritance, is not allowed
+[4.309s]     return static_cast<_Base2*>(__pair);
+[4.309s]            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.309s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:354:75: note: in instantiation of member function 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::__get_second_base' requested here
+[4.309s]             typename _CompressedPair::_Base2* __second = _CompressedPair::__get_second_base(__as_pair);
+[4.310s]                                                                           ^
+[4.310s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:306:53: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::__get_elem' requested here
+[4.310s]     _Tp* __get_elem() _NOEXCEPT { return __storage_.__get_elem(); }
+[4.311s]                                                     ^
+[4.311s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1108:76: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__get_elem' requested here
+[4.311s]     return shared_ptr<_Tp>::__create_with_control_block((*__control_block).__get_elem(), _VSTD::addressof(*__control_block));
+[4.311s]                                                                            ^
+[4.311s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, void>' requested here
+[4.312s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[4.312s]                   ^
+[4.313s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:13:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, void>' requested here
+[4.313s]     this ->_publisher = std::make_shared<Publisher>();
+[4.313s]                              ^
+[4.314s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.314s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[4.314s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.315s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.315s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:74: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.316s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[4.316s]                                                                          ^
+[4.318s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.318s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[4.318s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[4.319s]     speedType _speed;
+[4.319s]               ^
+[4.320s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[4.320s]     stearingAngleType _stearingAngle;
+[4.320s]                       ^
+[4.321s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[4.321s]     distanceType _distance;
+[4.321s]                  ^
+[4.322s] 6 warnings and 11 errors generated.
+[4.322s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[4.322s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[4.322s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.322s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:74: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.323s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[4.323s]                                                                          ^
+[4.323s] 2 warnings and 11 errors generated.
+[4.327s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[4.339s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[4.354s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.354s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.354s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:44:74: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.355s]   std::map<std::string, rclcpp::Publisher<message::msg::Num>::SharedPtr> publishers_;
+[4.355s]                                                                          ^
+[4.355s] 2 warnings and 14 errors generated.
+[4.372s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[4.373s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[4.374s] gmake: *** [Makefile:160: all] Error 2
+[4.377s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

@@ -1,0 +1,147 @@
+[0.115s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.204s] -- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+[0.275s] -- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+[0.751s] -- Found ament_lint_auto: 0.9.6 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_lint_auto/cmake)
+[0.906s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.911s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.911s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/brodie/ros2_truckplatoon/src/truck/include>
+[0.911s] -- Configured cppcheck exclude dirs and/or files: 
+[0.915s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.915s] -- Configured cpplint exclude dirs and/or files: 
+[0.917s] -- Added test 'lint_cmake' to check CMake code style
+[0.921s] -- Added test 'uncrustify' to check C / C++ code style
+[0.921s] -- Configured uncrustify additional arguments: 
+[0.922s] -- Added test 'xmllint' to check XML markup files
+[0.926s] -- Configuring done
+[0.957s] -- Generating done
+[0.963s] -- Build files have been written to: /Users/brodie/ros2_truckplatoon/build/truck
+[1.014s] Scanning dependencies of target truck
+[1.046s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[1.047s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[1.047s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[1.048s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/utils/JsonHandler.cpp.o
+[2.039s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:12:20: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+[2.039s]     for(int i = 0;i<n;i++)
+[2.039s]                   ~^~
+[2.039s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:18:17: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+[2.040s]         if(i +1 < n )
+[2.040s]            ~~~~ ^ ~
+[2.041s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.042s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.042s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.043s] #include "utils/Include.hpp"
+[2.043s]          ^~~~~~~~~~~~~~~~~~~
+[2.043s]          "utils/include.hpp"
+[2.043s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.044s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.044s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.045s] #include "utils/Include.hpp"
+[2.045s]          ^~~~~~~~~~~~~~~~~~~
+[2.045s]          "utils/include.hpp"
+[2.045s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.045s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.046s] #include "utils/Include.hpp"
+[2.046s]          ^~~~~~~~~~~~~~~~~~~
+[2.046s]          "utils/include.hpp"
+[2.047s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:31:27: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.047s]         for(auto message: *Bus)
+[2.047s]                           ^
+[2.047s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.047s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.047s]                            ^
+[2.049s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:127:31: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.050s]             for(auto message: *_Bus)
+[2.050s]                               ^
+[2.050s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.051s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.051s]                            ^
+[2.051s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:147:40: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.051s]                 for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
+[2.052s]                                        ^
+[2.052s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.052s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.054s]                            ^
+[2.054s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp:49:10: warning: unused variable 'key' [-Wunused-variable]
+[2.054s]     bool key = true;
+[2.054s]          ^
+[2.055s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:187:36: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.055s]             for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
+[2.055s]                                    ^
+[2.055s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.055s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.056s]                            ^
+[2.056s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:227:15: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.056s]     return Bus->back();
+[2.056s]               ^
+[2.057s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.057s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.057s]                            ^
+[2.057s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:232:27: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.058s]         for(auto message: *Bus)
+[2.058s]                           ^
+[2.058s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.058s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.059s]                            ^
+[2.059s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:241:23: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.059s]     for(auto message: *Bus)
+[2.059s]                       ^
+[2.060s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.060s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.060s]                            ^
+[2.061s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:252:12: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.061s]         Bus->push_back(*m);
+[2.061s]            ^
+[2.061s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.062s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.062s]                            ^
+[2.062s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:250:58: warning: unused parameter 'm' [-Wunused-parameter]
+[2.062s] void Truck::WriteBus(std::vector<Message>* Bus, Message *m )
+[2.063s]                                                          ^
+[2.063s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:263:8: error: implicit instantiation of undefined template 'std::vector<Message>'
+[2.063s]     Bus->push_back(Message(SenderPosition,ReceiverPosition, Event, SenderID, ReceiverID));
+[2.063s]        ^
+[2.064s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:259:28: note: template is declared here
+[2.064s] class _LIBCPP_TEMPLATE_VIS vector;
+[2.064s]                            ^
+[2.064s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:58: warning: unused parameter 'SenderPosition' [-Wunused-parameter]
+[2.065s] void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+[2.065s]                                                          ^
+[2.065s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:84: warning: unused parameter 'ReceiverPosition' [-Wunused-parameter]
+[2.065s] void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+[2.065s]                                                                                    ^
+[2.065s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:108: warning: unused parameter 'Event' [-Wunused-parameter]
+[2.065s] void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+[2.066s]                                                                                                            ^
+[2.066s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:123: warning: unused parameter 'SenderID' [-Wunused-parameter]
+[2.066s] void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+[2.066s]                                                                                                                           ^
+[2.066s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:261:141: warning: unused parameter 'ReceiverID' [-Wunused-parameter]
+[2.066s] void Truck::WriteBus(std::vector<Message>* Bus,u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event, int16_t SenderID, int16_t ReceiverID)
+[2.066s]                                                                                                                                             ^
+[2.083s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.083s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.084s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.084s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.085s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.085s]                      ^
+[2.085s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.085s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.085s]                      ^
+[2.085s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.086s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:
+[2.086s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:
+[2.086s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.086s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.087s]                      ^
+[2.087s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.087s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.087s]                      ^
+[2.090s] 7 warnings and 9 errors generated.
+[2.091s] 3 warnings generated.
+[2.092s] 3 warnings generated.
+[2.099s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.099s] gmake[2]: *** Waiting for unfinished jobs....
+[2.178s] 3 warnings generated.
+[2.184s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.184s] gmake: *** [Makefile:160: all] Error 2
+[2.186s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

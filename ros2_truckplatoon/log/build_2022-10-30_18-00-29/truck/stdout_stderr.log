@@ -1,0 +1,208 @@
+Scanning dependencies of target truck
+[ 16%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~
+         "utils/include.hpp"
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:520:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base:26:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility:212:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:283:5: error: static_assert failed due to requirement '0UL < sizeof...(_Types)' "tuple_element index out of range"
+    static_assert(_Ip < sizeof...(_Types), "tuple_element index out of range");
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:457:43: note: in instantiation of template class 'std::tuple_element<0, std::__tuple_types<>>' requested here
+    typedef _LIBCPP_NODEBUG_TYPE typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
+                                          ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/function_traits.hpp:71:3: note: in instantiation of template class 'std::tuple_element<0, std::tuple<>>' requested here
+  using argument_type = typename std::tuple_element<N, arguments>::type;
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/subscription_traits.hpp:98:76: note: in instantiation of template type alias 'argument_type' requested here
+    typename rclcpp::function_traits::function_traits<CallbackT>::template argument_type<0>>
+                                                                           ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node.hpp:205:43: note: in instantiation of template class 'rclcpp::subscription_traits::has_message_type<std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>, void, void, void, void>' requested here
+    typename rclcpp::subscription_traits::has_message_type<CallbackT>::type,
+                                          ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: in instantiation of default argument for 'create_subscription<message::msg::Message_<std::allocator<void>>, std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>>' required here
+Node::create_subscription(
+      ^~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: note: while substituting deduced template arguments into function template 'create_subscription' [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = (no value), CallbackMessageT = (no value), SubscriptionT = (no value), MessageMemoryStrategyT = (no value)]
+        subscription_ = this->create_subscription<message::msg::Message>(
+                              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: error: no matching member function for call to 'create_subscription'
+        subscription_ = this->create_subscription<message::msg::Message>(
+                        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: candidate template ignored: substitution failure [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = std::allocator<void>]
+Node::create_subscription(
+      ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:32:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hppIn file included from :/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+In file included from 5/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+In file included from :
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stringIn file included from :/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string520::
+520In file included from :
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_baseIn file included from :/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base:2626:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility:212:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:
+:283:5: error: In file included from static_assert failed due to requirement '0UL < sizeof...(_Types)' "tuple_element index out of range"
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility:212:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:283:5: error: static_assert failed due to requirement '0UL < sizeof...(_Types)' "tuple_element index out of range"    static_assert(_Ip < sizeof...(_Types), "tuple_element index out of range");
+
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:457:43: note: in instantiation of template class 'std::tuple_element<0, std::__tuple_types<>>' requested here
+    static_assert(_Ip < sizeof...(_Types), "tuple_element index out of range");
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~
+    typedef _LIBCPP_NODEBUG_TYPE typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
+                                          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/function_traits.hpp457::7143::3 :note:  in instantiation of template class 'std::tuple_element<0, std::__tuple_types<>>' requested herenote: in instantiation of template class 'std::tuple_element<0, std::tuple<>>' requested here
+
+  using argument_type = typename std::tuple_element<N, arguments>::type;
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/subscription_traits.hpp:98:76: note: in instantiation of template type alias 'argument_type' requested here
+    typedef _LIBCPP_NODEBUG_TYPE typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
+                                          ^
+    typename rclcpp::function_traits::function_traits<CallbackT>::template argument_type<0>>
+                                                                           ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/function_traits.hpp:71:3: note: in instantiation of template class 'std::tuple_element<0, std::tuple<>>' requested here
+  using argument_type = typename std::tuple_element<N, arguments>::type;
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node.hpp:205:43: note: in instantiation of template class 'rclcpp::subscription_traits::has_message_type<std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>, void, void, void, void>' requested here/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/subscription_traits.hpp
+:98:76: note: in instantiation of template type alias 'argument_type' requested here
+    typename rclcpp::subscription_traits::has_message_type<CallbackT>::type,
+                                          ^
+    typename rclcpp::function_traits::function_traits<CallbackT>::template argument_type<0>>
+                                                                           ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: in instantiation of default argument for 'create_subscription<message::msg::Message_<std::allocator<void>>, std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>>' required here
+Node::create_subscription(
+      ^~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: note: while substituting deduced template arguments into function template 'create_subscription' [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = (no value), CallbackMessageT = (no value), SubscriptionT = (no value), MessageMemoryStrategyT = (no value)]
+        subscription_ = this->create_subscription<message::msg::Message>(
+                              ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node.hpp:205:43: note: in instantiation of template class 'rclcpp::subscription_traits::has_message_type<std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>, void, void, void, void>' requested here
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: error: no matching member function for call to 'create_subscription'
+    typename rclcpp::subscription_traits::has_message_type<CallbackT>::type,
+                                          ^
+        subscription_ = this->create_subscription<message::msg::Message>(
+                        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: candidate template ignored: substitution failure [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = std::allocator<void>]
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: in instantiation of default argument for 'create_subscription<message::msg::Message_<std::allocator<void>>, std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>>' required hereNode::create_subscription(
+
+      ^
+Node::create_subscription(
+      ^~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: note: while substituting deduced template arguments into function template 'create_subscription' [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = (no value), CallbackMessageT = (no value), SubscriptionT = (no value), MessageMemoryStrategyT = (no value)]
+        subscription_ = this->create_subscription<message::msg::Message>(
+                              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: error: no matching member function for call to 'create_subscription'
+        subscription_ = this->create_subscription<message::msg::Message>(
+                        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: candidate template ignored: substitution failure [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = std::allocator<void>]
+Node::create_subscription(
+      ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:520:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base:26:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility:212:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:283:5: error: static_assert failed due to requirement '0UL < sizeof...(_Types)' "tuple_element index out of range"
+    static_assert(_Ip < sizeof...(_Types), "tuple_element index out of range");
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple:457:43: note: in instantiation of template class 'std::tuple_element<0, std::__tuple_types<>>' requested here
+    typedef _LIBCPP_NODEBUG_TYPE typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
+                                          ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/function_traits.hpp:71:3: note: in instantiation of template class 'std::tuple_element<0, std::tuple<>>' requested here
+  using argument_type = typename std::tuple_element<N, arguments>::type;
+  ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/subscription_traits.hpp:98:76: note: in instantiation of template type alias 'argument_type' requested here
+    typename rclcpp::function_traits::function_traits<CallbackT>::template argument_type<0>>
+                                                                           ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node.hpp:205:43: note: in instantiation of template class 'rclcpp::subscription_traits::has_message_type<std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>, void, void, void, void>' requested here
+    typename rclcpp::subscription_traits::has_message_type<CallbackT>::type,
+                                          ^
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: in instantiation of default argument for 'create_subscription<message::msg::Message_<std::allocator<void>>, std::__bind<void (Subscriber::*)() const, Subscriber *>, std::allocator<void>>' required here
+Node::create_subscription(
+      ^~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: note: while substituting deduced template arguments into function template 'create_subscription' [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = (no value), CallbackMessageT = (no value), SubscriptionT = (no value), MessageMemoryStrategyT = (no value)]
+        subscription_ = this->create_subscription<message::msg::Message>(
+                              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:30:31: error: no matching member function for call to 'create_subscription'
+        subscription_ = this->create_subscription<message::msg::Message>(
+                        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node_impl.hpp:91:7: note: candidate template ignored: substitution failure [with MessageT = message::msg::Message_<std::allocator<void>>, CallbackT = std::__bind<void (Subscriber::*)() const, Subscriber *>, AllocatorT = std::allocator<void>]
+Node::create_subscription(
+      ^
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "src/utils/Include.hpp"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "src/utils/include.hpp"
+1 warning and 2 errors generated.
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+    speedType _speed;
+              ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+    stearingAngleType _stearingAngle;
+                      ^
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+    distanceType _distance;
+                 ^
+5 warnings and 2 errors generated.
+1 warning and 2 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+1 warning and 2 errors generated.
+gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+gmake: *** [Makefile:160: all] Error 2

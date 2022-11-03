@@ -1,0 +1,42 @@
+[0.115s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake /Users/brodie/ros2_truckplatoon/src/message -DCMAKE_INSTALL_PREFIX=/Users/brodie/ros2_truckplatoon/install/message
+[0.336s] -- The C compiler identification is AppleClang 14.0.0.14000029
+[0.487s] -- The CXX compiler identification is AppleClang 14.0.0.14000029
+[0.501s] -- Detecting C compiler ABI info
+[0.824s] -- Detecting C compiler ABI info - done
+[0.834s] -- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
+[0.834s] -- Detecting C compile features
+[0.834s] -- Detecting C compile features - done
+[0.841s] -- Detecting CXX compiler ABI info
+[1.066s] -- Detecting CXX compiler ABI info - done
+[1.076s] -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+[1.076s] -- Detecting CXX compile features
+[1.077s] -- Detecting CXX compile features - done
+[1.099s] -- Found ament_cmake: 0.9.9 (/Users/brodie/ros2_foxy/ros2-osx/share/ament_cmake/cmake)
+[1.201s] -- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 (found suitable version "3.9.4", minimum required is "3") 
+[1.201s] -- Using PYTHON_EXECUTABLE: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+[1.912s] -- Found rosidl_default_generators: 1.0.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake)
+[1.937s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.001s] -- Found rosidl_adapter: 1.2.1 (/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_adapter/cmake)
+[2.154s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_c
+[2.278s] -- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp
+[2.618s] CMake Error at /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:218 (message):
+[2.618s]   Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+[2.618s]   system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+[2.619s]   OPENSSL_INCLUDE_DIR)
+[2.619s] Call Stack (most recent call first):
+[2.619s]   /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:577 (_FPHSA_FAILURE_MESSAGE)
+[2.619s]   /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/FindOpenSSL.cmake:536 (find_package_handle_standard_args)
+[2.619s]   /Users/brodie/ros2_foxy/ros2-osx/share/fastrtps/cmake/fastrtps-config.cmake:52 (find_package)
+[2.619s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c-extras.cmake:6 (find_package)
+[2.619s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:41 (include)
+[2.620s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+[2.620s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+[2.620s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[2.620s]   /Users/brodie/ros2_foxy/ros2-osx/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[2.620s]   CMakeLists.txt:23 (find_package)
+[2.620s] 
+[2.620s] 
+[2.621s] -- Configuring incomplete, errors occurred!
+[2.621s] See also "/Users/brodie/ros2_truckplatoon/build/message/CMakeFiles/CMakeOutput.log".
+[2.621s] See also "/Users/brodie/ros2_truckplatoon/build/message/CMakeFiles/CMakeError.log".
+[2.627s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/message' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake /Users/brodie/ros2_truckplatoon/src/message -DCMAKE_INSTALL_PREFIX=/Users/brodie/ros2_truckplatoon/install/message

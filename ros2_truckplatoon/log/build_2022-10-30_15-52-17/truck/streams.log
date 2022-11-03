@@ -1,0 +1,166 @@
+[0.136s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.398s] Scanning dependencies of target truck
+[0.466s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.467s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.475s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.476s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[2.153s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.153s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.154s] #include "utils/Include.hpp"
+[2.154s]          ^~~~~~~~~~~~~~~~~~~
+[2.154s]          "utils/include.hpp"
+[2.158s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.159s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.159s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.160s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.160s] #include "utils/Include.hpp"
+[2.161s]          ^~~~~~~~~~~~~~~~~~~
+[2.161s]          "utils/include.hpp"
+[2.170s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.171s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.171s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.171s] #include "utils/Include.hpp"
+[2.172s]          ^~~~~~~~~~~~~~~~~~~
+[2.172s]          "utils/include.hpp"
+[2.175s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.176s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.177s] #include "utils/Include.hpp"
+[2.177s]          ^~~~~~~~~~~~~~~~~~~
+[2.178s]          "utils/include.hpp"
+[4.178s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.179s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[4.179s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.180s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.180s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.180s]   message.sender_position = int16_t(0);
+[4.181s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.182s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.182s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.182s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.184s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.184s]   message.receiver_position = int16_t(0);
+[4.184s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.185s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.185s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.186s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.186s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.186s]   message.sender_id =int16_t(0);
+[4.187s]   ~~~~~~~~~~~~~~~~~ ^
+[4.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.187s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.188s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.189s]   message.receiver_id = int16_t(0);
+[4.189s]   ~~~~~~~~~~~~~~~~~~~ ^
+[4.190s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.190s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.190s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.191s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.191s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.191s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.192s]   message.sender_position = int16_t(0);
+[4.192s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.192s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.193s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.194s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.199s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.199s]   message.receiver_position = int16_t(0);
+[4.199s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.200s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.200s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.200s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.201s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.201s]   message.sender_id =int16_t(0);
+[4.201s]   ~~~~~~~~~~~~~~~~~ ^
+[4.202s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.202s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.202s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.203s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.203s]   message.receiver_id = int16_t(0);
+[4.203s]   ~~~~~~~~~~~~~~~~~~~ ^
+[4.204s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.204s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.204s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.205s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[4.205s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.205s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.206s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.206s]   message.sender_position = int16_t(0);
+[4.206s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.206s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.207s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.207s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.207s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.208s]   message.receiver_position = int16_t(0);
+[4.208s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.211s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2::
+[4.212s]  /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hppnote: variable 'message' declared const here
+[4.212s] :8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[4.213s] #include "src/utils/Include.hpp"
+[4.213s]          ^~~~~~~~~~~~~~~~~~~~~~~void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.214s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.214s] 
+[4.215s]          "src/utils/include.hpp"
+[4.215s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.216s]   message.sender_id =int16_t(0);
+[4.217s]   ~~~~~~~~~~~~~~~~~ ^
+[4.217s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.218s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.218s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.218s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.219s]   message.receiver_id = int16_t(0);
+[4.219s]   ~~~~~~~~~~~~~~~~~~~ ^
+[4.219s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.220s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.220s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.220s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[4.221s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[4.221s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.226s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:27: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.226s]   message.sender_position = int16_t(0);
+[4.226s]   ~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.227s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.227s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.228s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.228s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:33:29: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.229s]   message.receiver_position = int16_t(0);
+[4.229s]   ~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+[4.229s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.230s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.230s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.230s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:34:21: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.231s]   message.sender_id =int16_t(0);
+[4.231s]   ~~~~~~~~~~~~~~~~~ ^
+[4.231s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.232s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.232s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[4.232s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:35:23: error: cannot assign to variable 'message' with const-qualified type 'const message::msg::Message &' (aka 'const Message_<std::allocator<void>> &')
+[4.233s]   message.receiver_id = int16_t(0);
+[4.233s]   ~~~~~~~~~~~~~~~~~~~ ^
+[4.234s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:30:81: note: variable 'message' declared const here
+[4.234s] void PublishMessage (const std::string& TopicName, const message::msg::Message& message)
+[4.234s]                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[5.346s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[5.347s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[5.347s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[5.347s]     speedType _speed;
+[5.348s]               ^
+[5.348s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[5.348s]     stearingAngleType _stearingAngle;
+[5.349s]                       ^
+[5.349s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[5.349s]     distanceType _distance;
+[5.350s]                  ^
+[5.350s] 5 warnings and 4 errors generated.
+[5.364s] 1 warning and 4 errors generated.
+[5.378s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[5.378s] gmake[2]: *** Waiting for unfinished jobs....
+[5.382s] 1 warning and 4 errors generated.
+[5.396s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[5.410s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[5.459s] 1 warning and 4 errors generated.
+[5.479s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[5.480s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[5.480s] gmake: *** [Makefile:160: all] Error 2
+[5.484s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

@@ -1,0 +1,19 @@
+{
+  "package_name": "message",
+  "output_dir": "/Users/brodie/ros2_truckplatoon/build/message/rosidl_typesupport_introspection_c/message",
+  "template_dir": "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/Users/brodie/ros2_truckplatoon/build/message/rosidl_adapter/message:msg/Message.idl"
+  ],
+  "target_dependencies": [
+    "/Users/brodie/ros2_foxy/ros2-osx/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/Users/brodie/ros2_foxy/ros2-osx/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/Users/brodie/ros2_foxy/ros2-osx/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/Users/brodie/ros2_truckplatoon/build/message/rosidl_adapter/message/msg/Message.idl"
+  ]
+}

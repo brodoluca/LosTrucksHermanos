@@ -1,0 +1,116 @@
+[0.070s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.238s] Scanning dependencies of target truck
+[0.287s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.290s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.290s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.293s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[1.022s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.022s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.023s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.023s] #include "utils/Include.hpp"
+[1.023s]          ^~~~~~~~~~~~~~~~~~~
+[1.023s]          "utils/include.hpp"
+[1.023s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.024s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.024s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.024s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.024s] #include "utils/Include.hpp"
+[1.024s]          ^~~~~~~~~~~~~~~~~~~
+[1.024s]          "utils/include.hpp"
+[1.027s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.027s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.027s] #include "utils/Include.hpp"
+[1.027s]          ^~~~~~~~~~~~~~~~~~~
+[1.027s]          "utils/include.hpp"
+[1.028s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.028s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.028s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.028s] #include "utils/Include.hpp"
+[1.028s]          ^~~~~~~~~~~~~~~~~~~
+[1.028s]          "utils/include.hpp"
+[1.923s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.923s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.923s] #include "src/utils/Include.hpp"
+[1.923s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.923s]          "src/utils/include.hpp"
+[1.928s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.928s]     RCLCPP_INFO(this->get_logger(), TopicName);
+[1.928s]                 ~~~~  ^
+[1.929s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:538:86: note: expanded from macro 'RCLCPP_INFO'
+[1.929s]       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
+[1.929s]                                                                                      ^~~~~~
+[1.929s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.929s]     RCLCPP_INFO(this->get_logger(), TopicName);
+[1.929s]                 ~~~~  ^
+[1.929s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[1.930s]       logger.get_name(), \
+[1.930s]       ^~~~~~
+[1.930s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.930s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[1.930s]                                                               ^~~~
+[1.930s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:70:47: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.930s]     if (rcutils_logging_logger_is_enabled_for(name, severity)) { \
+[1.931s]                                               ^~~~
+[1.931s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:23: error: no member named 'get_logger' in 'Truck'
+[1.931s]     RCLCPP_INFO(this->get_logger(), TopicName);
+[1.931s]                 ~~~~  ^
+[1.931s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:543:7: note: expanded from macro 'RCLCPP_INFO'
+[1.931s]       logger.get_name(), \
+[1.932s]       ^~~~~~
+[1.934s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:502:63: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.934s]     RCUTILS_LOG_CONDITION_EMPTY, RCUTILS_LOG_CONDITION_EMPTY, name, \
+[1.934s]                                                               ^~~~
+[1.934s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:58: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.934s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.934s]                                                          ^~~~
+[1.941s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:35:37: error: use of undeclared identifier 'TopicName'
+[1.941s]     RCLCPP_INFO(this->get_logger(), TopicName);
+[1.941s]                                     ^
+[2.500s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.500s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.500s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.500s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.500s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.501s]                      ^
+[2.501s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.501s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.501s]                      ^
+[2.505s] 1 warning and 4 errors generated.
+[2.511s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.511s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:2:
+[2.511s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Event.hpp:4:
+[2.511s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.512s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.512s]                      ^
+[2.512s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.512s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.512s]                      ^
+[2.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[2.513s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:53:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.513s] static std::ostream& operator << ( std::ostream& outs, const EventType& p )
+[2.513s]                      ^
+[2.513s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:108:22: warning: unused function 'operator<<' [-Wunused-function]
+[2.513s] static std::ostream& operator << ( std::ostream& outs, const TruckState& p )
+[2.513s]                      ^
+[2.513s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.514s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[2.514s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[2.514s]     speedType _speed;
+[2.514s]               ^
+[2.514s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[2.514s]     stearingAngleType _stearingAngle;
+[2.514s]                       ^
+[2.514s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[2.514s]     distanceType _distance;
+[2.514s]                  ^
+[2.523s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.523s] gmake[2]: *** Waiting for unfinished jobs....
+[2.530s] 3 warnings generated.
+[2.541s] 3 warnings generated.
+[2.550s] 7 warnings generated.
+[2.558s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.558s] gmake: *** [Makefile:160: all] Error 2
+[2.560s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

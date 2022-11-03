@@ -1,0 +1,238 @@
+[0.140s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.448s] Scanning dependencies of target truck
+[0.517s] [ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.523s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.524s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.526s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[2.247s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.248s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.248s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.249s] #include "utils/Include.hpp"
+[2.249s]          ^~~~~~~~~~~~~~~~~~~
+[2.250s]          "utils/include.hpp"
+[2.250s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.250s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.251s] #include "utils/Include.hpp"
+[2.251s]          ^~~~~~~~~~~~~~~~~~~
+[2.251s]          "utils/include.hpp"
+[2.252s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.252s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.252s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.252s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.253s] #include "utils/Include.hpp"
+[2.253s]          ^~~~~~~~~~~~~~~~~~~
+[2.253s]          "utils/include.hpp"
+[2.259s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.259s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.260s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.260s] #include "utils/Include.hpp"
+[2.261s]          ^~~~~~~~~~~~~~~~~~~
+[2.261s]          "utils/include.hpp"
+[4.033s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.034s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[4.034s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.034s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.034s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[4.035s]   MinimalPublisher()
+[4.035s]   ^
+[4.056s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[4.056s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[4.056s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.057s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[4.057s]   MinimalPublisher()
+[4.058s]   ^
+[4.058s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:58: error: use of undeclared identifier 'tutorial_interfaces'
+[4.058s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[4.059s]                                                          ^
+[4.064s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.065s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.065s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[4.065s]   MinimalPublisher()
+[4.066s]   ^
+[4.072s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[4.072s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.072s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.073s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:17:3: error: C++ requires a type specifier for all declarations
+[4.073s]   MinimalPublisher()
+[4.073s]   ^
+[4.086s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:58: error: use of undeclared identifier 'tutorial_interfaces'
+[4.086s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[4.087s]                                                          ^
+[4.088s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:43: error: use of undeclared identifier 'tutorial_interfaces'
+[4.089s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.089s]                                           ^
+[4.089s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[4.090s]   : Node("minimal_publisher"), count_(0)
+[4.090s]   ^
+[4.095s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:58: error: use of undeclared identifier 'tutorial_interfaces'
+[4.095s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[4.096s]                                                          ^
+[4.102s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:32:58: error: use of undeclared identifier 'tutorial_interfaces'
+[4.102s] void PublishMessage (const std::string& TopicName, const tutorial_interfaces::msg::Message& message)
+[4.103s]                                                          ^
+[4.117s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:43: error: use of undeclared identifier 'tutorial_interfaces'
+[4.117s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.117s]                                           ^
+[4.117s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[4.118s]   : Node("minimal_publisher"), count_(0)
+[4.118s]   ^
+[4.119s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[4.119s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[4.119s]                                                   ^
+[4.123s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.123s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[4.124s] #include "src/utils/Include.hpp"
+[4.124s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[4.124s]          "src/utils/include.hpp"
+[4.125s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:43: error: use of undeclared identifier 'tutorial_interfaces'
+[4.126s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.126s]                                           ^
+[4.126s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[4.126s]   : Node("minimal_publisher"), count_(0)
+[4.127s]   ^
+[4.133s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:43: error: use of undeclared identifier 'tutorial_interfaces'
+[4.133s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.133s]                                           ^
+[4.134s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:18:3: error: only constructors take base initializers
+[4.134s]   : Node("minimal_publisher"), count_(0)
+[4.134s]   ^
+[4.142s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[4.143s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[4.143s]                                                   ^
+[4.152s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[4.152s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[4.152s]                                                   ^
+[4.157s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:14:5: error: no matching function for call to 'spin'
+[4.157s]     rclcpp::spin(_publisher);
+[4.158s]     ^~~~~~~~~~~~
+[4.158s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:45:1: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>' for 1st argument
+[4.158s] spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[4.158s] ^
+[4.158s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/executors.hpp:49:1: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'shared_ptr<rclcpp::Node>' for 1st argument
+[4.159s] spin(rclcpp::Node::SharedPtr node_ptr);
+[4.159s] ^
+[4.159s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:28:51: error: use of undeclared identifier 'tutorial_interfaces'
+[4.160s]   publishers_[TopicName] = this->create_publisher<tutorial_interfaces::msg::Message>(TopicName, 10);
+[4.160s]                                                   ^
+[4.775s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.775s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[4.776s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[4.776s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.777s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.777s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.777s]                                                                                      ^
+[4.777s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[4.777s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[4.778s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[4.778s]     speedType _speed;
+[4.778s]               ^
+[4.778s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[4.778s]     stearingAngleType _stearingAngle;
+[4.778s]                       ^
+[4.779s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[4.779s]     distanceType _distance;
+[4.779s]                  ^
+[4.779s] 6 warnings and 5 errors generated.
+[4.802s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[4.802s] gmake[2]: *** Waiting for unfinished jobs....
+[4.809s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.810s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.810s]                                                                                      ^
+[4.810s] 2 warnings and 5 errors generated.
+[4.823s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.824s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.824s]                                                                                      ^
+[4.824s] 2 warnings and 5 errors generated.
+[4.828s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[4.845s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[4.856s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.856s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.857s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:14:7: error: implicit default constructor for 'Publisher' must explicitly initialize the base class 'rclcpp::Node' which does not have a default constructor
+[4.857s] class Publisher : public rclcpp::Node
+[4.857s]       ^
+[4.858s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: note: in implicit default constructor for 'Publisher' first required here
+[4.858s]         ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+[4.859s]                                     ^
+[4.859s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__shared_ptr_emplace<>' requested here
+[4.859s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[4.859s]                                                       ^
+[4.859s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, void>' requested here
+[4.860s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[4.860s]                   ^
+[4.860s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:13:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, void>' requested here
+[4.860s]     this ->_publisher = std::make_shared<Publisher>();
+[4.860s]                              ^
+[4.860s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/node.hpp:74:7: note: 'rclcpp::Node' declared here
+[4.861s] class Node : public std::enable_shared_from_this<Node>
+[4.861s]       ^
+[4.861s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.861s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[4.861s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[4.861s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[4.862s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[4.862s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[4.862s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[4.862s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[4.863s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[4.863s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[4.863s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:19:
+[4.863s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/compressed_pair.h:171:12: error: static_cast from 'std::__compressed_pair<std::allocator<Publisher>, Publisher> *' to 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::_Base1 *' (aka '__compressed_pair_elem<std::allocator<Publisher>, 0> *'), which are not related by inheritance, is not allowed
+[4.864s]     return static_cast<_Base1*>(__pair);
+[4.864s]            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.864s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:348:74: note: in instantiation of member function 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::__get_first_base' requested here
+[4.864s]             typename _CompressedPair::_Base1* __first = _CompressedPair::__get_first_base(__as_pair);
+[4.865s]                                                                          ^
+[4.865s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:341:27: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::__get_alloc' requested here
+[4.865s]             ::new ((void*)__get_alloc()) _Alloc(_VSTD::move(__a));
+[4.865s]                           ^
+[4.865s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:291:11: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::_Storage' requested here
+[4.866s]         : __storage_(_VSTD::move(__a))
+[4.866s]           ^
+[4.866s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__shared_ptr_emplace<>' requested here
+[4.866s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[4.866s]                                                       ^
+[4.866s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, void>' requested here
+[4.867s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[4.867s]                   ^
+[4.867s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:13:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, void>' requested here
+[4.867s]     this ->_publisher = std::make_shared<Publisher>();
+[4.867s]                              ^
+[4.867s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.868s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[4.868s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[4.868s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[4.868s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[4.868s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[4.869s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[4.869s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[4.869s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[4.869s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[4.869s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:19:
+[4.870s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/compressed_pair.h:175:12: error: static_cast from 'std::__compressed_pair<std::allocator<Publisher>, Publisher> *' to 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::_Base2 *' (aka '__compressed_pair_elem<Publisher, 1> *'), which are not related by inheritance, is not allowed
+[4.870s]     return static_cast<_Base2*>(__pair);
+[4.870s]            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.870s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:354:75: note: in instantiation of member function 'std::__compressed_pair<std::allocator<Publisher>, Publisher>::__get_second_base' requested here
+[4.870s]             typename _CompressedPair::_Base2* __second = _CompressedPair::__get_second_base(__as_pair);
+[4.870s]                                                                           ^
+[4.871s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:306:53: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::_Storage::__get_elem' requested here
+[4.871s]     _Tp* __get_elem() _NOEXCEPT { return __storage_.__get_elem(); }
+[4.871s]                                                     ^
+[4.871s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1108:76: note: in instantiation of member function 'std::__shared_ptr_emplace<Publisher, std::allocator<Publisher>>::__get_elem' requested here
+[4.871s]     return shared_ptr<_Tp>::__create_with_control_block((*__control_block).__get_elem(), _VSTD::addressof(*__control_block));
+[4.872s]                                                                            ^
+[4.872s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Publisher, std::allocator<Publisher>, void>' requested here
+[4.872s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[4.872s]                   ^
+[4.872s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:13:30: note: in instantiation of function template specialization 'std::make_shared<Publisher, void>' requested here
+[4.872s]     this ->_publisher = std::make_shared<Publisher>();
+[4.873s]                              ^
+[4.907s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[4.908s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:6:
+[4.908s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/NodePublisher.hpp:46:86: warning: private field 'publishers_' is not used [-Wunused-private-field]
+[4.908s]   std::map<std::string, rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr> publishers_;
+[4.909s]                                                                                      ^
+[4.909s] 2 warnings and 9 errors generated.
+[4.938s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[4.939s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[4.939s] gmake: *** [Makefile:160: all] Error 2
+[4.942s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

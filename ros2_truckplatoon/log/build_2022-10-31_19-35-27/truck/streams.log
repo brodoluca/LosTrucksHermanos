@@ -1,0 +1,203 @@
+[0.090s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.257s] Scanning dependencies of target truck
+[0.298s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.298s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.298s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.298s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[1.174s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.174s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.174s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.175s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.175s] #include "utils/Include.hpp"
+[1.175s]          ^~~~~~~~~~~~~~~~~~~
+[1.175s]          "utils/include.hpp"
+[1.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.176s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.176s] #include "utils/Include.hpp"
+[1.176s]          ^~~~~~~~~~~~~~~~~~~
+[1.176s]          "utils/include.hpp"
+[1.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.176s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.177s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.177s] #include "utils/Include.hpp"
+[1.177s]          ^~~~~~~~~~~~~~~~~~~
+[1.177s]          "utils/include.hpp"
+[1.188s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.188s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.188s] #include "utils/Include.hpp"
+[1.189s]          ^~~~~~~~~~~~~~~~~~~
+[1.189s]          "utils/include.hpp"
+[2.184s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.185s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.185s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'int64'
+[2.185s]     Subscriber(std::string nodeName = "DefaultNode", const int64 &interval)
+[2.186s]                                                            ^
+[2.186s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.186s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.186s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.187s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'int64'
+[2.187s]     Subscriber(std::string nodeName = "DefaultNode", const int64 &interval)
+[2.187s]                                                            ^
+[2.187s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.188s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.188s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.188s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.188s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'int64'
+[2.189s]     Subscriber(std::string nodeName = "DefaultNode", const int64 &interval)
+[2.189s]                                                            ^
+[2.208s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: no viable overloaded '='
+[2.210s]       if(!_running)_running = true;
+[2.210s]                    ~~~~~~~~ ^ ~~~~
+[2.210s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1834:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.210s]     _Tp operator=(_Tp __d) volatile _NOEXCEPT
+[2.210s]         ^
+[2.210s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1837:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.210s]     _Tp operator=(_Tp __d) _NOEXCEPT
+[2.211s]         ^
+[2.211s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1840:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.211s]     atomic& operator=(const atomic&) = delete;
+[2.211s]             ^
+[2.211s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1841:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.211s]     atomic& operator=(const atomic&) volatile = delete;
+[2.211s]             ^
+[2.212s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[2.212s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.212s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.212s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.212s]                                                                ^
+[2.212s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: no viable overloaded '='
+[2.212s]       if(!_running)_running = true;
+[2.212s]                    ~~~~~~~~ ^ ~~~~
+[2.213s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1834:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.213s]     _Tp operator=(_Tp __d) volatile _NOEXCEPT
+[2.214s]         ^
+[2.214s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1837:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.214s]     _Tp operator=(_Tp __d) _NOEXCEPT
+[2.214s]         ^
+[2.214s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1840:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.215s]     atomic& operator=(const atomic&) = delete;
+[2.215s]             ^
+[2.215s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1841:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.215s]     atomic& operator=(const atomic&) volatile = delete;
+[2.215s]             ^
+[2.215s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[2.215s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[2.216s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.216s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.216s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.216s]                                                                ^
+[2.216s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: no viable overloaded '='
+[2.216s]       if(!_running)_running = true;
+[2.216s]                    ~~~~~~~~ ^ ~~~~
+[2.217s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1834:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.217s]     _Tp operator=(_Tp __d) volatile _NOEXCEPT
+[2.217s]         ^
+[2.217s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1837:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.217s]     _Tp operator=(_Tp __d) _NOEXCEPT
+[2.218s]         ^
+[2.218s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1840:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.218s]     atomic& operator=(const atomic&) = delete;
+[2.218s]             ^
+[2.218s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1841:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.218s]     atomic& operator=(const atomic&) volatile = delete;
+[2.218s]             ^
+[2.218s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.219s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[2.219s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.219s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.219s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.219s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.220s]                                                                ^
+[2.220s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.220s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.220s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.221s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:26:60: error: unknown type name 'int64'
+[2.221s]     Subscriber(std::string nodeName = "DefaultNode", const int64 &interval)
+[2.221s]                                                            ^
+[2.221s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:59:103: error: expected ';' after expression
+[2.222s]     this ->_subscriber = std::make_shared<Subscriber>("Subscriber_Truck_" + std::to_string(_id), 1000)
+[2.222s]                                                                                                       ^
+[2.222s]                                                                                                       ;
+[2.222s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[2.222s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[2.223s] #include "src/utils/Include.hpp"
+[2.223s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[2.223s]          "src/utils/include.hpp"
+[2.223s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:14: warning: unused parameter 'argc' [-Wunused-parameter]
+[2.223s] int main(int argc, char ** argv)
+[2.223s]              ^
+[2.223s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:3:28: warning: unused parameter 'argv' [-Wunused-parameter]
+[2.224s] int main(int argc, char ** argv)
+[2.224s]                            ^
+[2.238s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:52:29: error: no viable overloaded '='
+[2.238s]       if(!_running)_running = true;
+[2.239s]                    ~~~~~~~~ ^ ~~~~
+[2.239s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1834:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.239s]     _Tp operator=(_Tp __d) volatile _NOEXCEPT
+[2.239s]         ^
+[2.240s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1837:9: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.240s]     _Tp operator=(_Tp __d) _NOEXCEPT
+[2.240s]         ^
+[2.240s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1840:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.241s]     atomic& operator=(const atomic&) = delete;
+[2.241s]             ^
+[2.241s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic:1841:13: note: candidate function not viable: 'this' argument has type 'const std::atomic_bool' (aka 'const atomic<bool>'), but method is not marked const
+[2.242s]     atomic& operator=(const atomic&) volatile = delete;
+[2.242s]             ^
+[2.242s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[2.242s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[2.243s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[2.243s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:49:64: warning: unused parameter 'msg' [-Wunused-parameter]
+[2.243s]     void topic_callback(const message::msg::Message::SharedPtr msg) const
+[2.243s]                                                                ^
+[3.477s] 2 warnings and 2 errors generated.
+[3.494s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[3.494s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[3.495s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[3.495s]     speedType _speed;
+[3.495s]               ^
+[3.495s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[3.496s]     stearingAngleType _stearingAngle;
+[3.496s]                       ^
+[3.496s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[3.496s]     distanceType _distance;
+[3.497s]                  ^
+[3.497s] 8 warnings and 2 errors generated.
+[3.500s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[3.500s] gmake[2]: *** Waiting for unfinished jobs....
+[3.502s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[3.502s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:3:
+[3.502s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/PlatoonTypes.hpp:5:
+[3.503s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/Include.hpp:3:
+[3.503s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream:37:
+[3.503s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ios:214:
+[3.503s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__locale:15:
+[3.503s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+[3.504s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+[3.504s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+[3.504s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:20:
+[3.504s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:298:37: error: no matching constructor for initialization of 'Subscriber'
+[3.505s]         ::new ((void*)__get_elem()) _Tp(_VSTD::forward<_Args>(__args)...);
+[3.505s]                                     ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.505s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<Subscriber, std::allocator<Subscriber>>::__shared_ptr_emplace<std::string, int>' requested here
+[3.505s]     ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+[3.505s]                                                       ^
+[3.506s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<Subscriber, std::allocator<Subscriber>, std::string, int, void>' requested here
+[3.506s]     return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+[3.506s]                   ^
+[3.506s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:59:31: note: in instantiation of function template specialization 'std::make_shared<Subscriber, std::string, int, void>' requested here
+[3.506s]     this ->_subscriber = std::make_shared<Subscriber>("Subscriber_Truck_" + std::to_string(_id), 1000)
+[3.507s]                               ^
+[3.507s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+[3.507s] class Subscriber : public rclcpp::Node
+[3.507s]       ^
+[3.508s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:7: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 2 were provided
+[3.508s] 2 warnings and 2 errors generated.
+[3.517s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[3.527s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[3.536s] 2 warnings and 4 errors generated.
+[3.556s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[3.557s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[3.557s] gmake: *** [Makefile:160: all] Error 2
+[3.559s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=/Users/brodie/ros2_truckplatoon/install/message:/Users/brodie/ros2_truckplatoon/install/truck:/Users/brodie/ros2_truckplatoon/install/Messages:/Users/brodie/my_workspace/install/cpp_srvcli:/Users/brodie/my_workspace/install/cpp_pubsub:/Users/brodie/my_workspace/install/tutorial_interfaces:/Users/brodie/ros2_foxy/ros2-osx:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

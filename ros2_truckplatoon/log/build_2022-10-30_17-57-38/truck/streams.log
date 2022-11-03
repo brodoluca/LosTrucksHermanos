@@ -1,0 +1,239 @@
+[0.052s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.147s] Scanning dependencies of target truck
+[0.167s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
+[0.167s] [ 33%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.168s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
+[0.168s] [ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
+[0.654s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[0.654s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.654s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.655s] #include "utils/Include.hpp"
+[0.655s]          ^~~~~~~~~~~~~~~~~~~
+[0.655s]          "utils/include.hpp"
+[0.662s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[0.662s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.663s] #include "utils/Include.hpp"
+[0.663s]          ^~~~~~~~~~~~~~~~~~~
+[0.663s]          "utils/include.hpp"
+[0.663s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[0.663s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[0.664s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[0.664s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.664s] #include "utils/Include.hpp"
+[0.664s]          ^~~~~~~~~~~~~~~~~~~
+[0.664s]          "utils/include.hpp"
+[0.664s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[0.665s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[0.665s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:4:10: warning: non-portable path to file '"utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[0.665s] #include "utils/Include.hpp"
+[0.665s]          ^~~~~~~~~~~~~~~~~~~
+[0.665s]          "utils/include.hpp"
+[1.410s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.410s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.411s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.411s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.411s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: error: C++ requires a type specifier for all declarations
+[1.411s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.411s]     ^
+[1.411s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:1:
+[1.412s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.412s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: error: C++ requires a type specifier for all declarations
+[1.412s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.412s]     ^
+[1.413s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.413s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.413s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.413s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: error: C++ requires a type specifier for all declarations
+[1.413s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.414s]     ^
+[1.414s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.414s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.414s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.414s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: error: C++ requires a type specifier for all declarations
+[1.414s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.414s]     ^
+[1.419s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:5: error: only constructors take base initializers
+[1.420s]     : Node(nodeName)
+[1.420s]     ^
+[1.420s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:5: error: only constructors take base initializers
+[1.421s]     : Node(nodeName)
+[1.421s]     ^
+[1.421s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: 'MinimalSubscriber' is not a class, namespace, or enumeration
+[1.421s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.421s]                                   ^
+[1.421s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: note: 'MinimalSubscriber' declared here
+[1.421s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.421s]     ^
+[1.421s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: 'MinimalSubscriber' is not a class, namespace, or enumeration
+[1.421s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:        TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));5
+[1.421s] :                                  ^ 
+[1.422s] error: only constructors take base initializers
+[1.422s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5    : Node(nodeName):
+[1.422s]     ^
+[1.422s]  note: 'MinimalSubscriber' declared here
+[1.422s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.422s]     ^
+[1.422s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: 'MinimalSubscriber' is not a class, namespace, or enumeration
+[1.422s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:23:5: error: only constructors take base initializers
+[1.422s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.422s]                                   ^
+[1.422s]     : Node(nodeName)
+[1.422s]     ^
+[1.423s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: note: 'MinimalSubscriber' declared here
+[1.423s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.423s]     ^
+[1.423s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:35: error: 'MinimalSubscriber' is not a class, namespace, or enumeration
+[1.423s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.423s]                                   ^
+[1.423s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:22:5: note: 'MinimalSubscriber' declared here
+[1.423s]     MinimalSubscriber(std::string nodeName = "DefaultNode")
+[1.423s]     ^
+[1.432s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:76: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.432s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:76: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.433s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.433s]                                                                            ^~
+[1.434s]                                                                            std::placeholders::_1
+[1.435s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.435s]                                                                            ^~
+[1.435s]                                                                            std::placeholders::_1
+[1.435s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.435s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.435s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.436s]                                              ^
+[1.436s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.436s]                                              ^
+[1.436s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:76: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.436s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.436s]                                                                            ^~
+[1.437s]                                                                            std::placeholders::_1
+[1.437s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h:61:46: note: 'std::placeholders::_1' declared here
+[1.437s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.438s]                                              ^
+[1.438s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:31:76: error: use of undeclared identifier '_1'; did you mean 'std::placeholders::_1'?
+[1.438s]         TopicName, 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.439s]                                                                            ^~
+[1.439s]                                                                            std::placeholders::_1
+[1.439s] In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind.h/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp::611::
+[1.439s] 46In file included from :/Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp :note: 7'std::placeholders::_1' declared here:
+[1.439s] 
+[1.439s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:36:61: error: no member named 'data' in 'message::msg::Message_<std::allocator<void>>'
+[1.439s] /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
+[1.439s]                                              ^
+[1.439s]       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+[1.439s]                                                        ~~~~~^
+[1.440s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.cpp:1:
+[1.440s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.440s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.440s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:36:61: error: no member named 'data' in 'message::msg::Message_<std::allocator<void>>'
+[1.440s]       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+[1.440s]                                                        ~~~~~^
+[1.440s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:545:35: note: expanded from macro 'RCLCPP_INFO'
+[1.440s]         RCLCPP_ALL_BUT_FIRST_ARGS(__VA_ARGS__,"")); \
+[1.440s]                                   ^~~~~~~~~~~
+[1.440s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:36:43: note: expanded from macro 'RCLCPP_ALL_BUT_FIRST_ARGS'
+[1.441s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:545:35: note: expanded from macro 'RCLCPP_INFO'
+[1.441s] #define RCLCPP_ALL_BUT_FIRST_ARGS(N, ...) __VA_ARGS__
+[1.441s]                                           ^~~~~~~~~~~
+[1.441s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h        RCLCPP_ALL_BUT_FIRST_ARGS(__VA_ARGS__,"")); \
+[1.441s]                                   ^~~~~~~~~~~
+[1.441s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp::503:365::43 :note:  expanded from macro 'RCUTILS_LOG_INFO_NAMED'note: 
+[1.441s] expanded from macro 'RCLCPP_ALL_BUT_FIRST_ARGS'
+[1.441s]     __VA_ARGS__)
+[1.441s]     ^~~~~~~~~~~
+[1.441s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72#define RCLCPP_ALL_BUT_FIRST_ARGS(N, ...) __VA_ARGS__:
+[1.441s] 64                                          ^~~~~~~~~~~:
+[1.442s]  note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.442s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.442s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \    __VA_ARGS__)
+[1.442s] 
+[1.442s]                                                                ^~~~~~~~~~~    ^~~~~~~~~~~
+[1.442s] 
+[1.442s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.442s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.442s]                                                                ^~~~~~~~~~~
+[1.442s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.443s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:
+[1.443s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Leader.hpp:4:
+[1.443s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.443s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:36:61: error: no member named 'data' in 'message::msg::Message_<std::allocator<void>>'
+[1.443s]       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+[1.443s]                                                        ~~~~~^
+[1.443s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:545:35: note: expanded from macro 'RCLCPP_INFO'
+[1.443s]         RCLCPP_ALL_BUT_FIRST_ARGS(__VA_ARGS__,"")); \
+[1.443s]                                   ^~~~~~~~~~~
+[1.443s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:36:43: note: expanded from macro 'RCLCPP_ALL_BUT_FIRST_ARGS'
+[1.444s] #define RCLCPP_ALL_BUT_FIRST_ARGS(N, ...) __VA_ARGS__
+[1.444s]                                           ^~~~~~~~~~~
+[1.444s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.444s]     __VA_ARGS__)
+[1.444s]     ^~~~~~~~~~~
+[1.444s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.444s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.444s]                                                                ^~~~~~~~~~~
+[1.445s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.cpp:1:
+[1.445s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Communication.hpp:3:
+[1.445s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.hpp:7:
+[1.445s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Subscriber.hpp:36:61: error: no member named 'data' in 'message::msg::Message_<std::allocator<void>>'
+[1.445s]       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+[1.445s]                                                        ~~~~~^
+[1.446s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:545:35: note: expanded from macro 'RCLCPP_INFO'
+[1.446s]         RCLCPP_ALL_BUT_FIRST_ARGS(__VA_ARGS__,"")); \
+[1.446s]                                   ^~~~~~~~~~~
+[1.446s] /Users/brodie/ros2_foxy/ros2-osx/include/rclcpp/logging.hpp:36:43: note: expanded from macro 'RCLCPP_ALL_BUT_FIRST_ARGS'
+[1.446s] #define RCLCPP_ALL_BUT_FIRST_ARGS(N, ...) __VA_ARGS__
+[1.446s]                                           ^~~~~~~~~~~
+[1.446s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:503:5: note: expanded from macro 'RCUTILS_LOG_INFO_NAMED'
+[1.447s]     __VA_ARGS__)
+[1.447s]     ^~~~~~~~~~~
+[1.447s] /Users/brodie/ros2_foxy/ros2-osx/include/rcutils/logging_macros.h:72:64: note: expanded from macro 'RCUTILS_LOG_COND_NAMED'
+[1.447s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.447s]                                                                ^~~~~~~~~~~
+[1.447s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.447s] /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:8:10: warning: non-portable path to file '"src/utils/include.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+[1.447s] #include "src/utils/Include.hpp"
+[1.447s]          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.447s]          "src/utils/include.hpp"
+[1.447s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/Truck.cpp:26:24: error: no viable overloaded '='
+[1.447s]     this ->_subscriber = std::make_shared<Publisher>("Truck_" + std::to_string(_id));
+[1.448s]     ~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.448s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:511:17: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'const shared_ptr<Subscriber>' for 1st argument
+[1.448s]     shared_ptr& operator=(const shared_ptr& __r) _NOEXCEPT;
+[1.448s]                 ^
+[1.448s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:519:9: note: candidate template ignored: requirement '__compatible_with<Publisher, Subscriber>::value' was not satisfied [with _Yp = Publisher]
+[1.448s]         operator=(const shared_ptr<_Yp>& __r) _NOEXCEPT;
+[1.448s]         ^
+[1.449s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:521:17: note: candidate function not viable: no known conversion from 'shared_ptr<Publisher>' to 'shared_ptr<Subscriber>' for 1st argument
+[1.449s]     shared_ptr& operator=(shared_ptr&& __r) _NOEXCEPT;
+[1.449s]                 ^
+[1.449s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:529:9: note: candidate template ignored: requirement '__compatible_with<Publisher, Subscriber>::value' was not satisfied [with _Yp = Publisher]
+[1.449s]         operator=(shared_ptr<_Yp>&& __r);
+[1.449s]         ^
+[1.449s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:539:9: note: candidate template ignored: could not match 'auto_ptr' against 'shared_ptr'
+[1.449s]         operator=(auto_ptr<_Yp>&& __r);
+[1.449s]         ^
+[1.449s] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:548:9: note: candidate template ignored: could not match 'unique_ptr' against 'shared_ptr'
+[1.450s]         operator=(unique_ptr<_Yp, _Dp>&& __r);
+[1.450s]         ^
+[1.940s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
+[1.940s] In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:11:
+[1.940s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:9:15: warning: private field '_speed' is not used [-Wunused-private-field]
+[1.941s]     speedType _speed;
+[1.941s]               ^
+[1.941s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:10:23: warning: private field '_stearingAngle' is not used [-Wunused-private-field]
+[1.941s]     stearingAngleType _stearingAngle;
+[1.941s]                       ^
+[1.941s] /Users/brodie/ros2_truckplatoon/src/truck/src/src/DrivingEvent.hpp:11:18: warning: private field '_distance' is not used [-Wunused-private-field]
+[1.941s]     distanceType _distance;
+[1.941s]                  ^
+[1.942s] 5 warnings and 5 errors generated.
+[1.942s] 1 warning and 5 errors generated.
+[1.942s] 1 warning and 5 errors generated.
+[1.968s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[1.968s] gmake[2]: *** Waiting for unfinished jobs....
+[1.969s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:108: CMakeFiles/truck.dir/src/src/Leader.cpp.o] Error 1
+[1.969s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:121: CMakeFiles/truck.dir/src/src/Communication.cpp.o] Error 1
+[1.991s] 1 warning and 6 errors generated.
+[2.007s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:95: CMakeFiles/truck.dir/src/src/Truck.cpp.o] Error 1
+[2.008s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[2.008s] gmake: *** [Makefile:160: all] Error 2
+[2.010s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8

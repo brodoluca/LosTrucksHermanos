@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.cpp
+JsonHandler.hpp
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp
+
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/JsonHandler.hpp
+include.hpp
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/include.hpp
+
+/Users/brodie/ros2_truckplatoon/src/truck/src/src/utils/include.hpp
+iostream
+-
+string
+-
+map
+-
+

@@ -1,0 +1,11 @@
+[0.145s] Invoking command in '/Users/brodie/ros2_truckplatoon/build/truck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
+[0.265s] Scanning dependencies of target truck
+[0.288s] [ 50%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
+[0.344s] /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:10: fatal error: 'Platoon.hpp' file not found
+[0.344s] #include "Platoon.hpp"
+[0.345s]          ^~~~~~~~~~~~~
+[0.345s] 1 error generated.
+[0.348s] gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
+[0.349s] gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
+[0.349s] gmake: *** [Makefile:160: all] Error 2
+[0.351s] Invoked command in '/Users/brodie/ros2_truckplatoon/build/truck' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/brodie/my_workspace/install/my_package SHLVL=2 _=/usr/bin/env /usr/local/bin/cmake --build /Users/brodie/ros2_truckplatoon/build/truck -- -j8 -l8
