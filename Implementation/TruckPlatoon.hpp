@@ -39,7 +39,10 @@ namespace TruckPlatoon
             TruckCreatesPlatoon(5);
             break;
         case Simulation::LeaderLeavesPlatoon:
-            TruckCreatesPlatoon(5);
+            std::cout << "///////////////////////////////////"<<std::endl;
+            std::cout << "// Leader Leaves the platoon     //"<<std::endl;
+            std::cout << "///////////////////////////////////"<<std::endl;
+            LeaderLeaves();
             break;
 
         
@@ -47,7 +50,6 @@ namespace TruckPlatoon
             break;
         }
     }
-
 
 
 

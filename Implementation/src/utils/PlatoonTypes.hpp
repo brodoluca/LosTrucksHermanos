@@ -16,6 +16,7 @@
 #define BROADCAST 0
 #define STAMP_MESSAGE _position, BROADCAST, EventType::None, _id, BROADCAST
 #define LEADER_POSITION 1
+#define NEW_LEADER_POSITION 2
 
 
 

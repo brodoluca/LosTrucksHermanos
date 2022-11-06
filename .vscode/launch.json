@@ -12,7 +12,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "C/C++: g++ compila il file attivo"
+            "preLaunchTask": "C/C++: clang++ compila il file attivo"
         }
     ],
     "preLaunchTask": "g++.exe build active file"

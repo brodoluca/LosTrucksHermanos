@@ -69,12 +69,22 @@ void Truck::HandleEvent(const TruckEvent &event)
             }else if(event == TruckEvent::PlatoonNotAvailable)
             {
                 _state = TruckState::PlatoonCreation;
-            }else
+            }else if(event == TruckEvent::Leave)
             {
-                //ErrorHandling
+                _state = TruckState::Unavailable;
+            }else{
+                //Error handling
             }
             break;
         case TruckState::Elections:
+            if(event == TruckEvent::Elected)
+            {
+                _state = TruckState::Leader;
+            }else if (event == TruckEvent::PositionReceived)
+            {
+                 _state = TruckState::SimpleMember;
+                 _position-=1;
+            }
             break;
         case TruckState::PlatoonMember:
             if(event == TruckEvent::Elected)
@@ -89,12 +99,37 @@ void Truck::HandleEvent(const TruckEvent &event)
             {
                 _state = TruckState::SimpleMember;
                
+            }else if(event == TruckEvent::Leave)
+            {
+                _state = TruckState::Unavailable;
+            }else{
+                //Error handling
             }
         case TruckState::Leader:
-            /* code */
+            if(event == TruckEvent::Leave)
+            {
+                _state = TruckState::Unavailable;
+            }else{
+                //Error handling
+            }
             break;
         case TruckState::SimpleMember:
-            /* code */
+            if(event == TruckEvent::ElectNewLeader)
+            {
+                _state = TruckState::Elections;
+            }else if(event == TruckEvent::Leave)
+            {
+                _state = TruckState::Unavailable;
+            }
+            if(event == TruckEvent::Elected)
+            {
+                _state = TruckState::Leader;
+            }
+            
+            
+            else{
+                //Error handling
+            }
             break;
 
         case TruckState::Unavailable:
@@ -134,7 +169,14 @@ void Truck::Update()
                     HandleEvent(TruckEvent::PositionReceived);
                     
                 }
+
+                //in case the leader is leaving. 
+                //Basically, if the event type is leaving and the position is the leader position
+                if(message._Event.Type() == EventType::Leaving &&  message._SenderPosition==LEADER_POSITION){
+                    HandleEvent(TruckEvent::ElectNewLeader);
                     
+                }
+
             }
             break;
         case TruckState::Leader:
@@ -144,7 +186,7 @@ void Truck::Update()
                 return;
             }
         
-                for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
+            for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
                 {
                     if((*message)._Event.Type() == EventType::LeaderElected || (*message)._Event.Type() == EventType::BroadcastInfo)
                         break;
@@ -194,6 +236,13 @@ void Truck::Update()
                     _speed = std::stoi(map[SPEED]);
                     _platoonSize = std::stoi(map[PLATOON_SIZE]);
                 }
+
+                //in case the leader is leaving. 
+                //Basically, if the event type is leaving and the position is the leader position
+                if((*message)._Event.Type() == EventType::Leaving &&  (*message)._SenderPosition==LEADER_POSITION){
+                    HandleEvent(TruckEvent::ElectNewLeader);
+                    
+                }
             }
             break;
 
@@ -206,7 +255,26 @@ void Truck::Update()
             
             break;
         case TruckState::Elections:
-            break;
+            if(_position == NEW_LEADER_POSITION)
+            {
+                _position = LEADER_POSITION;
+                _platoonSize= _platoonSize-1;
+                Message newMessage( _position, 0, EventType::LeaderElected, _id, BROADCAST);
+                WriteBus(_Bus,&newMessage);
+                
+                HandleEvent(TruckEvent::Elected);
+            }
+            else
+            {
+                for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::Leaving; message--)
+                {
+                    if(message->_Event.Type() == EventType::LeaderElected){
+                        HandleEvent(TruckEvent::PositionReceived);
+                    }
+                }
+            }
+
+
         default:
             break;
     }
@@ -345,4 +413,25 @@ void Truck::BroadcastInfo()
 void Truck::_updateSpeed(const speedType& newSpeed)
 {
     _speed = newSpeed;
+}
+
+
+u_int16_t Truck::GetPosition()
+{
+    return _position;
+}
+
+void Truck::Leave()
+{
+    if(this->isLeader())
+    {
+        Message newMessage( _position, 0, EventType::Leaving, _id, BROADCAST);
+        WriteBus(_Bus, &newMessage);
+    }
+    else
+    {
+        //handle when truck is not leader
+    }
+
+    this->HandleEvent(TruckEvent::Leave);
 }

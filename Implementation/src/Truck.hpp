@@ -21,6 +21,8 @@ public:
     distanceType GetDistance();
     TruckState GetState();
 
+    u_int16_t GetPosition();
+
     void SetSpeed(speedType newSpeed);
     void SetAngle(stearingAngleType newStearingAngle);
     void SetDistance(distanceType newDistance);
@@ -56,8 +58,9 @@ public:
 
 
     void BroadcastInfo();
-
+    void Leave();
     bool isLeader();
+
 
 protected:
     TruckState _state;

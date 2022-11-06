@@ -23,6 +23,6 @@
 
 void TruckCreatesPlatoon(const int &NumberOfThreads = 4);
 
-
+void LeaderLeaves(const int &NumberOfTrucks = 4);
 
 #endif
