@@ -125,8 +125,6 @@ void Truck::HandleEvent(const TruckEvent &event)
             {
                 _state = TruckState::Leader;
             }
-            
-            
             else{
                 //Error handling
             }
@@ -229,8 +227,10 @@ void Truck::Update()
             for(auto message = _Bus->end(); (*message)._Event.Type() != EventType::LeaderElected; message--)
             {
                 if((*message)._Event.Type() == EventType::LeaderElected or (*message)._Event.Type() == EventType::None)
+                {
                         break;
-                if((*message)._Event.Type() == EventType::BroadcastInfo && ((*message)._ReceiverPosition == _position || (*message)._ReceiverPosition == BROADCAST))
+                }
+                else if((*message)._Event.Type() == EventType::BroadcastInfo && ((*message)._ReceiverPosition == _position || (*message)._ReceiverPosition == BROADCAST))
                 {
                     auto map = StupidJSON::ReadJson((*message)._Body);
                     _speed = std::stoi(map[SPEED]);
@@ -239,9 +239,16 @@ void Truck::Update()
 
                 //in case the leader is leaving. 
                 //Basically, if the event type is leaving and the position is the leader position
-                if((*message)._Event.Type() == EventType::Leaving &&  (*message)._SenderPosition==LEADER_POSITION){
+                else if((*message)._Event.Type() == EventType::Leaving &&  (*message)._SenderPosition==LEADER_POSITION){
                     HandleEvent(TruckEvent::ElectNewLeader);
-                    
+                }
+                else if((*message)._Event.Type() == EventType::Leaving &&  (*message)._SenderPosition!=LEADER_POSITION)
+                {
+                    if((*message)._SenderPosition < this->_position){
+                        this->_position-=1;
+                        WriteBus(_Bus,_position, LEADER_POSITION, EventType::ReceivePosition, _id, _leaderID );
+                    }
+                        
                 }
             }
             break;
@@ -430,7 +437,8 @@ void Truck::Leave()
     }
     else
     {
-        //handle when truck is not leader
+        Message newMessage( _position, 0, EventType::Leaving, _id, BROADCAST);
+        WriteBus(_Bus, &newMessage);
     }
 
     this->HandleEvent(TruckEvent::Leave);
