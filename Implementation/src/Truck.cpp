@@ -439,6 +439,8 @@ void Truck::Leave()
     {
         Message newMessage( _position, 0, EventType::Leaving, _id, BROADCAST);
         WriteBus(_Bus, &newMessage);
+        this ->_position = 999;
+
     }
 
     this->HandleEvent(TruckEvent::Leave);
