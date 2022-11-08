@@ -5,7 +5,7 @@
 #include "Truck.hpp"
 
 #include "utils/PlatoonTypes.hpp"
-#include "utils/Include.hpp"
+#include "utils/include.hpp"
 
 #include "Event.hpp"
 #include "DrivingEvent.hpp"
