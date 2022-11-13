@@ -1,5 +1,7 @@
 #include "Truck.hpp"
 
+namespace TruckOMP {
+
 
 Truck::Truck()
 {
@@ -445,3 +447,13 @@ void Truck::Leave()
 
     this->HandleEvent(TruckEvent::Leave);
 }
+
+
+
+
+
+
+
+
+
+}//end of Namespace

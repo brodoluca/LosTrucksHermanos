@@ -1,7 +1,7 @@
 #include "Simulations.hpp"
 
-
-
+namespace TruckOMP
+{
 static void ReadTheBus(const std::vector<Message>& MessageBus)
 {
     std::cout << std::endl<<std::endl << "READING THE BUS: "<< std::endl <<std::endl;
@@ -28,7 +28,7 @@ void TruckCreatesPlatoon(const int &NumberOfThreads)
             
             
 
-            Truck truck(ID);
+            TruckOMP::Truck truck(ID);
             truck.SetBus(&MessageBus);
 
             #pragma omp critical
@@ -61,7 +61,7 @@ void LeaderLeaves(const int &NumberOfTrucks)
             
             
 
-        Truck *truck = new Truck(ID);
+        TruckOMP::Truck *truck = new TruckOMP::Truck(ID);
         truck->SetBus(&MessageBus);
 
         #pragma omp critical
@@ -119,7 +119,7 @@ void MemberLeaves(const int &NumberOfTrucks)
             
             
 
-        Truck *truck = new Truck(ID);
+        TruckOMP::Truck *truck = new TruckOMP::Truck(ID);
         truck->SetBus(&MessageBus);
 
         #pragma omp critical
@@ -160,5 +160,27 @@ void MemberLeaves(const int &NumberOfTrucks)
     ReadTheBus(MessageBus);
 }
 
+} // end of namespace
+
+
+
+
+
+
+namespace TruckSocket
+{
+    void TruckCreatesPlatoon(const int &NumberOfTrucks)
+    {
+        std::cout << "WORK IN PROGRESS" << std::endl;
+    }
+    void LeaderLeaves(const int &NumberOfTrucks)
+    {
+        std::cout << "WORK IN PROGRESS" << std::endl;
+    }
+    void MemberLeaves(const int &NumberOfTrucks)
+    {
+        std::cout << "WORK IN PROGRESS" << std::endl;
+    }
+} // end of namespace
 
 

@@ -6,7 +6,8 @@
 
 #include "utils/JsonHandler.hpp"
 
-
+namespace TruckOMP
+{
 /// Class generated from the class diagram. 
 class Truck
 {
@@ -22,6 +23,7 @@ public:
     TruckState GetState();
 
     u_int16_t GetPosition();
+    bool isLeader();
 
     void SetSpeed(speedType newSpeed);
     void SetAngle(stearingAngleType newStearingAngle);
@@ -59,7 +61,7 @@ public:
 
     void BroadcastInfo();
     void Leave();
-    bool isLeader();
+    
 
 
 protected:
@@ -80,7 +82,52 @@ protected:
     
     void _updateSpeed(const speedType& newSpeed);
 };
+}// end of namespace
 
+
+
+namespace TruckSocket
+{
+
+
+class Truck
+{
+public:
+    Truck();
+    Truck(u_int16_t newID);
+    u_int16_t GetID();
+    void SetID(u_int16_t newID);
+
+    speedType GetSpeed();
+    stearingAngleType GetAngle();
+    distanceType GetDistance();
+    TruckState GetState();
+    bool isLeader();
+    u_int16_t GetPosition();
+
+    void SetSpeed(speedType newSpeed);
+    void SetAngle(stearingAngleType newStearingAngle);
+    void SetDistance(distanceType newDistance);
+    void SetState(TruckState newState);
+
+protected:
+    TruckState _state;
+    /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
+    u_int16_t _id;
+    u_int16_t _position;
+    u_int16_t _leaderID;
+    speedType _speed;
+    stearingAngleType _stearingAngle;
+    distanceType _distance;
+
+    constexpr static distanceType _safetyDistance = 150;//in m
+    
+    bool _isLeader = false;
+    u_int16_t _platoonSize;
+};
+
+
+} //end of namespace
 
 
 #endif
