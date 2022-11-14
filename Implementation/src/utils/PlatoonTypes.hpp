@@ -13,13 +13,26 @@
 #define SAFETY_DISTANCE "SafetyDistance"
 #define PLATOON_SIZE "PlatoonSize"
 
+#define NULL_MESSAGE false
+
+#define SENDER_POSITION 'S'
+#define RECEIVER_POSITION 'R'
+#define EVENT 'E'
+#define BODY 'B'
+
+#define SENDER_POSITION_S "S"
+#define RECEIVER_POSITION_S "R"
+#define EVENT_S "E"
+#define BODY_S "B"
+
+
 #define BROADCAST 0
 #define STAMP_MESSAGE _position, BROADCAST, EventType::None, _id, BROADCAST
 #define LEADER_POSITION 1
 #define NEW_LEADER_POSITION 2
 
 
-
+#define BUFFER_SIZE 2048
 
 typedef float speedType;
 
@@ -32,24 +45,22 @@ typedef float distanceType;
 // Type of the events that could happen during the interaction between trucks in the platoon
 enum  EventType
 {
-    LeaderElection,
-    LeaderElected,
-    Joining, 
-    Leaving, 
-    Coupling,
-    Decoupling,
-    NewPlatoon,
-    PlatoonNotFound,
-    PlatoonFound,
-    ReceivePosition,
-    BroadcastInfo,
-    Joined,
-    None, 
-
-    Crash,
-    CommunicationFailure, 
+    LeaderElection = 97,
+    LeaderElected = 98,
+    Joining = 99, 
+    Leaving=100, 
+    Coupling=101,
+    Decoupling=102,
+    NewPlatoon=103,
+    PlatoonNotFound=104,
+    PlatoonFound =105,
+    ReceivePosition=106,
+    BroadcastInfo=107,
+    Joined=108,
+    None=109, 
+    Crash=110,
+    CommunicationFailure=111, 
 };
-
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )
 {
@@ -151,26 +162,100 @@ class Event
 public:
     Event() {};
     Event(EventType Token){_Event = Token;};
-    EventType Type(){return _Event;};
+    //EventType Type(){return _Event;};
+    EventType Type()const {return _Event;};
 protected:
     EventType _Event;
 
 };
 
-struct Message
+namespace TruckOMP {
+
+    struct Message
+    {
+                Message(u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event,u_int16_t SenderID = -1, u_int16_t ReceiverID = -1)
+                : _SenderPosition(SenderPosition), _ReceiverPosition(ReceiverPosition), _Event(Event), _SenderID(SenderID),  _ReceiverID(ReceiverID)
+                {};
+
+                Message(){};
+                u_int16_t _SenderPosition;
+                u_int16_t _ReceiverPosition;
+                Event _Event;
+                int16_t _SenderID;
+                int16_t _ReceiverID;
+                std::string _Body;
+    };
+}
+
+
+namespace TruckSocket
 {
-            Message(u_int16_t SenderPosition, u_int16_t ReceiverPosition, Event Event,u_int16_t SenderID = -1, u_int16_t ReceiverID = -1)
-            : _SenderPosition(SenderPosition), _ReceiverPosition(ReceiverPosition), _Event(Event), _SenderID(SenderID),  _ReceiverID(ReceiverID)
-            {};
-            u_int16_t _SenderPosition;
-            u_int16_t _ReceiverPosition;
-            Event _Event;
-            int16_t _SenderID;
-            int16_t _ReceiverID;
-            std::string _Body;
+    struct Message
+    {
+        Message(){};
+        Message(bool None) {if(!None) _Event = Event(EventType::None);};
+        Message(std::map<std::string, std::string> map)
+        {
+            _SenderPosition = std::stoi(map[SENDER_POSITION_S]);
+            _ReceiverPosition = std::stoi(map[RECEIVER_POSITION_S]);
+            char char_array[map[EVENT_S].length()+ 1];
+            strcpy(char_array, map[EVENT_S].c_str());
+            _Event = Event(static_cast<EventType>(int(*char_array)));
+            _Body = map[BODY_S];
+        }
+        int _SenderPosition;
+        int _ReceiverPosition;
+        Event _Event;
+        std::string _Body;
 
+        void ToBuffer(char *buffer)
+        {
+            buffer[0] = '{';
+            buffer[1] = '\"';
+            buffer[2] = SENDER_POSITION;
+            buffer[3] = '\"';
+            buffer[4] = ':';
+            buffer[5] = '\"';
+            buffer[6] = _SenderPosition+'0'; //Let's find a better way for position > 255
+            buffer[7] = '\"';
+            buffer[8] =',';
+            buffer[9] = '\"';
+            buffer[10] = RECEIVER_POSITION;
+            buffer[11] = '\"';
+            buffer[12] = ':';
+            buffer[13] = '\"';
+            buffer[14] = _ReceiverPosition + '0';//Let's find a better way for position > 255
+            buffer[15] = '\"';
+            buffer[16] = ',';
+            buffer[17] = '\"';
+            buffer[18] = EVENT;
+            buffer[19] = '\"';
+            buffer[20] = ':';
+            buffer[21] = '\"';
+            buffer[22] = static_cast<int>(_Event.Type());
+            buffer[23] = '\"';
+            buffer[24] = ',';
+            buffer[25] = '\"';
+            buffer[26] = BODY;
+            buffer[27] = '\"';
+            buffer[28] = ':';
+            memcpy(buffer+29,_Body.c_str(),_Body.size() ); 
+            buffer[_Body.size()+29] = '}';
+            memcpy(buffer+_Body.size()+30,"\n",2 ); 
+        }
+    };
 
-};
+    struct RawMessage
+    {
+        RawMessage(struct sockaddr_in sender, char* body)
+        {
+            this->body = body;
+            this->sender = sender;
+        }
+        struct sockaddr_in sender;
+        char* body;
+    };
+}
 
 
 #endif

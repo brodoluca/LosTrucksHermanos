@@ -85,16 +85,18 @@ protected:
 }// end of namespace
 
 
+//////////////////////////////////////////////////////////////////
+
 
 namespace TruckSocket
 {
-
-
+#define MAXLINE 1024 
+#define PORT 8080
 class Truck
 {
 public:
-    Truck();
-    Truck(u_int16_t newID);
+    Truck(const std::string& myAddress = "127.0.0.1", int port = 1234);
+    Truck(u_int16_t newID, const std::string& myAddress = "127.0.0.1", int port = 1234);
     u_int16_t GetID();
     void SetID(u_int16_t newID);
 
@@ -110,6 +112,15 @@ public:
     void SetDistance(distanceType newDistance);
     void SetState(TruckState newState);
 
+    void TruckServer();
+    
+    void Exist();
+    void HandleEvent(const Event &event);
+    void Update(const Message& message);
+    void HandleRawMessages();
+    void HandleMessages();
+    ~Truck();
+
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
@@ -124,6 +135,19 @@ protected:
     
     bool _isLeader = false;
     u_int16_t _platoonSize;
+
+    std::thread* myServer;
+    std::mutex lockAddresses;
+    std::mutex lockMessageQueue;
+
+
+
+    std::vector< struct sockaddr_in> addressesOtherTrucks;
+    struct sockaddr_in myServerAddress;
+    int serverSocket;
+
+    std::queue<Message> MessageQueue;
+    std::queue<RawMessage> RawMessageQueue;
 };
 
 

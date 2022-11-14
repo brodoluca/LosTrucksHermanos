@@ -62,6 +62,7 @@ void LeaderLeaves(const int &NumberOfTrucks)
             
 
         TruckOMP::Truck *truck = new TruckOMP::Truck(ID);
+        
         truck->SetBus(&MessageBus);
 
         #pragma omp critical
@@ -171,6 +172,8 @@ namespace TruckSocket
 {
     void TruckCreatesPlatoon(const int &NumberOfTrucks)
     {
+        Truck truck(1);
+        truck.Exist();
         std::cout << "WORK IN PROGRESS" << std::endl;
     }
     void LeaderLeaves(const int &NumberOfTrucks)
@@ -179,6 +182,7 @@ namespace TruckSocket
     }
     void MemberLeaves(const int &NumberOfTrucks)
     {
+        
         std::cout << "WORK IN PROGRESS" << std::endl;
     }
 } // end of namespace

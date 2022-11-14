@@ -8,7 +8,7 @@
 int main()
 {
     
-    TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::MemberLeavesPlatoon, TruckPlatoon::SOCKET);
+    TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon, TruckPlatoon::SOCKET);
     return 0;
 } 
 
