@@ -214,6 +214,8 @@ namespace TruckSocket
         }
     }
 
+
+//trying to check my email
     void Truck::Update(const Message& message)
     {
         switch (_state)
