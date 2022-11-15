@@ -173,7 +173,7 @@ namespace TruckSocket
     void TruckCreatesPlatoon(const int &NumberOfTrucks)
     {
         Truck truck(1);
-        truck.Exist();
+        truck.CreatePlatoon();
     }
     void LeaderLeaves(const int &NumberOfTrucks)
     {

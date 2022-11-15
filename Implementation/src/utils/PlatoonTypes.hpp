@@ -34,7 +34,7 @@
 #define LEADER_POSITION 1
 #define NEW_LEADER_POSITION 2
 
-#define NULL_POSITION 99
+#define NULL_POSITION 9
 
 #define BUFFER_SIZE 2048
 
@@ -278,6 +278,7 @@ namespace TruckSocket
             *buffer = '\"';
             buffer++;
             *buffer = ':';
+            buffer++;
             memcpy(buffer,_Body.c_str(),_Body.size() ); 
             buffer+=_Body.size();
             *buffer= '}';

@@ -209,14 +209,13 @@ namespace TruckSocket
             this->lockMessageQueue.lock();
             RawMessageQueue.push(RawMessage(si_other, buffer));
             this->lockMessageQueue.unlock();
-
             
         }
     }
 
 
 //trying to check my email
-    void Truck::Update(const Message& message)
+    void Truck::Update()
     {
         switch (_state)
             {
@@ -273,24 +272,27 @@ namespace TruckSocket
         auto size = MessageQueue.size();
         if(size == 0)
         {
-            Update(Message(NULL_MESSAGE));
+            Update();
             return;
         }
-        while(size !=0)
+        while(size >0)
         {
-
+            
             auto message = MessageQueue.front();
             MessageQueue.pop();
             size = MessageQueue.size();
-            if ( _Platoon.find(message._SenderPosition) == _Platoon.end()) {
+            
+            if(message._SenderPosition == NULL_POSITION){}
+            else if ( _Platoon.find(message._SenderPosition) == _Platoon.end()) {
                 _Platoon[message._SenderPosition].first =message._Address;
                 _Platoon[message._SenderPosition].second = message._Port;
                 _platoonSize++;
             }
 
-
-            HandleEvent(message._Event);
-            Update(message);
+            
+            // << std::endl<< message._Port<< std::endl ; 
+            React(message);
+            Update();
             
             
 
@@ -308,8 +310,9 @@ namespace TruckSocket
             RawMessageQueue.pop();
             size = RawMessageQueue.size();
             this->lockMessageQueue.unlock();
-            int count = 0;
+
             auto m = StupidJSON::ReadJson(std::string(message.body));
+            //std::cout << std::endl<< m[PORT_S]<< std::endl ; 
             MessageQueue.push(Message(m));
         }
         
@@ -334,8 +337,26 @@ namespace TruckSocket
 
     }
 
+    void Truck::RequestToJoin(const std::string& address, int port)
+    {
+        Message message;
+        message._Event = Event(EventType::Joining);
+        message._ReceiverPosition = LEADER_POSITION;
+        message._SenderPosition = NULL_POSITION;
+        message._Address=this->_myAddress;
+        message._Port=this->_myPort;
+        message._Body = "{\"ciao\":\"ciao\"}";
+        //std::cout << address << port;
+        this->Send(message, address, port);
+        React(message);
+        Exist();
 
-
+    }
+    void Truck::CreatePlatoon()
+    {
+        _state=TruckState::PlatoonCreation;
+        Exist();
+    } 
 
 
 
@@ -358,15 +379,15 @@ LeaderElection = 97,
 
 */
 
-void Truck::HandleEvent(const Event &event)
+void Truck::React(const Message& message)
     {
-        auto eventType = event.Type();
+        auto eventType = message._Event.Type();
         switch (_state)
         {
             case TruckState::Available:
                 switch (eventType)
                 {
-                    case EventType::Joining: _state = TruckState::PlatoonMember; break;
+                    case EventType::Joining:PRINT("I am a platoon member") _state = TruckState::PlatoonMember; break;
                     case EventType::PlatoonNotFound:_state = TruckState::PlatoonCreation; break;
                     case EventType::Leaving: _state = TruckState::Unavailable; break;
                     case EventType::None: PRINT(" None Event received") break;
@@ -386,49 +407,58 @@ void Truck::HandleEvent(const Event &event)
                 }*/
                 break;
             case TruckState::PlatoonMember:
-                /*if(event == TruckEvent::Elected)
-                {
-                    _state = TruckState::Leader;
-                }
-                else if(event == TruckEvent::ElectNewLeader)
-                {
-                    _state = TruckState::Elections;
-                }
-                else if(event == TruckEvent::PositionReceived)
-                {
-                    _state = TruckState::SimpleMember;
                 
-                }else if(event == TruckEvent::Leave)
+                switch (eventType)
                 {
-                    _state = TruckState::Unavailable;
-                }else{
-                    //Error handling
-                }*/
+                    case EventType::ReceivePosition: 
+                        _position = message._ReceiverPosition;
+                        _state = TruckState::SimpleMember;
+                        PRINT("I am a simple member")
+                    break;
+                    default: std::cout << eventType; break;
+                }    
                 break;
             case TruckState::Leader:
-            /*
-                if(event == TruckEvent::Leave)
+                switch (eventType)
                 {
-                    _state = TruckState::Unavailable;
-                }else{
-                    //Error handling
-                }*/
+                    case EventType::Joining: 
+                        {
+                            Message messageToSend;
+                            messageToSend._Event = Event(EventType::ReceivePosition);
+                            this->_platoonSize++;
+                            messageToSend._ReceiverPosition = this->_platoonSize;
+                            messageToSend._SenderPosition = this->_position;
+                            messageToSend._Address=this->_myAddress;
+                            messageToSend._Port=this->_myPort;
+                            messageToSend._Body = "{\"ciao\":\"ciao\"}";
+
+                            _Platoon[message._SenderPosition].first =message._Address;
+                            _Platoon[message._SenderPosition].second = message._Port;
+                            //std::cout << message._Address<< message._Port;
+                            this->Send(messageToSend, message._Address, message._Port);
+                            //this->BroadcastInfo();
+                        }
+                        break;
+                    case EventType::Leaving: _state = TruckState::Unavailable; break;
+                    case EventType::None: PRINT(" None Event received") break;
+                    default: break;
+                }
+
                 break;
             case TruckState::SimpleMember:
-                /*if(event == TruckEvent::ElectNewLeader)
+                switch (eventType)
                 {
-                    _state = TruckState::Elections;
-                }else if(event == TruckEvent::Leave)
-                {
-                    _state = TruckState::Unavailable;
+                    case EventType::BroadcastInfo: 
+                        {
+                            //find better conversion for strings for the infos, stoi wont work here. Only works for 1 digit numbers
+                            PRINT("I received the info, but i am not able to process it");
+                        }
+                        break;
+                    case EventType::Leaving: _state = TruckState::Unavailable; break;
+                    case EventType::None: PRINT(" None Event received") break;
+                    default: break;
                 }
-                if(event == TruckEvent::Elected)
-                {
-                    _state = TruckState::Leader;
-                }
-                else{
-                    //Error handling
-                }*/
+
                 break;
 
             case TruckState::Unavailable:

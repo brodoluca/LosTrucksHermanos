@@ -114,11 +114,15 @@ public:
     void TruckServer();
     
     void Exist();
-    void HandleEvent(const Event &event);
-    void Update(const Message& message);
+    void React(const Message& message);
+    void Update();
     void HandleRawMessages();
     void HandleMessages();
     ~Truck();
+
+
+    void RequestToJoin(const std::string& address, int port);
+    void CreatePlatoon();
 
 
     void Send(char* buffer );
