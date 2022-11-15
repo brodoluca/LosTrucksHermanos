@@ -90,13 +90,12 @@ protected:
 
 namespace TruckSocket
 {
-#define MAXLINE 1024 
-#define PORT 8080
+
 class Truck
 {
 public:
-    Truck(const std::string& myAddress = "127.0.0.1", int port = 1234);
-    Truck(u_int16_t newID, const std::string& myAddress = "127.0.0.1", int port = 1234);
+    Truck(const std::string& myAddress = "127.0.0.1", int port = 8080);
+    Truck(u_int16_t newID, const std::string& myAddress = "127.0.0.1", int port = 8080);
     u_int16_t GetID();
     void SetID(u_int16_t newID);
 
@@ -121,6 +120,12 @@ public:
     void HandleMessages();
     ~Truck();
 
+
+    void Send(char* buffer );
+    void Send(const Message& message, int position);
+    void Send(const Message& message, const std::string& address, int port);
+    void Broadcast(const Message& message);
+    void BroadcastInfo();
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
@@ -130,6 +135,8 @@ protected:
     speedType _speed;
     stearingAngleType _stearingAngle;
     distanceType _distance;
+    std::string _myAddress;
+    unsigned int _myPort;
 
     constexpr static distanceType _safetyDistance = 150;//in m
     
@@ -141,13 +148,16 @@ protected:
     std::mutex lockMessageQueue;
 
 
-
-    std::vector< struct sockaddr_in> addressesOtherTrucks;
+    std::map<int, std::pair<std::string, int>> _Platoon;
+    //std::vector< struct sockaddr_in> addressesOtherTrucks;
     struct sockaddr_in myServerAddress;
     int serverSocket;
 
     std::queue<Message> MessageQueue;
     std::queue<RawMessage> RawMessageQueue;
+
+    time_t _lastTimeInfo;
+    double _timeSinceLastInfo;
 };
 
 

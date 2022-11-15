@@ -7,6 +7,12 @@ namespace TruckSocket
 
     Truck::~Truck()
     {
+        for(auto iter = _Platoon.begin(); iter != _Platoon.end(); ++iter)
+            {
+                std::cout << "Truck in position : " << iter->first << " with address " << iter->second.first << ":" <<iter->second.second << std::endl;
+            //ignore value
+            //Value v = iter->second;
+            }
         delete myServer;
     }
 
@@ -23,7 +29,9 @@ namespace TruckSocket
         this ->myServerAddress.sin_family = AF_INET;
         this ->myServerAddress.sin_port = htons(port);
         this ->myServerAddress.sin_addr.s_addr = inet_addr(myAddress.c_str());
-        //bool platoon = this->CheckForPlatoon();
+        this->_myAddress = myAddress;
+        this->_myPort = port;
+        myServer = new std::thread([this]() {TruckServer();});
     }
 
 
@@ -37,8 +45,10 @@ namespace TruckSocket
         this ->myServerAddress.sin_family = AF_INET;
         this ->myServerAddress.sin_port = htons(port);
         this ->myServerAddress.sin_addr.s_addr = inet_addr(myAddress.c_str());
-
+        this->_myAddress = myAddress;
+        this->_myPort = port;
         myServer = new std::thread([this]() {TruckServer();});
+        
 
     }
 
@@ -94,12 +104,90 @@ namespace TruckSocket
     {
         return _state;
     }
-
+    
 
 
     bool Truck::isLeader()
     {
         return _isLeader;
+    }
+
+    void Truck::Send(char* buffer )
+    {
+
+    }
+    void Truck::Broadcast(const Message& message)
+    {
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        char buffer[2048];
+        message.ToBuffer(buffer);
+        memset(&receiver, '\0', sizeof(receiver));
+        receiver.sin_family = AF_INET;
+        for(auto truck = _Platoon.begin(); truck != _Platoon.end(); ++truck)
+        {
+            receiver.sin_port = htons(truck->second.second);
+            receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
+            sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
+
+//        printf("[+]Data Send: %s\n", buffer);
+        
+
+        close(sockfd);
+
+    }
+    
+    void Truck::Send(const Message& message, int position)
+    {
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        char buffer[2048];
+        message.ToBuffer(buffer);
+        memset(&receiver, '\0', sizeof(receiver));
+
+        receiver.sin_family = AF_INET;
+        receiver.sin_port = htons(_Platoon[position].second);
+        receiver.sin_addr.s_addr = inet_addr(_Platoon[position].first.c_str());
+        sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+
+        close(sockfd);
+
+    }
+    void Truck::BroadcastInfo()
+    {
+                    Message message;
+                    message._Event = Event(EventType::BroadcastInfo);
+                    message._ReceiverPosition = BROADCAST;
+                    message._SenderPosition = this->_position;
+
+                    std::string  Tags[] = {SPEED, SAFETY_DISTANCE, PLATOON_SIZE};
+                    std::string Values[] = {std::to_string(int(_speed)), std::to_string(_safetyDistance), std::to_string(_platoonSize)};
+
+                    message._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 3);
+                    //char address[20];
+                    //inet_ntop(AF_INET,&myServerAddress.sin_addr.s_addr, address,  20);
+                    
+                    message._Address=this->_myAddress;
+                    message._Port=this->_myPort;
+                    this->Broadcast(message);
+                    _lastTimeInfo = time(0);
+    }
+    void Truck::Send(const Message& message, const std::string& address, int port)
+    {
+
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        memset(&receiver, '\0', sizeof(receiver));
+        char buffer[2048];
+        message.ToBuffer(buffer);
+        receiver.sin_family = AF_INET;
+        receiver.sin_port = htons(port);
+        receiver.sin_addr.s_addr = inet_addr(address.c_str());
+        sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+
+        close(sockfd);
+
     }
 
     void Truck::TruckServer()
@@ -137,6 +225,16 @@ namespace TruckSocket
             case TruckState::PlatoonMember:
                 break;
             case TruckState::Leader:
+                if(!_isLeader){
+                    _isLeader = true;
+                    _speed = 100;
+                    BroadcastInfo();
+                    return;
+                }
+                if(difftime( time(0), _lastTimeInfo) > SECONDS_TO_INFO)
+                {
+                    BroadcastInfo();
+                }
                 //if null message
                 //broadcast info
                 break;
@@ -151,6 +249,7 @@ namespace TruckSocket
                 _platoonSize = 1;
                 PRINT(" I am the new leader");
                 _state = Leader;
+                
                 break;
             case TruckState::Elections:
                 if(_position == NEW_LEADER_POSITION)
@@ -177,11 +276,21 @@ namespace TruckSocket
         }
         while(size !=0)
         {
+
             auto message = MessageQueue.front();
             MessageQueue.pop();
             size = MessageQueue.size();
+            if ( _Platoon.find(message._SenderPosition) == _Platoon.end()) {
+                _Platoon[message._SenderPosition].first =message._Address;
+                _Platoon[message._SenderPosition].second = message._Port;
+                _platoonSize++;
+            }
+
+
             HandleEvent(message._Event);
             Update(message);
+            
+            
 
         }
     }
@@ -200,19 +309,6 @@ namespace TruckSocket
             int count = 0;
             auto m = StupidJSON::ReadJson(std::string(message.body));
             MessageQueue.push(Message(m));
-            //this->lockAddresses.lock();
-            for(auto address : addressesOtherTrucks){
-                 if(address.sin_addr.s_addr == message.sender.sin_addr.s_addr){
-                    count++;
-                    break;
-                }
-            }
-            if(count == 0 )
-                addressesOtherTrucks.push_back(message.sender);
-
-            count = 0;
-            
-            //    this->lockAddresses.unlock();
         }
         
         
@@ -221,13 +317,16 @@ namespace TruckSocket
 
     void Truck::Exist()
     {
-        auto lastLength = addressesOtherTrucks.size();
+        //auto lastLength = addressesOtherTrucks.size();
         auto this_length = 0;
-        while (1)
+        time_t start = time(0);
+        double seconds_since_start = difftime( time(0), start);
+        while (seconds_since_start < SECONDS_TO_LIVE)
         {
             HandleRawMessages();
             HandleMessages();
             //std::this_thread::sleep_for(std::chrono::seconds(1));
+            seconds_since_start = difftime( time(0), start);
         }
     
 

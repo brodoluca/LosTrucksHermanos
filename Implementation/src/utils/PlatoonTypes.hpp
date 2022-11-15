@@ -4,7 +4,8 @@
 
 #include "include.hpp"
 
-
+#define SECONDS_TO_LIVE 99999
+#define SECONDS_TO_INFO 2
 
 #define NEW_POSITION "NewPosition"
 #define LEADER_ID "LeaderID"
@@ -19,18 +20,21 @@
 #define RECEIVER_POSITION 'R'
 #define EVENT 'E'
 #define BODY 'B'
+#define ADDRESS 'A'
+#define PORT 'P'
 
 #define SENDER_POSITION_S "S"
 #define RECEIVER_POSITION_S "R"
 #define EVENT_S "E"
 #define BODY_S "B"
-
-
+#define ADDRESS_S "A"
+#define PORT_S "P"
 #define BROADCAST 0
 #define STAMP_MESSAGE _position, BROADCAST, EventType::None, _id, BROADCAST
 #define LEADER_POSITION 1
 #define NEW_LEADER_POSITION 2
 
+#define NULL_POSITION 99
 
 #define BUFFER_SIZE 2048
 
@@ -202,13 +206,17 @@ namespace TruckSocket
             strcpy(char_array, map[EVENT_S].c_str());
             _Event = Event(static_cast<EventType>(int(*char_array)));
             _Body = map[BODY_S];
+            _Address = map[ADDRESS_S];
+            _Port = std::stoi(map[PORT_S]);
         }
         int _SenderPosition;
         int _ReceiverPosition;
         Event _Event;
         std::string _Body;
+        std::string _Address;
+        unsigned int _Port;
 
-        void ToBuffer(char *buffer)
+        void ToBuffer  (char *buffer) const
         {
             buffer[0] = '{';
             buffer[1] = '\"';
@@ -235,13 +243,46 @@ namespace TruckSocket
             buffer[22] = static_cast<int>(_Event.Type());
             buffer[23] = '\"';
             buffer[24] = ',';
+
             buffer[25] = '\"';
-            buffer[26] = BODY;
+            buffer[26] = ADDRESS;
             buffer[27] = '\"';
             buffer[28] = ':';
-            memcpy(buffer+29,_Body.c_str(),_Body.size() ); 
-            buffer[_Body.size()+29] = '}';
-            memcpy(buffer+_Body.size()+30,"\n",2 ); 
+            buffer[29] = '\"';
+            memcpy(buffer+30,_Address.c_str(),_Address.size() );
+            buffer += _Address.size()+30;
+            *buffer = '\"';
+            buffer++;
+            *buffer = ',';
+            buffer++;
+            *buffer = '\"';
+            buffer++;
+            *buffer = PORT;
+            buffer++;
+            *buffer = '\"';
+            buffer++;
+            *buffer = ':';
+            buffer++;
+            *buffer = '\"';
+            buffer++;
+            memcpy(buffer,std::to_string((int)_Port).c_str(),std::to_string(_Port).size() );
+            buffer+= std::to_string(_Port).size();
+            *buffer = '\"';
+            buffer++;
+            *buffer = ',';
+            buffer++;
+            *buffer  = '\"';
+            buffer++;
+            *buffer = BODY;
+            buffer++;
+            *buffer = '\"';
+            buffer++;
+            *buffer = ':';
+            memcpy(buffer,_Body.c_str(),_Body.size() ); 
+            buffer+=_Body.size();
+            *buffer= '}';
+            buffer++;
+            memcpy(buffer,"\n",2 ); 
         }
     };
 

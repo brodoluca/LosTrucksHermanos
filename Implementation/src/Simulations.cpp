@@ -174,7 +174,6 @@ namespace TruckSocket
     {
         Truck truck(1);
         truck.Exist();
-        std::cout << "WORK IN PROGRESS" << std::endl;
     }
     void LeaderLeaves(const int &NumberOfTrucks)
     {
