@@ -9,10 +9,7 @@
 
 #include "Event.hpp"
 #include "DrivingEvent.hpp"
-#include "OrganizationalEvent.hpp"
-#include "SafetyCriticalEvent.hpp"
 
-#include "Communication.hpp"
 
 #include <pthread.h>
 #include <vector>

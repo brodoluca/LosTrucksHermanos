@@ -156,6 +156,7 @@ namespace TruckSocket
     }
     void Truck::BroadcastInfo()
     {
+        
                     Message message;
                     message._Event = Event(EventType::BroadcastInfo);
                     message._ReceiverPosition = BROADCAST;
