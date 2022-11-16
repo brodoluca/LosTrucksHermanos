@@ -10,3 +10,9 @@ to start a leader
 ```
  ./implementation/main --mode leader
 ```
+
+
+TO-DO
+
+- Implement remaining behaviours
+- Do that GPU thingy
