@@ -12,7 +12,15 @@ to start a leader
 ```
 
 
+To compile (OLD, my man ALI is doing the make file)
+```
+ /usr/local/opt/llvm/bin/clang++ -fopenmp -g $(find .  -type f -iregex ".*\.cpp") -o main
+```
+
 TO-DO
 
 - Implement remaining behaviours
 - Do that GPU thingy
+
+
+
