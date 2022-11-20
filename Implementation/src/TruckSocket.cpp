@@ -112,14 +112,17 @@ namespace TruckSocket
         return _isLeader;
     }
 
-    void Truck::Send(char* buffer )
+    bool Truck::Send(char* buffer )
     {
-
+        return false;
     }
-    void Truck::Broadcast(const Message& message)
+    bool Truck::Broadcast(const Message& message)
     {
         struct sockaddr_in receiver;
         int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+
+        if(sockfd <0)
+            return false;
         char buffer[2048];
         message.ToBuffer(buffer);
         memset(&receiver, '\0', sizeof(receiver));
@@ -135,13 +138,16 @@ namespace TruckSocket
         
 
         close(sockfd);
+        return true;
 
     }
     
-    void Truck::Send(const Message& message, int position)
+    bool Truck::Send(const Message& message, int position)
     {
         struct sockaddr_in receiver;
         int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        if(sockfd <0)
+            return false;
         char buffer[2048];
         message.ToBuffer(buffer);
         memset(&receiver, '\0', sizeof(receiver));
@@ -152,9 +158,10 @@ namespace TruckSocket
         sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
 
         close(sockfd);
+        return true;
 
     }
-    void Truck::BroadcastInfo()
+    bool Truck::BroadcastInfo()
     {
         
                     Message message;
@@ -171,14 +178,17 @@ namespace TruckSocket
                     
                     message._Address=this->_myAddress;
                     message._Port=this->_myPort;
-                    this->Broadcast(message);
+                    bool check = this->Broadcast(message);
                     _lastTimeInfo = time(0);
+                    return check;
     }
-    void Truck::Send(const Message& message, const std::string& address, int port)
+    bool Truck::Send(const Message& message, const std::string& address, int port)
     {
 
         struct sockaddr_in receiver;
         int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        if(sockfd <0)
+            return false;
         memset(&receiver, '\0', sizeof(receiver));
         char buffer[2048];
         message.ToBuffer(buffer);
@@ -188,9 +198,29 @@ namespace TruckSocket
         sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
 
         close(sockfd);
+        return true;
 
     }
 
+    bool Truck::SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort)
+    {
+        Message message;
+        message._Event = Event(EventType::InterfaceInfo);
+        message._ReceiverPosition = INTERFACE;
+        message._SenderPosition = this->_position;
+        std::string  Tags[] = {SPEED, SAFETY_DISTANCE, PLATOON_SIZE};
+        std::string Values[] = {std::to_string(int(_speed)), std::to_string(_safetyDistance), std::to_string(_platoonSize)};
+
+        message._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 3);
+                    //char address[20];
+                    //inet_ntop(AF_INET,&myServerAddress.sin_addr.s_addr, address,  20);
+                    
+        message._Address=this->_myAddress;
+        message._Port=this->_myPort;
+
+        bool check = Send(message, InterfaceAddress, InterfacePort);
+        return check;
+    }
     void Truck::TruckServer()
     {
         this->serverSocket=0;

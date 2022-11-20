@@ -29,6 +29,9 @@
 #define BODY_S "B"
 #define ADDRESS_S "A"
 #define PORT_S "P"
+
+
+#define INTERFACE 0
 #define BROADCAST 0
 #define STAMP_MESSAGE _position, BROADCAST, EventType::None, _id, BROADCAST
 #define LEADER_POSITION 1
@@ -64,6 +67,7 @@ enum  EventType
     None=109, 
     Crash=110,
     CommunicationFailure=111, 
+    InterfaceInfo = 112
 };
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )

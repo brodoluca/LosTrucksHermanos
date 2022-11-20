@@ -125,11 +125,13 @@ public:
     void CreatePlatoon();
 
 
-    void Send(char* buffer );
-    void Send(const Message& message, int position);
-    void Send(const Message& message, const std::string& address, int port);
-    void Broadcast(const Message& message);
-    void BroadcastInfo();
+    bool Send(char* buffer );
+    bool Send(const Message& message, int position);
+    bool Send(const Message& message, const std::string& address, int port);
+    bool Broadcast(const Message& message);
+
+    bool BroadcastInfo();
+    bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
