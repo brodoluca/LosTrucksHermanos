@@ -1,10 +1,8 @@
 #ifndef TRUCK_HPP
 #define TRUCK_HPP
-#include "utils/PlatoonTypes.hpp"
-#include "utils/include.hpp"
-#include <cstdint>
 
-#include "utils/JsonHandler.hpp"
+#include "utils/include.hpp"
+
 
 namespace TruckOMP
 {

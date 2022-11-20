@@ -9,7 +9,7 @@
 #include <queue>
 #include <tuple>
 
-
+#include <cstdint>
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <unistd.h> 
@@ -19,4 +19,10 @@
 #include <arpa/inet.h> 
 #include <netinet/in.h> 
     
+#include <pthread.h>
+#include <vector>
+#include <random>
+
 #include "macros.hpp"
+#include "JsonHandler.hpp"
+#include "types.hpp"

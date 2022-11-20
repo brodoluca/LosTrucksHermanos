@@ -1,19 +1,14 @@
 #ifndef SIMULATIONS_HPP
 #define SIMULATIONS_HPP
 
-#include "Leader.hpp"
+
 #include "Truck.hpp"
 
-#include "utils/PlatoonTypes.hpp"
-#include "utils/include.hpp"
-
-#include "Event.hpp"
-#include "DrivingEvent.hpp"
 
 
-#include <pthread.h>
-#include <vector>
-#include <random>
+
+
+
 
 
 
