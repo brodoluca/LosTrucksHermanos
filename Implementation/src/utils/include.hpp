@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INCLUDE_HPP
+#define INCLUDE_HPP
 #include <omp.h>
 #include <iostream>
 #include <string>
@@ -26,3 +27,5 @@
 #include "macros.hpp"
 #include "JsonHandler.hpp"
 #include "types.hpp"
+
+#endif
