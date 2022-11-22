@@ -8,49 +8,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-    
-#define PORT     172413
-#define MAXLINE 1021
-static int tryme()
-{
-    int sockfd;
-    char buffer[MAXLINE];
-    char *hello = "Hello from server";
-    struct sockaddr_in servaddr, cliaddr;
-        
-    // Creating socket file descriptor
-    if ( (sockfd = socket(PF_INET, SOCK_DGRAM, 0)) < 0 ) {
-        perror("socket creation failed");
-        exit(EXIT_FAILURE);
-    }
-        
-    memset(&servaddr, 0, sizeof(servaddr));
-    memset(&cliaddr, 0, sizeof(cliaddr));
-        
-    // Filling server information
-    servaddr.sin_family = AF_INET; // IPv4
-    servaddr.sin_addr.s_addr = inet_addr("0.0.0.0");;
-    servaddr.sin_port = htons(PORT);
-        
-    // Bind the socket with the server address
-    if ( bind(sockfd, ( struct sockaddr *)&servaddr,
-            sizeof(servaddr)) < 0 )
-    {
-        perror("bind failed");
-        exit(EXIT_FAILURE);
-    }
-        
-    unsigned int len;
-    long n;
-    
-    len = sizeof(cliaddr); //len is value/result
-    
-     accept(sockfd, ( struct sockaddr *)&cliaddr,&len);
-    //recv(sockfd, buffer, sizeof(buffer), 0);
-    n = recvfrom(sockfd, (char *)buffer, MAXLINE,0, ( struct sockaddr *) &cliaddr,&len);
-    buffer[n] = '\0';
-    printf("Client : %s\n", buffer);
-}
+
 
 
 namespace TruckSocket
@@ -100,7 +58,7 @@ namespace TruckSocket
         this ->myServerAddress.sin_addr.s_addr = INADDR_ANY;
         this->_myAddress = myAddress;
         this->_myPort = port;
-        myServer = new std::thread([this]() {tryme();});
+        myServer = new std::thread([this]() {TruckServer();});
         
 
     }
@@ -232,6 +190,10 @@ namespace TruckSocket
                     message._Address=this->_myAddress;
                     message._Port=this->_myPort;
                     bool check = this->Broadcast(message);
+
+                    Send(message, GUI_ADDRESS, GUI_PORT);
+
+
                     _lastTimeInfo = time(0);
                     return check;
     }
@@ -239,7 +201,7 @@ namespace TruckSocket
     {
 
         struct sockaddr_in receiver;
-        int sockfd = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
         if(sockfd <0)
             return false;
 
@@ -286,8 +248,6 @@ namespace TruckSocket
         char buffer[2048];
         socklen_t addr_size;
         int serverSocket = socket(PF_INET, SOCK_DGRAM, 0);
-        std::cout << serverSocket <<std::endl;
-        char broadcast = '1';
 
         add.sin_addr.s_addr =inet_addr( this->_myAddress.c_str());
         add.sin_family = AF_INET;

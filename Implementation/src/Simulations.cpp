@@ -172,7 +172,7 @@ namespace TruckSocket
 {
     void TruckCreatesPlatoon(const int &NumberOfTrucks)
     {
-        Truck truck(1, "169.254.39.55", 1231);
+        Truck truck(1, "127.0.0.1", 11271);
         truck.CreatePlatoon();
     }
     void LeaderLeaves(const int &NumberOfTrucks)

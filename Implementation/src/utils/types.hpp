@@ -14,6 +14,11 @@
 #define SAFETY_DISTANCE "SafetyDistance"
 #define PLATOON_SIZE "PlatoonSize"
 
+
+#define GUI_ADDRESS "172.20.10.5"
+#define GUI_PORT 9876
+
+
 #define NULL_MESSAGE false
 
 #define SENDER_POSITION 'S'

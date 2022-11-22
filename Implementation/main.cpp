@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
         if(strcmp ( argv[3], "--port") ==0) 
         {
             TruckSocket::Truck truck(1, "127.0.0.1", 4567);
-            truck.RequestToJoin("10.118.132.193", 17241);
+            truck.RequestToJoin("127.0.0.1", 11271);
             //truck.Exist();
         }
     }
