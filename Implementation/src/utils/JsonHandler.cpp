@@ -43,7 +43,7 @@ std::string CreateJsonFromTag(std::string Tag, std::string Value)
 std::map<std::string, std::string> ReadJson(const std::string& MessageBody)
 {
     std::map<std::string, std::string> m;
-    auto my_str = MessageBody;
+    std::string my_str = MessageBody;
     my_str.erase(remove(my_str.begin(), my_str.end(), ':'), my_str.end());
     my_str.erase(remove(my_str.begin(), my_str.end(), ','), my_str.end());
     bool key = true;

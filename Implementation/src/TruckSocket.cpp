@@ -1,5 +1,56 @@
 #include "Truck.hpp"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+    
+#define PORT     172413
+#define MAXLINE 1021
+static int tryme()
+{
+    int sockfd;
+    char buffer[MAXLINE];
+    char *hello = "Hello from server";
+    struct sockaddr_in servaddr, cliaddr;
+        
+    // Creating socket file descriptor
+    if ( (sockfd = socket(PF_INET, SOCK_DGRAM, 0)) < 0 ) {
+        perror("socket creation failed");
+        exit(EXIT_FAILURE);
+    }
+        
+    memset(&servaddr, 0, sizeof(servaddr));
+    memset(&cliaddr, 0, sizeof(cliaddr));
+        
+    // Filling server information
+    servaddr.sin_family = AF_INET; // IPv4
+    servaddr.sin_addr.s_addr = inet_addr("0.0.0.0");;
+    servaddr.sin_port = htons(PORT);
+        
+    // Bind the socket with the server address
+    if ( bind(sockfd, ( struct sockaddr *)&servaddr,
+            sizeof(servaddr)) < 0 )
+    {
+        perror("bind failed");
+        exit(EXIT_FAILURE);
+    }
+        
+    unsigned int len;
+    long n;
+    
+    len = sizeof(cliaddr); //len is value/result
+    
+     accept(sockfd, ( struct sockaddr *)&cliaddr,&len);
+    //recv(sockfd, buffer, sizeof(buffer), 0);
+    n = recvfrom(sockfd, (char *)buffer, MAXLINE,0, ( struct sockaddr *) &cliaddr,&len);
+    buffer[n] = '\0';
+    printf("Client : %s\n", buffer);
+}
 
 
 namespace TruckSocket
@@ -26,9 +77,11 @@ namespace TruckSocket
         this->_distance = 0;
         this->_state = TruckState::Available;
         this ->_position = 0;
+
         this ->myServerAddress.sin_family = AF_INET;
         this ->myServerAddress.sin_port = htons(port);
-        this ->myServerAddress.sin_addr.s_addr = inet_addr(myAddress.c_str());
+        this ->myServerAddress.sin_addr.s_addr = INADDR_ANY;
+
         this->_myAddress = myAddress;
         this->_myPort = port;
         myServer = new std::thread([this]() {TruckServer();});
@@ -44,10 +97,10 @@ namespace TruckSocket
         this ->_position = 0;
         this ->myServerAddress.sin_family = AF_INET;
         this ->myServerAddress.sin_port = htons(port);
-        this ->myServerAddress.sin_addr.s_addr = inet_addr(myAddress.c_str());
+        this ->myServerAddress.sin_addr.s_addr = INADDR_ANY;
         this->_myAddress = myAddress;
         this->_myPort = port;
-        myServer = new std::thread([this]() {TruckServer();});
+        myServer = new std::thread([this]() {tryme();});
         
 
     }
@@ -155,7 +208,7 @@ namespace TruckSocket
         receiver.sin_family = AF_INET;
         receiver.sin_port = htons(_Platoon[position].second);
         receiver.sin_addr.s_addr = inet_addr(_Platoon[position].first.c_str());
-        sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        sendto(sockfd, buffer, BUFFER_SIZE, 0, (struct sockaddr*)&receiver, sizeof(receiver));
 
         close(sockfd);
         return true;
@@ -186,17 +239,21 @@ namespace TruckSocket
     {
 
         struct sockaddr_in receiver;
-        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        int sockfd = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
         if(sockfd <0)
             return false;
+
+
+        char broadcast = '1';
         memset(&receiver, '\0', sizeof(receiver));
         char buffer[2048];
         message.ToBuffer(buffer);
         receiver.sin_family = AF_INET;
         receiver.sin_port = htons(port);
         receiver.sin_addr.s_addr = inet_addr(address.c_str());
-        sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        auto a = sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
 
+        std::cout << a;
         close(sockfd);
         return true;
 
@@ -223,18 +280,29 @@ namespace TruckSocket
     }
     void Truck::TruckServer()
     {
+
+        struct sockaddr_in add;
         this->serverSocket=0;
         char buffer[2048];
         socklen_t addr_size;
-        this->serverSocket = socket(AF_INET, SOCK_DGRAM, 0);
+        int serverSocket = socket(PF_INET, SOCK_DGRAM, 0);
+        std::cout << serverSocket <<std::endl;
+        char broadcast = '1';
 
-        bind(this->serverSocket, (struct sockaddr*)&this ->myServerAddress, sizeof(this->myServerAddress));
+        add.sin_addr.s_addr =inet_addr( this->_myAddress.c_str());
+        add.sin_family = AF_INET;
+        add.sin_port = htons(this->_myPort);
         
+        
+        auto a = bind(serverSocket, (struct sockaddr*)&this->myServerAddress, sizeof(myServerAddress));
+        std::cout << a<<std::endl;
         while(1)
         {
             struct sockaddr_in si_other;
             addr_size = sizeof(si_other);
-            recvfrom(this->serverSocket, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)& si_other, &addr_size);
+            int a = recvfrom(serverSocket, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)& si_other, &addr_size);
+            if(a <0)
+                std::cout << a;
             printf("[+]Data Received: %s", buffer);
             
             this->lockMessageQueue.lock();

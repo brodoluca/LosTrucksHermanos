@@ -28,4 +28,6 @@
 #include "JsonHandler.hpp"
 #include "types.hpp"
 
+#include <errno.h>
+#include <string.h>
 #endif

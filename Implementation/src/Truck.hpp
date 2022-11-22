@@ -92,8 +92,8 @@ namespace TruckSocket
 class Truck
 {
 public:
-    Truck(const std::string& myAddress = "127.0.0.1", int port = 8080);
-    Truck(u_int16_t newID, const std::string& myAddress = "127.0.0.1", int port = 8080);
+    Truck(const std::string& myAddress = "10.208.1.206", int port = 4321);
+    Truck(u_int16_t newID, const std::string& myAddress = "169.254.39.55", int port = 4324);
     u_int16_t GetID();
     void SetID(u_int16_t newID);
 
