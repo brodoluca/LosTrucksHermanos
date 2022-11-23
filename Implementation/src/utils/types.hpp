@@ -4,7 +4,7 @@
 
 #include "include.hpp"
 
-#define SECONDS_TO_LIVE 99999
+#define SECONDS_TO_LIVE 5 // 99999
 #define SECONDS_TO_INFO 2
 
 #define NEW_POSITION "NewPosition"

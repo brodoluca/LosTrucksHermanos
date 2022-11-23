@@ -171,6 +171,7 @@ namespace TruckSocket
         receiver.sin_port = htons(_Platoon[position].second);
         receiver.sin_addr.s_addr = inet_addr(_Platoon[position].first.c_str());
         sendto(sockfd, buffer, BUFFER_SIZE, 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        std::cout << "[INFO] MESSAGE SENT\r\n";
 
         close(sockfd);
         return true;
@@ -393,6 +394,10 @@ namespace TruckSocket
             }
     }
 
+    /**
+     * @brief stay in the platoon for SECONDS_TO_LIVE seconds, and respons
+     * 
+     */
     void Truck::Exist()
     {
         //auto lastLength = addressesOtherTrucks.size();
@@ -414,7 +419,6 @@ namespace TruckSocket
             
             
         }
-    
 
     }
     
@@ -432,9 +436,26 @@ namespace TruckSocket
         //std::cout << address << port;
         this->Send(message, address, port);
         React(message);
+
         Exist();
 
+        LeavePlatoon();        
     }
+
+    void Truck::LeavePlatoon()
+    {
+        Message message;
+        message._Event = Event(EventType::Leaving);
+        message._ReceiverPosition = LEADER_POSITION;
+        message._SenderPosition = this->_position;
+        message._Address = this->_myAddress;
+        message._Port = this->_myPort;
+        message._Body = "{\"ciao\":\"arrivederci\"}";
+
+        this->Send(message, _Platoon[LEADER_POSITION].first, _Platoon[LEADER_POSITION].second);
+        React(message);
+    }
+
     void Truck::CreatePlatoon()
     {
         _state=TruckState::PlatoonCreation;
@@ -519,18 +540,23 @@ void Truck::React(const Message& message)
                 
                 switch (eventType)
                 {
+
                     case EventType::ReceivePosition: 
                         _position = message._ReceiverPosition;
                         _state = TruckState::SimpleMember;
+                        
                         _Platoon[LEADER_POSITION].first =message._Address;
                         _Platoon[LEADER_POSITION].second = message._Port;
                         
                         _Platoon[_position].first =_myAddress;
                         _Platoon[_position].second = _myPort;
                         PRINT("I am a simple member")
+
                     break;
-                    default: std::cout << eventType; break;
-                }    
+                default:
+                    std::cout << eventType;
+                    break;
+                }
                 break;
             case TruckState::Leader:
                 switch (eventType)
@@ -545,6 +571,7 @@ void Truck::React(const Message& message)
                             messageToSend._Address=this->_myAddress;
                             messageToSend._Port=this->_myPort;
                             messageToSend._Body = "{\"ciao\":\"ciao\"}";
+
 
                             _Platoon[this->_platoonSize].first =message._Address;
                             _Platoon[this->_platoonSize].second = message._Port;

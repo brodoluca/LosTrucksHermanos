@@ -2,14 +2,11 @@
 
 don't read me. Or maybe do ehehe
 
-To start a truck (the port is the one of the leader)
-```
-./implementation/main --mode truck --port 8080    
-```
-to start a leader
-```
- ./implementation/main --mode leader
-```
+To start a truck (the port is the one of the leader):  
+`./implementation/main --mode truck --port 8080 --my_ip 172.20.10.4 --leader_ip 172.20.10.3`
+
+to start a leader:  
+`./implementation/main --mode leader`
 
 
 To compile (OLD, my man ALI is doing the make file)

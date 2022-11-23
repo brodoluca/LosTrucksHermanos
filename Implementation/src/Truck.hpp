@@ -121,6 +121,7 @@ public:
 
 
     void RequestToJoin(const std::string& address, int port);
+    void LeavePlatoon();
     void CreatePlatoon();
 
 
