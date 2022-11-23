@@ -23,6 +23,7 @@
 #include <pthread.h>
 #include <vector>
 #include <random>
+#include <algorithm>
 
 #include "macros.hpp"
 #include "JsonHandler.hpp"
