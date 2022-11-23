@@ -8,6 +8,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <cmath>
 
 
 
@@ -138,8 +139,11 @@ namespace TruckSocket
         message.ToBuffer(buffer);
         memset(&receiver, '\0', sizeof(receiver));
         receiver.sin_family = AF_INET;
-        for(auto truck = _Platoon.begin(); truck != _Platoon.end(); ++truck)
+        auto truck = _Platoon.begin();
+        truck++;
+        for(; truck != _Platoon.end(); ++truck)
         {
+            
             receiver.sin_port = htons(truck->second.second);
             receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
             sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
@@ -207,7 +211,7 @@ namespace TruckSocket
             return false;
 
 
-        char broadcast = '1';
+        //char broadcast = '1';
         memset(&receiver, '\0', sizeof(receiver));
         char buffer[2048];
         message.ToBuffer(buffer);
@@ -216,7 +220,7 @@ namespace TruckSocket
         receiver.sin_addr.s_addr = inet_addr(address.c_str());
         auto a = sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
 
-        std::cout << a;
+        //std::cout << a;
         close(sockfd);
         return true;
 
@@ -256,7 +260,7 @@ namespace TruckSocket
         
         
         auto a = bind(serverSocket, (struct sockaddr*)&this->myServerAddress, sizeof(myServerAddress));
-        std::cout << a<<std::endl;
+        //std::cout << a<<std::endl;
         while(1)
         {
             struct sockaddr_in si_other;
@@ -310,7 +314,8 @@ namespace TruckSocket
                 _platoonSize = 1;
                 PRINT(" I am the new leader");
                 _state = Leader;
-                
+                _Platoon[LEADER_POSITION].first =_myAddress;
+                _Platoon[LEADER_POSITION].second = _myPort;
                 break;
             case TruckState::Elections:
                 if(_position == NEW_LEADER_POSITION)
@@ -346,7 +351,7 @@ namespace TruckSocket
             else if ( _Platoon.find(message._SenderPosition) == _Platoon.end()) {
                 _Platoon[message._SenderPosition].first =message._Address;
                 _Platoon[message._SenderPosition].second = message._Port;
-                _platoonSize++;
+                //_platoonSize++;
             }
 
             
@@ -378,7 +383,16 @@ namespace TruckSocket
         
         
     }
-
+    void Truck::DebugInfo()
+    {
+        std::cout << "The platoon is composed of:" <<std::endl;
+        for(auto iter = _Platoon.begin(); iter != _Platoon.end(); ++iter)
+            {
+                std::cout << "Truck in position : " << iter->first << " with address " << iter->second.first << ":" <<iter->second.second << std::endl;
+            //ignore value
+            //Value v = iter->second;
+            }
+    }
 
     /**
      * @brief stay in the platoon for SECONDS_TO_LIVE seconds, and respons
@@ -390,15 +404,25 @@ namespace TruckSocket
         auto this_length = 0;
         time_t start = time(0);
         double seconds_since_start = difftime( time(0), start);
+        double time_to_print = time(0);
         while (seconds_since_start < SECONDS_TO_LIVE)
         {
             HandleRawMessages();
             HandleMessages();
+            if(difftime( time(0), time_to_print) > 4 ){
+                DebugInfo();
+                time_to_print = time(0);
+            }
+                
             //std::this_thread::sleep_for(std::chrono::seconds(1));
             seconds_since_start = difftime( time(0), start);
+            
+            
         }
 
     }
+    
+
 
     void Truck::RequestToJoin(const std::string& address, int port)
     {
@@ -440,24 +464,50 @@ namespace TruckSocket
 
 
 
-/*
-LeaderElection = 97,
-    LeaderElected = 98,
-    Joining = 99, 
-    Leaving=100, 
-    Coupling=101,
-    Decoupling=102,
-    NewPlatoon=103,
-    PlatoonNotFound=104,
-    PlatoonFound =105,
-    ReceivePosition=106,
-    BroadcastInfo=107,
-    Joined=108,
-    None=109, 
-    Crash=110,
-    CommunicationFailure=111, 
+void Truck::UpdatePlatoonPosition( int leavingTruck)
+{
+    Message messageToSend;
+    messageToSend._Event = Event(EventType::ReceivePosition);
+    
+    
+    
+    //messageToSend._ReceiverPosition = this->_platoonSize;
+    //messageToSend._SenderPosition = this->_position;
+    messageToSend._Address=this->_myAddress;
+    messageToSend._Port=this->_myPort;
+    messageToSend._Body = "{\"ciao\":\"ciao\"}";
+    messageToSend._SenderPosition = this->_position;
+    struct sockaddr_in receiver;
+    int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
 
-*/
+    if(sockfd <0)
+        return ;
+    char buffer[2048];
+   
+    memset(&receiver, '\0', sizeof(receiver));
+    receiver.sin_family = AF_INET;
+    
+    if(_platoonSize >2)
+    {
+        auto truck = _Platoon.begin();
+        std::advance(truck,leavingTruck);
+        for(; truck != _Platoon.end(); ++truck)
+        {
+            messageToSend._ReceiverPosition = truck->first -1;
+            messageToSend.ToBuffer(buffer);
+            receiver.sin_port = htons(truck->second.second);
+            receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
+            sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
+    }
+
+//        printf("[+]Data Send: %s\n", buffer);
+    
+
+    close(sockfd);
+}
+
+
 
 void Truck::React(const Message& message)
     {
@@ -490,17 +540,18 @@ void Truck::React(const Message& message)
                 
                 switch (eventType)
                 {
-                case EventType::ReceivePosition:
-                    _position = message._ReceiverPosition;
-                    _state = TruckState::SimpleMember;
 
-                    _Platoon[LEADER_POSITION].first = message._Address;
-                    _Platoon[LEADER_POSITION].second = message._Port;
+                    case EventType::ReceivePosition: 
+                        _position = message._ReceiverPosition;
+                        _state = TruckState::SimpleMember;
+                        
+                        _Platoon[LEADER_POSITION].first =message._Address;
+                        _Platoon[LEADER_POSITION].second = message._Port;
+                        
+                        _Platoon[_position].first =_myAddress;
+                        _Platoon[_position].second = _myPort;
+                        PRINT("I am a simple member")
 
-                    _Platoon[_position].first = _myAddress;
-                    _Platoon[_position].second = _myPort;
-
-                    PRINT("I am a simple member")
                     break;
                 default:
                     std::cout << eventType;
@@ -521,14 +572,21 @@ void Truck::React(const Message& message)
                             messageToSend._Port=this->_myPort;
                             messageToSend._Body = "{\"ciao\":\"ciao\"}";
 
-                            _Platoon[message._SenderPosition].first = message._Address;
-                            _Platoon[message._SenderPosition].second = message._Port;
+
+                            _Platoon[this->_platoonSize].first =message._Address;
+                            _Platoon[this->_platoonSize].second = message._Port;
                             //std::cout << message._Address<< message._Port;
                             this->Send(messageToSend, message._Address, message._Port);
                             //this->BroadcastInfo();
                         }
                         break;
-                    case EventType::Leaving: _state = TruckState::Unavailable; break;
+                    case EventType::Leaving:
+                        _platoonSize-=1;
+                        _Platoon.erase(message._SenderPosition);
+                        
+                        UpdatePlatoonPosition(message._SenderPosition);
+                        
+                        break;
                     case EventType::None: PRINT(" None Event received") break;
                     default: break;
                 }
@@ -542,6 +600,10 @@ void Truck::React(const Message& message)
                             //find better conversion for strings for the infos, stoi wont work here. Only works for 1 digit numbers
                             PRINT("I received the info, but i am not able to process it");
                         }
+                        break;
+                    case EventType::ReceivePosition:
+                        _position = message._ReceiverPosition;
+                        PRINT("I received my new position");
                         break;
                     case EventType::Leaving: _state = TruckState::Unavailable; break;
                     case EventType::None: PRINT(" None Event received") break;

@@ -86,6 +86,7 @@ protected:
 //////////////////////////////////////////////////////////////////
 
 
+
 namespace TruckSocket
 {
 
@@ -131,6 +132,8 @@ public:
 
     bool BroadcastInfo();
     bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
+    void UpdatePlatoonPosition( int leavingTruck);
+    void DebugInfo();
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
