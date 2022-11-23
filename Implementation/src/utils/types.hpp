@@ -4,8 +4,10 @@
 
 #include "include.hpp"
 
-#define SECONDS_TO_LIVE 5 // 99999
+#define SECONDS_TO_LIVE 99999
 #define SECONDS_TO_INFO 2
+
+#define SECONDS_TO_SEND_ALIVE 1
 
 #define NEW_POSITION "NewPosition"
 #define LEADER_ID "LeaderID"
@@ -72,7 +74,10 @@ enum  EventType
     None=109, 
     Crash=110,
     CommunicationFailure=111, 
-    InterfaceInfo = 112
+    InterfaceInfo = 112,
+    IamAlive = 113,
+    Pin = 114,
+    TruckDead = 115,
 };
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )

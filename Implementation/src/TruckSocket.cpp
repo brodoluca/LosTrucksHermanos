@@ -521,6 +521,7 @@ void Truck::React(const Message& message)
         if(eventType == EventType::IamAlive)
         {
             _PlatoonAliveTime[message._SenderPosition] = time(0);
+            return;
         }
     
         switch (_state)
@@ -597,6 +598,7 @@ void Truck::React(const Message& message)
                         
                     case EventType::TruckDead:
                     {
+                        RemoveTruck(message._SenderPosition);
                         //Handle truck dead
                         //Ping and wait 1 sec
                         //if not back
@@ -648,6 +650,25 @@ void Truck::React(const Message& message)
 
     }
 
+    void Truck::RemoveTruck(int position)
+    {
+        if(this->isLeader())
+        {
+            auto it = _Platoon.find(position);
+            if (it != _Platoon.end())
+            {
+                _Platoon.erase(position);
+                _PlatoonAliveTime.erase(position);
+                UpdatePlatoonPosition(position);
+            }
+        }
+        else
+        {
+            //send to leader
+        }
+        
+        
+    }
 
 }//end of namespace
 
