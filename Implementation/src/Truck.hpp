@@ -2,6 +2,8 @@
 #define TRUCK_HPP
 
 
+#include "TruckOMP.hpp"
+#include "TruckSocket.hpp"
 
 
 #include "TruckSocket.hpp"

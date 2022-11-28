@@ -47,7 +47,16 @@ public:
     bool BroadcastInfo();
     bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
     void UpdatePlatoonPosition( int leavingTruck);
+
+    
+    bool sendAlive();
+    void RemoveTruck(int position);
+    void RemoveTruck(std::vector<int> position);
     void DebugInfo();
+    
+    void CheckAliveTime();
+    
+
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
@@ -71,15 +80,22 @@ protected:
 
 
     std::map<int, std::pair<std::string, int>> _Platoon;
+    std::map<int, double> _PlatoonAliveTime;
     //std::vector< struct sockaddr_in> addressesOtherTrucks;
     struct sockaddr_in myServerAddress;
     int serverSocket;
-
+    
     std::queue<Message> MessageQueue;
     std::queue<RawMessage> RawMessageQueue;
 
     time_t _lastTimeInfo;
-    double _timeSinceLastInfo;
+    double _lastAliveSent;
+    
+    
 };
+
+
 } //end of namespace
+
+
 #endif

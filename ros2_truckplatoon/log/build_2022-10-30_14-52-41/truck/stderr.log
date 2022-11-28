@@ -1,8 +1,0 @@
-In file included from /Users/brodie/ros2_truckplatoon/src/truck/src/truck.cpp:2:
-/Users/brodie/ros2_truckplatoon/src/truck/src/Platoon.hpp:4:10: fatal error: 'Leader.hpp' file not found
-#include "Leader.hpp"
-         ^~~~~~~~~~~~
-1 error generated.
-gmake[2]: *** [CMakeFiles/truck.dir/build.make:82: CMakeFiles/truck.dir/src/truck.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:97: CMakeFiles/truck.dir/all] Error 2
-gmake: *** [Makefile:160: all] Error 2

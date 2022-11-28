@@ -1,6 +1,0 @@
-{
-  "package_name": "message",
-  "non_idl_tuples": [
-    "/Users/brodie/ros2_truckplatoon/src/message:msg/Message.msg"
-  ]
-}

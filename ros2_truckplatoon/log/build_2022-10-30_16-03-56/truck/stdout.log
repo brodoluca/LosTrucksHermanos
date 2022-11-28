@@ -1,5 +1,0 @@
-Scanning dependencies of target truck
-[ 16%] Building CXX object CMakeFiles/truck.dir/src/truck.cpp.o
-[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Leader.cpp.o
-[ 50%] Building CXX object CMakeFiles/truck.dir/src/src/Truck.cpp.o
-[ 66%] Building CXX object CMakeFiles/truck.dir/src/src/Communication.cpp.o
