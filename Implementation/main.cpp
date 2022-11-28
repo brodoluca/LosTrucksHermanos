@@ -50,7 +50,10 @@ int main(int argc, char *argv[])
     // Execute
     if (mode == MODE_LEADER)
     {
-        TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon, TruckPlatoon::SOCKET);
+        
+        TruckSocket::Truck truck(1, "127.0.0.1", 11271);
+        truck.CreatePlatoon();
+        //TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon, TruckPlatoon::SOCKET);
     }
     else if (mode == MODE_TRUCK)
     {
