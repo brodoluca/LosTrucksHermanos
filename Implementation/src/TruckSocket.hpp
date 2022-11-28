@@ -1,12 +1,7 @@
-#ifndef TRUCK_HPP
-#define TRUCK_HPP
-
+#ifndef TRUCKSOCKET_HPP
+#define TRUCKSOCKET_HPP
 #include "utils/include.hpp"
-
-
-
-
-namespace TruckSocket 
+namespace TruckSocket
 {
 
 class Truck
@@ -40,6 +35,7 @@ public:
 
 
     void RequestToJoin(const std::string& address, int port);
+    void LeavePlatoon();
     void CreatePlatoon();
 
 
@@ -51,6 +47,7 @@ public:
     bool BroadcastInfo();
     bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
     void UpdatePlatoonPosition( int leavingTruck);
+
     
     bool sendAlive();
     void RemoveTruck(int position);
@@ -59,6 +56,7 @@ public:
     
     void CheckAliveTime();
     
+
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
