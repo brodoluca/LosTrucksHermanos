@@ -7,7 +7,8 @@
 #define SECONDS_TO_LIVE 99999
 #define SECONDS_TO_INFO 2
 
-#define SECONDS_TO_SEND_ALIVE 1
+#define SECONDS_TO_SEND_ALIVE 3
+#define SECONDS_TO_BE_ALIVE 10
 
 #define NEW_POSITION "NewPosition"
 #define LEADER_ID "LeaderID"
@@ -29,6 +30,8 @@
 #define BODY 'B'
 #define ADDRESS 'A'
 #define PORT 'P'
+
+
 
 #define SENDER_POSITION_S "S"
 #define RECEIVER_POSITION_S "R"

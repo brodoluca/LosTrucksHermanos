@@ -1,8 +1,12 @@
-#ifndef TRUCKSOCKET_HPP
-#define TRUCKSOCKET_HPP
+#ifndef TRUCK_HPP
+#define TRUCK_HPP
+
 #include "utils/include.hpp"
 
-namespace TruckSocket
+
+
+
+namespace TruckSocket 
 {
 
 class Truck
@@ -49,8 +53,8 @@ public:
     void UpdatePlatoonPosition( int leavingTruck);
     
     bool sendAlive();
-    
-    
+    void RemoveTruck(int position);
+    void RemoveTruck(std::vector<int> position);
     void DebugInfo();
     
     void CheckAliveTime();
@@ -82,7 +86,7 @@ protected:
     //std::vector< struct sockaddr_in> addressesOtherTrucks;
     struct sockaddr_in myServerAddress;
     int serverSocket;
-
+    
     std::queue<Message> MessageQueue;
     std::queue<RawMessage> RawMessageQueue;
 
@@ -94,7 +98,6 @@ protected:
 
 
 } //end of namespace
-
 
 
 #endif
