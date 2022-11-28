@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     // Execute
     if (mode == MODE_LEADER)
     {
-        TruckSocket::Truck truck(1, "127.0.0.1", leaderPortNum);
+        TruckSocket::Truck truck(1, leaderIpAddr, leaderPortNum);
         truck.CreatePlatoon();
         //TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon, TruckPlatoon::SOCKET);
     }
