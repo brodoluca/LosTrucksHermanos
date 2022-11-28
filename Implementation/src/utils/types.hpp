@@ -58,6 +58,12 @@ typedef float stearingAngleType;
 typedef float distanceType;
 
 
+typedef enum
+{
+    MODE_TRUCK,
+    MODE_LEADER
+} simMode;
+
 
 // Type of the events that could happen during the interaction between trucks in the platoon
 enum  EventType

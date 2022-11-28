@@ -2,11 +2,6 @@
 #include "TruckPlatoon.hpp"
 //#include "src/utils/json.hpp"
 
-typedef enum
-{
-    MODE_TRUCK,
-    MODE_LEADER
-} simMode;
 
 int main(int argc, char *argv[])
 {
