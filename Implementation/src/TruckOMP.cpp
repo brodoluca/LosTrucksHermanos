@@ -163,8 +163,16 @@ void Truck::Update()
             {
                 if(message._Event.Type() == EventType::ReceivePosition && message._ReceiverID == _id && _position==0){
                     auto map = StupidJSON::ReadJson(message._Body);
-                    _position = std::stoi(map[NEW_POSITION]);
-                    _leaderID = std::stoi(map[LEADER_ID]);
+                        try
+                        {
+                            _position = std::stoi(map[NEW_POSITION]);
+                            _leaderID = std::stoi(map[LEADER_ID]);
+                        }
+                        catch(const std::exception& e)
+                        {
+                            std::cerr << "Position and leader id parsing error from map"<< '\n';
+                        }
+                        
                     WriteBus(_Bus,_position, LEADER_POSITION, EventType::Joined, _id, _leaderID );
                     HandleEvent(TruckEvent::PositionReceived);
                     
