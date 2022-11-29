@@ -29,12 +29,28 @@ int main(int argc, char *argv[])
         else if (strcmp(argv[i], "--port") == 0)
         {
             // parse port number
-            leaderPortNum = std::stoi(argv[i + 1]);
+            try
+            {
+                leaderPortNum = std::stoi(argv[i + 1]);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << "Error in port number" << '\n';
+                return 1;
+            }
         }
         else if (strcmp(argv[i], "--my_port") == 0)
         {
             // parse port number
-            myPortNum = std::stoi(argv[i + 1]);
+            try
+            {
+                myPortNum = std::stoi(argv[i + 1]);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << "Error in My port number" << '\n';
+            }
+            
         }
         else if (strcmp(argv[i], "--my_ip") == 0)
         {
