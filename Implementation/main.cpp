@@ -7,7 +7,8 @@ int main(int argc, char *argv[])
 {
     // default arguments
     simMode mode = MODE_TRUCK;
-    int portNum = 11271;
+    int leaderPortNum = 11271;
+    int myPortNum = 11272;
     char *myIpAddr = (char *)"127.0.0.1";
     char *leaderIpAddr = (char *)"127.0.0.1";
 
@@ -28,7 +29,12 @@ int main(int argc, char *argv[])
         else if (strcmp(argv[i], "--port") == 0)
         {
             // parse port number
-            portNum = std::stoi(argv[i + 1]);
+            leaderPortNum = std::stoi(argv[i + 1]);
+        }
+        else if (strcmp(argv[i], "--my_port") == 0)
+        {
+            // parse port number
+            myPortNum = std::stoi(argv[i + 1]);
         }
         else if (strcmp(argv[i], "--my_ip") == 0)
         {
@@ -45,16 +51,15 @@ int main(int argc, char *argv[])
     // Execute
     if (mode == MODE_LEADER)
     {
-        TruckSocket::Truck truck(1, "127.0.0.1", 11271);
+        TruckSocket::Truck truck(1, leaderIpAddr, leaderPortNum);
         truck.CreatePlatoon();
         //TruckPlatoon::StartSimulation(TruckPlatoon::Simulation::CreatePlatoon, TruckPlatoon::SOCKET);
     }
     else if (mode == MODE_TRUCK)
     {
-        // std::cout << "Mode: Truck; IP: " << ipAddr << "; Port: " << portNum << std::endl;
-        TruckSocket::Truck truck(1, myIpAddr, 8765);
-        truck.RequestToJoin(leaderIpAddr, portNum);
-        // truck.LeavePlatoon(leaderIpAddr, portNum);
+        TruckSocket::Truck truck(1, myIpAddr, myPortNum);
+        truck.RequestToJoin(leaderIpAddr, leaderPortNum);
+        // truck.LeavePlatoon(leaderIpAddr, leaderPortNum);
         // truck.Exist();
     }
     return 0;
