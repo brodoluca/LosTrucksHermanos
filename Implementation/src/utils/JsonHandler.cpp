@@ -46,7 +46,7 @@ std::map<std::string, std::string> ReadJson(const std::string& MessageBody)
     std::string my_str = MessageBody;
     my_str.erase(remove(my_str.begin(), my_str.end(), ':'), my_str.end());
     my_str.erase(remove(my_str.begin(), my_str.end(), ','), my_str.end());
-    bool key = true;
+    //bool key = true;
     std::string tempKey;
     std::string tempValue;
     for (auto it = my_str.cbegin() ;it != my_str.cend(); it++)
@@ -61,13 +61,42 @@ std::map<std::string, std::string> ReadJson(const std::string& MessageBody)
                         break;
                 tempKey.push_back(*iter);
             }
-            iter+=2;
-            for (; *iter != '\"' ; iter++){
-                if( *iter == '}' )
-                        break;
+            if (!strcmp(tempKey.data(), BODY_S)) {
+                bool colon = true;
+                iter++;
+                for(; *iter != '}' ; iter++){
+                    tempValue.push_back(*iter);
+                    if(*iter == '\"' && *iter==*(iter+1) ){
+                        if(colon)
+                        {
+                            tempValue.push_back(':');
+                            colon = false;
+                        }else
+                        {
+                            tempValue.push_back(',');
+                        }
+                        
+                    }
+                        
+                    
+                }
+                    
+                iter++;
                 tempValue.push_back(*iter);
+                
+            }else{
+                iter+=2;
+                for (; *iter != '\"' ; iter++){
+                    if( *iter == '}' )
+                            break;
+                    tempValue.push_back(*iter);
 
+                }
             }
+            
+            
+            
+            
             it = iter;
         }
         //std::cout <<tempKey << " Value :"<< tempValue<<std::endl;

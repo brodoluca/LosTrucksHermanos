@@ -4,6 +4,7 @@
 namespace TruckSocket
 {
 
+
 class Truck
 {
 public:
@@ -35,7 +36,6 @@ public:
 
 
     void RequestToJoin(const std::string& address, int port);
-    void LeavePlatoon();
     void CreatePlatoon();
 
 
@@ -45,18 +45,23 @@ public:
     bool Broadcast(const Message& message);
 
     bool BroadcastInfo();
+    void BroadcastNewPlatoonMember();
+    
+    void SharePlatoonMembers();
+    
     bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
     void UpdatePlatoonPosition( int leavingTruck);
-
     
-    bool sendAlive();
+    bool SendAlive();
     void RemoveTruck(int position);
     void RemoveTruck(std::vector<int> position);
     void DebugInfo();
     
     void CheckAliveTime();
     
-
+    
+    void ReadDistanceSencor();
+    
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
@@ -75,6 +80,7 @@ protected:
     u_int16_t _platoonSize;
 
     std::thread* myServer;
+    std::thread* distanceSensor;
     std::mutex lockAddresses;
     std::mutex lockMessageQueue;
 
@@ -87,12 +93,14 @@ protected:
     
     std::queue<Message> MessageQueue;
     std::queue<RawMessage> RawMessageQueue;
-
+    std::queue<double> sensorReads;
     time_t _lastTimeInfo;
     double _lastAliveSent;
     
     
 };
+
+
 
 
 } //end of namespace

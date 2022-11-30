@@ -17,6 +17,8 @@
 #define SAFETY_DISTANCE "SafetyDistance"
 #define PLATOON_SIZE "PlatoonSize"
 
+#define DEBUG_MODE true
+
 
 #define GUI_ADDRESS "172.20.10.5"
 #define GUI_PORT 9876
@@ -30,7 +32,6 @@
 #define BODY 'B'
 #define ADDRESS 'A'
 #define PORT 'P'
-
 
 
 #define SENDER_POSITION_S "S"
@@ -51,18 +52,14 @@
 
 #define BUFFER_SIZE 2048
 
+#define READ_FREQUENCY 25000
+
 typedef float speedType;
 
 typedef float stearingAngleType;
 
 typedef float distanceType;
 
-
-typedef enum
-{
-    MODE_TRUCK,
-    MODE_LEADER
-} simMode;
 
 
 // Type of the events that could happen during the interaction between trucks in the platoon
@@ -87,6 +84,8 @@ enum  EventType
     IamAlive = 113,
     Pin = 114,
     TruckDead = 115,
+    AddNewMember = 116,
+    AddAllTrucks = 117
 };
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )

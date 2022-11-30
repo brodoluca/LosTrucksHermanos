@@ -1,6 +1,6 @@
 #ifndef INCLUDE_HPP
 #define INCLUDE_HPP
-#include <omp.h>
+//#include <omp.h>
 #include <iostream>
 #include <string>
 #include <map>
@@ -23,7 +23,6 @@
 #include <pthread.h>
 #include <vector>
 #include <random>
-#include <algorithm>
 
 #include "macros.hpp"
 #include "JsonHandler.hpp"
@@ -31,4 +30,8 @@
 
 #include <errno.h>
 #include <string.h>
+
+#include <chrono>
+#include <thread>
+
 #endif
