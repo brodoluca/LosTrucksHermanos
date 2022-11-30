@@ -1,9 +1,15 @@
 #ifndef TRUCKSOCKET_HPP
 #define TRUCKSOCKET_HPP
 #include "utils/include.hpp"
+
+
+#include "utils/include.hpp"
+
+
+
+
 namespace TruckSocket
 {
-
 
 class Truck
 {
@@ -62,6 +68,9 @@ public:
     
     void ReadDistanceSencor();
     
+    void SlowDown(int distance);
+    void SpeedUp(int distance);
+    
 protected:
     TruckState _state;
     /// Each truck has its id and its position in the platoon. They are not necessarely the same thing
@@ -99,8 +108,6 @@ protected:
     
     
 };
-
-
 
 
 } //end of namespace

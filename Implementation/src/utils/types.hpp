@@ -2,6 +2,7 @@
 #ifndef PLATOONTYPES_HPP
 #define PLATOONTYPES_HPP
 
+
 #include "include.hpp"
 
 #define SECONDS_TO_LIVE 99999
@@ -85,7 +86,9 @@ enum  EventType
     Pin = 114,
     TruckDead = 115,
     AddNewMember = 116,
-    AddAllTrucks = 117
+    AddAllTrucks = 117,
+    SlowDown = 118,
+    SpeedUp = 119
 };
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )

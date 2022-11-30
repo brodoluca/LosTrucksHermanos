@@ -915,7 +915,14 @@ void Truck::React(const Message& message)
                     std::cout << "last read: " <<a<< std::endl;
                 if (a <= 150) {
 //                    trigger distance event
-                }
+                    SlowDown(a);
+                }else if (a >= 160){
+                    SpeedUp(a);
+                    //go faster
+                    //random 50 50 to decide if its my maximum
+                    //send to leader hey slow down for 10 s
+                    //leader slows down.
+            }
                 
             }
             
@@ -951,6 +958,18 @@ void Truck::React(const Message& message)
         Send(messageToSend, _platoonSize);
         
     }
+
+    void Truck::SlowDown(int distance) {
+//        Print using the macro that the truck is slowing down;
+//        calculate for how much time (define a way based on the distance)
+        //send a meesage with the event slowdown to all the trucks behind me
+    }
+
+    void Truck::SpeedUp(int distance) {
+//        <#code#>;
+    }
+
+
 
 
 
