@@ -308,6 +308,8 @@ namespace TruckSocket
             buffer++;
             memcpy(buffer,"\n",2 ); 
         }
+   
+        bool operator< (Message const &m){return _SenderPosition < m._SenderPosition;}; //for sorting the queue based on the sender position
     };
 
     struct RawMessage

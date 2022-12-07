@@ -85,8 +85,9 @@ protected:
     struct sockaddr_in myServerAddress;
     int serverSocket;
     
-    std::queue<Message> MessageQueue;
-    std::queue<RawMessage> RawMessageQueue;
+    std::deque<Message> MessageQueue;
+    std::deque<RawMessage> RawMessageQueue;
+    void sortMessageQueue(bool gpu);
 
     time_t _lastTimeInfo;
     double _lastAliveSent;

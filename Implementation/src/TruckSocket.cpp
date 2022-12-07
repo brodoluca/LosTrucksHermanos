@@ -9,6 +9,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <cmath>
+#include <algorithm>
 
 
 
@@ -270,7 +271,7 @@ namespace TruckSocket
             printf("[+]Data Received: %s", buffer);
             
             this->lockMessageQueue.lock();
-            RawMessageQueue.push(RawMessage(si_other, buffer));
+            RawMessageQueue.push_front(RawMessage(si_other, buffer));
             this->lockMessageQueue.unlock();
             
         }
@@ -363,7 +364,7 @@ namespace TruckSocket
         {
             
             auto message = MessageQueue.front();
-            MessageQueue.pop();
+            MessageQueue.pop_front();
             size = MessageQueue.size();
             
            
@@ -384,13 +385,13 @@ namespace TruckSocket
         {
             this->lockMessageQueue.lock();
             auto message = RawMessageQueue.front();
-            RawMessageQueue.pop();
+            RawMessageQueue.pop_front();
             size = RawMessageQueue.size();
             this->lockMessageQueue.unlock();
 
             auto m = StupidJSON::ReadJson(std::string(message.body));
             //std::cout << std::endl<< m[PORT_S]<< std::endl ; 
-            MessageQueue.push(Message(m));
+            MessageQueue.push_front(Message(m));
         }
         
         
@@ -730,6 +731,16 @@ void Truck::React(const Message& message)
         for(int position : positions)
             RemoveTruck(position);
         
+    }
+
+    // sort queue based on EventType
+    void Truck::sortMessageQueue(bool gpu){        
+        if(gpu){
+           //to be implemented on GPU
+        }else{
+          //CPU implementation
+            std::sort(std::begin(this->MessageQueue),std::end(this->MessageQueue));
+        }
     }
 
 }//end of namespace
