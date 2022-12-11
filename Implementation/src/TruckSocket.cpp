@@ -636,6 +636,7 @@ void Truck::React(const Message& message)
     
         if(eventType == EventType::IamAlive)
         {
+            
             _PlatoonAliveTime[message._SenderPosition] = time(0);
             return;
         }
