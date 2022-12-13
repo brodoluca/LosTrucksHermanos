@@ -1,15 +1,14 @@
 
-#ifndef PLATOONTYPES_HPP
-#define PLATOONTYPES_HPP
-
+#ifndef TYPES_HPP
+#define TYPES_HPP
 
 #include "include.hpp"
 
 #define SECONDS_TO_LIVE 99999
-#define SECONDS_TO_INFO 2
+#define SECONDS_TO_INFO 1
 
-#define SECONDS_TO_SEND_ALIVE 3
-#define SECONDS_TO_BE_ALIVE 10
+#define SECONDS_TO_SEND_ALIVE 2
+#define SECONDS_TO_BE_ALIVE 20
 
 #define NEW_POSITION "NewPosition"
 #define LEADER_ID "LeaderID"
@@ -22,7 +21,7 @@
 
 
 #define GUI_ADDRESS "172.20.10.5"
-#define GUI_PORT 9876
+#define GUI_PORT 1123
 
 
 #define NULL_MESSAGE false
@@ -34,6 +33,8 @@
 #define ADDRESS 'A'
 #define PORT 'P'
 
+#define POSITION_TO_CHECK 'PC'
+
 
 #define SENDER_POSITION_S "S"
 #define RECEIVER_POSITION_S "R"
@@ -41,7 +42,7 @@
 #define BODY_S "B"
 #define ADDRESS_S "A"
 #define PORT_S "P"
-
+#define POSITION_TO_CHECK_S "PC"
 
 #define INTERFACE 0
 #define BROADCAST 0
@@ -88,7 +89,10 @@ enum  EventType
     AddNewMember = 116,
     AddAllTrucks = 117,
     SlowDown = 118,
-    SpeedUp = 119
+    SpeedUp = 119,
+    needPosition = 120,
+    IsTruckCorrect = 121
+    
 };
 
 static std::ostream& operator << ( std::ostream& outs, const EventType& p )
@@ -123,10 +127,30 @@ static std::ostream& operator << ( std::ostream& outs, const EventType& p )
         return outs<<"Joined";
     case EventType::BroadcastInfo:
         return outs<<"BroadcastInfo";
-    case EventType::None:
-        return outs << "None";
+    case EventType::SpeedUp:
+        return outs << "SpeedUp";
+    case EventType::SlowDown:
+            return outs << "SlowDown";
+    case EventType::AddAllTrucks:
+            return outs << "AddAllTrucks";
+    case EventType::AddNewMember:
+            return outs << "AddNewMember";
+    case EventType::TruckDead:
+            return outs << "TruckDead";
+    case EventType::Pin:
+            return outs << "Pin";
+    case EventType::IamAlive:
+            return outs << "IamAlive";
+    case EventType::InterfaceInfo:
+            return outs << "InterfaceInfo";
+        case EventType::needPosition:
+            return outs << "needPosition";
+        case EventType::IsTruckCorrect:
+            return outs << "IsTruckCorrect";
+ 
+            
     default:
-        return outs << "No Event";
+        return outs << "None";
     };
 };
 

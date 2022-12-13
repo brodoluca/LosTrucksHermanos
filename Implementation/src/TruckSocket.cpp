@@ -219,9 +219,9 @@ namespace TruckSocket
                     bool check = this->Broadcast(message);
 
                     Send(message, GUI_ADDRESS, GUI_PORT);
+                //std::cout << message._Body<<std::endl;
 
-
-                    _lastTimeInfo = time(0);
+                    _lastTimeInfoSent = time(0);
                     return check;
     }
 
@@ -275,7 +275,7 @@ namespace TruckSocket
                     
         message._Address=this->_myAddress;
         message._Port=this->_myPort;
-
+        
         bool check = Send(message, InterfaceAddress, InterfacePort);
         return check;
     }
@@ -304,10 +304,12 @@ namespace TruckSocket
             struct sockaddr_in si_other;
             addr_size = sizeof(si_other);
             ssize_t a = recvfrom(serverSocket, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)& si_other, &addr_size);
-            if(a <0)
-                std::cout << a;
-            if(DEBUG_MODE)
-                printf("[+]Data Received: %s", buffer);
+            //if(a <0)
+              //  std::cout << a;
+            //if(DEBUG_MODE){
+              //  printf("[+]Data Received: %s", buffer);
+                //printf("[+]Time %ld", time(0));
+            //}
             
             this->lockMessageQueue.lock();
             RawMessageQueue.push(RawMessage(si_other, buffer));
@@ -335,7 +337,6 @@ namespace TruckSocket
     {
         HandleRawMessages();
         HandleMessages();
-        
         switch (_state)
             {
             case TruckState::Available:
@@ -347,12 +348,13 @@ namespace TruckSocket
                     
             case TruckState::Leader:
                 if(!_isLeader){
+                    _position = 1;
                     _isLeader = true;
                     _speed = 100;
                     BroadcastInfo();
                     return;
                 }
-                if(difftime( time(0), _lastTimeInfo) > SECONDS_TO_INFO)
+                if(difftime( time(0), _lastTimeInfoSent) > SECONDS_TO_INFO)
                 {
                     BroadcastInfo();
                 }
@@ -361,12 +363,13 @@ namespace TruckSocket
                 //broadcast info
                 break;
             case TruckState::SimpleMember:
-                    if(difftime( time(0), _lastAliveSent) > SECONDS_TO_SEND_ALIVE)
+                    if(difftime( time(0), _lastMessageAliveSent) > SECONDS_TO_SEND_ALIVE)
                     {
                         
                             SendAlive();
-                        _lastAliveSent = time(0);
+                        _lastMessageAliveSent = time(0);
                     }
+                    CheckAliveTime();
                 break;
 
             case TruckState::Unavailable:
@@ -381,15 +384,37 @@ namespace TruckSocket
                 _Platoon[LEADER_POSITION].second = _myPort;
                 break;
             case TruckState::Elections:
-                if(_position == NEW_LEADER_POSITION)
-                {
-
-                }
-                else
-                {
-
-                }
-
+                    if(_countElection >= _platoonSize){
+                        if(_position == NEW_LEADER_POSITION)
+                        {
+                            _state = TruckState::Leader;
+                            _position = LEADER_POSITION;
+                            
+                            for(auto & [position, second]:_Platoon)
+                                _PlatoonAliveTime[position-1] = time(0);
+                            std::cout << "I am the leader" <<std::endl;
+                        }else{
+                            _state = TruckState::SimpleMember;
+                            _position--;
+                        }
+                        _Platoon.erase(1);
+                        
+                        {
+                            //let's rebuild the map
+                            auto temp = _Platoon;
+                            _Platoon.clear();
+                            int count = 1;
+                            for(auto & [position, second]:temp)
+                            {
+                                _Platoon[count] = second;
+                                count++;
+                            }
+                            
+                        }
+                        _countElection=0;
+                    }
+                    
+                
 
             default:
                 break;
@@ -415,8 +440,9 @@ namespace TruckSocket
             MessageQueue.pop();
             size = MessageQueue.size();
             
+            std::cout << message._Address << " "<<message._Port << " "<<message._Event.Type() <<std::endl;
            
-            // << std::endl<< message._Port<< std::endl ; 
+            // << std::endl<< message._Port<< std::endl ;
             React(message);
             //Update();
             
@@ -441,7 +467,7 @@ namespace TruckSocket
             this->lockMessageQueue.unlock();
 
             auto m = StupidJSON::ReadJson(std::string(message.body));
-            //std::cout << std::endl<< m[PORT_S]<< std::endl ; 
+            //std::cout << std::endl<< m[PORT_S]<< std::endl ;
             MessageQueue.push(Message(m));
         }
         
@@ -507,7 +533,7 @@ namespace TruckSocket
     {
         _state=TruckState::PlatoonCreation;
         Exist();
-    } 
+    }
 
 
 ///@brief The leader calls this function to mofigy the platoon position in case of a dead truck
@@ -536,17 +562,17 @@ void Truck::UpdatePlatoonPosition( int leavingTruck)
    
     memset(&receiver, '\0', sizeof(receiver));
     receiver.sin_family = AF_INET;
-    
-
     auto truck = _Platoon.begin();
-    std::advance(truck,leavingTruck);
-    for(; truck != _Platoon.end(); ++truck)
-    {
+    if(!(leavingTruck >= _Platoon.size())){
+        std::advance(truck,leavingTruck);
+        for(; truck != _Platoon.end(); ++truck)
+        {
             messageToSend._ReceiverPosition = truck->first -1;
             messageToSend.ToBuffer(buffer);
             receiver.sin_port = htons(truck->second.second);
             receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
             sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
     }
         
     truck = _Platoon.begin();
@@ -580,54 +606,86 @@ void Truck::UpdatePlatoonPosition( int leavingTruck)
 
 void Truck ::CheckAliveTime()
 {
-
-    
-    if(_platoonSize >2)
-    {
-        // We check which truck are dead
-        std::vector<int> positions_to_remove;
-        for(auto & [position, AliveTime]:_PlatoonAliveTime)
+    if(this->isLeader()){
+        if(_platoonSize >2)
         {
-            if(difftime(time(0),AliveTime)> SECONDS_TO_BE_ALIVE)
-                positions_to_remove.push_back(position);
+            // We check which truck are dead
+            std::vector<int> positions_to_remove;
+            for(auto & [position, AliveTime]:_PlatoonAliveTime)
+            {
+                if(difftime(time(0),AliveTime)> SECONDS_TO_BE_ALIVE)
+                    positions_to_remove.push_back(position);
+                
+            }
+            for(int position:positions_to_remove){
+                _platoonSize-=1;
+                RemoveTruck(position);
+                
+            }
             
-        }
-        for(int position:positions_to_remove){
-            _platoonSize--;
-            RemoveTruck(position);
+            //let's rebuild the map
+            auto temp = _Platoon;
+            _Platoon.clear();
+            int count = 1;
+            for(auto & [position, second]:temp)
+            {
+                _Platoon[count] = second;
+                count++;
+            }
             
+            
+            auto temp_alive = _PlatoonAliveTime;
+            _PlatoonAliveTime.clear();
+            count = 2;
+            for(auto & [position, second]:temp_alive)
+            {
+                _PlatoonAliveTime[count] = second;
+                count++;
+            }
+            
+            /*
+             As the truck dies, we need to find a way to replace the key in the map with the correct position
+             */
         }
+        else if(_platoonSize >1)
+        {
+            
+            // since we are the leader, the truck who dies is automatically in position 2
+            if(difftime(time(0),_PlatoonAliveTime[2]) > SECONDS_TO_BE_ALIVE){
+                //std::cout << difftime(time(0),_PlatoonAliveTime[2])<<std::endl;
+                RemoveTruck(2);
+                _platoonSize--;
+            }
+        }
+    }else{
+        if(_platoonSize>=2 )
+            if(difftime(time(0),_lastInfoReceived) > SECONDS_TO_BE_ALIVE){
+                if(_platoonSize >2)
+                    BroadcastLeaderDead();
+                else{
+                    Message messageToSend;
+                    messageToSend._Event = Event(EventType::LeaderElection);
+                    messageToSend._Address=this->_myAddress;
+                    messageToSend._ReceiverPosition=BROADCAST;
+                    messageToSend._Port=this->_myPort;
+                    messageToSend._Body = "{\"TRUCK_DEAD\":\"1\"}";
+                    messageToSend._SenderPosition = this->_position;
+                    
+                    Send(messageToSend, _myAddress,_myPort);
+                    
+                }
+                _countElection = 1;
+                _platoonSize--;
+            }
+    }
+//    }else if(_platoonSize>2){
+//        if(difftime(time(0),_lastMessageSent) > SECONDS_TO_BE_ALIVE){
+//            BroadcastLeaderDead();
+//        }
+            //leader is dead
+            //we need to elections
     
-        //let's rebuild the map
-        auto temp = _Platoon;
-        _Platoon.clear();
-        int count = 1;
-        for(auto & [position, second]:temp)
-        {
-            _Platoon[count] = second;
-            count++;
-        }
-        
-
-        auto temp_alive = _PlatoonAliveTime;
-        _PlatoonAliveTime.clear();
-        count = 2;
-        for(auto & [position, second]:temp_alive)
-        {
-            _PlatoonAliveTime[count] = second;
-            count++;
-        }
-        
-        /*
-         As the truck dies, we need to find a way to replace the key in the map with the correct position
-         */
-    }
-    else
-    {
-        // since we are the leader, the truck who dies is automatically in position 2
-        if(difftime(time(0),_PlatoonAliveTime[2]) > SECONDS_TO_BE_ALIVE)
-            RemoveTruck(2);
-    }
+    
 }
 
 void Truck::React(const Message& message)
@@ -636,63 +694,147 @@ void Truck::React(const Message& message)
     
         if(eventType == EventType::IamAlive)
         {
-            
+            //std::cout << "I am here" << std::endl;
             _PlatoonAliveTime[message._SenderPosition] = time(0);
             return;
         }
-    
+        
         switch (_state)
         {
             case TruckState::Available:
                 switch (eventType)
                 {
-                    case EventType::Joining:PRINT("I am a platoon member") _state = TruckState::PlatoonMember; break;
-                    case EventType::PlatoonNotFound:_state = TruckState::PlatoonCreation; break;
-                    case EventType::Leaving: _state = TruckState::Unavailable; break;
-                    case EventType::None: PRINT(" None Event received") break;
-                    default: break;
+                    case EventType::Joining:
+                        PRINT("I am a platoon member")
+                        _state = TruckState::PlatoonMember;
+                        break;
+                    case EventType::PlatoonNotFound:
+                        _state = TruckState::PlatoonCreation;
+                        break;
+                    case EventType::Leaving:
+                        _state = TruckState::Unavailable;
+                        break;
+                    case EventType::None:
+                        PRINT(" None Event received")
+                        break;
+                    
+                    default:
+                        PRINT(" Whats'up?") break;
+                        break;
                 }
-
-                
                 break;
             case TruckState::Elections:
-               /* if(event == TruckEvent::Elected)
+                
+                if(eventType == EventType::LeaderElection)
                 {
-                    _state = TruckState::Leader;
-                }else if (event == TruckEvent::PositionReceived)
-                {
-                    _state = TruckState::SimpleMember;
-                    _position-=1;
-                }*/
+                    _countElection++;
+                }
+                std::cout << "i am in the election state" <<std::endl;;
                 break;
             case TruckState::PlatoonMember:
                 
                 switch (eventType)
                 {
-                    case EventType::ReceivePosition: 
+                    case EventType::AddAllTrucks:
+                    {
+                        auto mBody = StupidJSON::ReadJson(message._Body);
+//                        std::cout <<message._Body;
+                        int positionToAdd = 2;
+                        auto truckInfo = mBody.begin();
+                        //truckInfo++;
+                        while (truckInfo!=mBody.end()) {
+                            try {
+                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->second, std::stoi(truckInfo->first));
+                            } catch (const std::exception& e) {
+                                std::cout << "Caught exception \"" << e.what() << "\"\n";
+                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->second,90909);
+                                Message messageToSend;
+                                messageToSend._Event = Event(EventType::IsTruckCorrect);
+                                messageToSend._Address=this->_myAddress;
+                                messageToSend._ReceiverPosition=LEADER_POSITION;
+                                messageToSend._Port=this->_myPort;
+                                messageToSend._Body = "{\"PC\":\""+std::to_string(positionToAdd)+"\"}";
+                                messageToSend._SenderPosition = this->_position;
+                                Send(message, message._Address, message._Port);
+                            }
+                            
+                            truckInfo++;
+                            positionToAdd++;
+                        }
+                        break;
+                    }
+                    case EventType::ReceivePosition:
                         _position = message._ReceiverPosition;
                         _state = TruckState::SimpleMember;
+                        
+                        
                         _Platoon[LEADER_POSITION].first =message._Address;
                         _Platoon[LEADER_POSITION].second = message._Port;
                         
                         _Platoon[_position].first =_myAddress;
                         _Platoon[_position].second = _myPort;
                         PRINT("I am a simple member")
-                        _platoonSize=2;
+                        _platoonSize=_position;
                         SendAlive();
+                        _lastInfoReceived=time(0);
                         //_lastAliveSent = time(0);
                     break;
-                    default: std::cout << eventType; break;
-                }    
+                    default:
+                        Message messageToSend;
+                        messageToSend._Event = Event(EventType::needPosition);
+                        messageToSend._ReceiverPosition = LEADER_POSITION;
+                        messageToSend._SenderPosition = this->_position;
+                        messageToSend._Address=this->_myAddress;
+                        messageToSend._Port=this->_myPort;
+                        messageToSend._Body = "{\"GIMME POSITION\":\"GIMME POSITIon\"}";
+                        _Platoon[LEADER_POSITION].first =message._Address;
+                        _Platoon[LEADER_POSITION].second = message._Port;
+                        Send(messageToSend, message._Address, message._Port);
+                        break;
+                }
                 break;
             case TruckState::Leader:
                 switch (eventType)
                 {
-                    case EventType::Joining: 
+                    case EventType::Joining:
                         {
+                            if (this->CheckIfTruckExists(message._Address, message._Port)) return;
+                            this->_platoonSize++;
                             Message messageToSend;
                             messageToSend._Event = Event(EventType::ReceivePosition);
-                            this->_platoonSize++;
+
+                            messageToSend._ReceiverPosition = this->_platoonSize;
+                            messageToSend._SenderPosition = this->_position;
+                            messageToSend._Address=this->_myAddress;
+                            messageToSend._Port=this->_myPort;
+                            messageToSend._Body = "{\"ciao\":\"ciao\"}";
+                            //std::cout << message._Address<< message._Port;
+                            this->Send(messageToSend, message._Address, message._Port);
+                            //this->BroadcastInfo();
+                            
+                            /*
+                             WE NEED TO TELL EVERYBODY THAT THERE'S A NEW TRUCK AS WELL
+                             */
+                            
+                                
+                            _Platoon[this->_platoonSize].first =message._Address;
+                            _Platoon[this->_platoonSize].second = message._Port;
+                            _PlatoonAliveTime[this->_platoonSize] = time(0);
+                            if (_platoonSize >2){
+                                BroadcastNewPlatoonMember();
+                                SharePlatoonMembers(_platoonSize);
+                            }
+                            
+                            
+                            
+                            
+                        }
+                        break;
+                    case EventType::needPosition:
+                        {
+                            
+                            Message messageToSend;
+                            messageToSend._Event = Event(EventType::ReceivePosition);
                             messageToSend._ReceiverPosition = this->_platoonSize;
                             messageToSend._SenderPosition = this->_position;
                             messageToSend._Address=this->_myAddress;
@@ -705,18 +847,11 @@ void Truck::React(const Message& message)
                             //std::cout << message._Address<< message._Port;
                             this->Send(messageToSend, message._Address, message._Port);
                             //this->BroadcastInfo();
-                            
-                            /*
-                             WE NEED TO TELL EVERYBODY THAT THERE'S A NEW TRUCK AS WELL
-                             */
-                            if (_platoonSize >2){
-                                BroadcastNewPlatoonMember();
-                                SharePlatoonMembers();
-                            }
+
                             
                             
                         }
-                        break;
+                    break;
                     case EventType::Leaving:
                         _platoonSize-=1;
                         _Platoon.erase(message._SenderPosition);
@@ -738,6 +873,11 @@ void Truck::React(const Message& message)
                         //basically, check which truck is dead and reassign positions to trucks after it
                         //create a different fnction for it
                     }
+                        break;
+                    case EventType::IsTruckCorrect:
+                        std::cout<< "OOPS";
+                        SharePlatoonMembers(message._SenderPosition);
+                        break;
                     default: break;
                 }
 
@@ -745,10 +885,18 @@ void Truck::React(const Message& message)
             case TruckState::SimpleMember:
                 switch (eventType)
                 {
-                    case EventType::BroadcastInfo: 
+                    case EventType::BroadcastInfo:
                         {
+                            _lastInfoReceived = time(0);
+                            auto Info = StupidJSON::ReadJson(message._Body);
+                            try {
+                                _platoonSize = std::stoi(Info["PlatoonSize"]);
+                            } catch (...) {
+                                
+                            }
+                           
                             //find better conversion for strings for the infos, stoi wont work here. Only works for 1 digit numbers
-                            PRINT("I received the info, but i am not able to process it");
+                            //PRINT("I received the info, but i am not able to process it");
                         }
                         break;
                     case EventType::ReceivePosition:
@@ -775,6 +923,7 @@ void Truck::React(const Message& message)
                     {
                         
                         auto mBody = StupidJSON::ReadJson(message._Body);
+                        //TRY HERE
                         _Platoon.erase(_Platoon.find(std::stoi(mBody["TRUCK_DEAD"])));
                     }
                         break;
@@ -795,19 +944,32 @@ void Truck::React(const Message& message)
                         }
                         
                     }
-                    break;
+                        break;
+                    case EventType::LeaderElection:
+                        _state = TruckState::Elections;
+                        break;
                     case EventType::AddAllTrucks:
                     {
                         auto mBody = StupidJSON::ReadJson(message._Body);
-                        std::cout <<message._Body;
+                        //std::cout <<message._Body;
                         int positionToAdd = 2;
                         auto truckInfo = mBody.begin();
-                        truckInfo++;
-                        while (positionToAdd < _position) {
+                        //truckInfo++;
+                        while (positionToAdd < _position && truckInfo!=mBody.end()) {
                             try {
-                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->first, std::stoi(truckInfo->second));
+                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->second, std::stoi(truckInfo->first));
                             } catch (...) {
-                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->first,90909);
+                                _Platoon[positionToAdd] = std::pair<std::string,int>(truckInfo->second,90909);
+
+                                Message messageToSend;
+                                messageToSend._Event = Event(EventType::IsTruckCorrect);
+                                messageToSend._Address=this->_myAddress;
+                                messageToSend._ReceiverPosition=LEADER_POSITION;
+                                messageToSend._Port=this->_myPort;
+                                messageToSend._Body = "{\"PC\":\""+std::to_string(positionToAdd)+"\"}";
+                                messageToSend._SenderPosition = this->_position;
+                                Send(message, message._Address, message._Port);
+                                std::cout << "HEX"<<std::endl;
                             }
 
                             truckInfo++;
@@ -845,9 +1007,15 @@ void Truck::React(const Message& message)
             auto it = _Platoon.find(position);
             if (it != _Platoon.end())
             {
-                UpdatePlatoonPosition(position);
-                _Platoon.erase(position);
-                _PlatoonAliveTime.erase(position);
+                
+                try {
+                    _Platoon.erase(position);
+                    _PlatoonAliveTime.erase(position);
+                    UpdatePlatoonPosition(position);
+                } catch (...) {
+                    std::cout<<"Ooops\n";
+                }
+                
                 
             }
         }
@@ -876,8 +1044,8 @@ void Truck::React(const Message& message)
         messageToSend._SenderPosition = this->_position;
         messageToSend._Address=this->_myAddress;
         messageToSend._Port=this->_myPort;
-        std::string  Tags[] = { ADDRESS_S,PORT_S,PLATOON_SIZE };
-        std::string Values[] = {_Platoon[this->_platoonSize].first, std::to_string(_Platoon[this->_platoonSize].second), std::to_string(_platoonSize) };
+        std::string  Tags[] = { PORT_S,ADDRESS_S,PLATOON_SIZE };
+        std::string Values[] = {std::to_string(_Platoon[this->_platoonSize].second),_Platoon[this->_platoonSize].first,  std::to_string(_platoonSize) };
 
         messageToSend._Body = StupidJSON::CreateJsonFromTags(Tags, Values, 3);
         struct sockaddr_in receiver;
@@ -932,7 +1100,7 @@ void Truck::React(const Message& message)
         };
     }
 
-    void Truck::SharePlatoonMembers() {
+    void Truck::SharePlatoonMembers(int position) {
         Message messageToSend;
         messageToSend._Event = Event(EventType::AddAllTrucks);
         messageToSend._ReceiverPosition = _platoonSize;
@@ -948,15 +1116,15 @@ void Truck::React(const Message& message)
         {
             addresses[c-2] = _Platoon[c].first;
             ports[c-2] =  std::to_string(_Platoon[c].second);
-            std::cout << _Platoon[c].first;;
+            //std::cout << _Platoon[c].first;;
         }
         
-        for(auto a :addresses)
-            std::cout << a;
+        //for(auto a :addresses)
+          //  std::cout << a;
         
         
-        messageToSend._Body = StupidJSON::CreateJsonFromTags(addresses, ports, _platoonSize-2);
-        Send(messageToSend, _platoonSize);
+        messageToSend._Body = StupidJSON::CreateJsonFromTags( ports, addresses,_platoonSize-2);
+        Send(messageToSend, position);
         
     }
 
@@ -964,14 +1132,103 @@ void Truck::React(const Message& message)
 //        Print using the macro that the truck is slowing down;
 //        calculate for how much time (define a way based on the distance)
         //send a meesage with the event slowdown to all the trucks behind me
+        
+        PRINT("I am slowing down");
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        char buffer[2048];
+        Message messageToSend;
+        messageToSend._Event = Event(EventType::SlowDown);
+        messageToSend._Address=this->_myAddress;
+        messageToSend._ReceiverPosition=BROADCAST;
+        messageToSend._Port=this->_myPort;
+        messageToSend._Body = "{\"Time\":\"1\"}";
+        messageToSend._SenderPosition = this->_position;
+        messageToSend.ToBuffer(buffer);
+        memset(&receiver, '\0', sizeof(receiver));
+        receiver.sin_family = AF_INET;
+        auto truck = _Platoon.find(_position);
+        for(; truck != _Platoon.end(); ++truck)
+        {
+            receiver.sin_port = htons(truck->second.second);
+            receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
+            sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
+        
+        
     }
 
     void Truck::SpeedUp(int distance) {
-//        <#code#>;
+        
+        PRINT("I am speeding up");
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+        char buffer[2048];
+        Message messageToSend;
+        messageToSend._Event = Event(EventType::SlowDown);
+        messageToSend._Address=this->_myAddress;
+        messageToSend._ReceiverPosition=BROADCAST;
+        messageToSend._Port=this->_myPort;
+        messageToSend._Body = "{\"Time\":\"1\"}";
+        messageToSend._SenderPosition = this->_position;
+        messageToSend.ToBuffer(buffer);
+        memset(&receiver, '\0', sizeof(receiver));
+        receiver.sin_family = AF_INET;
+        auto truck = _Platoon.find(_position);
+        for(; truck != _Platoon.end(); ++truck)
+        {
+            receiver.sin_port = htons(truck->second.second);
+            receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
+            sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
+    }
+
+    bool Truck::BroadcastLeaderDead() {
+        struct sockaddr_in receiver;
+        int sockfd = socket(PF_INET, SOCK_DGRAM, 0);
+
+        if(sockfd <0)
+            return false;
+        char buffer[2048];
+        Message messageToSend;
+        messageToSend._Event = Event(EventType::LeaderElection);
+        messageToSend._Address=this->_myAddress;
+        messageToSend._ReceiverPosition=BROADCAST;
+        messageToSend._Port=this->_myPort;
+        messageToSend._Body = "{\"TRUCK_DEAD\":\"1\"}";
+        messageToSend._SenderPosition = this->_position;
+        messageToSend.ToBuffer(buffer);
+        memset(&receiver, '\0', sizeof(receiver));
+        receiver.sin_family = AF_INET;
+        auto truck = _Platoon.begin();
+        truck++;
+        for(; truck != _Platoon.end(); ++truck)
+        {
+            receiver.sin_port = htons(truck->second.second);
+            receiver.sin_addr.s_addr = inet_addr(truck->second.first.c_str());
+            sendto(sockfd, buffer, size_t(BUFFER_SIZE), 0, (struct sockaddr*)&receiver, sizeof(receiver));
+        }
+
+//        printf("[+]Data Send: %s\n", buffer);
+        
+
+        close(sockfd);
+        return true;;
     }
 
 
 
+bool Truck::CheckIfTruckExists(const std::string& address, int port)
+{
+    if(_platoonSize <2) return false;
+    for (auto &[truck, info] : _Platoon)
+    {
+        if (info.first == address && info.second ==port) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 

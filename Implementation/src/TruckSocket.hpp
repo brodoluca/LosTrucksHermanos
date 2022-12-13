@@ -3,9 +3,6 @@
 #include "utils/include.hpp"
 
 
-#include "utils/include.hpp"
-
-
 
 
 namespace TruckSocket
@@ -52,8 +49,9 @@ public:
 
     bool BroadcastInfo();
     void BroadcastNewPlatoonMember();
+    bool BroadcastLeaderDead();
     
-    void SharePlatoonMembers();
+    void SharePlatoonMembers(int position);
     
     bool SendInfoToInterface( const std::string& InterfaceAddress, int InterfacePort);
     void UpdatePlatoonPosition( int leavingTruck);
@@ -70,6 +68,8 @@ public:
     
     void SlowDown(int distance);
     void SpeedUp(int distance);
+    
+    bool CheckIfTruckExists(const std::string& address, int port);
     
 protected:
     TruckState _state;
@@ -103,11 +103,18 @@ protected:
     std::queue<Message> MessageQueue;
     std::queue<RawMessage> RawMessageQueue;
     std::queue<double> sensorReads;
-    time_t _lastTimeInfo;
-    double _lastAliveSent;
+    time_t _lastTimeInfoSent;
+    double _lastMessageAliveSent;
+    double _lastInfoReceived;
+    
+    
+    int _countElection;
     
     
 };
+
+
+} //end of namespace
 
 
 } //end of namespace
