@@ -5,6 +5,11 @@
 #include "src/Simulations.hpp"
 
 
+typedef enum simMode{
+    MODE_LEADER, 
+    MODE_TRUCK
+}simMode;
+
 namespace TruckPlatoon
 {
     bool OMP = true;
