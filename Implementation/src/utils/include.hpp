@@ -34,4 +34,7 @@
 #include <chrono>
 #include <thread>
 
+#include <omp.h>
+#include <algorithm>
+
 #endif
