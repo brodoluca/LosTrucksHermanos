@@ -2,7 +2,6 @@
 #include "TruckPlatoon.hpp"
 //#include "src/utils/json.hpp"
 
-
 int main(int argc, char *argv[])
 {
     // default arguments

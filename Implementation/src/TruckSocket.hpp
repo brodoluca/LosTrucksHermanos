@@ -1,6 +1,7 @@
 #ifndef TRUCKSOCKET_HPP
 #define TRUCKSOCKET_HPP
 #include "utils/include.hpp"
+#define useGPU
 namespace TruckSocket
 {
 
@@ -87,7 +88,8 @@ protected:
     
     std::deque<Message> MessageQueue;
     std::deque<RawMessage> RawMessageQueue;
-    void sortMessageQueue(bool gpu);
+    void sortMessageQueue();
+    void sortRawMessageQueue();
 
     time_t _lastTimeInfo;
     double _lastAliveSent;

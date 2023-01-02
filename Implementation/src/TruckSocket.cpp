@@ -10,9 +10,9 @@
 #include <netinet/in.h>
 #include <cmath>
 #include <algorithm>
-
-
-
+#ifdef useGPU
+#include "utils/sorter.hpp"
+#endif
 namespace TruckSocket
 {
 
@@ -273,6 +273,7 @@ namespace TruckSocket
             this->lockMessageQueue.lock();
             RawMessageQueue.push_front(RawMessage(si_other, buffer));
             this->lockMessageQueue.unlock();
+            this->sortMessageQueue();            
             
         }
     }
@@ -392,6 +393,8 @@ namespace TruckSocket
             auto m = StupidJSON::ReadJson(std::string(message.body));
             //std::cout << std::endl<< m[PORT_S]<< std::endl ; 
             MessageQueue.push_front(Message(m));
+            this->sortMessageQueue();
+
         }
         
         
@@ -499,8 +502,7 @@ void Truck::UpdatePlatoonPosition( int leavingTruck)
 
     close(sockfd);
 }
-
-
+ 
 void Truck ::CheckAliveTime()
 {
 
@@ -733,14 +735,25 @@ void Truck::React(const Message& message)
         
     }
 
-    // sort queue based on EventType
-    void Truck::sortMessageQueue(bool gpu){        
-        if(gpu){
-           //to be implemented on GPU
-        }else{
-          //CPU implementation
-            std::sort(std::begin(this->MessageQueue),std::end(this->MessageQueue));
-        }
+    // sort queue based on Truck distance
+    void Truck::sortMessageQueue(){        
+        #ifdef useGPU
+        //gpu implementation
+        gpuSort(MessageQueue);
+        #else
+        //CPU implementation
+         std::sort(std::begin(this->MessageQueue),std::end(this->MessageQueue));
+       #endif
+    }
+
+    void Truck::sortRawMessageQueue(){        
+        #ifdef useGPU
+        //gpu implementation
+        gpuSort(this->RawMessageQueue);
+        #else
+        //CPU implementation
+            std::sort(std::begin(this->RawMessageQueue),std::end(this->RawMessageQueue));
+        #endif
     }
 
 }//end of namespace
