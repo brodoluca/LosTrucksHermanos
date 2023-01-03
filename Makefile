@@ -1,5 +1,5 @@
 cpu: ./Implementation/src/TruckSocket.cpp
-	g++ ./Implementation/main.cpp ./Implementation/src/TruckOMP.cpp ./Implementation/src/Simulations.cpp ./Implementation/src/utils/JsonHandler.cpp ./Implementation/src/TruckSocket.cpp -o main -fopenmp
+	g++ -std=c++17 ./Implementation/main.cpp ./Implementation/src/TruckOMP.cpp ./Implementation/src/Simulations.cpp ./Implementation/src/utils/JsonHandler.cpp ./Implementation/src/TruckSocket.cpp -o main -fopenmp
 gpu: ./Implementation/src/TruckSocket.cpp
 	nvcc ./Implementation/main.cpp ./Implementation/src/TruckOMP.cpp ./Implementation/src/Simulations.cpp ./Implementation/src/utils/JsonHandler.cpp ./Implementation/src/TruckSocket.cpp ./Implementation/src/sorter.cu -o main -Xcompiler -fopenmp
 leader: ./main

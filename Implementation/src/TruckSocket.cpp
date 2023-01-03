@@ -752,7 +752,8 @@ void Truck::React(const Message& message)
         gpuSort(this->RawMessageQueue);
         #else
         //CPU implementation
-            std::sort(std::begin(this->RawMessageQueue),std::end(this->RawMessageQueue));
+            //std::sort(std::begin(this->RawMessageQueue),std::end(this->RawMessageQueue));
+            //Raw messages don't have distances
         #endif
     }
 

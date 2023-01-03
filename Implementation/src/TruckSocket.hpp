@@ -1,7 +1,7 @@
 #ifndef TRUCKSOCKET_HPP
 #define TRUCKSOCKET_HPP
 #include "utils/include.hpp"
-#define useGPU
+#define useCPU
 namespace TruckSocket
 {
 
