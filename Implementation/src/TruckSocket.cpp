@@ -13,6 +13,7 @@
 #ifdef useGPU
 #include "utils/sorter.hpp"
 #endif
+
 namespace TruckSocket
 {
 
@@ -736,10 +737,24 @@ void Truck::React(const Message& message)
     }
 
     // sort queue based on Truck distance
-    void Truck::sortMessageQueue(){        
+    void Truck::sortMessageQueue(){    
+        std::deque <Message> tempQueue;
+        int n = 10;
+        Message tempMessage[n];
+        std::cout << "in: ";
+        for (size_t i = 0; i < n; i++)
+        {
+            tempMessage[i]._SenderPosition = (i+1)*2;            
+            tempQueue.push_front(tempMessage[i]);
+        }
+        std::random_shuffle(tempQueue.begin(),tempQueue.end());
+        std::cout << std::endl;
+
+
         #ifdef useGPU
         //gpu implementation
-        gpuSort(MessageQueue);
+        //gpuSort(MessageQueue);
+        gpuSort(tempQueue);
         #else
         //CPU implementation
          std::sort(std::begin(this->MessageQueue),std::end(this->MessageQueue));
